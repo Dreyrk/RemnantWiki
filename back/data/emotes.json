@@ -1,0 +1,122 @@
+[
+  {
+    "ID": 1,
+    "Name": "No Emote",
+    "Description": "Dissent with your head and arms.",
+    "Location": "Starting Emote",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/No+Emote",
+    "Worlds": "Ward 13"
+  },
+  {
+    "ID": 2,
+    "Name": "This Way Emote",
+    "Description": "Use your arms to point out where to go",
+    "Location": "Starting Emote",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/This+Way+Emote",
+    "Worlds": "Ward 13"
+  },
+  {
+    "ID": 3,
+    "Name": "Yes Emote",
+    "Description": "Consent with your head and hand",
+    "Location": "Starting Emote",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Yes+Emote",
+    "Worlds": "Ward 13"
+  },
+  {
+    "ID": 4,
+    "Name": "Wave Emote",
+    "Description": "Wave with your hand",
+    "Location": "Party with another Player",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Wave+Emote",
+    "Worlds": "Any"
+  },
+  {
+    "ID": 5,
+    "Name": "Cheer Emote",
+    "Description": "Cheer with your arms while screaming: \"Aw Yeah!",
+    "Location": "Defeat The Ent",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Cheer+Emote",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 6,
+    "Name": "Beckon Emote",
+    "Description": "Call someone with your hands",
+    "Location": "Defeat Singe",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Beckon+Emote",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 7,
+    "Name": "Fail Emote",
+    "Description": "Put your hand on your face while dissenting",
+    "Location": "Defeat The Harrow",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Fail+Emote",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 8,
+    "Name": "Laugh Emote",
+    "Description": "Laugh and point with your fingers",
+    "Location": "Defeat Claviger",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Laugh+Emote",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 9,
+    "Name": "Gravedigger Emote",
+    "Description": "Pretend to dig with a shovel using your arms",
+    "Location": "Defeat Undying King",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Gravedigger+Emote",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 10,
+    "Name": "Exhausted Emote",
+    "Description": "Recover your breath while pointing up with one finger",
+    "Location": "Defeat The Unclean One",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Exhausted+Emote",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 11,
+    "Name": "Confused Emote",
+    "Description": "Look Around while moving your arms.",
+    "Location": "Defeat Ixillis",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Confused+Emote",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 12,
+    "Name": "Freeze Frame Emote",
+    "Description": "Jump while raising your arm. You'll remain still in the air for a moment.",
+    "Location": "Defeat The Ravager",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Freeze+Frame+Emote",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 13,
+    "Name": "Tea Time Emote",
+    "Description": "Pretend to prepare tea with your arms.",
+    "Location": "Defeat Totem Father",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Tea+Time+Emote",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 14,
+    "Name": "High Five Emote",
+    "Description": "Raise your hand to perform a High Five. If another player performs the same emotes you will clap your hands.",
+    "Location": "Defeat Nightmare on Hardcore Mode",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/High+Five+Emote",
+    "Worlds": "Ward 17"
+  },
+  {
+    "ID": 15,
+    "Name": "Praise The Gun Emote",
+    "Description": "Raise your hand above your head while looking at it.",
+    "Location": "Defeat Nightmare on Normal Mode.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Praise+The+Gun+Emote",
+    "Worlds": "Ward 17"
+  }
+]

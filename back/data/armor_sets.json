@@ -1,0 +1,137 @@
+[
+  {
+    "ID": 1,
+    "Name": "Adventurer Set",
+    "Set Bonus": "Treasure Hunter",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Adventurer+Set",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/adventurer_set_remnant.jpg",
+    "Worlds": "Ward 13"
+  },
+  {
+    "ID": 2,
+    "Name": "Akari Set",
+    "Set Bonus": "Opportunist",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Akari+Set",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/akari_set_remnant.jpg",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 3,
+    "Name": "Bomber Set",
+    "Set Bonus": "Team Work",
+    "Url": "https://twitter.com/Remnant_Game/status/1150812476986073093",
+    "Worlds": "Unknown"
+  },
+  {
+    "ID": 4,
+    "Name": "Cultist's Set",
+    "Set Bonus": "Blood Pact",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Cultist's+Set",
+    "Worlds": "Ward 13"
+  },
+  {
+    "ID": 5,
+    "Name": "Drifter's Set",
+    "Set Bonus": "Wanderer",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Drifter's+Set",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 6,
+    "Name": "Elder Set",
+    "Set Bonus": "Believer",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Elder+Set",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 7,
+    "Name": "Hunter Set",
+    "Set Bonus": "Sharpshooter",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Hunter+Set",
+    "Worlds": "Ward 13"
+  },
+  {
+    "ID": 8,
+    "Name": "Leto's Set",
+    "Set Bonus": "Juggernaut",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Leto's+Set",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 9,
+    "Name": "Ossesus Set",
+    "Set Bonus": "Bloodlust",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Ossesus+Set",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 10,
+    "Name": "Radiant Set",
+    "Set Bonus": "Momentum",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Radiant+Set",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 11,
+    "Name": "Scrapper Set",
+    "Set Bonus": "Challenger",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Scrapper+Set",
+    "Worlds": "Ward 13"
+  },
+  {
+    "ID": 12,
+    "Name": "Slayer Set",
+    "Set Bonus": "Assassin",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Slayer+Set",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 13,
+    "Name": "Twisted Set",
+    "Set Bonus": "Regrowth",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Twisted+Set",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 14,
+    "Name": "Void Set",
+    "Set Bonus": "Power Transfer",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Void+Set",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 15,
+    "Name": "Bandit Set",
+    "Set Bonus": "Freeloader",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Bandit+Set",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 16,
+    "Name": "Labyrinth Set",
+    "Set Bonus": "Power Surge",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Labyrinth+Set",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 17,
+    "Name": "Carapace Set",
+    "Set Bonus": "Harden",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Carapace+Set",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 18,
+    "Name": "Warlord's Set",
+    "Set Bonus": "Deathwish",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Warlord's+Set",
+    "Worlds": "Resium"
+  },
+  {
+    "ID": 19,
+    "Name": "Scavenger's Set",
+    "Set Bonus": "Salvager",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Scavenger's+Set",
+    "Worlds": "Resium"
+  }
+]

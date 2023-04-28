@@ -1,0 +1,298 @@
+[
+  {
+    "ID": 1,
+    "Name": "Brutal Mark",
+    "Description": "Deals 20% bonus damage to enemies that has less than 50% Health.",
+    "Location & Crafting": "Can be found at a random location at Rhom.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Brutal+Mark",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 2,
+    "Name": "Butcher's Fetish",
+    "Description": "Increases Crit Chance by 15% for 10 seconds after striking an enemy with a Charged Melee Attack.",
+    "Location & Crafting": "Found at The Fetid Glade.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Butcher's+Fetish",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 3,
+    "Name": "Cleansing Jewel",
+    "Description": "Removes all negative status effects after expending a Dragon Heart and increases status buildup resistance by 50%.",
+    "Location & Crafting": "Found at The Labyrinth - The Eastern Wind.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Cleansing+Jewel",
+    "Worlds": "Labyrinth"
+  },
+  {
+    "ID": 4,
+    "Name": "Galenic Charm",
+    "Description": "Increases Weapon Mod damage by 30%",
+    "Location & Crafting": "Can be found at a random location at Rhom.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Galenic+Charm",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 5,
+    "Name": "Gunslinger's Charm",
+    "Description": "Increases Fire Rate by 15% and Reload Speed by 20%",
+    "Location & Crafting": "Can be found at a random location at Earth.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Gunslinger's+Charm",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 6,
+    "Name": "Leto's Amulet",
+    "Description": "Reduces Armor Encumbrance by 40% and Stamina cost by 10%.",
+    "Location & Crafting": "Can be found at a random location at Earth.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Leto's+Amulet",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 7,
+    "Name": "Mender's Charm",
+    "Description": "50% ally heal on Dragon Hearts use",
+    "Location & Crafting": "Can be purchased from Wud.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Mender's+Charm",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 8,
+    "Name": "Pocket Watch",
+    "Description": "Increases Stamina Regeneration by 20 per second and reduces Stamina Cost by 20%.",
+    "Location & Crafting": "Given by Mudtooth in Helicopter on Earth after listening to all his stories\n\nCan be used as exchange for Bandit Set before fight with Brabus.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Pocket+Watch",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 9,
+    "Name": "Rock of Anguish",
+    "Description": "Increases movement speed by 15% and Reload Speed by 25% for 10 seconds after taking damage",
+    "Location & Crafting": "Can be found at a random location at Corsus",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Rock+of+Anguish",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 10,
+    "Name": "Storm Amulet",
+    "Description": "Increases SHOCK damage by 20%.",
+    "Location & Crafting": "Can be found at a random location at Yaesha.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Storm+Amulet",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 11,
+    "Name": "Twisted Idol",
+    "Description": "Increases Armor Effectiveness by 30%.",
+    "Location & Crafting": "Drop by Wailing Tree",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Twisted+Idol",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 12,
+    "Name": "Soul Anchor",
+    "Description": "Increases duration of summoned creatures by 100% and increases hero damage by 5% per summoned minion.",
+    "Location & Crafting": "Dropped by Reanimator boss.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Soul+Anchor",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 13,
+    "Name": "Scavenger's Bauble",
+    "Description": "Increases the amount of Scrap picked up in the world by 35%",
+    "Location & Crafting": "Can be obtained by solving the Song of the Doe puzzle at Yaesha.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Scavenger's+Bauble",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 14,
+    "Name": "Vengeance Idol",
+    "Description": "All damage dealt is increased by 30% when the wearer's Health is below 50%. Includes Summons.",
+    "Location & Crafting": "Can be found at Yaesha.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Vengeance+Idol",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 15,
+    "Name": "Nightmare Spiral",
+    "Description": "Ranged hits steal 2.0% of base damage dealt as health. Consumable health regen effectiveness reduced by 95%",
+    "Location & Crafting": "Defeat Dreamer / Nightmare Hardcore Mode.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Nightmare+Spiral",
+    "Worlds": "Earth"
+  },
+  {
+    "ID": 16,
+    "Name": "Rusted Amulet",
+    "Description": "Reduces Stamina Cost by 80% but increases Armor Encumbrance by 25.",
+    "Location & Crafting": "Can be found at Corsus.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Rusted+Amulet",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 17,
+    "Name": "Talisman of Animosity",
+    "Description": "Increase Weakspot damage by 30%",
+    "Location & Crafting": "Can be found at a random location at Rhom.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Talisman+of+Animosity",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 18,
+    "Name": "Heart of Darkness",
+    "Description": "Increases Ranged and Melee damage dealt by 20%. Increases damage received by 50% for 60 seconds after using a Dragon Heart.",
+    "Location & Crafting": "Can be found in the Fetid Pools on Corsus. Use the Acid Cleaned Key on the second door.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Heart+of+Darkness",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 19,
+    "Name": "Amulet of Epicaricacy",
+    "Description": "Increases Mod Power generation by 10%. When attacking an enemy with an active STATUS EFFECT. Mod power generation is increased by an additional 25%.",
+    "Location & Crafting": "Dropped by Red Beetle in the Fetid Pools Dungeon on Corsus.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Amulet+of+Epicaricacy",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 20,
+    "Name": "Toxic Juju",
+    "Description": "",
+    "Location & Crafting": "",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Toxic+Juju",
+    "Worlds": ""
+  },
+  {
+    "ID": 21,
+    "Name": "Daredevil's Charm",
+    "Description": "Increases Total damage dealt by 25% for each piece of unequipped armor. Damage received is increased by 1%.",
+    "Location & Crafting": "75 Total Boss Kills in Survival Mode",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Daredevil's+Charm",
+    "Worlds": "Any"
+  },
+  {
+    "ID": 22,
+    "Name": "Black Rose",
+    "Description": "The wearer's chest armor set bonus is increased by 1 piece. It will not exceed the 3 piece armor set bonus.",
+    "Location & Crafting": "100 Total Boss Kills in Survival Mode",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Black+Rose",
+    "Worlds": "Any"
+  },
+  {
+    "ID": 23,
+    "Name": "Talisman of Perseverance",
+    "Description": "Increases earned experience by 1% when slaying an enemy and will last until the wearer dies, unequips the amulet, or rests at a checkpoint. stacking up to 50 times.",
+    "Location & Crafting": "Survival Mode - 50 Boss Kills",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Talisman+of+Perseverance",
+    "Worlds": "Any"
+  },
+  {
+    "ID": 24,
+    "Name": "Radioactive Ember",
+    "Description": "Increases RADIATION damage by 15% and converts basic melee weapons from physical to elemental dealing RADIATION damage.",
+    "Location & Crafting": "Random drop on Rhom.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Radioactive+Ember",
+    "Worlds": "Rhom"
+  },
+  {
+    "ID": 25,
+    "Name": "Stalker's Brand",
+    "Description": "Firearm sound is reduced by 25%. When crouched, increases Movement Speed by 20% and reduces enemy Awareness Range by 15%.",
+    "Location & Crafting": "Random drop on Yaesha",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Stalkers+Brand",
+    "Worlds": "Yaesha"
+  },
+  {
+    "ID": 26,
+    "Name": "Abrasive Amulet",
+    "Description": "Doubles application of the CORRODED effect. Melee Charge Attacks apply the CORRODED effect.",
+    "Location & Crafting": "Found at a random location on Corsus.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Abrasive+Amulet",
+    "Worlds": "Corsus"
+  },
+  {
+    "ID": 27,
+    "Name": "Shattered Vertebrae",
+    "Description": "Increase Ranged dmg by 10%. When dealing non-Critical dmg with a firearm, Crit Chance increased by 2%. When a Critical hit occurs, Crit Chance buff is removed",
+    "Location & Crafting": "Complete the Reisum campaign.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Shattered+Vertebrae",
+    "Worlds": "Reisum"
+  },
+  {
+    "ID": 28,
+    "Name": "Onyx Pendulum",
+    "Description": "Dealing dmg with a firearm increases dmg dealt by stowed firearm by 2.5% for 15s. Stacks 10 times.",
+    "Location & Crafting": "Complete both campaigns.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Onyx+Pendulum",
+    "Worlds": "Any"
+  },
+  {
+    "ID": 29,
+    "Name": "Blessed Necklace",
+    "Description": "Complete the Rescue the Krall Baby event.",
+    "Location & Crafting": "Reward for saving the Krall Mother's baby",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Blessed+Necklace",
+    "Worlds": "Resium"
+  },
+  {
+    "ID": 30,
+    "Name": "Hangman's Memento",
+    "Description": "Survive the Barn Siege.",
+    "Location & Crafting": "Survive the Barn Siege during the Subject 2923 campaign",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Hangman's+Memento",
+    "Worlds": "Resium"
+  },
+  {
+    "ID": 31,
+    "Name": "Vulcan's Detonator",
+    "Description": "Destroy all Warning Totems, alerting all of them.",
+    "Location & Crafting": "Warning Totems event: destroy all totems while alerting all of them",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Vulcan's+Detonator",
+    "Worlds": "Resium"
+  },
+  {
+    "ID": 32,
+    "Name": "Charcoal Necklace",
+    "Description": "Found randomly in Reisum.",
+    "Location & Crafting": "Reisum random drop",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Charcoal+Necklace",
+    "Worlds": "Resium"
+  },
+  {
+    "ID": 33,
+    "Name": "Driftstone",
+    "Description": "Found randomly in Reisum.",
+    "Location & Crafting": "Reisum random drop",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Driftstone",
+    "Worlds": "Resium"
+  },
+  {
+    "ID": 34,
+    "Name": "Razorwire Necklace",
+    "Description": "Found randomly in Reisum.",
+    "Location & Crafting": "Random drop Reisum",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Razorwire+Necklace",
+    "Worlds": "Resium"
+  },
+  {
+    "ID": 35,
+    "Name": "Polished Whetstone",
+    "Description": "Found randomly in Reisum.",
+    "Location & Crafting": "Random drop Reisum",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Polished+Whetstone",
+    "Worlds": "Resium"
+  },
+  {
+    "ID": 36,
+    "Name": "Terror Margin",
+    "Description": "Melee hits steal 1.5% base dmg dealt as health. For every 25% missing Health, gain an additional 1.5% lifesteal. When full health, gain 20% melee dmg.",
+    "Location & Crafting": "Found at a random location on Rural Earth.",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Terror+Margin",
+    "Worlds": "RuralEarth"
+  },
+  {
+    "ID": 37,
+    "Name": "White Rose",
+    "Description": "Increases all dmg dealt by 25% for each unequipped firearm",
+    "Location & Crafting": "Survival: Defeat all Bosses ??? times",
+    "Url": "https://remnantfromtheashes.wiki.fextralife.com/White+Rose",
+    "Worlds": "Any"
+  }
+]
