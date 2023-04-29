@@ -5,12 +5,33 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { theme } from "../style/theme.js";
+import useCurrentUserContext from '../hooks/useCurrentUserContext.js';
 
 function Login() {
+    const { user, setUser, setToken } = useCurrentUserContext()
     const [hide, setHide] = useState(true);
 
-    function login(user) {
-        toast.success("Login Success !")
+    async function loginUser() {
+        try {
+            const BASE_URL = process.env.REACT_APP_BASE_API_URL_DEV;
+            const fetchOpts = {
+                method: "POST",
+                headers: {
+                    Accept: "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(user),
+            };
+
+            const res = await fetch(`${BASE_URL}/auth/login`, fetchOpts);
+            if (res.status === 200) {
+                toast.success("Login Success !")
+            } else {
+                toast.error("Bad Request")
+            }
+        } catch (e) {
+            toast.error("Failed to Fetch :/")
+        }
     };
 
     return (
@@ -35,7 +56,7 @@ function Login() {
                     <Password name='login-password' type={hide ? "password" : "text"} placeholder='********' />
                     {hide ? <BiHide color={theme.colors.blanc} style={{ position: 'absolute', right: 110, top: 21 }} size={20} onClick={() => setHide(false)} /> : <BiShow color={theme.colors.blanc} style={{ position: 'absolute', right: 110, top: 21 }} size={20} onClick={() => setHide(true)} />}
                 </PasswordContainer>
-                <StyledBtn onClick={login} type='button'>Login</StyledBtn>
+                <StyledBtn onClick={loginUser} type='button'>Login</StyledBtn>
             </LoginContainer>
         </>
     )

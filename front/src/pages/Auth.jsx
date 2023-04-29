@@ -2,19 +2,26 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { theme } from "../style/theme.js"
+import useCurrentUserContext from '../hooks/useCurrentUserContext.js'
 import Navbar from '../components/Navbar.jsx'
 import Login from '../components/Login.jsx'
 import Register from '../components/Register.jsx'
+import SuccessBox from '../components/SuccessBox.jsx'
 
 function Auth() {
+    const { token } = useCurrentUserContext()
     return (
         <Wrapper>
             <Navbar />
             <Title>Log in to save your favorites builds, items and more</Title>
-            <BigContainer>
-                <Login />
-                <Register />
-            </BigContainer>
+            {!token ?
+                <BigContainer>
+                    <Login />
+                    <Register />
+                </BigContainer>
+                :
+                <SuccessBox />
+            }
         </Wrapper>
     )
 }
