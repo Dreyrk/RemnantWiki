@@ -1,0 +1,11 @@
+{
+  "name": "remnantwiki",
+  "version": "1.0.0",
+  "description": "Wiki of Remnant from the ashes",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd ./front && npm start"
+  },
+  "author": "Dreyrk",
+  "license": "ISC"
+}
