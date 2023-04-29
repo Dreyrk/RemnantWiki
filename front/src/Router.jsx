@@ -7,7 +7,7 @@ import Stuff from './pages/Stuff'
 import Worlds from './pages/Worlds'
 import Guide from './pages/Guide'
 import Saved from './pages/Saved'
-import Login from './pages/Login'
+import Auth from './pages/Auth'
 
 
 function Router() {
@@ -20,7 +20,7 @@ function Router() {
                 <Route path='/worlds' element={<Worlds />} />
                 <Route path='/guide' element={<Guide />} />
                 <Route path='/saved' element={<Saved />} />
-                <Route path='/login' element={<Login />} />
+                <Route path='/auth' element={<Auth />} />
             </Routes>
         </BrowserRouter>
     )
