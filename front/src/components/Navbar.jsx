@@ -37,6 +37,8 @@ const NavContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     background-color: ${theme.colors.gris1};
+    position: sticky;
+    top: 0;
 `
 
 const SideContainer = styled.div`
@@ -52,8 +54,11 @@ const Logo = styled.img`
 `
 
 const LogoLink = styled(NavLink)`
+    height: 80px;
+    width: 80px;
     opacity: 1;
     text-decoration: none;
+    display: flex;
 `
 
 const Link = styled(NavLink)`
@@ -64,7 +69,7 @@ const Link = styled(NavLink)`
     font-weight: 500;
     line-height: 30px;
     :hover {
-        scale: 0.9;
+        scale: 0.8;
     }
 `
 const IconLink = styled(NavLink)`
