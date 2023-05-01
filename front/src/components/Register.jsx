@@ -10,7 +10,7 @@ import useCurrentUserContext from '../hooks/useCurrentUserContext.js'
 
 function Register() {
 
-    const { user, setUser, setToken } = useCurrentUserContext()
+    const { user, setUser } = useCurrentUserContext()
 
     const [hide, setHide] = useState(true);
 
@@ -52,15 +52,15 @@ function Register() {
                 <SubTitle>Register</SubTitle>
                 <LabelInputContainer>
                     <Label htmlFor="pseudo">Pseudo :</Label>
-                    <Input name='pseudo' type="text" placeholder='LordOfRemnnant' />
+                    <Input onChange={(e) => setUser({ ...user, pseudo: e.target.value })} name='pseudo' type="text" placeholder='LordOfRemnnant' />
                 </LabelInputContainer>
                 <LabelInputContainer>
                     <Label htmlFor="register-email">Email :</Label>
-                    <Input name='register-email' type="email" placeholder='johndoe@email.com' />
+                    <Input onChange={(e) => setUser({ ...user, email: e.target.value })} name='register-email' type="email" placeholder='johndoe@email.com' />
                 </LabelInputContainer>
                 <PasswordContainer>
                     <Label htmlFor="register-password">Password :</Label>
-                    <Password name='register-password' type={hide ? "password" : "text"} placeholder='********' />
+                    <Password onChange={(e) => setUser({ ...user, password: e.target.value })} name='register-password' type={hide ? "password" : "text"} placeholder='********' />
                     {hide ? <BiHide color={theme.colors.blanc} style={{ position: 'absolute', right: 110, top: 21 }} size={20} onClick={() => setHide(false)} /> : <BiShow color={theme.colors.blanc} size={20} style={{ position: 'absolute', right: 110, top: 21 }} onClick={() => setHide(true)} />}
                 </PasswordContainer>
                 <StyledBtn onClick={createUser} type='button'>Register</StyledBtn>
