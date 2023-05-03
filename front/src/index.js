@@ -5,6 +5,7 @@ import "./index.css";
 
 import Router from "./Router";
 import { theme } from "./style/theme";
+import CurrentUserContextProvider from "./contexts/CurrentUserContext";
 
 const Page = styled.div`
   height: 100vh;
@@ -19,7 +20,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Page>
-      <Router />
+      <CurrentUserContextProvider>
+        <Router />
+      </CurrentUserContextProvider>
     </Page>
   </React.StrictMode>
 );

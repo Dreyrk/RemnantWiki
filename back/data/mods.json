@@ -1,282 +1,202 @@
 [
   {
-    "ID": 1,
-    "Name": "Flicker Cloak",
-    "Description": "Surrounds the caster with a magical shield absorbing 50% of their Max Health in damage from incoming attacks and prevents getting staggered. Lasts 15 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Flicker+Cloak",
-    "Worlds": "Earth"
+    "name": "Flicker Cloak",
+    "description": "Surrounds the caster with a magical shield absorbing 50% of their Max Health in damage from incoming attacks and prevents getting staggered. Lasts 15 seconds.",
+    "worlds": "Earth"
   },
   {
-    "ID": 2,
-    "Name": "Mender's Aura",
-    "Description": "Creates a 2.3 meter healing pool that regenerates 10 Health per second. Lasts 10 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Mender's+Aura",
-    "Worlds": "Ward 13"
+    "name": "Mender's Aura",
+    "description": "Creates a 2.3 meter healing pool that regenerates 10 Health per second. Lasts 10 seconds.",
+    "worlds": "Ward 13"
   },
   {
-    "ID": 3,
-    "Name": "Rattle Weed",
-    "Description": "Shoots a projectile that summons a RATTLE WEED upon impact with 300 Health and draws aggro on enemies within 10 meters. Lasts 10 seconds. Does not affect powerful enemies. (Max 1)",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Rattle+Weed",
-    "Worlds": "Earth"
+    "name": "Rattle Weed",
+    "description": "Shoots a projectile that summons a RATTLE WEED upon impact with 300 Health and draws aggro on enemies within 10 meters. Lasts 10 seconds. Does not affect powerful enemies. (Max 1)",
+    "worlds": "Earth"
   },
   {
-    "ID": 4,
-    "Name": "Mantle of Thorns",
-    "Description": "Reduces Melee damage taken from enemies by 20%, reflects 120% of Melee damage taken, and reduces stagger on hit. Lasts 60 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Mantle+of+Thorns",
-    "Worlds": "Ward 13"
+    "name": "Mantle of Thorns",
+    "description": "Reduces Melee damage taken from enemies by 20%, reflects 120% of Melee damage taken, and reduces stagger on hit. Lasts 60 seconds.",
+    "worlds": "Ward 13"
   },
   {
-    "ID": 5,
-    "Name": "Hot Shot",
-    "Description": "Ammunition is imbues with flame dealing FIRE damage which is increased by 15%. Shots also have a chance to apply the BURNING effect, dealing 100 FIRE damage over 10 seconds. Lasts 15 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Hot+Shot",
-    "Worlds": "Ward 13"
+    "name": "Hot Shot",
+    "description": "Ammunition is imbues with flame dealing FIRE damage which is increased by 15%. Shots also have a chance to apply the BURNING effect, dealing 100 FIRE damage over 10 seconds. Lasts 15 seconds.",
+    "worlds": "Ward 13"
   },
   {
-    "ID": 6,
-    "Name": "Hunter's Mark",
-    "Description": "Marks all enemies within 35 meters for the caster and their allies. Crit Chance against marked enemies is increased by 10%. Lasts 30 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Hunter's+Mark",
-    "Worlds": "Ward 13"
+    "name": "Hunter's Mark",
+    "description": "Marks all enemies within 35 meters for the caster and their allies. Crit Chance against marked enemies is increased by 10%. Lasts 30 seconds.",
+    "worlds": "Ward 13"
   },
   {
-    "ID": 7,
-    "Name": "Seed Caller",
-    "Description": "Summons a ROOT HOLLOW that deals 50 damage per hit. Lasts 30 seconds. (Max 2)",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Seed+Caller",
-    "Worlds": "Earth"
+    "name": "Seed Caller",
+    "description": "Summons a ROOT HOLLOW that deals 50 damage per hit. Lasts 30 seconds. (Max 2)",
+    "worlds": "Earth"
   },
   {
-    "ID": 8,
-    "Name": "Radioactive Volley",
-    "Description": "Fires a volley of 6 Radioactive projectiles that bounce off of the environment and deal 35 RADIATION damage each.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Radioactive+Volley",
-    "Worlds": "Rhom"
+    "name": "Radioactive Volley",
+    "description": "Fires a volley of 6 Radioactive projectiles that bounce off of the environment and deal 35 RADIATION damage each.",
+    "worlds": "Rhom"
   },
   {
-    "ID": 9,
-    "Name": "Breath of the Desert",
-    "Description": "Discharge 7 radioactive projectiles that will seek towards enemies within 20 meters and deal 30 RADIATION damage each.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Breath+of+the+Desert",
-    "Worlds": "Rhom"
+    "name": "Breath of the Desert",
+    "description": "Discharge 7 radioactive projectiles that will seek towards enemies within 20 meters and deal 30 RADIATION damage each.",
+    "worlds": "Rhom"
   },
   {
-    "ID": 10,
-    "Name": "Veil of the Black Tear",
-    "Description": "Generates a 5 meter impenetrable energy field. Heroes standing inside the energy field can shoot outward. Lasts 10 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Veil+of+the+Black+Tear",
-    "Worlds": "Rhom"
+    "name": "Veil of the Black Tear",
+    "description": "Generates a 5 meter impenetrable energy field. Heroes standing inside the energy field can shoot outward. Lasts 10 seconds.",
+    "worlds": "Rhom"
   },
   {
-    "ID": 11,
-    "Name": "Skewer",
-    "Description": "Fires a large spike that deals 125 damage, 300% additional stagger damage, and applies BLEEDING effect dealing 600 damage over 20 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Skewer",
-    "Worlds": "Corsus"
+    "name": "Skewer",
+    "description": "Fires a large spike that deals 125 damage, 300% additional stagger damage, and applies BLEEDING effect dealing 600 damage over 20 seconds.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 12,
-    "Name": "Song of Swords",
-    "Description": "Projects a 25 meter aura that moves with the caster. All allies standing in that aura will have all of their damage dealt increased by 10%. Lasts for 30 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Song+of+Swords",
-    "Worlds": "Yaesha"
+    "name": "Song of Swords",
+    "description": "Projects a 25 meter aura that moves with the caster. All allies standing in that aura will have all of their damage dealt increased by 10%. Lasts for 30 seconds.",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 13,
-    "Name": "Corrosive Aura",
-    "Description": "Projects a 5 meter aura that moves with the caster. Enemies inside the aura become CORRODED which reduces their defense by 15%. Lasts 30 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Corrosive+Aura",
-    "Worlds": "Corsus"
+    "name": "Corrosive Aura",
+    "description": "Projects a 5 meter aura that moves with the caster. Enemies inside the aura become CORRODED which reduces their defense by 15%. Lasts 30 seconds.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 14,
-    "Name": "Blink Token",
-    "Description": "Teleports the caster forward up to 13 meters and creates an electrical blast that deals 210 SHOCK damage within 3 meters.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Blink+Token",
-    "Worlds": "Yaesha"
+    "name": "Blink Token",
+    "description": "Teleports the caster forward up to 13 meters and creates an electrical blast that deals 210 SHOCK damage within 3 meters.",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 15,
-    "Name": "Swarm",
-    "Description": "Unleash insects that will seek after enemies within 20 meters and repeatedly attack dealing 5 CORROSIVE damage per hit. Lasts 15 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Swarm",
-    "Worlds": "Corsus"
+    "name": "Swarm",
+    "description": "Unleash insects that will seek after enemies within 20 meters and repeatedly attack dealing 5 CORROSIVE damage per hit. Lasts 15 seconds.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 16,
-    "Name": "Storm Caller",
-    "Description": "Conjures an electrical storm centered around the caster which discharges lightning strikes that deal 40 SHOCK damage to nearby enemies within 35 meters and reduces incoming damage by 50%. Lasts 12 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Storm+Caller+(Weaponmod)",
-    "Worlds": "Yaesha"
+    "name": "Storm Caller",
+    "description": "Conjures an electrical storm centered around the caster which discharges lightning strikes that deal 40 SHOCK damage to nearby enemies within 35 meters and reduces incoming damage by 50%. Lasts 12 seconds.",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 17,
-    "Name": "Beckon",
-    "Description": "Summons a WASTELAND SKULL which shoots projectiles that deal 40 damage per hit. Lasts 60 seconds. (Max 2)",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Beckon",
-    "Worlds": "Rhom"
+    "name": "Beckon",
+    "description": "Summons a WASTELAND SKULL which shoots projectiles that deal 40 damage per hit. Lasts 60 seconds. (Max 2)",
+    "worlds": "Rhom"
   },
   {
-    "ID": 18,
-    "Name": "Hive Shot",
-    "Description": "Fires a projectile that deals 20 CORROSIVE damage within 2.5 meters releasing an insect cloud that lasts for 12 seconds. Spreads to nearby enemies.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Hive+Shot",
-    "Worlds": "Corsus"
+    "name": "Hive Shot",
+    "description": "Fires a projectile that deals 20 CORROSIVE damage within 2.5 meters releasing an insect cloud that lasts for 12 seconds. Spreads to nearby enemies.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 19,
-    "Name": "Undying",
-    "Description": "If charged upon death, the wielder will be revived with 50% Health. They will also take 10% less damage and be immune to STATUS effects for 5 seconds. Once revived, Undying cannot be recharged for 5 minutes.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Undying",
-    "Worlds": "Rhom"
+    "name": "Undying",
+    "description": "If charged upon death, the wielder will be revived with 50% Health. They will also take 10% less damage and be immune to STATUS effects for 5 seconds. Once revived, Undying cannot be recharged for 5 minutes.",
+    "worlds": "Rhom"
   },
   {
-    "ID": 20,
-    "Name": "Static Field Shot",
-    "Description": "Fires a projectile that deals 65 SHOCK damage and applies the OVERLOADED effect. Overloaded enemies will trigger an explosion when they get within 4 meters from each other dealing up to 325 SHOCK damage within a 5 meter.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Static+Field+Shot",
-    "Worlds": "Yaesha"
+    "name": "Static Field Shot",
+    "description": "Fires a projectile that deals 65 SHOCK damage and applies the OVERLOADED effect. Overloaded enemies will trigger an explosion when they get within 4 meters from each other dealing up to 325 SHOCK damage within a 5 meter.",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 21,
-    "Name": "Howler's Immunity",
-    "Description": "Projects a 20 meter aura that moves with the caster and reduces incoming damage to all allies standing in the aura by 15%. Lasts 30 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Howler's+Immunity",
-    "Worlds": "Rhom"
+    "name": "Howler's Immunity",
+    "description": "Projects a 20 meter aura that moves with the caster and reduces incoming damage to all allies standing in the aura by 15%. Lasts 30 seconds.",
+    "worlds": "Rhom"
   },
   {
-    "ID": 22,
-    "Name": "Flame Thrower",
-    "Description": "Spews flames that will ignite targets with the BURNING effect dealing 100 FIRE damage over 10 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Flame+Thrower",
-    "Worlds": "Earth"
+    "name": "Flame Thrower",
+    "description": "Spews flames that will ignite targets with the BURNING effect dealing 100 FIRE damage over 10 seconds.",
+    "worlds": "Earth"
   },
   {
-    "ID": 23,
-    "Name": "Iron Sentinel",
-    "Description": "Summons a full automatic TURRET that shoots at 5 rounds per second and deals 5 damage per hit. Lasts 30 seconds. (Max 2)",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Iron+Sentinel",
-    "Worlds": "Rhom"
+    "name": "Iron Sentinel",
+    "description": "Summons a full automatic TURRET that shoots at 5 rounds per second and deals 5 damage per hit. Lasts 30 seconds. (Max 2)",
+    "worlds": "Rhom"
   },
   {
-    "ID": 24,
-    "Name": "Explosive Shot",
-    "Description": "Fires an explosive round that deals up to 240 damage to enemies within 4 meters.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Explosive+Shot",
-    "Worlds": "Earth"
+    "name": "Explosive Shot",
+    "description": "Fires an explosive round that deals up to 240 damage to enemies within 4 meters.",
+    "worlds": "Earth"
   },
   {
-    "ID": 25,
-    "Name": "Wildfire Shot",
-    "Description": "Shoots an arcing fireball that deals 25 FIRE damage and ignites enemies with the BURNING effect within 2 meters, dealing 300 FIRE damage over 10 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Wildfire+Shot",
-    "Worlds": "Yaesha"
+    "name": "Wildfire Shot",
+    "description": "Shoots an arcing fireball that deals 25 FIRE damage and ignites enemies with the BURNING effect within 2 meters, dealing 300 FIRE damage over 10 seconds.",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 26,
-    "Name": "Tentacle Shot",
-    "Description": "Launches a projectile which will summon a TENTACLE on impact that deals 75 SHOCK damage and steals 1.25% of the hero's Max Health per hit. Lasts 30 seconds. (Max 2)",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Tentacle+Shot",
-    "Worlds": "Yaesha"
+    "name": "Tentacle Shot",
+    "description": "Launches a projectile which will summon a TENTACLE on impact that deals 75 SHOCK damage and steals 1.25% of the hero's Max Health per hit. Lasts 30 seconds. (Max 2)",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 27,
-    "Name": "Spore Shot",
-    "Description": "Fires an explosive round that deals 25 ROT damage within 3 meters and will leave a deadly gas cloud that slows enemies and lasts for 7 seconds.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Spore+Shot",
-    "Worlds": "Earth"
+    "name": "Spore Shot",
+    "description": "Fires an explosive round that deals 25 ROT damage within 3 meters and will leave a deadly gas cloud that slows enemies and lasts for 7 seconds.",
+    "worlds": "Earth"
   },
   {
-    "ID": 28,
-    "Name": "Gravity Core",
-    "Description": "Fires a projectile which deals 50 damage and opens a gravity well for 5 seconds. Once unstable it explode dealing up to 500 damage within 5 meters. Adds 300 damage per enemy and divides total damage among all enemies.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Gravity+Core",
-    "Worlds": "Rhom"
+    "name": "Gravity Core",
+    "description": "Fires a projectile which deals 50 damage and opens a gravity well for 5 seconds. Once unstable it explode dealing up to 500 damage within 5 meters. Adds 300 damage per enemy and divides total damage among all enemies.",
+    "worlds": "Rhom"
   },
   {
-    "ID": 29,
-    "Name": "Banish",
-    "Description": "Fires a projectile that banishes enemies into another dimension for 4 seconds. When they return, they'll take 1.25x the damage from the Repulsor's primary fire for 8 seconds. Powerful enemies won't be banished, but will take increased damage from the Repulsor.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Banish",
-    "Worlds": "Ward 17"
+    "name": "Banish",
+    "description": "Fires a projectile that banishes enemies into another dimension for 4 seconds. When they return, they'll take 1.25x the damage from the Repulsor's primary fire for 8 seconds. Powerful enemies won't be banished, but will take increased damage from the Repulsor.",
+    "worlds": "Ward 17"
   },
   {
-    "ID": 30,
-    "Name": "Vampiric",
-    "Description": "ires 4 beetles that will fly towards enemies within 10 meters, land on them, and steal 50 health over 5 seconds. Once full, they will fly back and heal the hero.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Vampiric",
-    "Worlds": "Corsus"
+    "name": "Vampiric",
+    "description": "ires 4 beetles that will fly towards enemies within 10 meters, land on them, and steal 50 health over 5 seconds. Once full, they will fly back and heal the hero.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 31,
-    "Name": "Rift Walker",
-    "Description": "Enter a rift for 2.8 seconds leaving a summoned CLONE behind which draws aggro within 12.5 meters. The caster is invulnerable and their Movement Speed is increased by 30%. Upon exiting, the clone explodes dealing 250 damage within 5.5 meters. Does not affect powerful enemies. (Max 1)",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Rift+Walker",
-    "Worlds": "Corsus"
+    "name": "Rift Walker",
+    "description": "Enter a rift for 2.8 seconds leaving a summoned CLONE behind which draws aggro within 12.5 meters. The caster is invulnerable and their Movement Speed is increased by 30%. Upon exiting, the clone explodes dealing 250 damage within 5.5 meters. Does not affect powerful enemies. (Max 1)",
+    "worlds": "Corsus"
   },
   {
-    "ID": 32,
-    "Name": "Unstable Quills",
-    "Description": "Unleash a rapid burst of 12 quills. Press F again to detonate dealing 15 CORROSIVE damage each within 2.5 meters. Overcharge quills by shooting an enemy with quills attached until they glow, then detonate increasing the damage to 30 CORROSIVE damage each.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Unstable+Quills",
-    "Worlds": "Corsus"
+    "name": "Unstable Quills",
+    "description": "Unleash a rapid burst of 12 quills. Press F again to detonate dealing 15 CORROSIVE damage each within 2.5 meters. Overcharge quills by shooting an enemy with quills attached until they glow, then detonate increasing the damage to 30 CORROSIVE damage each.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 33,
-    "Name": "Seeker",
-    "Description": "Summons BEETLE that will rush towards enemies and explode dealing 160 CORROSIVE damage within 4 meters. Lasts 30 seconds. (Max 3)",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Seeker",
-    "Worlds": "Corsus"
+    "name": "Seeker",
+    "description": "Summons BEETLE that will rush towards enemies and explode dealing 160 CORROSIVE damage within 4 meters. Lasts 30 seconds. (Max 3)",
+    "worlds": "Corsus"
   },
   {
-    "ID": 34,
-    "Name": "Very Good Boy",
-    "Description": "Summons a VERY GOOD BOY that deals (80-240) damage per bite. Pet the dog to increase his damage dealt by 5% for 600 seconds. Lasts 60 seconds. (Max 1)",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Very+Good+Boy",
-    "Worlds": "Rhom"
+    "name": "Very Good Boy",
+    "description": "Summons a VERY GOOD BOY that deals (80-240) damage per bite. Pet the dog to increase his damage dealt by 5% for 600 seconds. Lasts 60 seconds. (Max 1)",
+    "worlds": "Rhom"
   },
   {
-    "ID": 35,
-    "Name": "Fan of Knives",
-    "Description": "Throw a fan of 7 knives that deal 20 damage each and applying the BLEED effect dealing 600 damage over 20s. Max 2 Charges",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Fan+of+Knives",
-    "Worlds": "Resium"
+    "name": "Fan of Knives",
+    "description": "Throw a fan of 7 knives that deal 20 damage each and applying the BLEED effect dealing 600 damage over 20s. Max 2 Charges",
+    "worlds": "Resium"
   },
   {
-    "ID": 36,
-    "Name": "Frozen Mist",
-    "Description": "Fires a projectile that deals 2 FROST damage. Releases a freezing cloud that lasts 10s, and applies FROSTBITE to enemies within 4m. Applies 3 FROSTBITE stacks on a direct hit. Players walking through the cloud will take damage and FROSTBITE buildup",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Frozen+Mist",
-    "Worlds": "Resium"
+    "name": "Frozen Mist",
+    "description": "Fires a projectile that deals 2 FROST damage. Releases a freezing cloud that lasts 10s, and applies FROSTBITE to enemies within 4m. Applies 3 FROSTBITE stacks on a direct hit. Players walking through the cloud will take damage and FROSTBITE buildup",
+    "worlds": "Resium"
   },
   {
-    "ID": 37,
-    "Name": "Blizzard",
-    "Description": "Cast a storm cloud that rains icicles as it travels forward up to 30m. Icicles deal 30 FROST damage each and apply FROSTBITE to enemies within 2m. Max 1 Charge",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Blizzard",
-    "Worlds": "Resium"
+    "name": "Blizzard",
+    "description": "Cast a storm cloud that rains icicles as it travels forward up to 30m. Icicles deal 30 FROST damage each and apply FROSTBITE to enemies within 2m. Max 1 Charge",
+    "worlds": "Resium"
   },
   {
-    "ID": 38,
-    "Name": "Cold Spear",
-    "Description": "Fires or throws a large icicle that deals 60 FROST damage and applies the FROZEN effect to a single enemy. Max 3 Charges.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Cold+Spear",
-    "Worlds": "Resium"
+    "name": "Cold Spear",
+    "description": "Fires or throws a large icicle that deals 60 FROST damage and applies the FROZEN effect to a single enemy. Max 3 Charges.",
+    "worlds": "Resium"
   },
   {
-    "ID": 39,
-    "Name": "Fusion Cannon",
-    "Description": "Fires a large powerful beam that penetrates through enemies dealing 80 for a single charge. Multiple charges increase damage dealt, recoil, and beam thickness per charge. 50 stacks",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Fusion+Cannon",
-    "Worlds": "Resium"
+    "name": "Fusion Cannon",
+    "description": "Fires a large powerful beam that penetrates through enemies dealing 80 for a single charge. Multiple charges increase damage dealt, recoil, and beam thickness per charge. 50 stacks",
+    "worlds": "Resium"
   },
   {
-    "ID": 40,
-    "Name": "Incinerator",
-    "Description": "Spews 11 fireballs that deal 20.15 FIRE dmg within 2m each and ignites enemies with BURNING effect dealing 100.75 dmg over 10s",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Incinerator",
-    "Worlds": "Resium"
+    "name": "Incinerator",
+    "description": "Spews 11 fireballs that deal 20.15 FIRE dmg within 2m each and ignites enemies with BURNING effect dealing 100.75 dmg over 10s",
+    "worlds": "Resium"
   }
 ]
