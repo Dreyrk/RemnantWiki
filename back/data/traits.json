@@ -1,352 +1,248 @@
 [
   {
-    "ID": 1,
-    "Name": "Vigor",
-    "Description": "Increases Max Health.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Vigor",
-    "Worlds": "Ward 13"
+    "name": "Vigor",
+    "description": "Increases Max Health.",
+    "worlds": "Ward 13"
   },
   {
-    "ID": 2,
-    "Name": "Endurance",
-    "Description": "Increases Max Stamina.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Endurance",
-    "Worlds": "Ward 13"
+    "name": "Endurance",
+    "description": "Increases Max Stamina.",
+    "worlds": "Ward 13"
   },
   {
-    "ID": 3,
-    "Name": "Exploiter",
-    "Description": "Increases Weak Spot Damage.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Exploiter",
-    "Worlds": "Any"
+    "name": "Exploiter",
+    "description": "Increases Weak Spot Damage.",
+    "worlds": "Any"
   },
   {
-    "ID": 4,
-    "Name": "Spirit",
-    "Description": "Increases Mod Power Generation.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Spirit",
-    "Worlds": "Earth,Ward 13"
+    "name": "Spirit",
+    "description": "Increases Mod Power Generation.",
+    "worlds": "Earth,Ward 13"
   },
   {
-    "ID": 5,
-    "Name": "Quick Hands",
-    "Description": "Increases Reload Speed.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Quick+Hands",
-    "Worlds": "Earth"
+    "name": "Quick Hands",
+    "description": "Increases Reload Speed.",
+    "worlds": "Earth"
   },
   {
-    "ID": 6,
-    "Name": "World Walker",
-    "Description": "Reduces Stamina cost when sprinting and evading.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/World+Walker",
-    "Worlds": "Rhom"
+    "name": "World Walker",
+    "description": "Reduces Stamina cost when sprinting and evading.",
+    "worlds": "Rhom"
   },
   {
-    "ID": 7,
-    "Name": "Keeper's Blessing",
-    "Description": "Increases resistance to elemental damage, buildup, and STATUS effects.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Keeper's+Blessing",
-    "Worlds": "Labyrinth"
+    "name": "Keeper's Blessing",
+    "description": "Increases resistance to elemental damage, buildup, and STATUS effects.",
+    "worlds": "Labyrinth"
   },
   {
-    "ID": 8,
-    "Name": "Mother's Blessing",
-    "Description": "Increases Ranged damage reduction.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Mother's+Blessing",
-    "Worlds": "Earth"
+    "name": "Mother's Blessing",
+    "description": "Increases Ranged damage reduction.",
+    "worlds": "Earth"
   },
   {
-    "ID": 9,
-    "Name": "Teamwork",
-    "Description": "Increases Mod Power buildup rate, earned Experience when killing enemies, and reduces damage taken when standing near teammates.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Teamwork",
-    "Worlds": "Any"
+    "name": "Teamwork",
+    "description": "Increases Mod Power buildup rate, earned Experience when killing enemies, and reduces damage taken when standing near teammates.",
+    "worlds": "Any"
   },
   {
-    "ID": 10,
-    "Name": "Warrior",
-    "Description": "Increases Melee Damage.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Warrior",
-    "Worlds": "Earth,Ward 13"
+    "name": "Warrior",
+    "description": "Increases Melee Damage.",
+    "worlds": "Earth,Ward 13"
   },
   {
-    "ID": 11,
-    "Name": "Shadow Walker",
-    "Description": "Reduces enemy Awareness.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Shadow+Walker",
-    "Worlds": "Earth,Ward 13"
+    "name": "Shadow Walker",
+    "description": "Reduces enemy Awareness.",
+    "worlds": "Earth,Ward 13"
   },
   {
-    "ID": 12,
-    "Name": "Elder Knowledge",
-    "Description": "Increases earned Experience when killing enemies.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Elder+Knowledge",
-    "Worlds": "Ward 13"
+    "name": "Elder Knowledge",
+    "description": "Increases earned Experience when killing enemies.",
+    "worlds": "Ward 13"
   },
   {
-    "ID": 13,
-    "Name": "Scavenger",
-    "Description": "Increases the amount of scrap picked up.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Scavenger",
-    "Worlds": "Earth,Ward 13"
+    "name": "Scavenger",
+    "description": "Increases the amount of scrap picked up.",
+    "worlds": "Earth,Ward 13"
   },
   {
-    "ID": 14,
-    "Name": "Recovery",
-    "Description": "Increases Stamina Regen rate and reduces Stamina Regen delay.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Recovery",
-    "Worlds": "Rhom"
+    "name": "Recovery",
+    "description": "Increases Stamina Regen rate and reduces Stamina Regen delay.",
+    "worlds": "Rhom"
   },
   {
-    "ID": 15,
-    "Name": "Handling",
-    "Description": "Reduces Gun Spread and Recoil.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Handling",
-    "Worlds": "Any"
+    "name": "Handling",
+    "description": "Reduces Gun Spread and Recoil.",
+    "worlds": "Any"
   },
   {
-    "ID": 16,
-    "Name": "Glutton",
-    "Description": "Increases Consumable Use speed.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Glutton",
-    "Worlds": "Corsus"
+    "name": "Glutton",
+    "description": "Increases Consumable Use speed.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 17,
-    "Name": "Catalyst",
-    "Description": "Increases chance to proc STATUS effects on enemies.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Catalyst",
-    "Worlds": "Corsus"
+    "name": "Catalyst",
+    "description": "Increases chance to proc STATUS effects on enemies.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 18,
-    "Name": "Executioner",
-    "Description": "Increases Critical Hit Chance.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Executioner",
-    "Worlds": "Corsus"
+    "name": "Executioner",
+    "description": "Increases Critical Hit Chance.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 19,
-    "Name": "Triage",
-    "Description": "Increases Healing Effectiveness.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Triage",
-    "Worlds": "Yaesha"
+    "name": "Triage",
+    "description": "Increases Healing Effectiveness.",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 20,
-    "Name": "Kingslayer",
-    "Description": "Increases Critical Hit Damage.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Kingslayer",
-    "Worlds": "Rhom"
+    "name": "Kingslayer",
+    "description": "Increases Critical Hit Damage.",
+    "worlds": "Rhom"
   },
   {
-    "ID": 21,
-    "Name": "Will to Live",
-    "Description": "Increases Health while wounded.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Will+to+Live",
-    "Worlds": "Any"
+    "name": "Will to Live",
+    "description": "Increases Health while wounded.",
+    "worlds": "Any"
   },
   {
-    "ID": 22,
-    "Name": "Arcane Strike",
-    "Description": "Increases Mod Power gained on Melee hits.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Arcane+Strike",
-    "Worlds": "Yaesha"
+    "name": "Arcane Strike",
+    "description": "Increases Mod Power gained on Melee hits.",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 23,
-    "Name": "Mind's Eye",
-    "Description": "Increases Ranged Damage.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Mind's+Eye",
-    "Worlds": "Ward 17"
+    "name": "Mind's Eye",
+    "description": "Increases Ranged Damage.",
+    "worlds": "Ward 17"
   },
   {
-    "ID": 24,
-    "Name": "Bark Skin",
-    "Description": "Increases Armor Effectiveness.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Bark+Skin",
-    "Worlds": "Earth"
+    "name": "Bark Skin",
+    "description": "Increases Armor Effectiveness.",
+    "worlds": "Earth"
   },
   {
-    "ID": 25,
-    "Name": "Revivalist",
-    "Description": "Increases Revive Speed.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Revivalist",
-    "Worlds": "Any"
+    "name": "Revivalist",
+    "description": "Increases Revive Speed.",
+    "worlds": "Any"
   },
   {
-    "ID": 26,
-    "Name": "Guardian's Blessing",
-    "Description": "Melee Damage Reduction +1%",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Guardians+Blessing",
-    "Worlds": "Yaesha"
+    "name": "Guardian's Blessing",
+    "description": "Melee Damage Reduction +1%",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 27,
-    "Name": "Cold as Ice",
-    "Description": "Increases damage dealt to enemies when attacking them from behind.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Cold+as+Ice",
-    "Worlds": "Earth"
+    "name": "Cold as Ice",
+    "description": "Increases damage dealt to enemies when attacking them from behind.",
+    "worlds": "Earth"
   },
   {
-    "ID": 28,
-    "Name": "Trigger Happy",
-    "Description": "Increases Fire Rate.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Trigger+Happy",
-    "Worlds": "Ward 13"
+    "name": "Trigger Happy",
+    "description": "Increases Fire Rate.",
+    "worlds": "Ward 13"
   },
   {
-    "ID": 29,
-    "Name": "Rapid Strike",
-    "Description": "Increases Melee Attack Speed.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Rapid+Strike",
-    "Worlds": "Ward 13"
+    "name": "Rapid Strike",
+    "description": "Increases Melee Attack Speed.",
+    "worlds": "Ward 13"
   },
   {
-    "ID": 30,
-    "Name": "Suspicion",
-    "Description": "Reduced Friendly Fire Damage Taken.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Suspicion",
-    "Worlds": "Any"
+    "name": "Suspicion",
+    "description": "Reduced Friendly Fire Damage Taken.",
+    "worlds": "Any"
   },
   {
-    "ID": 31,
-    "Name": "Swiftness",
-    "Description": "Increases Movement Speed.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Swiftness",
-    "Worlds": "Yaesha"
+    "name": "Swiftness",
+    "description": "Increases Movement Speed.",
+    "worlds": "Yaesha"
   },
   {
-    "ID": 32,
-    "Name": "Sleight of Hand",
-    "Description": "Increases Weapon Swap Speed.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Sleight+of+Hand",
-    "Worlds": "Any"
+    "name": "Sleight of Hand",
+    "description": "Increases Weapon Swap Speed.",
+    "worlds": "Any"
   },
   {
-    "ID": 33,
-    "Name": "Concentration",
-    "Description": "Increases weapon mod duration.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Concentration",
-    "Worlds": "Corsus"
+    "name": "Concentration",
+    "description": "Increases weapon mod duration.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 34,
-    "Name": "Blood Bond",
-    "Description": "Damage absorbtion.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Blood+Bond",
-    "Worlds": "Corsus"
+    "name": "Blood Bond",
+    "description": "Damage absorbtion.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 35,
-    "Name": "Footwork",
-    "Description": "Aim movement speed.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Footwork",
-    "Worlds": "Corsus"
+    "name": "Footwork",
+    "description": "Aim movement speed.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 36,
-    "Name": "Potency",
-    "Description": "Increases consumable duration.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Potency",
-    "Worlds": "Corsus"
+    "name": "Potency",
+    "description": "Increases consumable duration.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 37,
-    "Name": "Fortification",
-    "Description": "Reduces damage taken while reviving teamates.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Fortification",
-    "Worlds": "Corsus"
+    "name": "Fortification",
+    "description": "Reduces damage taken while reviving teamates.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 38,
-    "Name": "Invoker",
-    "Description": "Increases summons damage.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Invoker",
-    "Worlds": "Any"
+    "name": "Invoker",
+    "description": "Increases summons damage.",
+    "worlds": "Any"
   },
   {
-    "ID": 39,
-    "Name": "Luminescent",
-    "Description": "Extra lumenite chance.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Luminescent",
-    "Worlds": "Corsus"
+    "name": "Luminescent",
+    "description": "Extra lumenite chance.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 40,
-    "Name": "Evocation",
-    "Description": "Mod damage bonus.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Evocation",
-    "Worlds": "Corsus"
+    "name": "Evocation",
+    "description": "Mod damage bonus.",
+    "worlds": "Corsus"
   },
   {
-    "ID": 41,
-    "Name": "Armor Piercer",
-    "Description": "Deal 5000 damage to enemies' armored regions.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Armor+Piercer",
-    "Worlds": "Any"
+    "name": "Armor Piercer",
+    "description": "Deal 5000 damage to enemies' armored regions.",
+    "worlds": "Any"
+  },
+  { "name": "Climber", "description": "Vault 50 times.", "worlds": "Any" },
+  {
+    "name": "Demolitionist",
+    "description": "Kill 100 enemies with explosions.",
+    "worlds": "Any"
   },
   {
-    "ID": 42,
-    "Name": "Climber",
-    "Description": "Vault 50 times.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Climber",
-    "Worlds": "Any"
+    "name": "Tormentor",
+    "description": "Apply 100 Status Effects to enemies.",
+    "worlds": "Any"
   },
   {
-    "ID": 43,
-    "Name": "Demolitionist",
-    "Description": "Kill 100 enemies with explosions.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Demolitionist",
-    "Worlds": "Any"
+    "name": "Flash Caster",
+    "description": "Obtain 25 Weapon Mods.",
+    "worlds": "Any"
   },
   {
-    "ID": 44,
-    "Name": "Tormentor",
-    "Description": "Apply 100 Status Effects to enemies.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Tormentor",
-    "Worlds": "Any"
+    "name": "Vaccine",
+    "description": "Cure 25 Status Effects with Consumables.",
+    "worlds": "Any"
   },
   {
-    "ID": 45,
-    "Name": "Flash Caster",
-    "Description": "Obtain 25 Weapon Mods.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Flash+Caster",
-    "Worlds": "Any"
+    "name": "Hard Charger",
+    "description": "Defeat Brudvaak, the Rider and Vargr, the Warg.",
+    "worlds": "Resium"
   },
   {
-    "ID": 46,
-    "Name": "Vaccine",
-    "Description": "Cure 25 Status Effects with Consumables.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Vaccine",
-    "Worlds": "Any"
+    "name": "Siphoner",
+    "description": "Complete the Rescue the Krall Baby event.",
+    "worlds": "Resium"
   },
   {
-    "ID": 47,
-    "Name": "Hard Charger",
-    "Description": "Defeat Brudvaak, the Rider and Vargr, the Warg.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Hard+Charger",
-    "Worlds": "Resium"
+    "name": "Last Resort",
+    "description": "Defeat Harsgaard, Root Harbinger.",
+    "worlds": "Ward Prime"
   },
   {
-    "ID": 48,
-    "Name": "Siphoner",
-    "Description": "Complete the Rescue the Krall Baby event.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Siphoner",
-    "Worlds": "Resium"
-  },
-  {
-    "ID": 49,
-    "Name": "Last Resort",
-    "Description": "Defeat Harsgaard, Root Harbinger.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Last+Resort",
-    "Worlds": "Ward Prime"
-  },
-  {
-    "ID": 50,
-    "Name": "Wisdom",
-    "Description": "Complete the Ward Prime quest line.",
-    "Url": "https://remnantfromtheashes.wiki.fextralife.com/Wisdom",
-    "Worlds": "Ward Prime"
+    "name": "Wisdom",
+    "description": "Complete the Ward Prime quest line.",
+    "worlds": "Ward Prime"
   }
 ]

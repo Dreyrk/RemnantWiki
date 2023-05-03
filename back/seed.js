@@ -5,12 +5,12 @@ dotenv.config();
 
 async function main() {
   await mongoose
-    .connect(process.env.PORT, {
+    .connect(process.env.URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
     .then(() => {
-      const productSeed = async () => {
+      const itemsSeed = async () => {
         await product.deleteMany({});
         await product.insertMany(allData);
       };
