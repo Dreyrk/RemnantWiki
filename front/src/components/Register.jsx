@@ -26,10 +26,10 @@ function Register() {
                 body: JSON.stringify(user),
             };
 
-            const res = await fetch(`${BASE_URL}/auth/register`, fetchOpts);
+            const res = await fetch(`${BASE_URL}auth/register`, fetchOpts);
             if (res.status === 201) {
                 toast.success("Account Created !")
-            } else {
+            } else if (res.status === 400) {
                 toast.error("Bad Request")
             }
         } catch (e) {
@@ -48,15 +48,15 @@ function Register() {
                 pauseOnHover
                 theme="dark"
             />
-            <RegisterContainer>
+            <RegisterContainer onSubmit={(e) => createUser(e)}>
                 <SubTitle>Register</SubTitle>
                 <LabelInputContainer>
                     <Label htmlFor="pseudo">Pseudo :</Label>
-                    <Input onChange={(e) => setUser({ ...user, pseudo: e.target.value })} name='pseudo' type="text" placeholder='LordOfRemnnant' />
+                    <Input autoComplete='username' onChange={(e) => setUser({ ...user, pseudo: e.target.value })} name='pseudo' type="text" placeholder='LordOfRemnnant' />
                 </LabelInputContainer>
                 <LabelInputContainer>
                     <Label htmlFor="register-email">Email :</Label>
-                    <Input onChange={(e) => setUser({ ...user, email: e.target.value })} name='register-email' type="email" placeholder='johndoe@email.com' />
+                    <Input autoComplete='email' onChange={(e) => setUser({ ...user, email: e.target.value })} name='register-email' type="email" placeholder='johndoe@email.com' />
                 </LabelInputContainer>
                 <PasswordContainer>
                     <Label htmlFor="register-password">Password :</Label>
@@ -71,7 +71,7 @@ function Register() {
 
 export default Register;
 
-const RegisterContainer = styled.div`
+const RegisterContainer = styled.form`
     height: 320px;
     width: 90%;
     display: flex;
@@ -118,6 +118,12 @@ const StyledBtn = styled.button`
     color: ${theme.colors.blanc};
     border: none;
     box-shadow: 0px 2px 2px ${theme.colors.noir};
+    :hover {
+        transform: scale(1.1);
+    }
+    :active {
+        transform: scale(0.9);
+    }
 `
 
 const LabelInputContainer = styled.div`

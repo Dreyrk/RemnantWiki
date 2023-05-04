@@ -22,7 +22,7 @@ function Navbar({ titleSelected }) {
                 <Link to="/worlds">Worlds</Link>
                 <Link to="/guide">Guide</Link>
                 <IconLink to="/saved"><BsBookmarkHeart size={30} color={theme.colors.blanc} /></IconLink>
-                <IconLink to="/login"><FaUser size={30} color={theme.colors.blanc} /></IconLink>
+                <IconLink to="/auth"><FaUser size={30} color={theme.colors.blanc} /></IconLink>
             </SideContainer>
         </NavContainer>
     )

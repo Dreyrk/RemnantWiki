@@ -23,10 +23,16 @@ function Login() {
                 body: JSON.stringify(user),
             };
 
-            const res = await fetch(`${BASE_URL}/auth/login`, fetchOpts);
+            const res = await fetch(`${BASE_URL}auth/login`, fetchOpts);
+
+            const data = await res.json()
+
+            console.log(data, "user :", user)
             if (res.status === 200) {
                 toast.success("Login Success !")
-            } else {
+                setUser(data.user)
+                setToken(data.token)
+            } else if (res.status === 400) {
                 toast.error("Bad Request")
             }
         } catch (e) {
@@ -64,7 +70,7 @@ function Login() {
 
 export default Login;
 
-const LoginContainer = styled.div`
+const LoginContainer = styled.form`
     height: 35%;
     width: 90%;
     display: flex;
@@ -111,6 +117,12 @@ const StyledBtn = styled.button`
     color: ${theme.colors.blanc};
     border: none;
     box-shadow: 0px 2px 2px ${theme.colors.noir};
+    :hover {
+        transform: scale(1.1);
+    }
+    :active {
+        transform: scale(0.9);
+    }
 `
 
 const LabelInputContainer = styled.div`
