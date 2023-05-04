@@ -3,10 +3,10 @@ import mongoose from "mongoose";
 const armorSetSchema = mongoose.Schema({
   name: { type: String, required: true },
   setBonus: { type: String },
-  img: { type: String },
+  img: { original: { type: String }, skin: { type: Array } },
   worlds: { type: String },
 });
 
-const armorSets = mongoose.model("armorSets", armorSetSchema);
+const armorSet = mongoose.model("armorSet", armorSetSchema);
 
-export default armorSets;
+export default armorSet;

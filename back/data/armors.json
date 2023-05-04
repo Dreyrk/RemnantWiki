@@ -1,6 +1,7 @@
 [
   {
     "name": "Adventurer Goggles",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/adventurer_goggles_armor_remannt_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 4,
     "maxArmor": 108,
     "weight": 2,
@@ -17,6 +18,7 @@
   },
   {
     "name": "Akari Mask",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/akari_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 9,
     "maxArmor": 118,
     "weight": 4,
@@ -33,6 +35,7 @@
   },
   {
     "name": "Bandit's Mask",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bandit_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 6,
     "maxArmor": 112,
     "frost": 1,
@@ -49,6 +52,7 @@
   },
   {
     "name": "Bomber Hat",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bomber_hat.png",
     "baseArmor": 9,
     "maxArmor": 118,
     "frost": 0,
@@ -59,10 +63,12 @@
     "rot": 3,
     "radiation": 3,
     "corrosive": 3,
-    "shock": 3
+    "shock": 3,
+    "category": "head"
   },
   {
     "name": "Cultist Hat",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ex-cultist_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 7,
     "maxArmor": 114,
     "frost": 0,
@@ -79,6 +85,7 @@
   },
   {
     "name": "Drifter's Mask",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/drifter_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 14,
     "maxArmor": 128,
     "frost": 2,
@@ -95,6 +102,7 @@
   },
   {
     "name": "Elder Headdress",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/elder_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 12,
     "maxArmor": 124,
     "frost": 1,
@@ -111,6 +119,7 @@
   },
   {
     "name": "Hunter Shroud",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hunter_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 9,
     "maxArmor": 118,
     "frost": 1,
@@ -127,6 +136,7 @@
   },
   {
     "name": "Leto's Helmet",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/leto_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 20,
     "maxArmor": 140,
     "frost": 3,
@@ -143,6 +153,7 @@
   },
   {
     "name": "Osseus Helm",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/osseus_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 13,
     "maxArmor": 126,
     "frost": -2,
@@ -159,6 +170,7 @@
   },
   {
     "name": "Radiant Visage",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/radiant_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 14,
     "maxArmor": 128,
     "frost": 3,
@@ -175,6 +187,7 @@
   },
   {
     "name": "Scrapper Helmet",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scrapper_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 15,
     "maxArmor": 130,
     "frost": 2,
@@ -191,6 +204,7 @@
   },
   {
     "name": "Slayer Mask",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slayer_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 12,
     "maxArmor": 124,
     "frost": 2,
@@ -207,6 +221,7 @@
   },
   {
     "name": "Twisted Hood",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/root_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 13,
     "maxArmor": 126,
     "frost": 0,
@@ -223,6 +238,7 @@
   },
   {
     "name": "Twisted Mask",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/twisted_mask_key_item_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 9,
     "frost": -6,
     "weight": 6,
@@ -238,6 +254,7 @@
   },
   {
     "name": "Void Skull",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/void_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 15,
     "maxArmor": 130,
     "frost": 0,
@@ -254,6 +271,7 @@
   },
   {
     "name": "Labyrinth Helm",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/labyrinth_helmet_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 15,
     "maxArmor": 130,
     "frost": 0,
@@ -270,6 +288,7 @@
   },
   {
     "name": "Carapace Great Helm",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/carapace_helm_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 16,
     "maxArmor": 132,
     "frost": 2,
@@ -286,6 +305,7 @@
   },
   {
     "name": "Warlord Skull",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warlord_helmet_armor_item_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 16,
     "maxArmor": 132,
     "frost": 3,
@@ -302,6 +322,7 @@
   },
   {
     "name": "Scavenger Helmet",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scavenger_helmet_armor_item_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 14,
     "maxArmor": 128,
     "frost": -2,
@@ -318,6 +339,7 @@
   },
   {
     "name": "Adventurer Tunic",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/adventurer_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 16,
     "maxArmor": 132,
     "frost": 2,
@@ -329,10 +351,12 @@
     "radiation": 1,
     "corrosive": 1,
     "shock": 1,
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "category": "body"
   },
   {
     "name": "Akari Garb",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/akari_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 18,
     "maxArmor": 136,
     "frost": 1,
@@ -344,10 +368,12 @@
     "radiation": 3,
     "corrosive": 1,
     "shock": -1,
-    "worlds": "Rhom"
+    "worlds": "Rhom",
+    "category": "body"
   },
   {
     "name": "Bandit Jacket",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bandit_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 17,
     "maxArmor": 134,
     "frost": 1,
@@ -359,10 +385,12 @@
     "radiation": -2,
     "corrosive": 3,
     "shock": -2,
-    "worlds": "Earth"
+    "worlds": "Earth",
+    "category": "body"
   },
   {
     "name": "Cultist Duster",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ex-cultist_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 23,
     "maxArmor": 146,
     "frost": 1,
@@ -374,10 +402,12 @@
     "radiation": -3,
     "corrosive": -1,
     "shock": 2,
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "category": "body"
   },
   {
     "name": "Drifter's Overcoat",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/drifter_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 25,
     "maxArmor": 150,
     "frost": 2,
@@ -389,10 +419,12 @@
     "radiation": -2,
     "corrosive": -1,
     "shock": 3,
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "category": "body"
   },
   {
     "name": "Elder Raiment",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/elder_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 17,
     "maxArmor": 134,
     "frost": 0,
@@ -404,10 +436,12 @@
     "radiation": -3,
     "corrosive": 3,
     "shock": 2,
-    "worlds": "Yaesha"
+    "worlds": "Yaesha",
+    "category": "body"
   },
   {
     "name": "Hunter Trenchcoat",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hunter_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 21,
     "maxArmor": 142,
     "frost": 1,
@@ -419,10 +453,12 @@
     "radiation": 3,
     "corrosive": 3,
     "shock": -3,
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "category": "body"
   },
   {
     "name": "Leto's Armor",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/leto_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 51,
     "maxArmor": 202,
     "frost": 4,
@@ -434,10 +470,12 @@
     "radiation": 3,
     "corrosive": 5,
     "shock": 3,
-    "worlds": "Earth"
+    "worlds": "Earth",
+    "category": "body"
   },
   {
     "name": "Osseus Husk",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/osseusarmor_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 27,
     "maxArmor": 154,
     "frost": -1,
@@ -449,10 +487,12 @@
     "radiation": 4,
     "corrosive": -3,
     "shock": -3,
-    "worlds": "Rhom"
+    "worlds": "Rhom",
+    "category": "body"
   },
   {
     "name": "Radiant Protector",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/radiant_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 33,
     "maxArmor": 166,
     "frost": 3,
@@ -464,10 +504,12 @@
     "radiation": -1,
     "corrosive": -5,
     "shock": 4,
-    "worlds": "Yaesha"
+    "worlds": "Yaesha",
+    "category": "body"
   },
   {
     "name": "Scrapper Bodyplate",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scrapper_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 28,
     "maxArmor": 156,
     "frost": 2,
@@ -479,10 +521,12 @@
     "radiation": -1,
     "corrosive": -3,
     "shock": -3,
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "category": "body"
   },
   {
     "name": "Slayer Mantle",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slayer_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 26,
     "maxArmor": 152,
     "frost": 3,
@@ -494,10 +538,12 @@
     "radiation": -2,
     "corrosive": 3,
     "shock": -2,
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "category": "body"
   },
   {
     "name": "Twisted Cage",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/root_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 33,
     "maxArmor": 166,
     "frost": 0,
@@ -509,10 +555,12 @@
     "radiation": -1,
     "corrosive": 1,
     "shock": 0,
-    "worlds": "Earth"
+    "worlds": "Earth",
+    "category": "body"
   },
   {
     "name": "Void Carapace",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/voidcarapace_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 34,
     "maxArmor": 168,
     "frost": 0,
@@ -524,10 +572,12 @@
     "radiation": 4,
     "corrosive": -5,
     "shock": -2,
-    "worlds": "Rhom"
+    "worlds": "Rhom",
+    "category": "body"
   },
   {
     "name": "Labyrinth Armor",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/labyrinth_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 27,
     "maxArmor": 154,
     "frost": 1,
@@ -539,10 +589,12 @@
     "radiation": 0,
     "corrosive": 3,
     "shock": -4,
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "category": "body"
   },
   {
     "name": "Carapace Shell",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/carapace_shell_armor_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 35,
     "maxArmor": 170,
     "frost": 3,
@@ -554,10 +606,12 @@
     "radiation": -3,
     "corrosive": 5,
     "shock": -2,
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "category": "body"
   },
   {
     "name": "Warlord Armor",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warlord_armor_item_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 34,
     "maxArmor": 168,
     "frost": 6,
@@ -569,10 +623,12 @@
     "radiation": -1,
     "corrosive": 2,
     "shock": 2,
-    "worlds": "Resium"
+    "worlds": "Resium",
+    "category": "body"
   },
   {
     "name": "Scavenger Armor",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scavenger_armor_item_remnant_from_the_ashes_wiki_guide_64px.png",
     "baseArmor": 29,
     "maxArmor": 158,
     "frost": -2,
@@ -584,6 +640,311 @@
     "radiation": 2,
     "corrosive": -2,
     "shock": -3,
-    "worlds": "Resium"
+    "worlds": "Resium",
+    "category": "body"
+  },
+  {
+    "name": "Adventurer Leggings",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/adventurer_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 11,
+    "maxArmor": 122,
+    "frost": 2,
+    "weight": 4,
+    "armorSet": "Adventurer",
+    "bleed": 2,
+    "fire": 1,
+    "rot": 2,
+    "radiation": 1,
+    "corrosive": 1,
+    "shock": 3,
+    "worlds": "Ward 13",
+    "category": "legs"
+  },
+  {
+    "name": "Akari Leggings",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/akari_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 11,
+    "maxArmor": 122,
+    "frost": 1,
+    "weight": 6,
+    "armorSet": "Akari",
+    "bleed": 2,
+    "fire": -1,
+    "rot": -2,
+    "radiation": 2,
+    "corrosive": 1,
+    "shock": -1,
+    "worlds": "Rhom",
+    "category": "legs"
+  },
+  {
+    "name": "Bandit Trousers",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bandit_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 12,
+    "maxArmor": 124,
+    "frost": 1,
+    "weight": 5,
+    "armorSet": "Bandit",
+    "bleed": 2,
+    "fire": -2,
+    "rot": 1,
+    "radiation": -1,
+    "corrosive": 1,
+    "shock": -1,
+    "worlds": "Earth",
+    "category": "legs"
+  },
+  {
+    "name": "Cultist Britches",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ex-cultist_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 13,
+    "maxArmor": 126,
+    "frost": 1,
+    "weight": 7,
+    "armorSet": "Cultist",
+    "bleed": 2,
+    "fire": 1,
+    "rot": -1,
+    "radiation": -2,
+    "corrosive": -1,
+    "shock": 2,
+    "worlds": "Ward 13",
+    "category": "legs"
+  },
+  {
+    "name": "Drifter's Trousers",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/drifter_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 13,
+    "maxArmor": 126,
+    "frost": 1,
+    "weight": 9,
+    "armorSet": "Drifter",
+    "bleed": -2,
+    "fire": 3,
+    "rot": 1,
+    "radiation": -1,
+    "corrosive": -1,
+    "shock": 2,
+    "worlds": "Ward 13",
+    "category": "legs"
+  },
+  {
+    "name": "Elder Leggings",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/elder_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 12,
+    "maxArmor": 124,
+    "frost": 0,
+    "weight": 6,
+    "armorSet": "Elder",
+    "bleed": -1,
+    "fire": 2,
+    "rot": -1,
+    "radiation": -2,
+    "corrosive": 2,
+    "shock": 2,
+    "worlds": "Yaesha",
+    "category": "legs"
+  },
+  {
+    "name": "Leto's Leggings",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/letos_leggings_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 30,
+    "maxArmor": 160,
+    "frost": 3,
+    "weight": 27,
+    "armorSet": "Leto",
+    "bleed": 3,
+    "fire": 4,
+    "rot": 3,
+    "radiation": 3,
+    "corrosive": 3,
+    "shock": 4,
+    "worlds": "Earth",
+    "category": "legs"
+  },
+  {
+    "name": "Hunter Pants",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/letos_leggings_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 12,
+    "maxArmor": 124,
+    "frost": 0,
+    "weight": 6,
+    "armorSet": "Hunter",
+    "bleed": 2,
+    "fire": -1,
+    "rot": -1,
+    "radiation": 2,
+    "corrosive": 2,
+    "shock": -2,
+    "worlds": "Ward 13",
+    "category": "legs"
+  },
+  {
+    "name": "Osseous Kilt",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/osseus_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 16,
+    "maxArmor": 132,
+    "frost": -1,
+    "weight": 9,
+    "armorSet": "Osseous",
+    "bleed": 3,
+    "fire": 1,
+    "rot": 1,
+    "radiation": 3,
+    "corrosive": -2,
+    "shock": -2,
+    "worlds": "Rhom",
+    "category": "legs"
+  },
+  {
+    "name": "Radiant Greaves",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/radiant_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 22,
+    "maxArmor": 144,
+    "frost": 3,
+    "weight": 18,
+    "armorSet": "Radiant",
+    "bleed": 1,
+    "fire": 2,
+    "rot": -1,
+    "radiation": 0,
+    "corrosive": -4,
+    "shock": 3,
+    "worlds": "Yaesha",
+    "category": "legs"
+  },
+  {
+    "name": "Scrapper Workboots",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scrapper_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 14,
+    "maxArmor": 128,
+    "frost": 2,
+    "weight": 9,
+    "armorSet": "Scrapper",
+    "bleed": 3,
+    "fire": 0,
+    "rot": 2,
+    "radiation": 0,
+    "corrosive": -2,
+    "shock": -2,
+    "worlds": "Ward 13",
+    "category": "legs"
+  },
+  {
+    "name": "Slayer Boots",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slayer_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 15,
+    "maxArmor": 130,
+    "frost": 1,
+    "weight": 10,
+    "armorSet": "Slayer",
+    "bleed": 2,
+    "fire": -2,
+    "rot": 3,
+    "radiation": -2,
+    "corrosive": 3,
+    "shock": -2,
+    "worlds": "Corsus",
+    "category": "legs"
+  },
+  {
+    "name": "Twisted Tassets",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/root_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 21,
+    "maxArmor": 142,
+    "frost": 0,
+    "weight": 16,
+    "armorSet": "Twisted",
+    "bleed": 2,
+    "fire": -5,
+    "rot": 5,
+    "radiation": -1,
+    "corrosive": 2,
+    "shock": 0,
+    "worlds": "Earth",
+    "category": "legs"
+  },
+  {
+    "name": "Void Greaves",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/void_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 21,
+    "maxArmor": 142,
+    "frost": -1,
+    "weight": 19,
+    "armorSet": "Void",
+    "bleed": 2,
+    "fire": 2,
+    "rot": 3,
+    "radiation": 3,
+    "corrosive": -4,
+    "shock": -1,
+    "worlds": "Rhom",
+    "category": "legs"
+  },
+  {
+    "name": "Labyrinth Greaves",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/labyrinth_greaves_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 16,
+    "maxArmor": 132,
+    "frost": 0,
+    "weight": 14,
+    "armorSet": "Labyrinth",
+    "bleed": -2,
+    "fire": 3,
+    "rot": 4,
+    "radiation": -1,
+    "corrosive": 2,
+    "shock": -3,
+    "worlds": "Corsus",
+    "category": "legs"
+  },
+  {
+    "name": "Carapace Greaves",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/carapace_greaves_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 22,
+    "maxArmor": 144,
+    "frost": 2,
+    "weight": 20,
+    "armorSet": "Carapace",
+    "bleed": 1,
+    "fire": -2,
+    "rot": 2,
+    "radiation": -2,
+    "corrosive": 5,
+    "shock": -2,
+    "worlds": "Corsus",
+    "category": "legs"
+  },
+  {
+    "name": "Warlord Boots",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warlord_legs_armor_item_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 21,
+    "maxArmor": 142,
+    "frost": 5,
+    "bleed": 2,
+    "fire": -2,
+    "rot": -3,
+    "radiation": -1,
+    "corrosive": 2,
+    "shock": 1,
+    "armorSet": "Warlord",
+    "worlds": "Resium",
+    "category": "legs"
+  },
+  {
+    "name": "Scavenger Boots",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scavenger_legs_armor_item_remnant_from_the_ashes_wiki_guide_64px.png",
+    "baseArmor": 16,
+    "maxArmor": 132,
+    "frost": -2,
+    "bleed": 2,
+    "fire": 2,
+    "rot": 2,
+    "radiation": 3,
+    "corrosive": -2,
+    "shock": -2,
+    "armorSet": "Scavenger",
+    "worlds": "Resium",
+    "category": "legs"
   }
 ]
