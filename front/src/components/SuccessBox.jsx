@@ -5,7 +5,7 @@ import { theme } from '../style/theme';
 function SuccessBox() {
     return (
         <BoxContainer>
-            success
+            <div>success</div>
         </BoxContainer>
     )
 }
