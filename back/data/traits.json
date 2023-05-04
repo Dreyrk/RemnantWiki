@@ -2,247 +2,301 @@
   {
     "name": "Vigor",
     "description": "Increases Max Health.",
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vigor_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Endurance",
     "description": "Increases Max Stamina.",
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/endurance_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Exploiter",
     "description": "Increases Weak Spot Damage.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/exploiter_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Spirit",
     "description": "Increases Mod Power Generation.",
-    "worlds": "Earth,Ward 13"
+    "worlds": "Earth,Ward 13",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/spirit_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Quick Hands",
     "description": "Increases Reload Speed.",
-    "worlds": "Earth"
+    "worlds": "Earth",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/quick_hands_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "World Walker",
     "description": "Reduces Stamina cost when sprinting and evading.",
-    "worlds": "Rhom"
+    "worlds": "Rhom",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/world_walker_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Keeper's Blessing",
     "description": "Increases resistance to elemental damage, buildup, and STATUS effects.",
-    "worlds": "Labyrinth"
+    "worlds": "Labyrinth",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/keepers_blessing_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Mother's Blessing",
     "description": "Increases Ranged damage reduction.",
-    "worlds": "Earth"
+    "worlds": "Earth",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/mothers_blessing_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Teamwork",
     "description": "Increases Mod Power buildup rate, earned Experience when killing enemies, and reduces damage taken when standing near teammates.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/teamwork_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Warrior",
     "description": "Increases Melee Damage.",
-    "worlds": "Earth,Ward 13"
+    "worlds": "Earth,Ward 13",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warrior_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Shadow Walker",
     "description": "Reduces enemy Awareness.",
-    "worlds": "Earth,Ward 13"
+    "worlds": "Earth,Ward 13",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/shadow_walker_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Elder Knowledge",
     "description": "Increases earned Experience when killing enemies.",
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/elder_knowledge_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Scavenger",
     "description": "Increases the amount of scrap picked up.",
-    "worlds": "Earth,Ward 13"
+    "worlds": "Earth,Ward 13",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scavenger_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Recovery",
     "description": "Increases Stamina Regen rate and reduces Stamina Regen delay.",
-    "worlds": "Rhom"
+    "worlds": "Rhom",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/recovery_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Handling",
     "description": "Reduces Gun Spread and Recoil.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/handling_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Glutton",
     "description": "Increases Consumable Use speed.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/glutton_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Catalyst",
     "description": "Increases chance to proc STATUS effects on enemies.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/catalyst_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Executioner",
     "description": "Increases Critical Hit Chance.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/executioner_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Triage",
     "description": "Increases Healing Effectiveness.",
-    "worlds": "Yaesha"
+    "worlds": "Yaesha",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/triage_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Kingslayer",
     "description": "Increases Critical Hit Damage.",
-    "worlds": "Rhom"
+    "worlds": "Rhom",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/kingslayer_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Will to Live",
     "description": "Increases Health while wounded.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/will_to_live_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Arcane Strike",
     "description": "Increases Mod Power gained on Melee hits.",
-    "worlds": "Yaesha"
+    "worlds": "Yaesha",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/arcane_strike_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Mind's Eye",
     "description": "Increases Ranged Damage.",
-    "worlds": "Ward 17"
+    "worlds": "Ward 17",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/minds_eye_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Bark Skin",
     "description": "Increases Armor Effectiveness.",
-    "worlds": "Earth"
+    "worlds": "Earth",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bark_skin_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Revivalist",
     "description": "Increases Revive Speed.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/revivalist_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Guardian's Blessing",
     "description": "Melee Damage Reduction +1%",
-    "worlds": "Yaesha"
+    "worlds": "Yaesha",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/guardians_blessing_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Cold as Ice",
     "description": "Increases damage dealt to enemies when attacking them from behind.",
-    "worlds": "Earth"
+    "worlds": "Earth",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/cold_as_ice_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Trigger Happy",
     "description": "Increases Fire Rate.",
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/trigger_happy_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Rapid Strike",
     "description": "Increases Melee Attack Speed.",
-    "worlds": "Ward 13"
+    "worlds": "Ward 13",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/rapid_strike_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Suspicion",
     "description": "Reduced Friendly Fire Damage Taken.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/suspicion_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Swiftness",
     "description": "Increases Movement Speed.",
-    "worlds": "Yaesha"
+    "worlds": "Yaesha",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/swiftness_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Sleight of Hand",
     "description": "Increases Weapon Swap Speed.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/sleight_of_hand_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Concentration",
     "description": "Increases weapon mod duration.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/concentration_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Blood Bond",
     "description": "Damage absorbtion.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/blood_bond_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Footwork",
     "description": "Aim movement speed.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/footwork_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Potency",
     "description": "Increases consumable duration.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/potency_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Fortification",
     "description": "Reduces damage taken while reviving teamates.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fortification_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Invoker",
     "description": "Increases summons damage.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/invoker_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Luminescent",
     "description": "Extra lumenite chance.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/luminescent_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Evocation",
     "description": "Mod damage bonus.",
-    "worlds": "Corsus"
+    "worlds": "Corsus",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/evocation_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Armor Piercer",
     "description": "Deal 5000 damage to enemies' armored regions.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/armor_piercer_traits_remnant_from_the_ashes_wiki_guide.png"
   },
-  { "name": "Climber", "description": "Vault 50 times.", "worlds": "Any" },
+  {
+    "name": "Climber",
+    "description": "Vault 50 times.",
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/climber_traits_remnant_from_the_ashes_wiki_guide.png"
+  },
   {
     "name": "Demolitionist",
     "description": "Kill 100 enemies with explosions.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/demolitionist_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Tormentor",
     "description": "Apply 100 Status Effects to enemies.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/tormentor_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Flash Caster",
     "description": "Obtain 25 Weapon Mods.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/flash_caster_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Vaccine",
     "description": "Cure 25 Status Effects with Consumables.",
-    "worlds": "Any"
+    "worlds": "Any",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vaccine_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Hard Charger",
     "description": "Defeat Brudvaak, the Rider and Vargr, the Warg.",
-    "worlds": "Resium"
+    "worlds": "Resium",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hard_charger_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Siphoner",
     "description": "Complete the Rescue the Krall Baby event.",
-    "worlds": "Resium"
+    "worlds": "Resium",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/siphoner_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Last Resort",
     "description": "Defeat Harsgaard, Root Harbinger.",
-    "worlds": "Ward Prime"
+    "worlds": "Ward Prime",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/last_resort_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Wisdom",
     "description": "Complete the Ward Prime quest line.",
-    "worlds": "Ward Prime"
+    "worlds": "Ward Prime",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/wisdom_traits_remnant_from_the_ashes_wiki_guide.png"
   }
 ]

@@ -1,31 +1,211 @@
 [
   {
     "name": "Adventurer Set",
-    "setBonus": "Treasure Hunter",
-    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/adventurer_set_remnant.jpg",
+    "setBonus": "Increases chance to get materials from destroying breakables. Increases the amount of scrap picked up by 20%.",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/adventurer_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/survivor_remnant.jpg"
+      ]
+    },
     "worlds": "Ward 13"
   },
   {
     "name": "Akari Set",
-    "setBonus": "Opportunist",
-    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/akari_set_remnant.jpg",
+    "setBonus": "Perfect Dodging increases Firing, Melee, Reload, and Evade Speed for 20 seconds. Slightly increases Evade Window.",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/akari_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/shadow_remnant.jpg"
+      ]
+    },
     "worlds": "Rhom"
   },
-  { "name": "Bomber Set", "setBonus": "Team Work", "worlds": "Unknown" },
-  { "name": "Cultist's Set", "setBonus": "Blood Pact", "worlds": "Ward 13" },
-  { "name": "Drifter's Set", "setBonus": "Wanderer", "worlds": "Earth" },
-  { "name": "Elder Set", "setBonus": "Believer", "worlds": "Yaesha" },
-  { "name": "Hunter Set", "setBonus": "Sharpshooter", "worlds": "Ward 13" },
-  { "name": "Leto's Set", "setBonus": "Juggernaut", "worlds": "Earth" },
-  { "name": "Ossesus Set", "setBonus": "Bloodlust", "worlds": "Rhom" },
-  { "name": "Radiant Set", "setBonus": "Momentum", "worlds": "Yaesha" },
-  { "name": "Scrapper Set", "setBonus": "Challenger", "worlds": "Ward 13" },
-  { "name": "Slayer Set", "setBonus": "Assassin", "worlds": "Corsus" },
-  { "name": "Twisted Set", "setBonus": "Regrowth", "worlds": "Earth" },
-  { "name": "Void Set", "setBonus": "Power Transfer", "worlds": "Rhom" },
-  { "name": "Bandit Set", "setBonus": "Freeloader", "worlds": "Earth" },
-  { "name": "Labyrinth Set", "setBonus": "Power Surge", "worlds": "Corsus" },
-  { "name": "Carapace Set", "setBonus": "Harden", "worlds": "Corsus" },
-  { "name": "Warlord's Set", "setBonus": "Deathwish", "worlds": "Resium" },
-  { "name": "Scavenger's Set", "setBonus": "Salvager", "worlds": "Resium" }
+  {
+    "name": "Bomber Set",
+    "img": {
+      "original": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf2eot21Uo_FUiRLkVxn0tliTUD8Xt9cCXYwCLZve-XDBGfOgOb5tMdR8EAoDeMlRZdOc&usqp=CAU"
+    },
+    "setBonus": "Increases the Range of the Teamwork trait.",
+    "worlds": "Unknown"
+  },
+  {
+    "name": "Cultist's Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/cultist's_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/doomsayer_remnant.jpg",
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ritualist_remnant.jpg"
+      ]
+    },
+    "setBonus": "Increases Weapon Mod duration. Mod Power is generated slowly over time.",
+    "worlds": "Ward 13"
+  },
+  {
+    "name": "Drifter's Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/drifter's_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vagrant_remnant.jpg"
+      ]
+    },
+    "setBonus": "Sprinting for 1s. Evading, or sliding adds 1 stack of inertia. Inertia stacks increase Ranged and Melee damage. Max 5 Stacks. Lasts 10 seconds. Increases Stamina Regen by 15 per second.",
+    "worlds": "Earth"
+  },
+  {
+    "name": "Elder Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/elder_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bloodletter_remnant.jpg"
+      ]
+    },
+    "setBonus": "Dragon Hearts increases the Total damage dealt by all allies standing within 40 meters for 30 seconds. Gives a 25% chance to not consume a Dragon Heart.",
+    "worlds": "Yaesha"
+  },
+  {
+    "name": "Hunter Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hunter_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/widowmaker_remnant.jpg",
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/nightstalker_remnant.jpg"
+      ]
+    },
+    "setBonus": "Increases total Ranged and Weakspot damage. Reduces Spread of firearms by 20%.",
+    "worlds": "Ward 13"
+  },
+  {
+    "name": "Leto's Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/leto's_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/sentinel_remnant.jpg"
+      ]
+    },
+    "setBonus": "3-Piece: Reduces base incoming damage by 10%. Gain an additional 10% per 10% Max Health missing. Max 5 stacks.",
+    "worlds": "Earth"
+  },
+  {
+    "name": "Ossesus Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/osseous_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/headhunter_remnant.jpg"
+      ]
+    },
+    "setBonus": "Subsequent Ranged or Melee hits against the same enemy increases wearer's Total damage dealt to that enemy. Effect degrades over time. Melee Speed and Fire Rate is increased by 5%.",
+    "worlds": "Rhom"
+  },
+  {
+    "name": "Radiant Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/radiant_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/crusader_remnant.jpg"
+      ]
+    },
+    "setBonus": "Critical hits increase Crit Chance and Crit damage for 3 seconds, stacking up to 10 times. Recoil is reduced by 15%.",
+    "worlds": "Yaesha"
+  },
+  {
+    "name": "Scrapper Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scrapper_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/roughneck_remnant.jpg",
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/gladiator_remnant.jpg"
+      ]
+    },
+    "setBonus": "Increases Total damage from all sources dealt by wearer to enemies within 5 meters. Receive 15% less damage from enemies within this range.",
+    "worlds": "Ward 13"
+  },
+  {
+    "name": "Slayer Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slayer_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/harbinger_remnant.jpg"
+      ]
+    },
+    "setBonus": "Reloading increases the Total damage dealt to the next enemy hit with that weapon. Lasts 10 seconds. Reload speed is increased by 10%.",
+    "worlds": "Corsus"
+  },
+  {
+    "name": "Twisted Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/twisted_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/corrupted_remnant.jpg"
+      ]
+    },
+    "setBonus": "At full health, gain a Regrowth stack every 3 seconds which increases Total outgoing Melee and Weapon Mod damage. Stacks 10x. Taking damage removes 1 stack. Regenerates 0.334 Health per second.",
+    "worlds": "Earth"
+  },
+  {
+    "name": "Void Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/void_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/chaos_remnant.jpg"
+      ]
+    },
+    "setBonus": "After 5 seconds, gain a boost that increases Total damage from all sources. Taking damage transfers the boost from Damage to Damage Reduction for 5 seconds. Standing Aim Movement Speed is increased by 25%.",
+    "worlds": "Rhom"
+  },
+  {
+    "name": "Bandit Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bandit_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/brigand_remnant.jpg"
+      ]
+    },
+    "setBonus": "Chance to replace spent bullet on hit. Increases Ammo acquired on pickup by 25%.",
+    "worlds": "Earth"
+  },
+  {
+    "name": "Labyrinth Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/labyrinth_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/mystic_remnant.jpg"
+      ]
+    },
+    "setBonus": "Increase Total Weapon Mod damage. Refunds 10% of Mod Power on use.",
+    "worlds": "Corsus"
+  },
+  {
+    "name": "Carapace Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/carapace_set_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vanguard_remnant.jpg"
+      ]
+    },
+    "setBonus": "After avoiding damage for 15s, armor hardens 1x per piece granting damage reduction. Damage removes a stack. If all stacks are removed, gain 10% bonus Movement Speed per piece (30% Max) for 5s. Increases Total damage from all sources by 5% per piece.",
+    "worlds": "Corsus"
+  },
+  {
+    "name": "Warlord's Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warlord_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/destroyer_remnant.jpg"
+      ]
+    },
+    "setBonus": "Dragon Hearts are no longer consumed for healing. They instead increase Ranged and Melee damage, grant lifesteal, and drain 200% health over 30s. Kills heal 5% over 3s.",
+    "worlds": "Resium"
+  },
+  {
+    "name": "Scavenger's Set",
+    "img": {
+      "original": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scavenger_armor_remnant.jpg",
+      "skin": [
+        "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/raider_remnant.jpg"
+      ]
+    },
+    "setBonus": "Ammo, Iron, Scrap pickups increase Total Ranged and Melee damage dealt, and reduce incoming damage. Stacks 10x. Lasts 30s. At or below 50% Health, pickups grant 2 stacks. Taking direct damage removes 1 stack. Pull Scrap and Iron materials towards the wearer.",
+    "worlds": "Resium"
+  }
 ]

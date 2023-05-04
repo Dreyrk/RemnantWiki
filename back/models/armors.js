@@ -5,7 +5,7 @@ const armorSchema = mongoose.Schema({
   category: {
     type: String,
     enum: ["body", "head", "legs", "other"],
-    default: "armor",
+    default: "other",
     required: true,
   },
   baseArmor: { type: Number },

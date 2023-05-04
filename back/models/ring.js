@@ -1,12 +1,12 @@
 import mongoose from "mongoose";
 
-const emoteSchema = mongoose.Schema({
+const ringSchema = mongoose.Schema({
   name: { type: String, required: true },
   description: { type: String },
-  location: { type: String },
+  img: { type: String },
   worlds: { type: String },
 });
 
-const emote = mongoose.model("emote", emoteSchema);
+const ring = mongoose.model("ring", ringSchema);
 
-export default emote;
+export default ring;
