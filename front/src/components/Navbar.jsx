@@ -2,12 +2,23 @@ import React from 'react'
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom'
 import { BsBookmarkHeart } from "react-icons/bs"
+import { BiLogOut } from "react-icons/bi"
 import { FaUser } from "react-icons/fa"
 
 import { theme } from "../style/theme.js"
 import logo from "../images/logo.jpg"
+import useCurrentUserContext from "../hooks/useCurrentUserContext.js"
 
 function Navbar({ titleSelected }) {
+
+    const { token, setUser, setToken } = useCurrentUserContext()
+
+    function logOut() {
+        setUser({})
+        setToken(null)
+        localStorage.clear()
+    }
+
     return (
         <NavContainer>
             <SideContainer>
@@ -21,8 +32,8 @@ function Navbar({ titleSelected }) {
             <SideContainer>
                 <Link to="/worlds">Worlds</Link>
                 <Link to="/guide">Guide</Link>
-                <IconLink to="/saved"><BsBookmarkHeart size={30} color={theme.colors.blanc} /></IconLink>
-                <IconLink to="/login"><FaUser size={30} color={theme.colors.blanc} /></IconLink>
+                {token && <IconLink to="/saved"><BsBookmarkHeart size={30} color={theme.colors.blanc} /></IconLink>}
+                {!token ? <IconLink to="/auth"><FaUser size={30} color={theme.colors.blanc} /></IconLink> : <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />}
             </SideContainer>
         </NavContainer>
     )

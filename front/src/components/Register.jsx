@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BiHide, BiShow } from "react-icons/bi";
 import styled from 'styled-components';
+import { motion } from "framer-motion"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -8,7 +9,7 @@ import { theme } from "../style/theme.js";
 import useCurrentUserContext from '../hooks/useCurrentUserContext.js'
 
 
-function Register() {
+function Register({ setAccountCreated, variants }) {
 
     const { user, setUser } = useCurrentUserContext()
 
@@ -27,10 +28,14 @@ function Register() {
             };
 
             const res = await fetch(`${BASE_URL}/auth/register`, fetchOpts);
+
             if (res.status === 201) {
                 toast.success("Account Created !")
-            } else {
+                setAccountCreated(true)
+            } else if (res.status === 400) {
                 toast.error("Bad Request")
+            } else if (res.status === 404) {
+                toast.error("Wrong fetch URL")
             }
         } catch (e) {
             toast.error("Failed to Fetch")
@@ -38,7 +43,7 @@ function Register() {
     };
 
     return (
-        <>
+        <Wrapper variants={variants}>
             <ToastContainer
                 position="top-center"
                 autoClose={5000}
@@ -48,15 +53,15 @@ function Register() {
                 pauseOnHover
                 theme="dark"
             />
-            <RegisterContainer>
+            <RegisterContainer onSubmit={(e) => createUser(e)}>
                 <SubTitle>Register</SubTitle>
                 <LabelInputContainer>
                     <Label htmlFor="pseudo">Pseudo :</Label>
-                    <Input onChange={(e) => setUser({ ...user, pseudo: e.target.value })} name='pseudo' type="text" placeholder='LordOfRemnnant' />
+                    <Input autoComplete='username' onChange={(e) => setUser({ ...user, pseudo: e.target.value })} name='pseudo' type="text" placeholder='LordOfRemnnant' />
                 </LabelInputContainer>
                 <LabelInputContainer>
                     <Label htmlFor="register-email">Email :</Label>
-                    <Input onChange={(e) => setUser({ ...user, email: e.target.value })} name='register-email' type="email" placeholder='johndoe@email.com' />
+                    <Input autoComplete='email' onChange={(e) => setUser({ ...user, email: e.target.value })} name='register-email' type="email" placeholder='johndoe@email.com' />
                 </LabelInputContainer>
                 <PasswordContainer>
                     <Label htmlFor="register-password">Password :</Label>
@@ -65,13 +70,22 @@ function Register() {
                 </PasswordContainer>
                 <StyledBtn onClick={createUser} type='button'>Register</StyledBtn>
             </RegisterContainer>
-        </>
+        </Wrapper>
     )
 }
 
 export default Register;
 
-const RegisterContainer = styled.div`
+const Wrapper = styled(motion.div)`
+    height: 100%;
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+const RegisterContainer = styled.form`
     height: 320px;
     width: 90%;
     display: flex;
@@ -118,6 +132,12 @@ const StyledBtn = styled.button`
     color: ${theme.colors.blanc};
     border: none;
     box-shadow: 0px 2px 2px ${theme.colors.noir};
+    :hover {
+        transform: scale(1.1);
+    }
+    :active {
+        transform: scale(0.9);
+    }
 `
 
 const LabelInputContainer = styled.div`

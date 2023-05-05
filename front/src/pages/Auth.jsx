@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import { theme } from "../style/theme.js"
 import useCurrentUserContext from '../hooks/useCurrentUserContext.js'
@@ -10,14 +11,44 @@ import SuccessBox from '../components/SuccessBox.jsx'
 
 function Auth() {
     const { token } = useCurrentUserContext()
+    const [accountCreated, setAccountCreated] = useState(false);
+
+    useEffect(() => {
+        if (token && accountCreated) {
+            setAccountCreated(false)
+        }
+    }, [])
+
+    const container = {
+        hidden: { opacity: 1, scale: 0 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                delayChildren: 0.3,
+                staggerChildren: 0.2
+            }
+        }
+    };
+
+    const item = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1
+        }
+    };
+
     return (
         <Wrapper>
             <Navbar />
-            <Title>Log in to save your favorites builds, items and more</Title>
+            {!token && <Title>Log in to save your favorites builds, items and more</Title>}
             {!token ?
-                <BigContainer>
-                    <Login />
-                    <Register />
+                <BigContainer variants={container}
+                    initial="hidden"
+                    animate="visible" height={accountCreated ? 550 : 740}>
+                    <Login variants={item} accountCreated={accountCreated} />
+                    {!accountCreated && <Register variants={item} setAccountCreated={setAccountCreated} />}
                 </BigContainer>
                 :
                 <SuccessBox />
@@ -33,11 +64,12 @@ const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 `
 
-const BigContainer = styled.div`
-    height: 740px;
-    width: 740px;
+const BigContainer = styled(motion.div)`
+    height: ${(props) => props.height};
+    width: 760px;
     border-radius: 50px;
     background-color: ${theme.colors.gris1};
     display: flex;
@@ -46,8 +78,7 @@ const BigContainer = styled.div`
     gap: 25px;
     border: 2px solid ${theme.colors.gris2};
     box-shadow: 0px 6px 6px ${theme.colors.noir};
-    padding-bottom: 5px;
-    padding-top: 10px;
+    padding: 5px;
 `
 
 const Title = styled.h2`

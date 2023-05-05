@@ -12,6 +12,7 @@ router.get("/api/items/amulets/:id", amuletsController.getById);
 
 //ARMORS
 
+//AUTH
 router.post("/api/auth/register", auth.hashPassword, userController.postUser);
 router.post(
   "/api/auth/login",

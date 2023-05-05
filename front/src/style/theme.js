@@ -5,5 +5,6 @@ export const theme = {
     gris2: "#495057",
     blanc: "#F4F4F6",
     rouge: "#9D0208",
+    vert: "#70E000",
   },
 };

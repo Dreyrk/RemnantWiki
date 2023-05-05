@@ -3,6 +3,20 @@ import user from "../models/user.js";
 import CODES from "../utils/httpCodes.js";
 
 const userController = {
+  getAll: async (req, res) => {
+    try {
+      const data = await user.find({});
+
+      if (data) {
+        res.status(CODES.SUCCESS).send({ data: data, totalUsers: data.length });
+      } else {
+        req.status(404).send({ error: "no users registered" });
+      }
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+      console.error(e);
+    }
+  },
   getUserById: async (req, res) => {
     const { id } = res.params;
     try {
