@@ -20,4 +20,7 @@ router.post(
   auth.verifyPassword
 );
 
+//USER
+router.get("/api/users/reset", userController.resetUser);
+
 export default router;

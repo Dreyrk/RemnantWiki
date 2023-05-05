@@ -48,6 +48,14 @@ const userController = {
       console.error(e);
     }
   },
+  resetUser: async (req, res) => {
+    try {
+      await user.deleteMany({});
+      res.sendStatus(CODES.SUCCESS);
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+    }
+  },
 };
 
 export default userController;
