@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { BiHide, BiShow } from "react-icons/bi";
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { theme } from "../style/theme.js";
 import useCurrentUserContext from '../hooks/useCurrentUserContext.js';
 
-function Login() {
+function Login({ accountCreated, variants }) {
     const { user, setUser, setToken } = useCurrentUserContext()
     const [hide, setHide] = useState(true);
 
@@ -23,17 +24,18 @@ function Login() {
                 body: JSON.stringify(user),
             };
 
-            const res = await fetch(`${BASE_URL}auth/login`, fetchOpts);
+            const res = await fetch(`${BASE_URL}/auth/login`, fetchOpts);
 
             const data = await res.json()
 
-            console.log(data, "user :", user)
             if (res.status === 200) {
                 toast.success("Login Success !")
                 setUser(data.user)
                 setToken(data.token)
             } else if (res.status === 400) {
                 toast.error("Bad Request")
+            } else if (res.status === 404) {
+                toast.error("Wrong fetch URL")
             }
         } catch (e) {
             toast.error("Failed to Fetch :/")
@@ -41,7 +43,7 @@ function Login() {
     };
 
     return (
-        <>
+        <Wrapper variants={variants}>
             <ToastContainer
                 position="top-center"
                 autoClose={5000}
@@ -51,7 +53,7 @@ function Login() {
                 pauseOnHover
                 theme="dark"
             />
-            <LoginContainer>
+            <LoginContainer bottom={accountCreated ? 20 : 0} gap={accountCreated ? 60 : 30} >
                 <SubTitle>Login</SubTitle>
                 <LabelInputContainer>
                     <Label htmlFor="login-email">Email :</Label>
@@ -64,24 +66,34 @@ function Login() {
                 </PasswordContainer>
                 <StyledBtn onClick={loginUser} type='button'>Login</StyledBtn>
             </LoginContainer>
-        </>
+        </Wrapper>
     )
 }
 
 export default Login;
 
+const Wrapper = styled(motion.div)`
+    height: 100%;
+    width: 100%;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 const LoginContainer = styled.form`
-    height: 35%;
+    height: 95%;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: ${(props) => props.gap}px;
     border: 1px solid ${theme.colors.gris2};
     box-shadow: 0px 4px 4px ${theme.colors.noir};
     padding: 10px;
     border-radius: 50px;
     background-color: ${theme.colors.gris2};
+    margin-bottom: ${(props) => props.bottom}px;
 `
 
 const SubTitle = styled.h2`

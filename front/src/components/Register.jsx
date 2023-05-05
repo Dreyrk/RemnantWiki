@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { BiHide, BiShow } from "react-icons/bi";
 import styled from 'styled-components';
+import { motion } from "framer-motion"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -8,7 +9,7 @@ import { theme } from "../style/theme.js";
 import useCurrentUserContext from '../hooks/useCurrentUserContext.js'
 
 
-function Register() {
+function Register({ setAccountCreated, variants }) {
 
     const { user, setUser } = useCurrentUserContext()
 
@@ -26,11 +27,15 @@ function Register() {
                 body: JSON.stringify(user),
             };
 
-            const res = await fetch(`${BASE_URL}auth/register`, fetchOpts);
+            const res = await fetch(`${BASE_URL}/auth/register`, fetchOpts);
+
             if (res.status === 201) {
                 toast.success("Account Created !")
+                setAccountCreated(true)
             } else if (res.status === 400) {
                 toast.error("Bad Request")
+            } else if (res.status === 404) {
+                toast.error("Wrong fetch URL")
             }
         } catch (e) {
             toast.error("Failed to Fetch")
@@ -38,7 +43,7 @@ function Register() {
     };
 
     return (
-        <>
+        <Wrapper variants={variants}>
             <ToastContainer
                 position="top-center"
                 autoClose={5000}
@@ -65,11 +70,20 @@ function Register() {
                 </PasswordContainer>
                 <StyledBtn onClick={createUser} type='button'>Register</StyledBtn>
             </RegisterContainer>
-        </>
+        </Wrapper>
     )
 }
 
 export default Register;
+
+const Wrapper = styled(motion.div)`
+    height: 100%;
+    width: 100%;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 
 const RegisterContainer = styled.form`
     height: 320px;
