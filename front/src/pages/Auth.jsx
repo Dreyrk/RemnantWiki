@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
@@ -10,14 +10,7 @@ import Register from '../components/Register.jsx'
 import SuccessBox from '../components/SuccessBox.jsx'
 
 function Auth() {
-    const { token } = useCurrentUserContext()
-    const [accountCreated, setAccountCreated] = useState(false);
-
-    useEffect(() => {
-        if (token && accountCreated) {
-            setAccountCreated(false)
-        }
-    }, [])
+    const { token, accountCreated, setAccountCreated } = useCurrentUserContext()
 
     const container = {
         hidden: { opacity: 1, scale: 0 },

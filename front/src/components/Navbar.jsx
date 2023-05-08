@@ -11,12 +11,13 @@ import useCurrentUserContext from "../hooks/useCurrentUserContext.js"
 
 function Navbar({ titleSelected }) {
 
-    const { token, setUser, setToken } = useCurrentUserContext()
+    const { token, setUser, setToken, setAccountCreated } = useCurrentUserContext()
 
     function logOut() {
         setUser({})
         setToken(null)
         localStorage.clear()
+        setAccountCreated(false)
     }
 
     return (
