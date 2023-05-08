@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
-import amulet from "../models/amulet.js";
+import mods from "../models/mods.js";
 import CODES from "../utils/httpCodes.js";
 
-const amuletsController = {
+const modsController = {
   getAll: async (req, res) => {
-    const { limit, page } = req.query;
+    const { limit, page, name } = req.query;
 
     const pageNumber = Number.parseInt(page, 10);
     const limitNumber = Number.parseInt(limit, 10);
@@ -22,9 +22,9 @@ const amuletsController = {
     }
 
     try {
-      const count = await amulet.count();
+      const count = await mods.count();
 
-      const data = await amulet
+      const data = await mods
         .find({})
         .limit(size)
         .skip(size * pages);
@@ -46,12 +46,12 @@ const amuletsController = {
 
     try {
       if (mongoose.Types.ObjectId.isValid(id)) {
-        const item = await amulet.findById(id);
+        const item = await mods.findById(id);
 
         if (item) {
           res.status(CODES.SUCCESS).send({ data: item });
         } else {
-          res.status(CODES.NOT_FOUND).send({ error: "Amulet not found" });
+          res.status(CODES.NOT_FOUND).send({ error: "mods not found" });
         }
       } else {
         res.status(CODES.BAD_REQUEST).send({ error: "ID is not valid" });
@@ -61,6 +61,24 @@ const amuletsController = {
       console.error(e);
     }
   },
+  getByName: async (req, res) => {
+    const { name } = req.params;
+
+    try {
+      const mod = await mods.find({
+        name,
+      });
+
+      if (mod) {
+        res.status(CODES.SUCCESS).send(mod);
+      } else {
+        res.status(CODES.NOT_FOUND).send({ error: "Mod not found" });
+      }
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+      console.error(e);
+    }
+  },
 };
 
-export default amuletsController;
+export default modsController;

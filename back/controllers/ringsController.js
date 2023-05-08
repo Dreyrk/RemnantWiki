@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
-import amulet from "../models/amulet.js";
+import ring from "../models/ring.js";
 import CODES from "../utils/httpCodes.js";
 
-const amuletsController = {
+const ringsController = {
   getAll: async (req, res) => {
     const { limit, page } = req.query;
 
@@ -22,9 +22,9 @@ const amuletsController = {
     }
 
     try {
-      const count = await amulet.count();
+      const count = await ring.count();
 
-      const data = await amulet
+      const data = await ring
         .find({})
         .limit(size)
         .skip(size * pages);
@@ -46,12 +46,12 @@ const amuletsController = {
 
     try {
       if (mongoose.Types.ObjectId.isValid(id)) {
-        const item = await amulet.findById(id);
+        const item = await ring.findById(id);
 
         if (item) {
           res.status(CODES.SUCCESS).send({ data: item });
         } else {
-          res.status(CODES.NOT_FOUND).send({ error: "Amulet not found" });
+          res.status(CODES.NOT_FOUND).send({ error: "ring not found" });
         }
       } else {
         res.status(CODES.BAD_REQUEST).send({ error: "ID is not valid" });
@@ -63,4 +63,4 @@ const amuletsController = {
   },
 };
 
-export default amuletsController;
+export default ringsController;
