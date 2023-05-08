@@ -28,6 +28,7 @@ async function main() {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
+
   await amulet.deleteMany({});
   await amulet.insertMany(amuletsData);
 

@@ -34,7 +34,7 @@ const amuletsController = {
           .status(CODES.SUCCESS)
           .send({ data: data, totalPages: Math.ceil(count / size) });
       } else {
-        res.status(CODES.NO_CONTENT).send({ error: "data is undefined" });
+        res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
       }
     } catch (e) {
       res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
