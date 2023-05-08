@@ -16,9 +16,6 @@ const Page = styled.div`
   font-family: "Roboto", sans-serif;
   position: relative;
   background-color: ${theme.colors.noir};
-  ::-webkit-scrollbar {
-    display: none;
-  }
 `;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
