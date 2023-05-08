@@ -8,6 +8,7 @@ import Worlds from './pages/Worlds'
 import Guide from './pages/Guide'
 import Saved from './pages/Saved'
 import Auth from './pages/Auth'
+import Builds from "./components/Builds"
 
 
 function Router() {
@@ -16,7 +17,8 @@ function Router() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/characters' element={<Characters />} />
-                <Route path='/stuff' element={<Stuff />} />
+                <Route path='/stuff/:item?' element={<Stuff />} />
+                <Route path='/builds/challenge' element={<Builds />} />
                 <Route path='/worlds' element={<Worlds />} />
                 <Route path='/guide' element={<Guide />} />
                 <Route path='/saved' element={<Saved />} />
