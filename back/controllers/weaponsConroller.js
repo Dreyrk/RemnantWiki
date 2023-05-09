@@ -1,25 +1,25 @@
 import mongoose from "mongoose";
 import weapons from "../models/weapons.js";
 import CODES from "../utils/httpCodes.js";
+import paginate from "../helpers/paginate.js";
 
 const weaponsController = {
   getAll: async (req, res) => {
-    const { limit, page } = req.query;
+    try {
+      const data = await weapons.find({});
 
-    const pageNumber = Number.parseInt(page, 10);
-    const limitNumber = Number.parseInt(limit, 10);
-
-    let pages = 0;
-
-    if (pageNumber > 0 && !Number.isNaN(pageNumber)) {
-      pages = pageNumber;
+      if (data) {
+        res.status(CODES.SUCCESS).send({ data: data });
+      } else {
+        res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
+      }
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+      console.error(e);
     }
-
-    let size = 10;
-
-    if (limitNumber > 0 && !Number.isNaN(limitNumber)) {
-      size = limitNumber;
-    }
+  },
+  getAllPaginate: async (req, res) => {
+    const { size, pages } = paginate(req);
 
     try {
       const count = await weapons.count();

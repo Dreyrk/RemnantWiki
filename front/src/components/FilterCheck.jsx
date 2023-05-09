@@ -59,5 +59,6 @@ const Checkbox = styled(motion.div)`
     width: 25px;
     border-radius: 40px;
     background-color: ${(props) => props.color};
+    border: 1px solid ${theme.colors.noir};
 `
 

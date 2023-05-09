@@ -1,14 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 import { theme } from "../style/theme.js";
 import FilterCheck from './FilterCheck.jsx';
+import ItemBox from './ItemBox.jsx';
 
 const weaponFilters = ["Primary", "Secondary", "Melee"];
 
-function Weapons() {
+async function fetchData(url) {
+    const res = await fetch(`${process.env.REACT_APP_BASE_API_URL_DEV}${url}`);
 
+    if (res.status === 200) {
+        const data = await res.json()
+        return data.data
+    } else {
+        throw new Error("fetch failed")
+    }
+}
+
+function Weapons() {
+    const [weapons, setWeapons] = useState([])
+
+    const getData = useCallback(async () => {
+        const data = await fetchData("/items/weapons");
+        setWeapons(data)
+    }, [])
+
+    useEffect(() => {
+        getData()
+    }, [getData])
 
     return (
         <BigContainer>
@@ -19,15 +40,27 @@ function Weapons() {
             </FilterContainer>
             <DisplayContainer>
                 <Title>Weapons</Title>
-                <div>
-                    box
-                </div>
+                <BoxDisplayContainer>
+                    {weapons.map((weapon) => (
+                        <ItemBox key={weapon._id} item={weapon} />))}
+                </BoxDisplayContainer>
             </DisplayContainer>
         </BigContainer>
     )
 }
 
 export default Weapons;
+
+
+
+const BoxDisplayContainer = styled.div`
+    width: 95%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-y: auto;
+    gap: 15px;
+`
 
 const BigContainer = styled.div`
     height: 100%;
@@ -50,10 +83,16 @@ const DisplayContainer = styled(motion.div)`
     width: 100%;
     padding: 10px;
     overflow-y: auto;
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 `
 
 const Title = styled.h1`
-
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-decoration: underline;
+    color: ${theme.colors.blanc};
 `
