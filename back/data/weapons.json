@@ -80,7 +80,11 @@
     "critChance": 10,
     "worlds": "Corsus",
     "category": "primary",
-    "weaponMod": "Skewer",
+    "weaponMod": {
+      "name": "Skewer",
+      "description": "Fires a large spike that deals 125 damage, 300% additional stagger damage, and applies BLEEDING effect dealing 600 damage over 20 seconds.",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/devastator__skewer_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "type": "normal",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/devastator_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
@@ -109,7 +113,11 @@
     "critChance": 5,
     "worlds": "Earth",
     "category": "primary",
-    "weaponMod": "Spore Shot",
+    "weaponMod": {
+      "name": "Spore Shot",
+      "description": "Fires an explosive round that deals 25 ROT damage within 3 meters and will leave a deadly gas cloud that slows enemies and lasts for 7 seconds.",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/spore_launcher_spore_shot_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "type": "rot",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/sporelauncher_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
@@ -138,7 +146,11 @@
     "critChance": 10,
     "worlds": "Rhom",
     "category": "primary",
-    "weaponMod": "Undying",
+    "weaponMod": {
+      "name": "Undying",
+      "description": "If charged upon death, the wielder will be revived with 50% Health. They will also take 10% less damage and be immune to STATUS effects for 5 seconds. Once revived, Undying cannot be recharged for 5 minutes.",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ruin_undying_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "type": "radiation",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ruin_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
@@ -154,7 +166,12 @@
     "worlds": "Yaesha",
     "category": "primary",
     "type": "shock",
-    "weaponMod": "Static Field Shot",
+    "weaponMod": {
+      "name": "Static Field Shot",
+      "description": "Fires a projectile that deals 65 SHOCK damage and applies the OVERLOADED effect. Overloaded enemies will trigger an explosion when they get within 4 meters from each other dealing up to 325 SHOCK damage within a 5 meter.",
+      "worlds": "Yaesha",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/eye_of_the_storm_statice_field_shot_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/boss_eyeofthestorm_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
@@ -168,7 +185,11 @@
     "critChance": 15,
     "worlds": "Rhom",
     "category": "primary",
-    "weaponMod": "Gravity Core",
+    "weaponMod": {
+      "name": "Gravity Core",
+      "description": "Fires a projectile which deals 50 damage and opens a gravity well for 5 seconds. Once unstable it explode dealing up to 500 damage within 5 meters. Adds 300 damage per enemy and divides total damage among all enemies.",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/particle_accelerator_gravitycore_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/particleaccelerato_boss_weapon_remnant_from_the_ashes_wiki_guider_150px.png"
   },
   {
@@ -182,7 +203,11 @@
     "critChance": 5,
     "worlds": "Ward 17",
     "category": "primary",
-    "weaponMod": "Banish",
+    "weaponMod": {
+      "name": "Banish",
+      "description": "Fires a projectile that banishes enemies into another dimension for 4 seconds. When they return, they'll take 1.25x the damage from the Repulsor's primary fire for 8 seconds. Powerful enemies won't be banished, but will take increased damage from the Repulsor.",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/repulsor_banish_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/repulsor_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
@@ -224,7 +249,11 @@
     "critChance": 5,
     "worlds": "Reisum",
     "category": "primary",
-    "weaponMod": "Incinerator",
+    "weaponMod": {
+      "name": "Incinerator",
+      "description": "Spews 11 fireballs that deal 20.15 FIRE dmg within 2m each and ignites enemies with BURNING effect dealing 100.75 dmg over 10s",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/incinerator_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "type": "frost",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/alternator_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
@@ -239,7 +268,11 @@
     "critChance": 5,
     "worlds": "Ward Prime",
     "category": "primary",
-    "weaponMod": "Fusion Cannon",
+    "weaponMod": {
+      "name": "Fusion Cannon",
+      "description": "Fires a large powerful beam that penetrates through enemies dealing 80 for a single charge. Multiple charges increase damage dealt, recoil, and beam thickness per charge. 50 stacks",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fusioncannon_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fusionrifle_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
@@ -324,7 +357,11 @@
     "critChance": 5,
     "worlds": "Corsus",
     "type": "corrosive",
-    "weaponMod": "Hive Shot",
+    "weaponMod": {
+      "name": "Hive Shot",
+      "description": "Fires a projectile that deals 20 CORROSIVE damage within 2.5 meters releasing an insect cloud that lasts for 12 seconds. Spreads to nearby enemies.",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hive_cannon_hive_shot_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hivecannon_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
@@ -339,7 +376,11 @@
     "critChance": 5,
     "worlds": "Earth",
     "type": "fire",
-    "weaponMod": "Flame Thrower",
+    "weaponMod": {
+      "name": "Flame Thrower",
+      "description": "Spews flames that will ignite targets with the BURNING effect dealing 100 FIRE damage over 10 seconds.",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/spitfire_flamethrower_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/spitfire_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
@@ -354,7 +395,11 @@
     "critChance": 10,
     "worlds": "Yaesha",
     "type": "shock",
-    "weaponMod": "Tentacle Shot",
+    "weaponMod": {
+      "name": "Tentacle Shot",
+      "description": "Launches a projectile which will summon a TENTACLE on impact that deals 75 SHOCK damage and steals 1.25% of the hero's Max Health per hit. Lasts 30 seconds. (Max 2)",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/curse_of_the_jungle_god_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/curseofjunglego_boss_weapon_remnant_from_the_ashes_wiki_guided_150px.png"
   },
   {
@@ -369,7 +414,11 @@
     "critChance": 5,
     "worlds": "Corsus",
     "type": "explosive",
-    "weaponMod": "Vampiric",
+    "weaponMod": {
+      "name": "Vampiric",
+      "description": "Fires 4 beetles that will fly towards enemies within 10 meters, land on them, and steal 50 health over 5 seconds. Once full, they will fly back and heal the hero.",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vampiric_weapon_mods_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pride_of_the_iska_hand_gun_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
@@ -457,7 +506,10 @@
     "name": "Petrified Maul",
     "baseDamage": 75,
     "maxDamage": 225,
-    "weaponMod": "Heavy Impact",
+    "weaponMod": {
+      "name": "Heavy Impact",
+      "description": "Charge attacks have a 100% chance to inflict bonus stagger damage."
+    },
     "worlds": "Earth",
     "category": "melee",
     "critChance": 5,
@@ -491,7 +543,10 @@
     "category": "melee",
     "critChance": 5,
     "type": "normal",
-    "weaponMod": "Force Burst",
+    "weaponMod": {
+      "name": "Force Burst",
+      "description": "Charge attacks release an explosive force that will stagger and push enemies back"
+    },
     "worlds": "Rhom",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/worldbreakerr_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
@@ -499,7 +554,10 @@
     "name": "Riven",
     "baseDamage": 37,
     "maxDamage": 111,
-    "weaponMod": "Life Leach",
+    "weaponMod": {
+      "name": "Life Leach",
+      "description": "Melee hits steal 4% of the base damage dealt as Health"
+    },
     "worlds": "Corsus,Rhom",
     "category": "melee",
     "critChance": 15,
@@ -520,7 +578,10 @@
     "name": "Scar of The Jungle God",
     "baseDamage": 27,
     "maxDamage": 81,
-    "weaponMod": "Razor Sharp",
+    "weaponMod": {
+      "name": "Razor Sharp",
+      "description": "Charge attacks have apply the BLEEDING effect dealing 200 damage over 20 seconds"
+    },
     "worlds": "Yaesha",
     "category": "melee",
     "critChance": 5,
@@ -531,7 +592,10 @@
     "name": "Smolder",
     "baseDamage": 45,
     "maxDamage": 135,
-    "weaponMod": "Blaze",
+    "weaponMod": {
+      "name": "Blaze",
+      "description": "Charge attacks apply the BURNING effect which will deal 100 fire damage over 10 seconds."
+    },
     "worlds": "Earth",
     "category": "melee",
     "critChance": 10,
@@ -542,7 +606,10 @@
     "name": "Voice of The Tempest",
     "baseDamage": 47,
     "maxDamage": 141,
-    "weaponMod": "Lightning Shock",
+    "weaponMod": {
+      "name": "Lightning Shock",
+      "description": "Charge attacks apply the OVERLOADED effect."
+    },
     "worlds": "Yaesha",
     "category": "melee",
     "critChance": 10,
@@ -553,7 +620,10 @@
     "name": "Butchers Flail",
     "baseDamage": 60,
     "maxDamage": 180,
-    "weaponMod": "Corrosive Strike",
+    "weaponMod": {
+      "name": "Corrosive Strike",
+      "description": "Strikes apply CORRODED stack. Each stack reduces enemy defense by 5%. Max 5 stack. Last 10 seconds. Charged attacks apply 2 stacks."
+    },
     "worlds": "Corsus",
     "category": "melee",
     "critChance": 5,
@@ -564,7 +634,10 @@
     "name": "Guardian Axe",
     "baseDamage": 51,
     "maxDamage": 153,
-    "weaponMod": "Spirit Engine",
+    "weaponMod": {
+      "name": "Spirit Engine",
+      "description": "Generates 2x the amount of Mod Power per damage dealt."
+    },
     "worlds": "Corsus",
     "category": "melee",
     "critChance": 5,
@@ -575,7 +648,10 @@
     "name": "The Lost Harpoon",
     "baseDamage": 39,
     "maxDamage": 117,
-    "weaponMod": "Power Strike",
+    "weaponMod": {
+      "name": "Power Strike",
+      "description": "Increases damage on each successive hit by 10% for 15 seconds. Can be stacked 5 times."
+    },
     "worlds": "Rhom",
     "category": "melee",
     "critChance": 10,
@@ -586,7 +662,10 @@
     "name": "Hero's Sword",
     "baseDamage": 48,
     "maxDamage": 144,
-    "weaponMod": "Energy Wave",
+    "weaponMod": {
+      "name": "Energy Wave",
+      "description": "Charge attacks release an energy wave allowing the wielder to strike enemies from farther away."
+    },
     "worlds": "Any",
     "category": "melee",
     "critChance": 10,
@@ -597,7 +676,10 @@
     "name": "Chain Blade",
     "baseDamage": 47,
     "maxDamage": 141,
-    "weaponMod": "Chain Strike",
+    "weaponMod": {
+      "name": "Chain Strike",
+      "description": "Charge Attacks extend the chain allowing the wielder to hit enemies from farther away"
+    },
     "worlds": "Reisum",
     "category": "melee",
     "critChance": 5,
@@ -608,7 +690,10 @@
     "name": "World's Edge",
     "baseDamage": 45,
     "maxDamage": 135,
-    "weaponMod": "Horizon Strike",
+    "weaponMod": {
+      "name": "Horizon Strike",
+      "description": "Charge attacks release a wide wave projectile that will penetrate through multiple enemies"
+    },
     "worlds": "Ward Prime",
     "category": "melee",
     "critChance": 10,
@@ -619,7 +704,10 @@
     "name": "Frostborne",
     "baseDamage": 50,
     "maxDamage": 150,
-    "weaponMod": "Cold Strike",
+    "weaponMod": {
+      "name": "Cold Strike",
+      "description": "Strikes apply FROSTBITE stacks. Charge attacks apply 2 stacks per hit"
+    },
     "worlds": "Resium",
     "category": "melee",
     "critChance": 5,

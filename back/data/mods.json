@@ -231,7 +231,7 @@
     "name": "Fusion Cannon",
     "description": "Fires a large powerful beam that penetrates through enemies dealing 80 for a single charge. Multiple charges increase damage dealt, recoil, and beam thickness per charge. 50 stacks",
     "worlds": "Resium",
-    "img": ""
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fusioncannon_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
     "name": "Incinerator",

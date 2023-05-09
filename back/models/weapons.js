@@ -1,5 +1,11 @@
 import mongoose from "mongoose";
 
+const weaponModSchema = mongoose.Schema({
+  name: { type: String },
+  img: { type: String },
+  description: { type: String },
+});
+
 const weaponSchema = mongoose.Schema({
   name: { type: String, required: true },
   category: {
@@ -17,7 +23,23 @@ const weaponSchema = mongoose.Schema({
   critChance: { type: Number },
   worlds: { type: String },
   img: { type: String },
-  weaponMod: { type: String },
+  type: {
+    type: String,
+    enum: [
+      "shock",
+      "radiation",
+      "corrosive",
+      "rot",
+      "fire",
+      "frost",
+      "normal",
+      "explosive",
+      "other",
+    ],
+    default: "normal",
+    required: true,
+  },
+  weaponMod: weaponModSchema,
 });
 
 const weapons = mongoose.model("weapons", weaponSchema);

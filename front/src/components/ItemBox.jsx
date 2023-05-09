@@ -66,8 +66,8 @@ const Name = styled.p`
     font-family: 'Red Hat Text';
     font-style: normal;
     color: ${theme.colors.blanc};
-    font-weight: 700;
-    font-size: 32px;
+    font-weight: 800;
+    font-size: 24px;
     line-height: 42px;
     grid-column: 1 / span 2;
     grid-row: 1;
