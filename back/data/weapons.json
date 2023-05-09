@@ -10,7 +10,8 @@
     "critChance": 10,
     "worlds": "Ward 13",
     "category": "primary",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/huntingrifle_basic_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Coach Gun",
@@ -23,7 +24,8 @@
     "critChance": 5,
     "worlds": "Ward 13",
     "category": "primary",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/coachgun_basic_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Shotgun",
@@ -36,7 +38,8 @@
     "critChance": 5,
     "worlds": "Ward 13",
     "category": "primary",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/shotgun_basic_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Assault Rifle",
@@ -49,7 +52,8 @@
     "critChance": 5,
     "worlds": "Earth",
     "category": "primary",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/assaultrifle_basic_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Beam Rifle",
@@ -62,7 +66,8 @@
     "critChance": 5,
     "worlds": "Rhom",
     "category": "primary",
-    "type": "radiation"
+    "type": "radiation",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/beamrifle_basic_weapon_remnat_from_the_ashes_wiki_guide_250px.png"
   },
   {
     "name": "Devastator",
@@ -76,7 +81,8 @@
     "worlds": "Corsus",
     "category": "primary",
     "weaponMod": "Skewer",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/devastator_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Sniper Rifle",
@@ -89,7 +95,8 @@
     "critChance": 20,
     "worlds": "Earth",
     "category": "primary",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/sniper_basic_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Sporebloom",
@@ -103,7 +110,8 @@
     "worlds": "Earth",
     "category": "primary",
     "weaponMod": "Spore Shot",
-    "type": "rot"
+    "type": "rot",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/sporelauncher_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Crossbow",
@@ -116,7 +124,8 @@
     "critChance": 20,
     "worlds": "Corsus",
     "category": "primary",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/crossbow_basic_weapon_remnat_from_the_ashes_wiki_guide_250px.png"
   },
   {
     "name": "Ruin",
@@ -130,7 +139,8 @@
     "worlds": "Rhom",
     "category": "primary",
     "weaponMod": "Undying",
-    "type": "radiation"
+    "type": "radiation",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ruin_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Eye of the Storm",
@@ -144,7 +154,8 @@
     "worlds": "Yaesha",
     "category": "primary",
     "type": "shock",
-    "weaponMod": "Static Field Shot"
+    "weaponMod": "Static Field Shot",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/boss_eyeofthestorm_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Particle Accelerator",
@@ -157,7 +168,8 @@
     "critChance": 15,
     "worlds": "Rhom",
     "category": "primary",
-    "weaponMod": "Gravity Core"
+    "weaponMod": "Gravity Core",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/particleaccelerato_boss_weapon_remnant_from_the_ashes_wiki_guider_150px.png"
   },
   {
     "name": "Repulsor",
@@ -170,7 +182,8 @@
     "critChance": 5,
     "worlds": "Ward 17",
     "category": "primary",
-    "weaponMod": "Banish"
+    "weaponMod": "Banish",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/repulsor_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Chicago Typewriter",
@@ -183,7 +196,8 @@
     "critChance": 5,
     "worlds": "Earth",
     "category": "primary",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/machinegun_basic_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Ricochet Rifle",
@@ -196,7 +210,8 @@
     "critChance": 5,
     "worlds": "Yaesha",
     "category": "primary",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ricochet_rifle_basic_weapon_remnat_from_the_ashes_wiki_guide_250px.png"
   },
   {
     "name": "Alternator",
@@ -210,7 +225,8 @@
     "worlds": "Reisum",
     "category": "primary",
     "weaponMod": "Incinerator",
-    "type": "frost"
+    "type": "frost",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/alternator_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Fusion Rifle",
@@ -223,7 +239,8 @@
     "critChance": 5,
     "worlds": "Ward Prime",
     "category": "primary",
-    "weaponMod": "Fusion Cannon"
+    "weaponMod": "Fusion Cannon",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fusionrifle_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Repeater Pistol",
@@ -236,7 +253,8 @@
     "maxAmmo": 104,
     "critChance": 5,
     "worlds": "Ward 13",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/repeater_pistol_basic_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Magnum Revolver",
@@ -249,7 +267,8 @@
     "maxAmmo": 30,
     "critChance": 5,
     "worlds": "Earth",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/revolver_wasteland_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Defiler",
@@ -262,7 +281,8 @@
     "maxAmmo": 36,
     "critChance": 5,
     "worlds": "Rhom",
-    "type": "radiation"
+    "type": "radiation",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/defiler_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Hunting Pistol",
@@ -275,7 +295,8 @@
     "maxAmmo": 19,
     "critChance": 15,
     "worlds": "Earth",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hunting_pistol_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Submachine Gun",
@@ -288,7 +309,8 @@
     "maxAmmo": 245,
     "critChance": 5,
     "worlds": "Ward 13",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/submachinegun_basic_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Hive Cannon",
@@ -302,7 +324,8 @@
     "critChance": 5,
     "worlds": "Corsus",
     "type": "corrosive",
-    "weaponMod": "Hive Shot"
+    "weaponMod": "Hive Shot",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hivecannon_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Spitfire",
@@ -316,7 +339,8 @@
     "critChance": 5,
     "worlds": "Earth",
     "type": "fire",
-    "weaponMod": "Flame Thrower"
+    "weaponMod": "Flame Thrower",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/spitfire_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Curse of the Jungle God",
@@ -330,7 +354,8 @@
     "critChance": 10,
     "worlds": "Yaesha",
     "type": "shock",
-    "weaponMod": "Tentacle Shot"
+    "weaponMod": "Tentacle Shot",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/curseofjunglego_boss_weapon_remnant_from_the_ashes_wiki_guided_150px.png"
   },
   {
     "name": "Pride of the Iskal",
@@ -344,7 +369,8 @@
     "critChance": 5,
     "worlds": "Corsus",
     "type": "explosive",
-    "weaponMod": "Vampiric"
+    "weaponMod": "Vampiric",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pride_of_the_iska_hand_gun_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Machine Pistol",
@@ -357,7 +383,8 @@
     "maxAmmo": 240,
     "critChance": 5,
     "worlds": "Ward Prime",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/machinepistol_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Sawed-Off",
@@ -370,7 +397,8 @@
     "maxAmmo": 21,
     "critChance": 5,
     "worlds": "Reisum",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/sawedoffshotgun_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Twin Shot",
@@ -383,7 +411,8 @@
     "maxAmmo": 34,
     "critChance": 15,
     "worlds": "Reisum",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/minicrossbow_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Scrap Sword",
@@ -392,7 +421,8 @@
     "critChance": 10,
     "type": "normal",
     "worlds": "Ward 13",
-    "category": "melee"
+    "category": "melee",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scrapsword_melee_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Scrap Hammer",
@@ -401,7 +431,8 @@
     "worlds": "Ward 13",
     "category": "melee",
     "critChance": 5,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scraphammer_melee_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Scrap Hatchet",
@@ -410,7 +441,8 @@
     "worlds": "Ward 13",
     "category": "melee",
     "critChance": 5,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scraphatchet_melee_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Blade of Adventure",
@@ -418,7 +450,8 @@
     "maxDamage": 78,
     "worlds": "Ward 13",
     "category": "melee",
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/dreamersblade_melee_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Petrified Maul",
@@ -428,7 +461,8 @@
     "worlds": "Earth",
     "category": "melee",
     "critChance": 5,
-    "type": "rot"
+    "type": "rot",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/petrifiedmaul_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Wastelander Flail",
@@ -437,7 +471,8 @@
     "worlds": "Rhom",
     "category": "melee",
     "critChance": 5,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/wastelandflail_melee_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Scythe",
@@ -446,7 +481,8 @@
     "worlds": "Corsus",
     "category": "melee",
     "critChance": 15,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/swampscythe_melee_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "World Breaker",
@@ -456,7 +492,8 @@
     "critChance": 5,
     "type": "normal",
     "weaponMod": "Force Burst",
-    "worlds": "Rhom"
+    "worlds": "Rhom",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/worldbreakerr_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Riven",
@@ -466,7 +503,8 @@
     "worlds": "Corsus,Rhom",
     "category": "melee",
     "critChance": 15,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/riven_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Spear",
@@ -475,7 +513,8 @@
     "worlds": "Yaesha",
     "category": "melee",
     "critChance": 10,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/panspear_melee_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Scar of The Jungle God",
@@ -485,7 +524,8 @@
     "worlds": "Yaesha",
     "category": "melee",
     "critChance": 5,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scarofthejunglegod_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Smolder",
@@ -495,7 +535,8 @@
     "worlds": "Earth",
     "category": "melee",
     "critChance": 10,
-    "type": "fire"
+    "type": "fire",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/smolder_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Voice of The Tempest",
@@ -505,7 +546,8 @@
     "worlds": "Yaesha",
     "category": "melee",
     "critChance": 10,
-    "type": "shock"
+    "type": "shock",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/voiceofthetempest_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Butchers Flail",
@@ -515,7 +557,8 @@
     "worlds": "Corsus",
     "category": "melee",
     "critChance": 5,
-    "type": "corrosive"
+    "type": "corrosive",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/butchersflail_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Guardian Axe",
@@ -525,7 +568,8 @@
     "worlds": "Corsus",
     "category": "melee",
     "critChance": 5,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/guardianaxe_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "The Lost Harpoon",
@@ -535,7 +579,8 @@
     "worlds": "Rhom",
     "category": "melee",
     "critChance": 10,
-    "type": "radiation"
+    "type": "radiation",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/lostharpoon_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   },
   {
     "name": "Hero's Sword",
@@ -545,7 +590,8 @@
     "worlds": "Any",
     "category": "melee",
     "critChance": 10,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/adventurers_blade_basic_weapon_remnant_from_the_ashes_wiki_guide_220px.png"
   },
   {
     "name": "Chain Blade",
@@ -555,7 +601,8 @@
     "worlds": "Reisum",
     "category": "melee",
     "critChance": 5,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/chainblade_weapon_remnant_from_the_ashes_wiki_guide_150px.png?v=1597935736501"
   },
   {
     "name": "World's Edge",
@@ -565,7 +612,8 @@
     "worlds": "Ward Prime",
     "category": "melee",
     "critChance": 10,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/worldsedge_weapon_remnant_from_the_ashes_wiki_guide_150px.png?v=1597935736505"
   },
   {
     "name": "Frostborne",
@@ -575,6 +623,7 @@
     "worlds": "Resium",
     "category": "melee",
     "critChance": 5,
-    "type": "normal"
+    "type": "normal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/frostborne_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
   }
 ]
