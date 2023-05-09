@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
@@ -20,22 +20,25 @@ async function fetchData(url) {
 }
 
 function Weapons() {
-    const [weapons, setWeapons] = useState([])
+
+    const [weapons, setWeapons] = useState([]);
+    const originalData = useRef(weapons);
 
     const getData = useCallback(async () => {
         const data = await fetchData("/items/weapons");
         setWeapons(data)
-    }, [])
+        originalData.current = data
+    }, []);
 
     useEffect(() => {
         getData()
-    }, [getData])
+    }, [getData]);
 
     return (
         <BigContainer>
             <FilterContainer>
                 {weaponFilters.map((filter, i) => (
-                    <FilterCheck key={i} filter={filter} />
+                    <FilterCheck key={i} filter={filter} originalData={originalData} setData={setWeapons} />
                 ))}
             </FilterContainer>
             <DisplayContainer>

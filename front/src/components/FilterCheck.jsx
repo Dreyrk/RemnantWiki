@@ -4,13 +4,25 @@ import { motion } from 'framer-motion'
 
 import { theme } from "../style/theme.js"
 
-function FilterCheck({ filter }) {
+function FilterCheck({ filter, originalData, setData, setFilter }) {
     const [isChecked, setIsChecked] = useState(false)
+    const [filterSelected, setFilterSelected] = useState([])
+
+    function check() {
+        setIsChecked(!isChecked)
+        setFilterSelected((prev) => prev.push(filter))
+        setData(originalData.current.filter((item) => item.category === filter.toLowerCase()))
+    }
+    function uncheck() {
+        setIsChecked(!isChecked)
+        //setFilterSelected((prev) => prev.filter((f) => f !== filter.toLowerCase))
+        setData(originalData.current)
+    }
 
     return (
         <LabelInputContainer>
             <Label>{filter}</Label>
-            <CheckContainer justify={isChecked ? "flex-end" : "flex-start"} onClick={() => setIsChecked(!isChecked)} >
+            <CheckContainer justify={isChecked ? "flex-end" : "flex-start"} onClick={!isChecked ? check : uncheck}>
                 <Checkbox
                     color={!isChecked ? theme.colors.rouge : theme.colors.vert}
                     layout

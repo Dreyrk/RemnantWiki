@@ -19,13 +19,16 @@ function ItemBox({ item }) {
             </ImgContainer>
             {item.category !== "melee" ?
                 <BoxDescContainer>
-                    <Name>{item.name}</Name>
+                    <NameModContainer>
+                        <Name>{item.name}</Name>
+                        {item.weaponMod?.img && <WeaponMod src={item.weaponMod.img} />}
+                    </NameModContainer>
                     <Desc>Range: <span style={{ color: theme.colors.rouge }}>{item.idealRange}m</span></Desc>
                     <DPS>Base DPS: <span style={{ color: theme.colors.rouge }}>{Math.ceil(item.baseDamage * item.rps)}</span></DPS>
                 </BoxDescContainer>
                 :
                 <BoxDescContainer>
-                    <Name>{item.name}</Name>
+                    <MeleeName>{item.name}</MeleeName>
                     <Desc>Base DMG: <span style={{ color: theme.colors.rouge }}>{item.baseDamage}m</span></Desc>
                     <DPS>Crit chance: <span style={{ color: theme.colors.rouge }}>{item.critChance}%</span></DPS>
                 </BoxDescContainer>
@@ -35,6 +38,37 @@ function ItemBox({ item }) {
 }
 
 export default ItemBox;
+
+const WeaponMod = styled.img`
+    height: 25px;
+    width: 25px;
+    justify-self: end;
+    :hover {
+        transform: scale(1.5);
+    }
+`
+
+const MeleeName = styled.p`
+    border-bottom: 1px solid ${theme.colors.noir};
+    margin: 0;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    color: ${theme.colors.blanc};
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 42px;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+`
+
+const NameModContainer = styled.div`
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    border-bottom: 1px solid ${theme.colors.noir};
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`
 
 const DPS = styled.p`
     margin: 0;
@@ -71,7 +105,6 @@ const Name = styled.p`
     line-height: 42px;
     grid-column: 1 / span 2;
     grid-row: 1;
-    border-bottom: 1px solid ${theme.colors.noir};
 `
 
 const BoxImg = styled.img`

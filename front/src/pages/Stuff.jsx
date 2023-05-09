@@ -20,58 +20,76 @@ function Stuff() {
     switch (categorySelected.item) {
         case "weapons":
             return (
-                <>
+                <Wrapper>
                     <Navbar />
                     <Weapons />
-                </>
+                </Wrapper>
             )
         case "armors":
             return (
-                <>
+                <Wrapper>
                     <Navbar />
                     <Armors />
-                </>
+                </Wrapper>
             )
         case "amulets":
             return (
-                <>
+                <Wrapper>
                     <Navbar />
                     <Amulets />
-                </>
+                </Wrapper>
             )
         case "rings":
             return (
-                <>
+                <Wrapper>
                     <Navbar />
                     <Rings />
-                </>
+                </Wrapper>
             )
         case "mods":
             return (
-                <>
+                <Wrapper>
                     <Navbar />
                     <Mods />
-                </>
+                </Wrapper>
             )
         default:
             return (
-                <>
+                <Wrapper>
                     <Navbar />
                     <CategoryContainer>
                         {category.map((cat) => {
                             if (cat.name !== "Challenge Build") {
-                                return <StyledLink key={cat.name} to={cat.link}><StyledBtn type='button'>{cat.name}</StyledBtn></StyledLink>
+                                return (
+                                    <StyledLink key={cat.name} to={cat.link}>
+                                        <StyledBtn type='button'>{cat.name}</StyledBtn>
+                                    </StyledLink>
+                                )
                             } else {
-                                return <CircleLink key={cat.name} to={cat.link}><CircleBtn type='button'>{cat.name}<FaRandom size={30} color={theme.colors.blanc} /></CircleBtn></CircleLink>
+                                return (
+                                    <CircleLink key={cat.name} to={cat.link}>
+                                        <CircleBtn type='button'>
+                                            {cat.name}
+                                            <FaRandom size={30} color={theme.colors.blanc} />
+                                        </CircleBtn>
+                                    </CircleLink>
+                                )
                             }
                         })}
                     </CategoryContainer>
-                </>
+                </Wrapper>
             )
     }
 }
 
 export default Stuff;
+
+const Wrapper = styled.div`
+    margin: 0;
+    padding: 0;
+    height: 89vh;
+    max-height: 100vh;
+`
 
 const CategoryContainer = styled.div`
     height: calc(100% - 100px);
