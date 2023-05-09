@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 
 import { theme } from "../style/theme.js";
 import FilterCheck from './FilterCheck.jsx';
+import ItemBox from './ItemBox.jsx';
 
 const weaponFilters = ["Primary", "Secondary", "Melee"];
 
@@ -30,8 +31,6 @@ function Weapons() {
         getData()
     }, [getData])
 
-    console.log(weapons)
-
     return (
         <BigContainer>
             <FilterContainer>
@@ -43,10 +42,7 @@ function Weapons() {
                 <Title>Weapons</Title>
                 <BoxDisplayContainer>
                     {weapons.map((weapon) => (
-                        <BoxContainer key={weapon.name}>
-                            <img src={weapon.img} alt={weapon.name} />
-                            <div></div>
-                        </BoxContainer>))}
+                        <ItemBox key={weapon._id} item={weapon} />))}
                 </BoxDisplayContainer>
             </DisplayContainer>
         </BigContainer>
@@ -54,6 +50,8 @@ function Weapons() {
 }
 
 export default Weapons;
+
+
 
 const BoxDisplayContainer = styled.div`
     width: 95%;
@@ -97,10 +95,4 @@ const Title = styled.h1`
     line-height: 58px;
     text-decoration: underline;
     color: ${theme.colors.blanc};
-`
-const BoxContainer = styled(motion.div)`
-    height: 285px;
-    width: 285px;
-    border-radius: 25px;
-    background-color: ${theme.colors.gris1};
 `
