@@ -10,8 +10,12 @@ function FilterCheck({ filter, originalData, setData, setFilter }) {
 
     function check() {
         setIsChecked(!isChecked)
-        setFilterSelected((prev) => prev.push(filter))
-        setData(originalData.current.filter((item) => item.category === filter.toLowerCase()))
+        if (filterSelected.some((f) => f !== filter)) {
+            setFilterSelected(filterSelected.push(filter))
+        } else {
+            setFilterSelected(filterSelected.filter((f) => f !== filter))
+        }
+        setData(originalData.current.filter((item) => item.category.includes(filter.toLowerCase())))
     }
     function uncheck() {
         setIsChecked(!isChecked)
