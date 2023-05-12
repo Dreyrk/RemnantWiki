@@ -7,7 +7,7 @@ import fetchData from '../helpers/fetchData.js';
 import FilterCheck from './FilterCheck.jsx';
 import ItemBox from './ItemBox.jsx';
 
-const AmuletsFilters = ["Head", "Body", "Legs"];
+const amuletsFilters = ["Earth", "Rhom", "Yeasha", "Corsus", "Resium", "Any"];
 
 function Amulets() {
     const [amulets, setAmulets] = useState([]);
@@ -26,7 +26,7 @@ function Amulets() {
     return (
         <BigContainer>
             <FilterContainer>
-                {AmuletsFilters.map((filter, i) => (
+                {amuletsFilters.map((filter, i) => (
                     <FilterCheck key={i} filter={filter} originalData={originalData} setData={setAmulets} />
                 ))}
             </FilterContainer>

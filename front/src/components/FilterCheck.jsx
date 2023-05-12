@@ -16,7 +16,7 @@ function FilterCheck({ filter, originalData, setData }) {
             } else {
                 setFilterSelected(filterSelected.filter((f) => f !== filter))
             }
-            setData(originalData.current.filter((item) => item.category.includes(filter.toLowerCase())))
+            setData(originalData.current.filter((item) => item.worlds.toLowerCase().includes(filter.toLowerCase())))
         } else {
             setIsChecked(!isChecked)
             setData(originalData.current)
