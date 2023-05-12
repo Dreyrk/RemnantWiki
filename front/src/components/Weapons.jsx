@@ -3,21 +3,11 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 import { theme } from "../style/theme.js";
+import fetchData from '../helpers/fetchData.js';
 import FilterCheck from './FilterCheck.jsx';
 import ItemBox from './ItemBox.jsx';
 
 const weaponFilters = ["Primary", "Secondary", "Melee"];
-
-async function fetchData(url) {
-    const res = await fetch(`${process.env.REACT_APP_BASE_API_URL_DEV}${url}`);
-
-    if (res.status === 200) {
-        const data = await res.json()
-        return data.data
-    } else {
-        throw new Error("fetch failed")
-    }
-}
 
 function Weapons() {
     const [weapons, setWeapons] = useState([]);

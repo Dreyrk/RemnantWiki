@@ -9,7 +9,7 @@ function ItemBoxDesc({ item, setShow }) {
         case "melee":
             return (
                 <BoxDescContainer>
-                    <MeleeName>{item.name}</MeleeName>
+                    <AltName>{item.name}</AltName>
                     <Desc>Base DMG: <span style={{ color: theme.colors.rouge }}>{item.baseDamage}m</span></Desc>
                     <DPS>Crit chance: <span style={{ color: theme.colors.rouge }}>{item.critChance}%</span></DPS>
                 </BoxDescContainer>
@@ -26,9 +26,22 @@ function ItemBoxDesc({ item, setShow }) {
                     <DPS>Base DPS: <span style={{ color: theme.colors.rouge }}>{Math.ceil(item.baseDamage * item.rps)}</span></DPS>
                 </BoxDescContainer>
             )
+        case "head":
+        case "body":
+        case "legs":
+            return (
+                <BoxDescContainer>
+                    <AltName>{item.name}</AltName>
+                    <Desc>Base Armor: <span style={{ color: theme.colors.rouge }}>{item.baseArmor}</span></Desc>
+                    <ArmorSet>Set: <span style={{ color: theme.colors.rouge }}>{item.armorSet}</span></ArmorSet>
+                </BoxDescContainer>
+            )
         default:
             return (
-                <p>No Desc :/</p>
+                <BoxDescContainer>
+                    <AltName>{item.name}</AltName>
+                    <BaseDesc>Worlds: <span style={{ color: theme.colors.rouge }}>{item.worlds}</span></BaseDesc>
+                </BoxDescContainer>
             )
     }
 }
@@ -57,7 +70,7 @@ const WeaponMod = styled.img`
     }
 `
 
-const MeleeName = styled.p`
+const AltName = styled.p`
     border-bottom: 1px solid ${theme.colors.noir};
     margin: 0;
     font-family: 'Red Hat Text';
@@ -92,10 +105,35 @@ const DPS = styled.p`
     line-height: 26px;
 `
 
+const ArmorSet = styled.p`
+    margin: 0;
+    color: ${theme.colors.noir};
+    grid-column: 2;
+    grid-row: 2;
+    place-self: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+`
+
 const Desc = styled.p`
     margin: 0;
     color: ${theme.colors.noir};
     grid-column: 1;
+    grid-row: 2;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+`
+
+const BaseDesc = styled.p`
+    margin: 0;
+    color: ${theme.colors.noir};
+    grid-column: 1 / span 2;
     grid-row: 2;
     font-family: 'Red Hat Text';
     font-style: normal;
