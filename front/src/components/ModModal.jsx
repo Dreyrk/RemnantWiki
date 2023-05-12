@@ -10,20 +10,21 @@ function ModModal({ mod }) {
 
     useEffect(() => {
         const descLength = parseInt(mod.description.length, 10)
-        if (descLength < 150) {
-            setDescHeight(descLength * 0.1)
-        } else {
-            setDescHeight(descLength * 0.2)
-        }
-        console.log(parseInt(mod.description.length, 10))
-    }, [mod.description])
 
-    console.log(parseInt(mod.description.length, 10))
+
+        if (110 < descLength < 150) {
+            setDescHeight(descLength * 0.1)
+        } else if (descLength > 150) {
+            setDescHeight(descLength * 0.2)
+        } else if (descLength <= 110) {
+            setDescHeight(0)
+        }
+    }, [mod.description])
 
     const time = useTime()
     const scroll = useTransform(
         time,
-        [0, 2000], // For every x seconds...
+        [0, 2000], // For every x ms...
         [0, -descHeight], // ...translateY based on desc length
         { clamp: true }
     )
