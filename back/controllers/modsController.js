@@ -4,35 +4,11 @@ import CODES from "../utils/httpCodes.js";
 
 const modsController = {
   getAll: async (req, res) => {
-    const { limit, page, name } = req.query;
-
-    const pageNumber = Number.parseInt(page, 10);
-    const limitNumber = Number.parseInt(limit, 10);
-
-    let pages = 0;
-
-    if (pageNumber > 0 && !Number.isNaN(pageNumber)) {
-      pages = pageNumber;
-    }
-
-    let size = 10;
-
-    if (limitNumber > 0 && !Number.isNaN(limitNumber)) {
-      size = limitNumber;
-    }
-
     try {
-      const count = await mods.count();
-
-      const data = await mods
-        .find({})
-        .limit(size)
-        .skip(size * pages);
+      const data = await mods.find({});
 
       if (data) {
-        res
-          .status(CODES.SUCCESS)
-          .send({ data: data, totalPages: Math.ceil(count / size) });
+        res.status(CODES.SUCCESS).send({ data: data });
       } else {
         res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
       }

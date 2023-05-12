@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
@@ -6,72 +6,39 @@ import { motion } from 'framer-motion'
 import { theme } from '../style/theme.js'
 import useCurrentUserContext from "../hooks/useCurrentUserContext.js"
 import LikeBtn from './LikeBtn.jsx'
+import ItemBoxDesc from './ItemBoxDesc.jsx'
+import ModModal from './ModModal.jsx'
 
 function ItemBox({ item }) {
-
+    const [show, setShow] = useState(false)
     const { token } = useCurrentUserContext()
 
     return (
         <BoxContainer>
             {token && <LikeBtn item={item} />}
-            <ImgContainer>
-                <BoxImg src={item.img} alt={item.name} />
-            </ImgContainer>
-            {item.category !== "melee" ?
-                <BoxDescContainer>
-                    <Name>{item.name}</Name>
-                    <Desc>Range: <span style={{ color: theme.colors.rouge }}>{item.idealRange}m</span></Desc>
-                    <DPS>Base DPS: <span style={{ color: theme.colors.rouge }}>{Math.ceil(item.baseDamage * item.rps)}</span></DPS>
-                </BoxDescContainer>
-                :
-                <BoxDescContainer>
-                    <Name>{item.name}</Name>
-                    <Desc>Base DMG: <span style={{ color: theme.colors.rouge }}>{item.baseDamage}m</span></Desc>
-                    <DPS>Crit chance: <span style={{ color: theme.colors.rouge }}>{item.critChance}%</span></DPS>
-                </BoxDescContainer>
-            }
-        </BoxContainer>
+            <FlipContainer animate={{ rotateY: show ? 180 : 0 }}
+                transition={{ duration: 0.6 }}>
+                {!show ?
+                    <ImgContainer transition={{ delay: 0.3 }}>
+                        <BoxImg src={item.img} alt={item.name} />
+                    </ImgContainer>
+                    :
+                    <ModModal mod={item.weaponMod} />
+                }
+            </FlipContainer>
+            <ItemBoxDesc setShow={setShow} item={item} />
+        </BoxContainer >
     )
 }
 
 export default ItemBox;
 
-const DPS = styled.p`
+const FlipContainer = styled(motion.div)`
     margin: 0;
-    color: ${theme.colors.noir};
-    grid-column: 2;
-    grid-row: 2;
-    place-self: center;
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 26px;
-`
-
-const Desc = styled.p`
-    margin: 0;
-    color: ${theme.colors.noir};
-    grid-column: 1;
-    grid-row: 2;
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 26px;
-`
-
-const Name = styled.p`
-    margin: 0;
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    color: ${theme.colors.blanc};
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 42px;
-    grid-column: 1 / span 2;
-    grid-row: 1;
-    border-bottom: 1px solid ${theme.colors.noir};
+    height: 180px;
+    width: 280px;
+    display: grid;
+    place-items: center;
 `
 
 const BoxImg = styled.img`
@@ -79,25 +46,13 @@ const BoxImg = styled.img`
     width: auto;
 `
 
-const ImgContainer = styled.div`
+const ImgContainer = styled(motion.div)`
     height: 160px;
     width: 280px;
     display: flex;
     justify-content: center;
     align-items: center;
-`
-
-const BoxDescContainer = styled.div`
-    height: 95px;
-    width: 280px;
-    border-radius: 15px;
-    background-color: rgba(244, 244, 246, 0.4);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 50%);
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
+    margin: auto;
 `
 
 const BoxContainer = styled(motion.div)`
@@ -109,5 +64,8 @@ const BoxContainer = styled(motion.div)`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
 `
