@@ -4,29 +4,29 @@ import { motion } from 'framer-motion'
 
 import { theme } from "../style/theme.js"
 
-function FilterCheck({ filter, originalData, setData, setFilter }) {
+function FilterCheck({ filter, originalData, setData }) {
     const [isChecked, setIsChecked] = useState(false)
     const [filterSelected, setFilterSelected] = useState([])
 
     function check() {
-        setIsChecked(!isChecked)
-        if (filterSelected.some((f) => f !== filter)) {
-            setFilterSelected(filterSelected.push(filter))
+        if (!isChecked) {
+            setIsChecked(!isChecked)
+            if (filterSelected.some((f) => f !== filter)) {
+                setFilterSelected(filterSelected.push(filter))
+            } else {
+                setFilterSelected(filterSelected.filter((f) => f !== filter))
+            }
+            setData(originalData.current.filter((item) => item.category.includes(filter.toLowerCase())))
         } else {
-            setFilterSelected(filterSelected.filter((f) => f !== filter))
+            setIsChecked(!isChecked)
+            setData(originalData.current)
         }
-        setData(originalData.current.filter((item) => item.category.includes(filter.toLowerCase())))
-    }
-    function uncheck() {
-        setIsChecked(!isChecked)
-        //setFilterSelected((prev) => prev.filter((f) => f !== filter.toLowerCase))
-        setData(originalData.current)
     }
 
     return (
         <LabelInputContainer>
             <Label>{filter}</Label>
-            <CheckContainer justify={isChecked ? "flex-end" : "flex-start"} onClick={!isChecked ? check : uncheck}>
+            <CheckContainer justify={isChecked ? "flex-end" : "flex-start"} onClick={check}>
                 <Checkbox
                     color={!isChecked ? theme.colors.rouge : theme.colors.vert}
                     layout

@@ -20,7 +20,6 @@ async function fetchData(url) {
 }
 
 function Weapons() {
-
     const [weapons, setWeapons] = useState([]);
     const originalData = useRef(weapons);
 
