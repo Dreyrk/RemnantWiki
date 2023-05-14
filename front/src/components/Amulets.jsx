@@ -7,14 +7,14 @@ import fetchData from '../helpers/fetchData.js';
 import FilterCheck from './FilterCheck.jsx';
 import ItemBox from './ItemBox.jsx';
 
-const amuletsFilters = ["Earth", "Rhom", "Yeasha", "Corsus", "Resium", "Any"];
+const amuletsFilters = ["Earth", "Rhom", "Yaesha", "Corsus", "Resium", "Any"];
 
 function Amulets() {
     const [amulets, setAmulets] = useState([]);
     const originalData = useRef(amulets);
 
     const getData = useCallback(async () => {
-        const data = await fetchData("/items/amulets");
+        const data = await fetchData("items/amulets");
         setAmulets(data)
         originalData.current = data
     }, []);

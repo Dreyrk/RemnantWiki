@@ -45,6 +45,7 @@ export default Navbar;
 const NavContainer = styled.div`
     width: 100vw;
     height: 100px;
+    place-self: start;
     display: flex;
     align-items: center;
     justify-content: space-between;

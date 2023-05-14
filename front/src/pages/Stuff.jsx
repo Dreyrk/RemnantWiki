@@ -15,9 +15,9 @@ import Mods from '../components/Mods'
 
 function Stuff() {
 
-    const categorySelected = useParams()
+    const { itemCategory } = useParams()
 
-    switch (categorySelected.item) {
+    switch (itemCategory) {
         case "weapons":
             return (
                 <Wrapper>

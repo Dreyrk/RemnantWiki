@@ -1,5 +1,5 @@
 async function fetchData(url) {
-  const res = await fetch(`${process.env.REACT_APP_BASE_API_URL_DEV}${url}`);
+  const res = await fetch(`${process.env.REACT_APP_BASE_API_URL_DEV}/${url}`);
 
   if (res.status === 200) {
     const data = await res.json();

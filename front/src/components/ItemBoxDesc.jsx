@@ -11,7 +11,7 @@ function ItemBoxDesc({ item, setShow }) {
                 <BoxDescContainer>
                     <AltName>{item.name}</AltName>
                     <Desc>Base DMG: <span style={{ color: theme.colors.rouge }}>{item.baseDamage}m</span></Desc>
-                    <DPS>Crit chance: <span style={{ color: theme.colors.rouge }}>{item.critChance}%</span></DPS>
+                    <DPS>Crit chance: <span style={{ color: theme.colors.rouge }}>{item.critChance ? item.critChance : "?"}%</span></DPS>
                 </BoxDescContainer>
             )
         case "primary":
