@@ -16,7 +16,7 @@ function ItemBox({ item }) {
     const { pathname } = useLocation()
 
     return (
-        <NavLink to={`${pathname}/${item._id}`} style={{ margin: 0, textDecoration: "none" }}>
+        <NavLink to={`${pathname}${item._id}`} style={{ margin: 0, textDecoration: "none" }}>
             <BoxContainer>
                 {token && <LikeBtn item={item} />}
                 <FlipContainer animate={{ rotateY: show ? 180 : 0 }}
