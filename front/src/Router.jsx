@@ -10,6 +10,7 @@ import Saved from './pages/Saved'
 import Auth from './pages/Auth'
 import Builds from "./components/Builds"
 import ItemDetails from './pages/ItemDetails'
+import NotFound from './pages/NotFound'
 
 
 function Router() {
@@ -25,6 +26,7 @@ function Router() {
                 <Route path='/guide' element={<Guide />} />
                 <Route path='/saved' element={<Saved />} />
                 <Route path='/auth' element={<Auth />} />
+                <Route path='*' element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     )

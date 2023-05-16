@@ -15,8 +15,10 @@ function ItemBox({ item }) {
     const { token } = useCurrentUserContext()
     const { pathname } = useLocation()
 
+    console.log(pathname)
+
     return (
-        <NavLink to={`${pathname}${item._id}`} style={{ margin: 0, textDecoration: "none" }}>
+        <NavLink to={`${pathname}/${item._id}`} style={{ margin: 0, textDecoration: "none" }}>
             <BoxContainer>
                 {token && <LikeBtn item={item} />}
                 <FlipContainer animate={{ rotateY: show ? 180 : 0 }}
