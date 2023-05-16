@@ -9,6 +9,8 @@ import Guide from './pages/Guide'
 import Saved from './pages/Saved'
 import Auth from './pages/Auth'
 import Builds from "./components/Builds"
+import ItemDetails from './pages/ItemDetails'
+import NotFound from './pages/NotFound'
 
 
 function Router() {
@@ -17,12 +19,14 @@ function Router() {
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='/characters' element={<Characters />} />
-                <Route path='/stuff/:item?' element={<Stuff />} />
+                <Route path='/stuff/:itemCategory?' element={<Stuff />} />
+                <Route path='/stuff/:itemCategory?/:id?' element={<ItemDetails />} />
                 <Route path='/builds/challenge' element={<Builds />} />
                 <Route path='/worlds' element={<Worlds />} />
                 <Route path='/guide' element={<Guide />} />
                 <Route path='/saved' element={<Saved />} />
                 <Route path='/auth' element={<Auth />} />
+                <Route path='*' element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     )

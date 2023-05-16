@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import { NavLink, useLocation } from 'react-router-dom'
 
 
 import { theme } from '../style/theme.js'
@@ -12,22 +13,27 @@ import ModModal from './ModModal.jsx'
 function ItemBox({ item }) {
     const [show, setShow] = useState(false)
     const { token } = useCurrentUserContext()
+    const { pathname } = useLocation()
+
+    console.log(pathname)
 
     return (
-        <BoxContainer>
-            {token && <LikeBtn item={item} />}
-            <FlipContainer animate={{ rotateY: show ? 180 : 0 }}
-                transition={{ duration: 0.6 }}>
-                {!show ?
-                    <ImgContainer transition={{ delay: 0.3 }}>
-                        <BoxImg src={item.img} alt={item.name} />
-                    </ImgContainer>
-                    :
-                    <ModModal mod={item.weaponMod} />
-                }
-            </FlipContainer>
-            <ItemBoxDesc setShow={setShow} item={item} />
-        </BoxContainer >
+        <NavLink to={`${pathname}/${item._id}`} style={{ margin: 0, textDecoration: "none" }}>
+            <BoxContainer>
+                {token && <LikeBtn item={item} />}
+                <FlipContainer animate={{ rotateY: show ? 180 : 0 }}
+                    transition={{ duration: 0.6 }}>
+                    {!show ?
+                        <ImgContainer transition={{ delay: 0.3 }}>
+                            <BoxImg src={item.img} alt={item.name} />
+                        </ImgContainer>
+                        :
+                        <ModModal mod={item.weaponMod} />
+                    }
+                </FlipContainer>
+                <ItemBoxDesc setShow={setShow} item={item} />
+            </BoxContainer >
+        </NavLink>
     )
 }
 

@@ -14,7 +14,7 @@ function Weapons() {
     const originalData = useRef(weapons);
 
     const getData = useCallback(async () => {
-        const data = await fetchData("/items/weapons");
+        const data = await fetchData("items/weapons");
         setWeapons(data)
         originalData.current = data
     }, []);

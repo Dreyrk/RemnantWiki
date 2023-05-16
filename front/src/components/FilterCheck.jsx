@@ -5,8 +5,8 @@ import { motion } from 'framer-motion'
 import { theme } from "../style/theme.js"
 
 function FilterCheck({ filter, originalData, setData }) {
-    const [isChecked, setIsChecked] = useState(false)
-    const [filterSelected, setFilterSelected] = useState([])
+    const [isChecked, setIsChecked] = useState(false);
+    const [filterSelected, setFilterSelected] = useState([]);
 
     function check() {
         if (!isChecked) {
@@ -16,7 +16,11 @@ function FilterCheck({ filter, originalData, setData }) {
             } else {
                 setFilterSelected(filterSelected.filter((f) => f !== filter))
             }
-            setData(originalData.current.filter((item) => item.worlds.toLowerCase().includes(filter.toLowerCase())))
+            if (originalData.current[0].category) {
+                setData(originalData.current.filter((item) => item.category.includes(filter.toLowerCase())))
+            } else if (originalData.current[0].worlds) {
+                setData(originalData.current.filter((item) => item.worlds.includes(filter)))
+            }
         } else {
             setIsChecked(!isChecked)
             setData(originalData.current)
