@@ -1,6 +1,6 @@
 # RemnantWiki
 
-RemnantWiki is a website for get informations on Remnant from the ashes game items and manage your builds
+RemnantWiki is a Web App for get informations on Remnant from the ashes game items and manage your builds
 
 ## Installation
 
