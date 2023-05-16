@@ -21,7 +21,7 @@ function Router() {
                 <Route path='/characters' element={<Characters />} />
                 <Route path='/stuff/:itemCategory?' element={<Stuff />} />
                 <Route path='/stuff/:itemCategory?/:id?' element={<ItemDetails />} />
-                <Route path='/builds/challenge' element={<Builds />} />
+                <Route path='/builds/:type?' element={<Builds />} />
                 <Route path='/worlds' element={<Worlds />} />
                 <Route path='/guide' element={<Guide />} />
                 <Route path='/saved' element={<Saved />} />

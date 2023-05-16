@@ -33,8 +33,8 @@ function Armors() {
             <DisplayContainer>
                 <Title>Armors</Title>
                 <BoxDisplayContainer>
-                    {armors.map((weapon) => (
-                        <ItemBox key={weapon._id} item={weapon} />))}
+                    {armors.map((armor) => (
+                        <ItemBox key={armor._id} item={armor} />))}
                 </BoxDisplayContainer>
             </DisplayContainer>
         </BigContainer>

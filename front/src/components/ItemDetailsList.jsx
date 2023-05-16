@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 import WeaponsDetails from './WeaponsDetails.jsx';
+import ArmorsDetails from './ArmorsDetails.jsx';
+import { theme } from '../style/theme.js';
 
 
 function ItemDetailsList({ item, category }) {
@@ -12,47 +14,67 @@ function ItemDetailsList({ item, category }) {
             return (
                 <WeaponsDetails item={item} />
             )
-        case "rings":
-            return (
-                <DetailsList>
-                    <ListItem></ListItem>
-                </DetailsList>
-            )
         case "amulets":
             return (
-                <DetailsList>
-                    <ListItem></ListItem>
+                <DetailsList
+                    initial="initial"
+                    animate="animate"
+                    variants={{
+                        initial: { opacity: 0 },
+                        animate: { opacity: 1, transition: { staggerChildren: 0.2, delay: 0.2 } }
+                    }}
+                >
+                    <ListItem variants={{
+                        initial: { y: -10, opacity: 0 },
+                        animate: { y: 0, opacity: 1 }
+                    }}>
+                        <ModDesc>
+                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Location :</span> <br /> {item.location}
+                        </ModDesc>
+                    </ListItem>
+                    <ListItem variants={{
+                        initial: { y: -10, opacity: 0 },
+                        animate: { y: 0, opacity: 1 }
+                    }}>
+                        <ModDesc>
+                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> : <br /> {item.description}
+                        </ModDesc>
+                    </ListItem>
                 </DetailsList>
             )
         case "armors":
             return (
-                <DetailsList>
-                    <ListItem></ListItem>
-                </DetailsList>
+                <ArmorsDetails item={item} />
             )
-        case "mods":
-            return (
-                <DetailsList>
-                    <ListItem></ListItem>
-                </DetailsList>
-            )
-        case "items":
-            return (
-                <DetailsList>
-                    <ListItem></ListItem>
-                </DetailsList>
-            )
-
         default:
             return (
-                <DetailsList>
-                    <ListItem></ListItem>
+                <DetailsList initial="initial"
+                    animate="animate"
+                    variants={{
+                        initial: { opacity: 0 },
+                        animate: { opacity: 1, transition: { staggerChildren: 0.2, delay: 0.2 } }
+                    }}>
+                    <ListItem variants={{
+                        initial: { y: -10, opacity: 0 },
+                        animate: { y: 0, opacity: 1 }
+                    }}>
+                        <ModDesc>
+                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> : <br /> {item.description}
+                        </ModDesc>
+                    </ListItem>
                 </DetailsList>
             )
     }
 }
 
 export default ItemDetailsList;
+
+const ModDesc = styled.p`
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+    width: 100%;
+`
 
 const DetailsList = styled(motion.ul)`
     height: 100%;
@@ -64,8 +86,10 @@ const DetailsList = styled(motion.ul)`
 `
 
 const ListItem = styled(motion.li)`
-    width: 350px;
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
 `
