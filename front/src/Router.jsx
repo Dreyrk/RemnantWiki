@@ -8,7 +8,7 @@ import Worlds from './pages/Worlds'
 import Guide from './pages/Guide'
 import Saved from './pages/Saved'
 import Auth from './pages/Auth'
-import Builds from "./components/Builds"
+import Builds from './pages/Builds'
 import ItemDetails from './pages/ItemDetails'
 import NotFound from './pages/NotFound'
 

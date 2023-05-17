@@ -37,6 +37,24 @@ const amuletsController = {
       console.error(e);
     }
   },
+  getRandom: async (req, res) => {
+    try {
+      const length = await amulet.count();
+
+      const data = await amulet.find({});
+
+      const randomItem = data[Math.floor(Math.random() * length)];
+
+      if (data) {
+        res.status(CODES.SUCCESS).send({ data: randomItem });
+      } else {
+        res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
+      }
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+      console.error(e);
+    }
+  },
 };
 
 export default amuletsController;
