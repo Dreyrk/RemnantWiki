@@ -16,7 +16,7 @@ function ModModal({ mod }) {
     const time = useTime()
     const scroll = useTransform(
         time,
-        [0, 4000], // For every x ms...
+        [2000, 8000], // For every x ms...
         [0, -descHeight], // ...translateY based on desc length
         { clamp: true }
     )

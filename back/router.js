@@ -25,6 +25,7 @@ router.get("/api/random/amulets", amuletsController.getRandom);
 //RINGS
 router.get("/api/items/rings", ringsController.getAll);
 router.get("/api/items/rings/:id", ringsController.getById);
+router.get("/api/random/rings", ringsController.getRandom);
 
 //ARMORS
 router.get("/api/items/armors", armorsController.getAll);

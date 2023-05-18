@@ -66,9 +66,13 @@ const armorsController = {
       const randomLegs = await legs[Math.floor(Math.random() * legs.length)];
 
       if (randomHead && randomBody && randomLegs) {
-        res
-          .status(CODES.SUCCESS)
-          .send({ data: [randomHead, randomBody, randomLegs] });
+        res.status(CODES.SUCCESS).send({
+          data: {
+            head: randomHead,
+            body: randomBody,
+            legs: randomLegs,
+          },
+        });
       } else {
         res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
       }

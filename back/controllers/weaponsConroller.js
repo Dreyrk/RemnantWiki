@@ -94,9 +94,13 @@ const weaponsController = {
       const randomMelee = await melee[Math.floor(Math.random() * melee.length)];
 
       if (randomPrimary && randomSecondary && randomMelee) {
-        res
-          .status(CODES.SUCCESS)
-          .send({ data: [randomPrimary, randomSecondary, randomMelee] });
+        res.status(CODES.SUCCESS).send({
+          data: {
+            primary: randomPrimary,
+            secondary: randomSecondary,
+            melee: randomMelee,
+          },
+        });
       } else {
         res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
       }
