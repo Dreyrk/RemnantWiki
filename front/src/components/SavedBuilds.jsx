@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Builds() {
+function SavedBuilds() {
     return (
         <div>
-            builds
+            saved builds
         </div>
     )
 }
 
-export default Builds;
+export default SavedBuilds

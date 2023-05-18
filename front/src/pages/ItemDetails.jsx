@@ -64,6 +64,7 @@ const Img = styled.img`
 
 const Title = styled(motion.h1)`
     margin: 0;
+    padding-left: 3rem;
     grid-column: 1 / span 5;
     grid-row: 1;
     place-self: center;

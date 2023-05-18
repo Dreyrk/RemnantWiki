@@ -37,6 +37,34 @@ const ringsController = {
       console.error(e);
     }
   },
+  getRandom: async (req, res) => {
+    try {
+      const length = await ring.count();
+
+      const data = await ring.find({});
+
+      const randomItem1 = data[Math.floor(Math.random() * length)];
+      let randomItem2;
+
+      do {
+        randomItem2 = data[Math.floor(Math.random() * length)];
+      } while (randomItem1 === randomItem2);
+
+      if (data) {
+        res.status(CODES.SUCCESS).send({
+          data: {
+            ring1: randomItem1,
+            ring2: randomItem2,
+          },
+        });
+      } else {
+        res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
+      }
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+      console.error(e);
+    }
+  },
 };
 
 export default ringsController;

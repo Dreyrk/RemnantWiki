@@ -20,14 +20,17 @@ const router = express.Router();
 //AMULETS
 router.get("/api/items/amulets", amuletsController.getAll);
 router.get("/api/items/amulets/:id", amuletsController.getById);
+router.get("/api/random/amulets", amuletsController.getRandom);
 
 //RINGS
 router.get("/api/items/rings", ringsController.getAll);
 router.get("/api/items/rings/:id", ringsController.getById);
+router.get("/api/random/rings", ringsController.getRandom);
 
 //ARMORS
 router.get("/api/items/armors", armorsController.getAll);
 router.get("/api/items/armors/:id", armorsController.getById);
+router.get("/api/random/armors", armorsController.getRandom);
 router.get(
   "/api/items/armors/category/:category",
   armorsController.getByCategory
@@ -40,6 +43,7 @@ router.get("/api/sets/armors/:id", armorSetsController.getById);
 //WEAPONS
 router.get("/api/items/weapons", weaponsController.getAll);
 router.get("/api/items/weapons/:id", weaponsController.getById);
+router.get("/api/random/weapons", weaponsController.getRandom);
 router.get(
   "/api/items/weapons/category/:category",
   weaponsController.getByCategory

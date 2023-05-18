@@ -55,6 +55,32 @@ const armorsController = {
       console.error(e);
     }
   },
+  getRandom: async (req, res) => {
+    try {
+      const head = await armors.find({ category: "head" });
+      const body = await armors.find({ category: "body" });
+      const legs = await armors.find({ category: "legs" });
+
+      const randomHead = await head[Math.floor(Math.random() * head.length)];
+      const randomBody = await body[Math.floor(Math.random() * body.length)];
+      const randomLegs = await legs[Math.floor(Math.random() * legs.length)];
+
+      if (randomHead && randomBody && randomLegs) {
+        res.status(CODES.SUCCESS).send({
+          data: {
+            head: randomHead,
+            body: randomBody,
+            legs: randomLegs,
+          },
+        });
+      } else {
+        res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
+      }
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+      console.error(e);
+    }
+  },
 };
 
 export default armorsController;

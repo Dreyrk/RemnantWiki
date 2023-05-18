@@ -1,42 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 import UpperCaseFirstLetter from "../helpers/UpperCaseFirstLetter.js"
 import { theme } from "../style/theme.js"
 
-import missing from "../images/missing_img.jpg"
 import radiationLogo from "../images/radiationLogo.png"
-import ice from "../images/ice.png"
+import frost from "../images/ice.png"
 import fire from "../images/fire.png"
 import lightning from "../images/lightning.png"
 import corrosive from "../images/corrosive.png"
 import rot from "../images/rot.png"
-import normal from "../images/normal.png"
 
-function typeImg(type) {
-    switch (type) {
-        case "radiation":
-            return radiationLogo;
-        case "frost":
-            return ice;
-        case "normal":
-            return normal;
-        case "rot":
-            return rot;
-        case "fire":
-            return fire;
-        case "shock":
-            return lightning;
-        case "corrosive":
-            return corrosive;
-        default:
-            return missing
-    }
-}
 
-function WeaponsDetails({ item }) {
-    const [showType, setShowType] = useState(false)
+function ArmorsDetails({ item }) {
     return (
         <DetailsList
             initial="initial"
@@ -49,7 +26,7 @@ function WeaponsDetails({ item }) {
                 initial: { y: -10, opacity: 0 },
                 animate: { y: 0, opacity: 1 }
             }}>
-                <Text>Category: {item.category && UpperCaseFirstLetter(item.category)} weapon</Text>
+                <Text>Armor Part : {item.category && UpperCaseFirstLetter(item.category)}</Text>
             </ListItem>
             <ListItem
                 variants={{
@@ -57,54 +34,58 @@ function WeaponsDetails({ item }) {
                     animate: { y: 0, opacity: 1 }
                 }}>
                 <DamageTitle>
-                    <Text>Damage :</Text>
+                    <Text>Armor :</Text>
                 </DamageTitle>
                 <DamageContainer>
-                    <Text>Base: {item.baseDamage}</Text>
-                    <Text>Max: {item.maxDamage}</Text>
+                    <Text>Base: {item.baseArmor}</Text>
+                    <Text>Max: {item.maxArmor}</Text>
                 </DamageContainer>
             </ListItem>
             <ListItem variants={{
                 initial: { y: -10, opacity: 0 },
                 animate: { y: 0, opacity: 1 }
             }}>
-                <Text>Rounds per second: {item.rps}/s</Text>
+                <Text decorate>Part of {item.armorSet} Set</Text>
             </ListItem>
             <ListItem variants={{
                 initial: { y: -10, opacity: 0 },
                 animate: { y: 0, opacity: 1 }
             }}>
-                <Text>Crit Chance: {item.critChance}%</Text>
+                <DamageTitle>
+                    <Text>Resistance :</Text>
+                </DamageTitle>
+                <DamageContainer>
+                    <Text><TypeImg src={fire} alt='fire' /> {item.fire}</Text>
+                    <Text><TypeImg src={frost} alt='frost' /> {item.frost ? item.frost : 0}</Text>
+                    <Text><TypeImg src={corrosive} alt='corrosive' /> {item.corrosive}</Text>
+                    <Text><TypeImg src={rot} alt='rot' /> {item.rot}</Text>
+                    <Text><TypeImg src={radiationLogo} alt='radiation' /> {item.radiation}</Text>
+                    <Text><TypeImg src={lightning} alt='shock' /> {item.shock}</Text>
+                </DamageContainer>
             </ListItem>
             <ListItem variants={{
                 initial: { y: -10, opacity: 0 },
                 animate: { y: 0, opacity: 1 }
             }}>
-                <Text>Magazine: {item.magazine}</Text>
+                <Text>Weight: {item.weight}</Text>
             </ListItem>
             <ListItem variants={{
                 initial: { y: -10, opacity: 0 },
                 animate: { y: 0, opacity: 1 }
             }}>
-                <Text>Ideal Range: {item.idealRange}m</Text>
-            </ListItem>
-            <ListItem variants={{
-                initial: { y: -10, opacity: 0 },
-                animate: { y: 0, opacity: 1 }
-            }}>
-                <Text>Type :</Text>
-                {showType && <Text>{item.type}</Text>}
-                <TypeImg onClick={() => setShowType(!showType)} src={typeImg(item.type)} alt={item.name} />
+                <Text>Worlds: {item.worlds}</Text>
             </ListItem>
         </DetailsList>
     )
 }
 
-export default WeaponsDetails;
+export default ArmorsDetails;
 
 const TypeImg = styled.img`
-    height: 35px;
-    width: 35px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-inline: 10px;
 `
 
 const DamageTitle = styled.div`
@@ -164,3 +145,6 @@ const ListItem = styled(motion.li)`
     justify-content: space-evenly;
     align-items: center;
 `
+Text.defaultProps = {
+    decoration: "none"
+}

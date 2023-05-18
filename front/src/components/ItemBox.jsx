@@ -15,17 +15,17 @@ function ItemBox({ item }) {
     const { token } = useCurrentUserContext()
     const { pathname } = useLocation()
 
-    console.log(pathname)
-
     return (
         <NavLink to={`${pathname}/${item._id}`} style={{ margin: 0, textDecoration: "none" }}>
             <BoxContainer>
                 {token && <LikeBtn item={item} />}
-                <FlipContainer animate={{ rotateY: show ? 180 : 0 }}
-                    transition={{ duration: 0.6 }}>
+                <FlipContainer
+                    animate={{ rotateY: show ? 180 : 0 }}
+                    transition={{ duration: 0.6 }}
+                >
                     {!show ?
                         <ImgContainer transition={{ delay: 0.3 }}>
-                            <BoxImg src={item.img} alt={item.name} />
+                            <BoxImg height={pathname.includes("mods") ? 100 : 50} src={item.img} alt={item.name} />
                         </ImgContainer>
                         :
                         <ModModal mod={item.weaponMod} />
@@ -48,7 +48,7 @@ const FlipContainer = styled(motion.div)`
 `
 
 const BoxImg = styled.img`
-    height: 50%;
+    height: ${(props) => props.height}%;
     width: auto;
 `
 

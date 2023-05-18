@@ -79,6 +79,36 @@ const weaponsController = {
       console.error(e);
     }
   },
+  getRandom: async (req, res) => {
+    try {
+      const primary = await weapons.find({ category: "primary" });
+      const secondary = await weapons.find({ category: "secondary" });
+      const melee = await weapons.find({ category: "melee" });
+
+      const randomPrimary = await primary[
+        Math.floor(Math.random() * primary.length)
+      ];
+      const randomSecondary = await secondary[
+        Math.floor(Math.random() * secondary.length)
+      ];
+      const randomMelee = await melee[Math.floor(Math.random() * melee.length)];
+
+      if (randomPrimary && randomSecondary && randomMelee) {
+        res.status(CODES.SUCCESS).send({
+          data: {
+            primary: randomPrimary,
+            secondary: randomSecondary,
+            melee: randomMelee,
+          },
+        });
+      } else {
+        res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
+      }
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+      console.error(e);
+    }
+  },
 };
 
 export default weaponsController;

@@ -4,14 +4,17 @@ import styled from 'styled-components';
 import { theme } from '../style/theme.js';
 
 function ItemBoxDesc({ item, setShow }) {
-
     switch (item.category) {
         case "melee":
             return (
                 <BoxDescContainer>
                     <AltName>{item.name}</AltName>
-                    <Desc>Base DMG: <span style={{ color: theme.colors.rouge }}>{item.baseDamage}m</span></Desc>
-                    <DPS>Crit chance: <span style={{ color: theme.colors.rouge }}>{item.critChance ? item.critChance : "?"}%</span></DPS>
+                    <Desc>
+                        Base DMG: <span style={{ color: theme.colors.rouge }}>{item.baseDamage}m</span>
+                    </Desc>
+                    <DPS>
+                        Crit chance: <span style={{ color: theme.colors.rouge }}>{item.critChance ? item.critChance : "?"}%</span>
+                    </DPS>
                 </BoxDescContainer>
             )
         case "primary":
@@ -22,8 +25,12 @@ function ItemBoxDesc({ item, setShow }) {
                         <Name>{item.name}</Name>
                         {item.weaponMod?.img && <WeaponMod onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} src={item.weaponMod.img} />}
                     </NameModContainer>
-                    <Desc>Range: <span style={{ color: theme.colors.rouge }}>{item.idealRange}m</span></Desc>
-                    <DPS>Base DPS: <span style={{ color: theme.colors.rouge }}>{Math.ceil(item.baseDamage * item.rps)}</span></DPS>
+                    <Desc>
+                        Range: <span style={{ color: theme.colors.rouge }}>{item.idealRange}m</span>
+                    </Desc>
+                    <DPS>
+                        Base DPS: <span style={{ color: theme.colors.rouge }}>{Math.ceil(item.baseDamage * item.rps)}</span>
+                    </DPS>
                 </BoxDescContainer>
             )
         case "head":
