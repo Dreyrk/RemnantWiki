@@ -3,36 +3,37 @@ import styled from 'styled-components'
 import { motion } from "framer-motion"
 
 import { theme } from "../style/theme.js"
+import { NavLink } from 'react-router-dom'
 
 function BuildDisplay({ build }) {
     return (
         <BuildContainer>
             <Title>Random Build</Title>
-            <GridContainer column={4} row={"3 / span 1"}>
+            <GridContainer to={`/stuff/armors/${build.head._id}`} column={4} row={"3 / span 1"}>
                 <BuildImg src={build.head.img} />
             </GridContainer>
-            <GridContainer column={4} row={"4 / span 2"}>
+            <GridContainer to={`/stuff/armors/${build.body._id}`} column={4} row={"4 / span 2"}>
                 <BuildImg src={build.body.img} />
             </GridContainer>
-            <GridContainer column={4} row={"6 / span 1"}>
+            <GridContainer to={`/stuff/armors/${build.legs._id}`} column={4} row={"6 / span 1"}>
                 <BuildImg src={build.legs.img} />
             </GridContainer>
-            <GridContainer jewel column={3} row={4}>
+            <GridContainer to={`/stuff/amulets/${build.amulet._id}`} jewel column={3} row={4}>
                 <BuildImg src={build.amulet.img} />
             </GridContainer>
-            <GridContainer jewel column={3} row={5}>
+            <GridContainer to={`/stuff/rings/${build.ring1._id}`} jewel column={3} row={5}>
                 <BuildImg src={build.ring1.img} />
             </GridContainer>
-            <GridContainer jewel column={2} row={5}>
+            <GridContainer to={`/stuff/rings/${build.ring2._id}`} jewel column={2} row={5}>
                 <BuildImg src={build.ring2.img} />
             </GridContainer>
-            <GridContainer primary column={"6 / span 2"} row={"4 / span 2"}>
+            <GridContainer to={`/stuff/weapons/${build.primary._id}`} primary column={"6 / span 2"} row={"4 / span 2"}>
                 <BuildImg src={build.primary.img} />
             </GridContainer>
-            <GridContainer secondary column={5} row={4}>
+            <GridContainer to={`/stuff/weapons/${build.secondary._id}`} secondary column={5} row={4}>
                 <BuildImg src={build.secondary.img} />
             </GridContainer>
-            <GridContainer secondary column={5} row={5}>
+            <GridContainer to={`/stuff/weapons/${build.melee._id}`} secondary column={5} row={5}>
                 <BuildImg src={build.melee.img} />
             </GridContainer>
         </BuildContainer >
@@ -59,18 +60,26 @@ const BuildContainer = styled(motion.div)`
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: repeat(8, 12.5%);
+    gap: 20px;
 `
 
-const GridContainer = styled(motion.div)`
+const GridContainer = styled(motion(NavLink))`
     grid-column: ${(props) => props.column};
     grid-row: ${(props) => props.row};
-    place-self: ${(props) => props.primary ? "center stretch" : "stretch center"};
-    padding: ${(props) => props.jewel ? 10 : 0}px;
-    height: ${(props) => props.primary ? "105px" : "80%"};
-    width: ${(props) => props.secondary ? "140%" : "auto"};
+    place-self: ${(props) => props.primary ? "center stretch" : "end stretch"};
+    margin: ${(props) => props.jewel ? 10 : 0}px;
+    height: ${(props) => props.primary ? "105px" : "100%"};
+    width: ${(props) => props.primary ? "80%" : "100%"};
+    background-color: rgba(244, 244, 246, 0.4);
+    border-radius: 25px;
+    opacity: 1;
 `
 
 const BuildImg = styled.img`
-    height: 90%;
+    height: 100%;
     width: 100%;
+    object-fit: contain;
+    :hover {
+        transform: scale(1.1);
+    }
 `
