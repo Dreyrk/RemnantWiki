@@ -7,18 +7,17 @@ import Navbar from '../components/Navbar'
 import { theme } from '../style/theme.js';
 
 function Saved() {
-    const { user } = useCurrentUserContext()
+    const { user, token } = useCurrentUserContext()
 
-    console.log(user)
     return (
         <>
             <Navbar />
             <Container>
                 <Title>{user.pseudo}'s Saved Page</Title>
-                <StyledBtn to={"/saved/items"} >
+                <StyledBtn to={token ? "/saved/items" : "/auth"}>
                     Items
                 </StyledBtn>
-                <StyledBtn to={"/builds/saved"}>
+                <StyledBtn to={token ? "/builds/saved" : "/auth"}>
                     Builds
                 </StyledBtn>
             </Container>

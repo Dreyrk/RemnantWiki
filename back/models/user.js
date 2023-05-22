@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 const BuildSchema = mongoose.Schema(
   {
     name: { type: String },
+    description: { type: String },
     head: { type: Object },
     body: { type: Object },
     legs: { type: Object },

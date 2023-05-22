@@ -52,7 +52,7 @@ router.get(
 //MODS
 router.get("/api/items/mods", modsController.getAll);
 router.get("/api/items/mods/:id", modsController.getById);
-router.get("/api/items/mods/name/:name", modsController.getById);
+router.get("/api/name/mods/:name", modsController.getByName);
 
 //TRAITS
 router.get("/api/items/traits", traitsController.getAll);
@@ -69,8 +69,5 @@ router.post(
   loginController.getUserByEmailWithPasswordAndPassToNext,
   auth.verifyPassword
 );
-
-//USER
-router.get("/api/users/reset", userController.resetUser);
 
 export default router;

@@ -22,7 +22,7 @@ function Builds() {
             return (
                 <Wrapper>
                     <Navbar />
-                    {token ? <SavedBuilds /> : <h1>Login First</h1>}
+                    {token && <SavedBuilds />}
                 </Wrapper>
             )
         default:

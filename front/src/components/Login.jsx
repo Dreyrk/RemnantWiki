@@ -35,7 +35,7 @@ function Login({ accountCreated, variants }) {
             } else if (res.status === 400) {
                 toast.error("Bad Request")
             } else if (res.status === 404) {
-                toast.error("Wrong fetch URL")
+                toast.error("Wrong email or password")
             }
         } catch (e) {
             toast.error("Failed to Fetch :/")

@@ -46,7 +46,8 @@ const BoxContainer = styled(motion.div)`
     color: ${theme.colors.blanc};
     background-color: ${theme.colors.gris1};
     position: absolute;
-    top: 38%;
+    top: 15%;
+    left: 30%;
     border-radius: 35px;
     display: flex;
     flex-direction: column;
