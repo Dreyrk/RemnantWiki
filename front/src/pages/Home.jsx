@@ -8,9 +8,8 @@ function Home() {
     return (
         <Wrapper>
             <Navbar />
-            <HomePage>
-                <div></div>
-            </HomePage>
+            <HomeSection>
+            </HomeSection>
         </Wrapper>
     )
 }
@@ -22,14 +21,18 @@ const Wrapper = styled.div`
     width: 100%;
     margin: 0;
     padding: 0;
+    
 `
 
-const HomePage = styled.div`
-    height: 100%;
+const HomeSection = styled.section`
+    height: 100vh;
+    max-height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
     background-image: url(${background});
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 `

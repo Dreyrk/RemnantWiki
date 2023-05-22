@@ -8,14 +8,14 @@ import { NavLink } from 'react-router-dom'
 function BuildDisplay({ build }) {
     return (
         <BuildContainer>
-            <Title>Random Build</Title>
-            <GridContainer to={`/stuff/armors/${build.head._id}`} column={4} row={"3 / span 1"}>
+            <Title>Your Challenge Build is :</Title>
+            <GridContainer to={`/stuff/armors/${build.head._id}`} armor column={4} row={"3 / span 1"}>
                 <BuildImg src={build.head.img} />
             </GridContainer>
             <GridContainer to={`/stuff/armors/${build.body._id}`} column={4} row={"4 / span 2"}>
                 <BuildImg src={build.body.img} />
             </GridContainer>
-            <GridContainer to={`/stuff/armors/${build.legs._id}`} column={4} row={"6 / span 1"}>
+            <GridContainer to={`/stuff/armors/${build.legs._id}`} armor column={4} row={"6 / span 1"}>
                 <BuildImg src={build.legs.img} />
             </GridContainer>
             <GridContainer to={`/stuff/amulets/${build.amulet._id}`} jewel column={3} row={4}>
@@ -68,6 +68,7 @@ const GridContainer = styled(motion(NavLink))`
     grid-row: ${(props) => props.row};
     place-self: ${(props) => props.primary ? "center stretch" : "end stretch"};
     margin: ${(props) => props.jewel ? 10 : 0}px;
+    padding: ${(props) => props.armor ? 5 : 0}px;
     height: ${(props) => props.primary ? "105px" : "100%"};
     width: ${(props) => props.primary ? "80%" : "100%"};
     background-color: rgba(244, 244, 246, 0.4);

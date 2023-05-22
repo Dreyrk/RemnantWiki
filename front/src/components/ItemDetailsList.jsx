@@ -8,7 +8,6 @@ import { theme } from '../style/theme.js';
 
 
 function ItemDetailsList({ item, category }) {
-    console.log(item)
     switch (category) {
         case "weapons":
             return (

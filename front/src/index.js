@@ -4,7 +4,7 @@ import styled from "styled-components";
 import "./index.css";
 
 import Router from "./Router";
-import { theme } from "./style/theme";
+import { theme } from "./style/theme.js";
 import CurrentUserContextProvider from "./contexts/CurrentUserContext";
 
 const Page = styled.div`
