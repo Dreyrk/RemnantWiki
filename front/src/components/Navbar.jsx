@@ -55,7 +55,7 @@ function Navbar({ titleSelected }) {
                 <Link to="/worlds">Worlds</Link>
                 <Link to="/guide">Guide</Link>
                 {token && <IconLink to="/saved"><BsBookmarkHeart size={30} color={theme.colors.blanc} /></IconLink>}
-                {!token ? <IconLink to="/auth"><FaUser size={30} color={theme.colors.blanc} /></IconLink> : <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />}
+                {!token ? <IconLink to="/auth"><FaUser size={30} color={theme.colors.blanc} /></IconLink> : <IconLink><BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} /></IconLink>}
             </SideContainer>
         </NavContainer>
     )
@@ -66,6 +66,8 @@ export default Navbar;
 const CloseBtn = styled.button`
     height: 40px;
     width: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
     border: none;
     background-color: ${theme.colors.noir};
     grid-column: 1;

@@ -35,6 +35,7 @@ function ChallengeBuild() {
             toast.error("failed to get random challenge build")
         }
     }
+
     return (
         <BigContainer>
             <ToastContainer
@@ -46,13 +47,17 @@ function ChallengeBuild() {
                 pauseOnHover
                 theme="dark"
             />
-            {fullSet.amulet !== null && <BuildDisplay build={fullSet} />}
+            {fullSet.head ? <BuildDisplay build={fullSet} /> : <Title>Click to discover your challenge build</Title>}
             <StyledBtn onClick={getChallengeBuild} type='button'>Challenge</StyledBtn>
         </BigContainer>
     )
 }
 
 export default ChallengeBuild;
+
+const Title = styled.h1`
+    color: ${theme.colors.blanc};
+`
 
 const BigContainer = styled.div`
     height: 100%;
@@ -61,7 +66,8 @@ const BigContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 20px;
 `
 
 const StyledBtn = styled.button`

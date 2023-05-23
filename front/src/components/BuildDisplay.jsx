@@ -31,7 +31,7 @@ function BuildDisplay({ build }) {
                 <BuildImg src={build.primary.img} />
             </GridContainer>
             <GridContainer to={`/stuff/weapons/${build.secondary._id}`} secondary column={5} row={4}>
-                <BuildImg src={build.secondary.img} />
+                <BuildImg secondary src={build.secondary.img} />
             </GridContainer>
             <GridContainer to={`/stuff/weapons/${build.melee._id}`} secondary column={5} row={5}>
                 <BuildImg src={build.melee.img} />
@@ -66,7 +66,7 @@ const BuildContainer = styled(motion.div)`
 const GridContainer = styled(motion(NavLink))`
     grid-column: ${(props) => props.column};
     grid-row: ${(props) => props.row};
-    place-self: ${(props) => props.primary ? "center stretch" : "end stretch"};
+    place-self: ${(props) => props.primary ? "center stretch" : "stretch"};
     margin: ${(props) => props.jewel ? 10 : 0}px;
     padding: ${(props) => props.armor ? 5 : 0}px;
     height: ${(props) => props.primary ? "105px" : "100%"};
@@ -80,7 +80,8 @@ const BuildImg = styled.img`
     height: 100%;
     width: 100%;
     object-fit: contain;
+    transform: ${(props) => props.secondary && "scale(1.5)"};
     :hover {
-        transform: scale(1.1);
+        transform: ${(props) => props.secondary ? "scale(1.6)" : "scale(1.1)"};
     }
 `
