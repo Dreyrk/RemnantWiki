@@ -6,9 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import fetchData from '../helpers/fetchData.js'
 import BuildDisplay from './BuildDisplay.jsx'
 import { theme } from '../style/theme.js'
+import { AnimatePresence } from 'framer-motion';
 
 
 function ChallengeBuild() {
+    const [showBuild, setShowBuild] = useState(false)
     const [fullSet, setFullSet] = useState({
         head: null,
         body: null,
@@ -22,6 +24,7 @@ function ChallengeBuild() {
     })
 
     async function getChallengeBuild() {
+        setShowBuild(false)
         const { head, body, legs } = await fetchData("random/armors")
         const { ring1, ring2 } = await fetchData("random/rings")
         const amulet = await fetchData("random/amulets")
@@ -31,6 +34,7 @@ function ChallengeBuild() {
             setFullSet({
                 head, body, legs, ring1, ring2, amulet, primary, secondary, melee
             })
+            setShowBuild(true)
         } else {
             toast.error("failed to get random challenge build")
         }
@@ -47,7 +51,9 @@ function ChallengeBuild() {
                 pauseOnHover
                 theme="dark"
             />
-            {fullSet.head ? <BuildDisplay build={fullSet} /> : <Title>Click to discover your challenge build</Title>}
+            <AnimatePresence>
+                {fullSet.head ? <BuildDisplay showBuild={showBuild} build={fullSet} /> : <Title>Click to discover your challenge build</Title>}
+            </AnimatePresence>
             <StyledBtn onClick={getChallengeBuild} type='button'>Challenge</StyledBtn>
         </BigContainer>
     )
