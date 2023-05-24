@@ -63,6 +63,12 @@ export default ChallengeBuild;
 
 const Title = styled.h1`
     color: ${theme.colors.blanc};
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 35vh;
 `
 
 const BigContainer = styled.div`
@@ -72,7 +78,6 @@ const BigContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 20px;
 `
 

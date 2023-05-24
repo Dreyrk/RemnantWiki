@@ -17,90 +17,92 @@ function BuildDisplay({ build, showBuild }) {
                         to={`/stuff/armors/${build.head._id}`}
                         armor
                         column={4} row={"3 / span 1"}
-                        initial={{ y: 150, scale: 0.2, opacity: 0.4 }}
+                        initial={{ y: 150, scale: 0.2, opacity: 0 }}
                         animate={finalPosition}
                         transition={{ delay: 0.5, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
-                        exit={{ y: 150, scale: 0.2, opacity: 0.4 }}
+                        exit={{ y: 150, scale: 0.2, opacity: 0 }}
                     >
                         <BuildImg src={build.head.img} />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/armors/${build.body._id}`}
+                        armor
                         column={4} row={"4 / span 2"}
-                        initial={{ scale: 0.2, opacity: 0.4 }}
+                        initial={{ scale: 0.2, opacity: 0 }}
                         animate={finalPosition}
                         transition={{ delay: 0.7, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
-                        exit={{ scale: 0.2, opacity: 0.4 }}
+                        exit={{ scale: 0.2, opacity: 0 }}
                     >
                         <BuildImg src={build.body.img} />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/armors/${build.legs._id}`}
-                        armor column={4} row={"6 / span 1"}
-                        initial={{ y: -150, scale: 0.2, opacity: 0.4 }}
+                        armor
+                        column={4} row={"6 / span 1"}
+                        initial={{ y: -150, scale: 0.2, opacity: 0 }}
                         animate={finalPosition}
                         transition={{ delay: 0.5, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
-                        exit={{ y: -150, scale: 0.2, opacity: 0.4 }}
+                        exit={{ y: -150, scale: 0.2, opacity: 0 }}
                     >
                         <BuildImg src={build.legs.img} />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/amulets/${build.amulet._id}`}
                         jewel column={3} row={4}
-                        initial={{ y: 50, x: 185, scale: 0.2, opacity: 0.4 }}
+                        initial={{ y: 50, x: 185, scale: 0.2, opacity: 0 }}
                         animate={finalPosition}
                         transition={{ delay: 0.3, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
-                        exit={{ y: 50, x: 185, scale: 0.2, opacity: 0.4 }}
+                        exit={{ y: 50, x: 185, scale: 0.2, opacity: 0 }}
                     >
                         <BuildImg src={build.amulet.img} />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/rings/${build.ring1._id}`}
                         jewel column={3} row={5}
-                        initial={{ y: -50, x: 185, scale: 0.2, opacity: 0.4 }}
+                        initial={{ y: -50, x: 185, scale: 0.2, opacity: 0 }}
                         animate={finalPosition}
                         transition={{ delay: 0.3, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
-                        exit={{ y: -50, x: 185, scale: 0.2, opacity: 0.4 }}
+                        exit={{ y: -50, x: 185, scale: 0.2, opacity: 0 }}
                     >
                         <BuildImg src={build.ring1.img} />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/rings/${build.ring2._id}`}
                         jewel column={2} row={5}
-                        initial={{ y: -50, x: 381, scale: 0.2, opacity: 0.4 }}
+                        initial={{ y: -50, x: 381, scale: 0.2, opacity: 0 }}
                         animate={finalPosition}
                         transition={{ delay: 0.1, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
-                        exit={{ y: -50, x: 381, scale: 0.2, opacity: 0.4 }}
+                        exit={{ y: -50, x: 381, scale: 0.2, opacity: 0 }}
                     >
                         <BuildImg src={build.ring2.img} />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/weapons/${build.primary._id}`}
                         primary column={"6 / span 2"} row={"4 / span 2"}
-                        initial={{ x: -451, scale: 0.115, opacity: 0.4 }}
+                        initial={{ x: -451, scale: 0.115, opacity: 0 }}
                         animate={finalPosition}
-                        transition={{ delay: 0.1, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
-                        exit={{ x: -451, scale: 0.115, opacity: 0.4 }}
+                        transition={{ delay: 0, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
+                        exit={{ x: -451, scale: 0.115, opacity: 0 }}
                     >
                         <BuildImg src={build.primary.img} />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/weapons/${build.secondary._id}`}
                         secondary column={5} row={4}
-                        initial={{ y: 50, x: -195, scale: 0.2, opacity: 0.4 }}
+                        initial={{ y: 50, x: -195, scale: 0.2, opacity: 0 }}
                         animate={finalPosition}
                         transition={{ delay: 0.3, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
-                        exit={{ y: 50, x: -195, scale: 0.2, opacity: 0.4 }}
+                        exit={{ y: 50, x: -195, scale: 0.2, opacity: 0 }}
                     >
                         <BuildImg secondary src={build.secondary.img} />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/weapons/${build.melee._id}`}
                         secondary column={5} row={5}
-                        initial={{ y: -50, x: -195, scale: 0.2, opacity: 0.4 }}
+                        initial={{ y: -50, x: -195, scale: 0.2, opacity: 0 }}
                         animate={finalPosition}
                         transition={{ delay: 0.3, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
-                        exit={{ y: -50, x: -195, scale: 0.2, opacity: 0.4 }}
+                        exit={{ y: -50, x: -195, scale: 0.2, opacity: 0 }}
                     >
                         <BuildImg src={build.melee.img} />
                     </GridContainer>

@@ -70,6 +70,7 @@ const Container = styled.div`
 const HomeLink = styled(NavLink)`
     font-size: 24px;
     opacity: 0.5;
+    padding-right: 50px;
     :hover {
         opacity: 1;
     }

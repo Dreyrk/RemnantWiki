@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { BsPlusCircle } from "react-icons/bs"
+import { NavLink } from 'react-router-dom'
 
 import { theme } from '../style/theme.js'
 import useCurrentUserContext from '../hooks/useCurrentUserContext'
@@ -14,7 +15,7 @@ function SavedBuilds() {
         <Wrapper>
             <BigContainer>
                 <BuildBox build={user.saved.builds} />
-                <CreateBtn>
+                <CreateBtn to={"create"}>
                     <BsPlusCircle size={40} color={theme.colors.blanc} />
                 </CreateBtn>
             </BigContainer>
@@ -40,7 +41,7 @@ const BigContainer = styled.div`
     place-items: center;
 `
 
-const CreateBtn = styled.button`
+const CreateBtn = styled(NavLink)`
     height: 80px;
     width: 80px;
     border-radius: 50%;
@@ -52,4 +53,8 @@ const CreateBtn = styled.button`
     margin: 0;
     padding: 0;
     cursor: pointer;
+    opacity: 1;
+    :active {
+        transform: scale(0.8);
+    }
 `
