@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from "styled-components"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,8 +10,7 @@ import { AnimatePresence } from 'framer-motion';
 
 
 function ChallengeBuild() {
-    const [showBuild, setShowBuild] = useState(false)
-    const [fullSet, setFullSet] = useState({
+    const initialFullSet = () => JSON.parse(localStorage.getItem('ChallengeBuild')) || {
         head: null,
         body: null,
         legs: null,
@@ -21,7 +20,20 @@ function ChallengeBuild() {
         primary: null,
         secondary: null,
         melee: null
-    })
+    };
+    const [showBuild, setShowBuild] = useState(false);
+    const [fullSet, setFullSet] = useState(initialFullSet);
+
+    useEffect(() => {
+        if (initialFullSet.head !== null) {
+            localStorage.setItem('ChallengeBuild', JSON.stringify(fullSet));
+            setShowBuild(true)
+        } else {
+            setShowBuild(false)
+        }
+    }, [fullSet]);
+
+
 
     async function getChallengeBuild() {
         setShowBuild(false)
@@ -52,7 +64,7 @@ function ChallengeBuild() {
                 theme="dark"
             />
             <AnimatePresence>
-                {fullSet.head ? <BuildDisplay showBuild={showBuild} build={fullSet} /> : <Title>Click to discover your challenge build</Title>}
+                {fullSet.head !== null ? <BuildDisplay build={fullSet} showBuild={showBuild} /> : <Title>Click to discover your challenge build</Title>}
             </AnimatePresence>
             <StyledBtn onClick={getChallengeBuild} type='button'>Challenge</StyledBtn>
         </BigContainer>

@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import { theme } from '../style/theme.js'
 import useCurrentUserContext from '../hooks/useCurrentUserContext'
 import BuildBox from './BuildBox'
+import Navbar from './Navbar.jsx'
 
 function SavedBuilds() {
 
@@ -13,6 +14,7 @@ function SavedBuilds() {
 
     return (
         <Wrapper>
+            <Navbar />
             <BigContainer>
                 <BuildBox build={user.saved.builds} />
                 <CreateBtn to={"create"}>

@@ -12,16 +12,18 @@ import Builds from './pages/Builds';
 import ItemDetails from './pages/ItemDetails';
 import NotFound from './pages/NotFound';
 import CreateBuild from './pages/CreateBuild';
+import SavedBuilds from './components/SavedBuilds';
 
 const routes = [
     { path: '/', component: Home },
     { path: '/characters', component: Characters },
     { path: '/stuff/:itemCategory?', component: Stuff },
     { path: '/stuff/:itemCategory?/:id?', component: ItemDetails },
-    { path: '/builds/saved/create', component: CreateBuild },
     { path: '/builds/:type?', component: Builds },
     { path: '/worlds', component: Worlds },
     { path: '/guide', component: Guide },
+    { path: '/saved/builds/create', component: CreateBuild },
+    { path: '/saved/builds', component: SavedBuilds },
     { path: '/saved', component: Saved },
     { path: '/auth', component: Auth },
     { path: '*', component: NotFound }

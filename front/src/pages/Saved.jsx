@@ -17,7 +17,7 @@ function Saved() {
                 <StyledBtn to={token ? "/saved/items" : "/auth"}>
                     Items
                 </StyledBtn>
-                <StyledBtn to={token ? "/builds/saved" : "/auth"}>
+                <StyledBtn to={token ? "/saved/builds" : "/auth"}>
                     Builds
                 </StyledBtn>
             </Container>

@@ -81,6 +81,7 @@ function CreateBuild() {
 
 export default CreateBuild;
 
+
 const Wrapper = styled.div`
     height: 100%;
     width: 100%;
@@ -121,6 +122,8 @@ const GridContainer = styled.div`
     background-color: rgba(244, 244, 246, 0.4);
     border-radius: 25px;
     opacity: 1;
+    display: grid;
+    place-content: center;
 `
 
 const CreateBtn = styled.button`
