@@ -16,7 +16,8 @@ function BuildBox({ build }) {
 
             </DetailsContainer>
             <Desc>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis, laboriosam illum blanditiis, quos animi, atque obcaecati necessitatibus a perspiciatis consequatur voluptas ratione odit vel similique facere nisi quo consectetur.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum corporis, laboriosam illum blanditiis, quos animi,
+                atque obcaecati necessitatibus a perspiciatis consequatur voluptas ratione odit vel similique facere nisi quo consectetur.
             </Desc>
         </BoxContainer>
     )

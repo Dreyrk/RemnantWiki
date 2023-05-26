@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 import { theme } from "../style/theme.js";
+import { device } from '../style/device.js';
 import fetchData from '../helpers/fetchData.js';
 import FilterCheck from './FilterCheck.jsx';
 import ItemBox from './ItemBox.jsx';
@@ -47,11 +48,20 @@ export default Weapons;
 
 const BoxDisplayContainer = styled.div`
     width: 95%;
-    height: 1000px;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     overflow-y: auto;
     gap: 15px;
+    @media ${device.desktop} {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media ${device.laptop} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media ${device.mobileL} {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 const BigContainer = styled.div`
@@ -68,6 +78,9 @@ const FilterContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media ${device.mobileL} {
+        display: none;
+    }
 `
 
 const DisplayContainer = styled(motion.div)`

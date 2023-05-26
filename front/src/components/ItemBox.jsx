@@ -10,13 +10,13 @@ import LikeBtn from './LikeBtn.jsx'
 import ItemBoxDesc from './ItemBoxDesc.jsx'
 import ModModal from './ModModal.jsx'
 
-function ItemBox({ item }) {
+function ItemBox({ item, build }) {
     const [show, setShow] = useState(false)
     const { token } = useCurrentUserContext()
     const { pathname } = useLocation()
 
     return (
-        <NavLink to={`${pathname}/${item._id}`} style={{ margin: 0, textDecoration: "none" }}>
+        <NavLink to={`${pathname}/${item._id}`} style={{ margin: 0, textDecoration: "none", position: "relative" }}>
             <BoxContainer>
                 {token && <LikeBtn item={item} />}
                 <FlipContainer

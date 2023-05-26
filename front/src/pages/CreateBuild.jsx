@@ -1,76 +1,148 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components';
 import { BsPlusCircle } from "react-icons/bs"
 
+import useFetch from '../hooks/useFetch.js';
 import { theme } from '../style/theme.js';
 import Navbar from '../components/Navbar.jsx';
+import ItemsList from '../components/ItemsList.jsx';
+
+
 
 function CreateBuild() {
+    const { data: amuletsData, isLoading: amuletsLoading, isError: amuletsError } = useFetch("items/amulets");
+    const { data: ringsData, isLoading: ringsLoading, isError: ringsError } = useFetch("items/rings");
+    const { data: headData, isLoading: headLoading, isError: headError } = useFetch("items/armors/category/head");
+    const { data: bodyData, isLoading: bodyLoading, isError: bodyError } = useFetch("items/armors/category/body");
+    const { data: legsData, isLoading: legsLoading, isError: legsError } = useFetch("items/armors/category/legs");
+    const { data: primaryData, isLoading: primaryLoading, isError: primaryError } = useFetch("items/weapons/category/primary");
+    const { data: secondaryData, isLoading: secondaryLoading, isError: secondaryError } = useFetch("items/weapons/category/secondary");
+    const { data: meleeData, isLoading: meleeLoading, isError: meleeError } = useFetch("items/weapons/category/melee");
+
+    const [build, setBuild] = useState({
+        head: null,
+        body: null,
+        legs: null,
+        ring1: null,
+        ring2: null,
+        amulet: null,
+        primary: null,
+        secondary: null,
+        melee: null
+    })
+    const [show, setShow] = useState({
+        head: false,
+        body: false,
+        legs: false,
+        ring1: false,
+        ring2: false,
+        amulet: false,
+        primary: false,
+        secondary: false,
+        melee: false
+    })
     return (
         <Wrapper>
             <Navbar />
             <BuildContainer>
                 <Title>Create your Build</Title>
                 <GridContainer
-                    armor column={3} row={"2 / span 1"}
+                    armor="true"
+                    column={3} row={2}
                 >
-                    <CreateBtn type='button'>
+                    {!show.head ?
+                        <CreateBtn onClick={() => setShow({ ...show, head: true })} type='button'>
+                            <BsPlusCircle size={40} color={theme.colors.blanc} />
+                        </CreateBtn>
+                        :
+                        <ItemsList data={headData} isLoading={headLoading} isError={headError} setShow={setShow} part={"head"} />
+                    }
+                </GridContainer>
+                <GridContainer
+                    armor="true"
+                    column={3} row={"3 / span 2"}
+                >
+                    {!show.body ?
+                        <CreateBtn onClick={() => setShow({ ...show, body: true })} type='button'>
+                            <BsPlusCircle size={40} color={theme.colors.blanc} />
+                        </CreateBtn>
+                        :
+                        <ItemsList data={bodyData} isLoading={bodyLoading} isError={bodyError} setShow={setShow} part={"body"} />
+                    }
+                </GridContainer>
+                <GridContainer
+                    armor="true"
+                    column={3} row={5}
+                >
+                    {!show.legs ?
+                        <CreateBtn onClick={() => setShow({ ...show, legs: true })} type='button'>
+                            <BsPlusCircle size={40} color={theme.colors.blanc} />
+                        </CreateBtn>
+                        :
+                        <ItemsList data={legsData} isLoading={legsLoading} isError={legsError} setShow={setShow} part={"legs"} />
+                    }
+                </GridContainer>
+                <GridContainer
+                    jewel="true"
+                    column={2} row={3}
+                >
+                    {!show.amulet ?
+                        <CreateBtn onClick={() => setShow({ ...show, amulet: true })} type='button'>
+                            <BsPlusCircle size={40} color={theme.colors.blanc} />
+                        </CreateBtn>
+                        :
+                        <ItemsList data={amuletsData} isLoading={amuletsLoading} isError={amuletsError} setShow={setShow} part={"amulet"} />
+                    }
+                </GridContainer>
+                <GridContainer
+                    jewel="true"
+                    column={2} row={4}
+                >
+                    {!show.ring1 ?
+                        <CreateBtn onClick={() => setShow({ ...show, ring1: true })} type='button'>
+                            <BsPlusCircle size={40} color={theme.colors.blanc} />
+                        </CreateBtn>
+                        :
+                        <ItemsList data={ringsData} isLoading={ringsLoading} isError={ringsError} setShow={setShow} part={"ring1"} />
+                    }
+                </GridContainer>
+                <GridContainer
+                    jewel="true"
+                    column={1} row={4}
+                >
+                    {!show.ring2 ?
+                        <CreateBtn onClick={() => setShow({ ...show, ring2: true })} type='button'>
+                            <BsPlusCircle size={40} color={theme.colors.blanc} />
+                        </CreateBtn>
+                        :
+                        <ItemsList data={ringsData} isLoading={ringsLoading} isError={ringsError} setShow={setShow} part={"ring2"} />
+                    }
+                </GridContainer>
+                <GridContainer
+                    primary="true"
+                    column={"5 / span 2"} row={"3 / span 2"}
+                >
+                    {!show.primary ?
+                        <CreateBtn onClick={() => setShow({ ...show, primary: true })} type='button'>
+                            <BsPlusCircle size={40} color={theme.colors.blanc} />
+                        </CreateBtn>
+                        :
+                        <ItemsList data={primaryData} isLoading={primaryLoading} isError={primaryError} setShow={setShow} part={"primary"} />
+                    }
+                </GridContainer>
+                <GridContainer
+                    secondary="true"
+                    column={4} row={3}
+                >
+                    <CreateBtn onClick={() => setShow({ ...show, secondary: true })} type='button'>
                         <BsPlusCircle size={40} color={theme.colors.blanc} />
                     </CreateBtn>
                 </GridContainer>
                 <GridContainer
-                    armor column={3} row={"3 / span 2"}
+                    secondary="true"
+                    column={4} row={4}
                 >
-                    <CreateBtn type='button'>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
-                </GridContainer>
-                <GridContainer
-                    armor column={3} row={"5 / span 1"}
-                >
-                    <CreateBtn type='button'>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
-                </GridContainer>
-                <GridContainer
-                    jewel column={2} row={3}
-                >
-                    <CreateBtn type='button'>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
-                </GridContainer>
-                <GridContainer
-                    jewel column={2} row={4}
-                >
-                    <CreateBtn type='button'>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
-                </GridContainer>
-                <GridContainer
-                    jewel column={1} row={4}
-                >
-                    <CreateBtn type='button'>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
-                </GridContainer>
-                <GridContainer
-                    primary column={"5 / span 2"} row={"3 / span 2"}
-                >
-                    <CreateBtn type='button'>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
-                </GridContainer>
-                <GridContainer
-                    secondary column={4} row={3}
-                >
-                    <CreateBtn type='button'>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
-                </GridContainer>
-                <GridContainer
-                    secondary column={4} row={4}
-                >
-                    <CreateBtn type='button'>
+                    <CreateBtn onClick={() => setShow({ ...show, melee: true })} type='button'>
                         <BsPlusCircle size={40} color={theme.colors.blanc} />
                     </CreateBtn>
                 </GridContainer>
@@ -80,7 +152,6 @@ function CreateBuild() {
 }
 
 export default CreateBuild;
-
 
 const Wrapper = styled.div`
     height: 100%;
@@ -112,6 +183,7 @@ const BuildContainer = styled.div`
 `
 
 const GridContainer = styled.div`
+    position: relative;
     grid-column: ${(props) => props.column};
     grid-row: ${(props) => props.row};
     place-self: ${(props) => props.primary ? "center stretch" : "stretch"};
@@ -139,9 +211,6 @@ const CreateBtn = styled.button`
     padding: 0;
     cursor: pointer;
     opacity: 1;
-    :active {
-        transform: scale(0.8);
-    }
 `
 
 const BuildImg = styled.img`

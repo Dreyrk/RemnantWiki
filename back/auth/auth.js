@@ -55,7 +55,7 @@ const auth = {
   },
   verifyToken: (req, res, next) => {
     try {
-      const [type, token] = req.headers.authHeader.split(" ");
+      const [type, token] = req.headers.authorization.split(" ");
       if (type !== "Bearer") throw new Error("Only Bearer token allowed");
       req.payload = jwt.verify(token, JWT_SECRET);
       next();

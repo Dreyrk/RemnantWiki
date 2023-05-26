@@ -1,5 +1,8 @@
 import express from "express";
 
+//ROUTER
+const router = express.Router();
+
 //ITEMS IMPORT
 import amuletsController from "./controllers/amuletsController.js";
 import ringsController from "./controllers/ringsController.js";
@@ -14,8 +17,6 @@ import emotesController from "./controllers/emotesController.js";
 import userController from "./controllers/usersController.js";
 import loginController from "./auth/login.js";
 import auth from "./auth/auth.js";
-
-const router = express.Router();
 
 //AMULETS
 router.get("/api/items/amulets", amuletsController.getAll);
@@ -62,12 +63,13 @@ router.get("/api/items/traits/:id", traitsController.getById);
 router.get("/api/items/emotes", emotesController.getAll);
 router.get("/api/items/emotes/:id", emotesController.getById);
 
-//AUTH
+//AUTH & USER
 router.post("/api/auth/register", auth.hashPassword, userController.postUser);
 router.post(
   "/api/auth/login",
   loginController.getUserByEmailWithPasswordAndPassToNext,
   auth.verifyPassword
 );
+router.put("/api/user/:id", auth.verifyToken, userController.updateUser);
 
 export default router;

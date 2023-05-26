@@ -36,9 +36,10 @@ function Navbar({ titleSelected }) {
             </SideContainer>
             <Title to="/">{titleSelected ? titleSelected : "Remnant Wiki"}</Title>
             <SideContainer>
-                {!show ? <BurgerMenuIcon type='button' onClick={() => setShow(true)} >
-                    <BiMenuAltLeft size={45} color={theme.colors.blanc} />
-                </BurgerMenuIcon>
+                {!show ?
+                    <BurgerMenuIcon type='button' onClick={() => setShow(true)} >
+                        <BiMenuAltLeft size={45} color={theme.colors.blanc} />
+                    </BurgerMenuIcon>
                     :
                     <MobileNavContainer>
                         <CloseBtn type='button' onClick={() => setShow(false)}>
@@ -48,14 +49,34 @@ function Navbar({ titleSelected }) {
                         <Link show column={2} row={3} to="/stuff">Equipements/Stuff</Link>
                         <Link show column={2} row={2} to="/worlds">Worlds</Link>
                         <Link show column={1} row={3} to="/guide">Guide</Link>
-                        {token && <IconLink to="/saved"><BsBookmarkHeart size={30} color={theme.colors.blanc} /></IconLink>}
-                        {!token ? <IconLink to="/auth"><FaUser size={30} color={theme.colors.blanc} /></IconLink> : <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />}
+                        {token &&
+                            <IconLink to="/saved">
+                                <BsBookmarkHeart size={30} color={theme.colors.blanc} />
+                            </IconLink>}
+                        {!token ?
+                            <IconLink to="/auth">
+                                <FaUser size={30} color={theme.colors.blanc} />
+                            </IconLink> :
+                            <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />
+                        }
                     </MobileNavContainer>
                 }
                 <Link to="/worlds">Worlds</Link>
                 <Link to="/guide">Guide</Link>
-                {token && <IconLink to="/saved"><BsBookmarkHeart size={30} color={theme.colors.blanc} /></IconLink>}
-                {!token ? <IconLink to="/auth"><FaUser size={30} color={theme.colors.blanc} /></IconLink> : <IconLink><BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} /></IconLink>}
+                {token &&
+                    <IconLink to="/saved">
+                        <BsBookmarkHeart size={30} color={theme.colors.blanc} />
+                    </IconLink>
+                }
+                {!token ?
+                    <IconLink to="/auth">
+                        <FaUser size={30} color={theme.colors.blanc} />
+                    </IconLink>
+                    :
+                    <IconLink logout="true" >
+                        <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />
+                    </IconLink>
+                }
             </SideContainer>
         </NavContainer>
     )
@@ -176,6 +197,7 @@ const IconLink = styled(NavLink)`
     color: ${theme.colors.blanc};
     text-align: center;
     font-size: 20px;
+    opacity: ${(props) => props.logout && 1};
     :hover {
         scale: 0.8;
     }
