@@ -1,28 +1,45 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { BsPlusCircle } from "react-icons/bs"
-import { NavLink } from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
 
 import { theme } from '../style/theme.js'
 import useCurrentUserContext from '../hooks/useCurrentUserContext'
 import BuildBox from './BuildBox'
 import Navbar from './Navbar.jsx'
+import BuildDisplay from './BuildDisplay.jsx'
 
 function SavedBuilds() {
-
+    const [selectedBuild, setSelectedBuild] = useState(null)
     const { user } = useCurrentUserContext()
+    const { name } = useParams()
 
-    return (
+    useEffect(() => {
+        if (name) {
+            const decodedName = decodeURIComponent(name)
+            console.log(decodedName)
+            setSelectedBuild(user.saved.builds.find(build => build.name === decodedName))
+        }
+    }, [name])
+
+    if (name) {
         <Wrapper>
             <Navbar />
-            <BigContainer>
-                <BuildBox build={user.saved.builds} />
-                <CreateBtn to={"create"}>
-                    <BsPlusCircle size={40} color={theme.colors.blanc} />
-                </CreateBtn>
-            </BigContainer>
+            <BuildDisplay build={selectedBuild} />
         </Wrapper>
-    )
+    } else {
+        return (
+            <Wrapper>
+                <Navbar />
+                <BigContainer>
+                    {user.saved.builds.map((build, i) => (<BuildBox key={i} build={build} />))}
+                    <CreateBtn to={"create"}>
+                        <BsPlusCircle size={40} color={theme.colors.blanc} />
+                    </CreateBtn>
+                </BigContainer>
+            </Wrapper>
+        )
+    }
 }
 
 export default SavedBuilds;
@@ -41,6 +58,7 @@ const BigContainer = styled.div`
     grid-template-columns: repeat(5, 250px);
     grid-template-rows: repeat(5, 250px);
     place-items: center;
+    gap: 35px;
 `
 
 const CreateBtn = styled(NavLink)`

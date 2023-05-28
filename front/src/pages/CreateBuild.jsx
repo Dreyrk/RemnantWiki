@@ -1,15 +1,21 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import { BsPlusCircle } from "react-icons/bs"
+import { toast, ToastContainer } from 'react-toastify';
 
 import useFetch from '../hooks/useFetch.js';
 import { theme } from '../style/theme.js';
 import Navbar from '../components/Navbar.jsx';
 import ItemsList from '../components/ItemsList.jsx';
+import CreateBtn from '../components/CreateBtn.jsx';
+import useCurrentUserContext from '../hooks/useCurrentUserContext.js';
+import updateUser from '../helpers/updateUser.js';
 
 
 
 function CreateBuild() {
+
+    const { user, setUser, token } = useCurrentUserContext()
+
     const { data: amuletsData, isLoading: amuletsLoading, isError: amuletsError } = useFetch("items/amulets");
     const { data: ringsData, isLoading: ringsLoading, isError: ringsError } = useFetch("items/rings");
     const { data: headData, isLoading: headLoading, isError: headError } = useFetch("items/armors/category/head");
@@ -20,6 +26,7 @@ function CreateBuild() {
     const { data: meleeData, isLoading: meleeLoading, isError: meleeError } = useFetch("items/weapons/category/melee");
 
     const [build, setBuild] = useState({
+        name: null,
         head: null,
         body: null,
         legs: null,
@@ -41,21 +48,47 @@ function CreateBuild() {
         secondary: false,
         melee: false
     })
+
+    const SaveBuild = () => {
+        if (Object.values(build).some(el => el !== null)) {
+            setUser((prevUser) => ({
+                ...prevUser, saved: {
+                    ...prevUser.saved, builds: [...prevUser.saved.builds, build]
+                }
+            }))
+            updateUser(user, token)
+            toast.success("Build Saved")
+        } else {
+            toast.warn("Build is not complete")
+        }
+    }
+
     return (
         <Wrapper>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                pauseOnHover
+                theme="dark"
+            />
             <Navbar />
             <BuildContainer>
                 <Title>Create your Build</Title>
+                <NameContainer>
+                    <Text>Name :</Text>
+                    <NameInput value={build.name} onChange={(e) => setBuild({ ...build, name: e.target.value })} type='text' placeholder='Name your build...' />
+                </NameContainer>
                 <GridContainer
                     armor="true"
                     column={3} row={2}
                 >
                     {!show.head ?
-                        <CreateBtn onClick={() => setShow({ ...show, head: true })} type='button'>
-                            <BsPlusCircle size={40} color={theme.colors.blanc} />
-                        </CreateBtn>
+                        <CreateBtn item={build.head} setShow={setShow} setBuild={setBuild} part={"head"} />
                         :
-                        <ItemsList data={headData} isLoading={headLoading} isError={headError} setShow={setShow} part={"head"} />
+                        <ItemsList data={headData} isLoading={headLoading} isError={headError} setShow={setShow} part={"head"} setBuild={setBuild} />
                     }
                 </GridContainer>
                 <GridContainer
@@ -63,11 +96,9 @@ function CreateBuild() {
                     column={3} row={"3 / span 2"}
                 >
                     {!show.body ?
-                        <CreateBtn onClick={() => setShow({ ...show, body: true })} type='button'>
-                            <BsPlusCircle size={40} color={theme.colors.blanc} />
-                        </CreateBtn>
+                        <CreateBtn item={build.body} setShow={setShow} setBuild={setBuild} part={"body"} />
                         :
-                        <ItemsList data={bodyData} isLoading={bodyLoading} isError={bodyError} setShow={setShow} part={"body"} />
+                        <ItemsList data={bodyData} isLoading={bodyLoading} isError={bodyError} setShow={setShow} part={"body"} setBuild={setBuild} />
                     }
                 </GridContainer>
                 <GridContainer
@@ -75,11 +106,9 @@ function CreateBuild() {
                     column={3} row={5}
                 >
                     {!show.legs ?
-                        <CreateBtn onClick={() => setShow({ ...show, legs: true })} type='button'>
-                            <BsPlusCircle size={40} color={theme.colors.blanc} />
-                        </CreateBtn>
+                        <CreateBtn item={build.legs} setShow={setShow} setBuild={setBuild} part={"legs"} />
                         :
-                        <ItemsList data={legsData} isLoading={legsLoading} isError={legsError} setShow={setShow} part={"legs"} />
+                        <ItemsList data={legsData} isLoading={legsLoading} isError={legsError} setShow={setShow} part={"legs"} setBuild={setBuild} />
                     }
                 </GridContainer>
                 <GridContainer
@@ -87,11 +116,9 @@ function CreateBuild() {
                     column={2} row={3}
                 >
                     {!show.amulet ?
-                        <CreateBtn onClick={() => setShow({ ...show, amulet: true })} type='button'>
-                            <BsPlusCircle size={40} color={theme.colors.blanc} />
-                        </CreateBtn>
+                        <CreateBtn item={build.amulet} setShow={setShow} setBuild={setBuild} part={"amulet"} />
                         :
-                        <ItemsList data={amuletsData} isLoading={amuletsLoading} isError={amuletsError} setShow={setShow} part={"amulet"} />
+                        <ItemsList data={amuletsData} isLoading={amuletsLoading} isError={amuletsError} setShow={setShow} part={"amulet"} setBuild={setBuild} />
                     }
                 </GridContainer>
                 <GridContainer
@@ -99,11 +126,9 @@ function CreateBuild() {
                     column={2} row={4}
                 >
                     {!show.ring1 ?
-                        <CreateBtn onClick={() => setShow({ ...show, ring1: true })} type='button'>
-                            <BsPlusCircle size={40} color={theme.colors.blanc} />
-                        </CreateBtn>
+                        <CreateBtn item={build.ring1} setShow={setShow} setBuild={setBuild} part={"ring1"} />
                         :
-                        <ItemsList data={ringsData} isLoading={ringsLoading} isError={ringsError} setShow={setShow} part={"ring1"} />
+                        <ItemsList data={ringsData} isLoading={ringsLoading} isError={ringsError} setShow={setShow} part={"ring1"} setBuild={setBuild} />
                     }
                 </GridContainer>
                 <GridContainer
@@ -111,11 +136,9 @@ function CreateBuild() {
                     column={1} row={4}
                 >
                     {!show.ring2 ?
-                        <CreateBtn onClick={() => setShow({ ...show, ring2: true })} type='button'>
-                            <BsPlusCircle size={40} color={theme.colors.blanc} />
-                        </CreateBtn>
+                        <CreateBtn item={build.ring2} setShow={setShow} setBuild={setBuild} part={"ring2"} />
                         :
-                        <ItemsList data={ringsData} isLoading={ringsLoading} isError={ringsError} setShow={setShow} part={"ring2"} />
+                        <ItemsList data={ringsData} isLoading={ringsLoading} isError={ringsError} setShow={setShow} part={"ring2"} setBuild={setBuild} />
                     }
                 </GridContainer>
                 <GridContainer
@@ -123,35 +146,93 @@ function CreateBuild() {
                     column={"5 / span 2"} row={"3 / span 2"}
                 >
                     {!show.primary ?
-                        <CreateBtn onClick={() => setShow({ ...show, primary: true })} type='button'>
-                            <BsPlusCircle size={40} color={theme.colors.blanc} />
-                        </CreateBtn>
+                        <CreateBtn item={build.primary} setShow={setShow} setBuild={setBuild} part={"primary"} />
                         :
-                        <ItemsList data={primaryData} isLoading={primaryLoading} isError={primaryError} setShow={setShow} part={"primary"} />
+                        <ItemsList data={primaryData} isLoading={primaryLoading} isError={primaryError} setShow={setShow} part={"primary"} setBuild={setBuild} />
                     }
                 </GridContainer>
                 <GridContainer
                     secondary="true"
                     column={4} row={3}
                 >
-                    <CreateBtn onClick={() => setShow({ ...show, secondary: true })} type='button'>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
+                    {!show.secondary ?
+                        <CreateBtn item={build.secondary} setShow={setShow} setBuild={setBuild} part={"secondary"} />
+                        :
+                        <ItemsList data={secondaryData} isLoading={secondaryLoading} isError={secondaryError} setShow={setShow} part={"secondary"} setBuild={setBuild} />
+                    }
                 </GridContainer>
                 <GridContainer
                     secondary="true"
                     column={4} row={4}
                 >
-                    <CreateBtn onClick={() => setShow({ ...show, melee: true })} type='button'>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
+                    {!show.melee ?
+                        <CreateBtn item={build.melee} setShow={setShow} setBuild={setBuild} part={"melee"} />
+                        :
+                        <ItemsList data={meleeData} isLoading={meleeLoading} isError={meleeError} setShow={setShow} part={"melee"} setBuild={setBuild} />
+                    }
                 </GridContainer>
             </BuildContainer>
+            <StyledBtn onClick={SaveBuild} type='button'>Save</StyledBtn>
         </Wrapper>
     )
 }
 
 export default CreateBuild;
+
+const Text = styled.p`
+    margin: 0;
+    color: ${theme.colors.blanc};
+    font-size: 1.2rem;
+`
+
+const NameContainer = styled.div`
+    grid-column: 5 / span 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+`
+
+const NameInput = styled.input`
+    height: 20px;
+    width: 150px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: none;
+    padding: 0 15px;
+    color: ${theme.colors.rouge};
+    background-color: ${theme.colors.blanc};
+    transition: background-color 0.3s;
+
+    &::placeholder {
+    color: ${theme.colors.rouge};
+    opacity: 0.5;
+    }
+
+    &:focus {
+    outline: none;
+    background-color: ${theme.colors.gris2};
+    }
+`
+
+const StyledBtn = styled.button`
+    height: 35px;
+    width: 120px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-right: 145px;
+    border-radius: 40px;
+    background-color: ${theme.colors.rouge};
+    color: ${theme.colors.blanc};
+    border: none;
+    box-shadow: 0px 2px 2px ${theme.colors.noir};
+    :hover {
+        transform: scale(1.1);
+    }
+    :active {
+        transform: scale(0.9);
+    }
+`
 
 const Wrapper = styled.div`
     height: 100%;
@@ -180,10 +261,10 @@ const BuildContainer = styled.div`
     grid-template-columns: repeat(6, 16.66%);
     grid-template-rows: repeat(6, 16.66%);
     gap: 20px;
+    position: relative;
 `
 
 const GridContainer = styled.div`
-    position: relative;
     grid-column: ${(props) => props.column};
     grid-row: ${(props) => props.row};
     place-self: ${(props) => props.primary ? "center stretch" : "stretch"};
@@ -194,31 +275,8 @@ const GridContainer = styled.div`
     background-color: rgba(244, 244, 246, 0.4);
     border-radius: 25px;
     opacity: 1;
-    display: grid;
-    place-content: center;
-`
-
-const CreateBtn = styled.button`
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    background-color: ${theme.colors.gris2};
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    opacity: 1;
-`
-
-const BuildImg = styled.img`
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    transform: ${(props) => props.secondary && "scale(1.5)"};
-    :hover {
-        transform: ${(props) => props.secondary ? "scale(1.6)" : "scale(1.1)"};
-    }
+    overflow: hidden;
 `

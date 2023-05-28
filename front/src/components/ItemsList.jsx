@@ -8,25 +8,43 @@ import UpperCaseFirstLetter from "../helpers/UpperCaseFirstLetter.js"
 import ItemBox from "./ItemBox.jsx"
 
 
-function ItemsList({ data, isLoading, isError, setShow, part, top, left }) {
+function ItemsList({ data, isLoading, isError, setShow, part, setBuild }) {
 
     const handleClose = () => {
         setShow((prevShow) => ({ ...prevShow, [part]: false }));
     };
 
-    return (
-        <Container left={left} top={top} >
-            <CloseBtn type='button' onClick={handleClose}>
-                <IoClose size={35} color={theme.colors.blanc} />
-            </CloseBtn>
-            <PartName>{UpperCaseFirstLetter(part)}</PartName>
-            <List>
-                {data.map((item) => (
-                    <ItemBox item={item} key={item._id} />
-                ))}
-            </List>
-        </Container>
-    )
+    function addItem(item) {
+        setBuild((prevBuild) => ({ ...prevBuild, [part]: item }))
+        handleClose()
+    }
+
+
+    if (isLoading) {
+        return (
+            <p>Loading</p>
+        )
+    }
+    else if (isError) {
+        return (
+            <p>Error</p>
+        )
+    }
+    else if (data) {
+        return (
+            <Container>
+                <CloseBtn type='button' onClick={handleClose}>
+                    <IoClose size={35} color={theme.colors.blanc} />
+                </CloseBtn>
+                <PartName>{UpperCaseFirstLetter(part)}</PartName>
+                <List>
+                    {data.map((item) => (
+                        <ItemBox item={item} key={item._id} build={true} addItem={addItem} />
+                    ))}
+                </List>
+            </Container>
+        )
+    }
 }
 
 export default ItemsList;
@@ -53,11 +71,11 @@ const List = styled(motion.div)`
 
 const Container = styled(motion.div)`
     position: absolute;
-    top: ${(props) => props.top ? props.top : 0};
-    left: ${(props) => props.left};
+    top: 20%;
+    left: 31.5%;
     z-index: 99;
-    height: 500px;
-    width: 325px;
+    height: 80%;
+    width: 25%;
     background-color: ${theme.colors.gris2};
     display: flex;
     flex-direction: column;

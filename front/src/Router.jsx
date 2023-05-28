@@ -23,7 +23,7 @@ const routes = [
     { path: '/worlds', component: Worlds },
     { path: '/guide', component: Guide },
     { path: '/saved/builds/create', component: CreateBuild },
-    { path: '/saved/builds', component: SavedBuilds },
+    { path: '/saved/builds/:name?', component: SavedBuilds },
     { path: '/saved', component: Saved },
     { path: '/auth', component: Auth },
     { path: '*', component: NotFound }
