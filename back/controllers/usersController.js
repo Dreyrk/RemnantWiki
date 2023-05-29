@@ -48,6 +48,16 @@ const userController = {
       console.error(e);
     }
   },
+  updateUser: async (req, res) => {
+    const { id } = req.params;
+    const newUser = req.body;
+
+    try {
+      await user.findByIdAndUpdate(id, newUser);
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+    }
+  },
   resetUser: async (req, res) => {
     try {
       await user.deleteMany({});

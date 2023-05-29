@@ -9,6 +9,7 @@ import ring from "./models/ring.js";
 import weapons from "./models/weapons.js";
 import mods from "./models/mods.js";
 import trait from "./models/trait.js";
+import user from "./models/user.js";
 
 import amuletsData from "./data/amulets.json" assert { type: "json" };
 import armorSetsData from "./data/armor_sets.json" assert { type: "json" };
@@ -28,6 +29,8 @@ async function main() {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
+
+  await user.deleteMany({});
 
   await amulet.deleteMany({});
   await amulet.insertMany(amuletsData);

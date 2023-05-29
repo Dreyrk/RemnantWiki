@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import { NavLink } from 'react-router-dom'
+import { AiFillHome } from "react-icons/ai"
 
 import { theme } from "../style/theme.js"
 import useCurrentUserContext from '../hooks/useCurrentUserContext.js'
@@ -44,13 +46,35 @@ function Auth() {
                     {!accountCreated && <Register variants={item} setAccountCreated={setAccountCreated} />}
                 </BigContainer>
                 :
-                <SuccessBox />
+                <Container>
+                    <SuccessBox />
+                    <HomeLink to={"/"}><AiFillHome color={theme.colors.blanc} size={40} /></HomeLink>
+                </Container>
             }
         </Wrapper>
     )
 }
 
 export default Auth;
+
+const Container = styled.div`
+    height: 70%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+`
+
+const HomeLink = styled(NavLink)`
+    font-size: 24px;
+    opacity: 0.5;
+    padding-right: 50px;
+    :hover {
+        opacity: 1;
+    }
+`
 
 const Wrapper = styled.div`
     height: 100%;

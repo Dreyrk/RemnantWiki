@@ -1,5 +1,8 @@
 import express from "express";
 
+//ROUTER
+const router = express.Router();
+
 //ITEMS IMPORT
 import amuletsController from "./controllers/amuletsController.js";
 import ringsController from "./controllers/ringsController.js";
@@ -14,8 +17,6 @@ import emotesController from "./controllers/emotesController.js";
 import userController from "./controllers/usersController.js";
 import loginController from "./auth/login.js";
 import auth from "./auth/auth.js";
-
-const router = express.Router();
 
 //AMULETS
 router.get("/api/items/amulets", amuletsController.getAll);
@@ -52,7 +53,7 @@ router.get(
 //MODS
 router.get("/api/items/mods", modsController.getAll);
 router.get("/api/items/mods/:id", modsController.getById);
-router.get("/api/items/mods/name/:name", modsController.getById);
+router.get("/api/name/mods/:name", modsController.getByName);
 
 //TRAITS
 router.get("/api/items/traits", traitsController.getAll);
@@ -62,15 +63,14 @@ router.get("/api/items/traits/:id", traitsController.getById);
 router.get("/api/items/emotes", emotesController.getAll);
 router.get("/api/items/emotes/:id", emotesController.getById);
 
-//AUTH
+//AUTH & USER
 router.post("/api/auth/register", auth.hashPassword, userController.postUser);
 router.post(
   "/api/auth/login",
   loginController.getUserByEmailWithPasswordAndPassToNext,
   auth.verifyPassword
 );
-
-//USER
-router.get("/api/users/reset", userController.resetUser);
+router.put("/api/user/:id", auth.verifyToken, userController.updateUser);
+router.get("/api/user", userController.getAll);
 
 export default router;

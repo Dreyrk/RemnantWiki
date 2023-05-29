@@ -6,10 +6,11 @@ export const CurrentUserContext = createContext();
 function CurrentUserContextProvider({ children }) {
   const [token, setToken] = useLocalStorage("token", "");
   const [accountCreated, setAccountCreated] = useState(false);
-  const [user, setUser] = useState({
+  const [user, setUser] = useLocalStorage("user", {
     pseudo: "",
     email: "",
     password: "",
+    saved: { builds: [], items: [] },
   });
   return (
     <CurrentUserContext.Provider

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styled from "styled-components"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -6,10 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import fetchData from '../helpers/fetchData.js'
 import BuildDisplay from './BuildDisplay.jsx'
 import { theme } from '../style/theme.js'
+import { AnimatePresence } from 'framer-motion';
 
 
 function ChallengeBuild() {
-    const [fullSet, setFullSet] = useState({
+    const initialFullSet = () => JSON.parse(localStorage.getItem('ChallengeBuild')) || {
         head: null,
         body: null,
         legs: null,
@@ -19,9 +20,23 @@ function ChallengeBuild() {
         primary: null,
         secondary: null,
         melee: null
-    })
+    };
+    const [showBuild, setShowBuild] = useState(false);
+    const [fullSet, setFullSet] = useState(initialFullSet);
+
+    useEffect(() => {
+        if (initialFullSet.head !== null) {
+            localStorage.setItem('ChallengeBuild', JSON.stringify(fullSet));
+            setShowBuild(true)
+        } else {
+            setShowBuild(false)
+        }
+    }, [fullSet]);
+
+
 
     async function getChallengeBuild() {
+        setShowBuild(false)
         const { head, body, legs } = await fetchData("random/armors")
         const { ring1, ring2 } = await fetchData("random/rings")
         const amulet = await fetchData("random/amulets")
@@ -31,10 +46,12 @@ function ChallengeBuild() {
             setFullSet({
                 head, body, legs, ring1, ring2, amulet, primary, secondary, melee
             })
+            setShowBuild(true)
         } else {
             toast.error("failed to get random challenge build")
         }
     }
+
     return (
         <BigContainer>
             <ToastContainer
@@ -46,13 +63,25 @@ function ChallengeBuild() {
                 pauseOnHover
                 theme="dark"
             />
-            {fullSet.amulet !== null && <BuildDisplay build={fullSet} />}
+            <AnimatePresence>
+                {fullSet.head !== null ? <BuildDisplay build={fullSet} showBuild={showBuild} /> : <Title>Click to discover your challenge build</Title>}
+            </AnimatePresence>
             <StyledBtn onClick={getChallengeBuild} type='button'>Challenge</StyledBtn>
         </BigContainer>
     )
 }
 
 export default ChallengeBuild;
+
+const Title = styled.h1`
+    color: ${theme.colors.blanc};
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 35vh;
+`
 
 const BigContainer = styled.div`
     height: 100%;
@@ -61,12 +90,13 @@ const BigContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    gap: 20px;
 `
 
 const StyledBtn = styled.button`
     height: 45px;
     width: 140px;
+    margin: auto;
     border-radius: 40px;
     background-color: ${theme.colors.rouge};
     color: ${theme.colors.blanc};

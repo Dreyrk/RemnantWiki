@@ -18,9 +18,12 @@ function Builds() {
                     <ChallengeBuild />
                 </Wrapper>
             )
-        case "saved" && token:
+        case "saved":
             return (
-                <SavedBuilds />
+                <Wrapper>
+                    <Navbar />
+                    {token && <SavedBuilds />}
+                </Wrapper>
             )
         default:
             return (
