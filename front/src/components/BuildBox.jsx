@@ -1,16 +1,26 @@
 import React from 'react'
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 
 import { theme } from '../style/theme.js';
 
+const variants = {
+    hidden: { x: -100, opacity: 0 },
+    show: { x: 0, opacity: 1 }
+}
+
 function BuildBox({ build }) {
 
     return (
-        <BoxContainer to={`/saved/builds/${build.name ? build.name : "noname"}`}>
+        <BoxContainer
+            variants={variants}
+            transition={{ bounce: 1, stiffness: 80, type: "spring" }}
+            whileHover={{ scale: 1.05 }}
+            to={`/saved/builds/${build.name && build.name}`}>
             <Name>{build.name ? build.name : "No Name"}</Name>
             <DetailsContainer>
-                <BuildImg src={build.primary.img} alt='buildImg' />
+                {build.primary.img && <BuildImg src={build.primary.img} alt='buildImg' />}
             </DetailsContainer>
             <Desc>
                 {build.description ? build.description : "No Desc"}
@@ -21,7 +31,7 @@ function BuildBox({ build }) {
 
 export default BuildBox;
 
-const BoxContainer = styled(NavLink)`
+const BoxContainer = styled(motion(NavLink))`
     opacity: 1;
     text-decoration: none;
     height: 250px;

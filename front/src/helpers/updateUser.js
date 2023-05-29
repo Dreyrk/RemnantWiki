@@ -22,7 +22,7 @@ async function updateUser(newUser, token) {
   );
 
   if (res.status === 204) {
-    return "User updated successfully";
+    return "Success";
   } else {
     throw new Error("Fetch failed");
   }

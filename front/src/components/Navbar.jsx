@@ -142,6 +142,7 @@ const NavContainer = styled.div`
     @media ${device.mobileL} {
         height: 65px;
         flex-direction: row-reverse;
+        z-index: 99;
     }
 `
 

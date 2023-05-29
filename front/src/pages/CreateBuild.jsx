@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import { toast, ToastContainer } from 'react-toastify';
+import { GrPowerReset } from "react-icons/gr"
 
 import useFetch from '../hooks/useFetch.js';
 import { theme } from '../style/theme.js';
@@ -26,7 +27,7 @@ function CreateBuild() {
     const { data: meleeData, isLoading: meleeLoading, isError: meleeError } = useFetch("items/weapons/category/melee");
 
     const [build, setBuild] = useState({
-        name: null,
+        name: '',
         head: null,
         body: null,
         legs: null,
@@ -49,15 +50,50 @@ function CreateBuild() {
         melee: false
     })
 
+    const ResetBuild = () => {
+        setBuild({
+            name: '',
+            description: '',
+            head: null,
+            body: null,
+            legs: null,
+            ring1: null,
+            ring2: null,
+            amulet: null,
+            primary: null,
+            secondary: null,
+            melee: null
+        })
+    }
+
     const SaveBuild = () => {
-        if (Object.values(build).some(el => el !== null)) {
+        const isValid = Object.values(build).every(value => value !== null && value !== '')
+        if (isValid) {
             setUser((prevUser) => ({
                 ...prevUser, saved: {
                     ...prevUser.saved, builds: [...prevUser.saved.builds, build]
                 }
             }))
-            updateUser(user, token)
-            toast.success("Build Saved")
+            try {
+                updateUser(user, token)
+                toast.success("Build Saved")
+                setBuild({
+                    name: '',
+                    description: '',
+                    head: null,
+                    body: null,
+                    legs: null,
+                    ring1: null,
+                    ring2: null,
+                    amulet: null,
+                    primary: null,
+                    secondary: null,
+                    melee: null
+                })
+            } catch (e) {
+                toast.error("Updated Failed")
+                console.error(e)
+            }
         } else {
             toast.warn("Build is not complete")
         }
@@ -77,10 +113,17 @@ function CreateBuild() {
             <Navbar />
             <BuildContainer>
                 <Title>Create your Build</Title>
+                <ResetBtn onClick={ResetBuild} type='button'>
+                    <GrPowerReset size={40} color={theme.colors.blanc} />
+                </ResetBtn>
                 <NameContainer>
                     <Text>Name :</Text>
                     <NameInput value={build.name} onChange={(e) => setBuild({ ...build, name: e.target.value })} type='text' placeholder='Name your build...' />
                 </NameContainer>
+                <DescContainer>
+                    <Text>Description :</Text>
+                    <DescInput value={build.description} onChange={(e) => setBuild({ ...build, description: e.target.value })} type='text' placeholder='Enter a small description of your build...' />
+                </DescContainer>
                 <GridContainer
                     armor="true"
                     column={3} row={2}
@@ -179,6 +222,17 @@ function CreateBuild() {
 
 export default CreateBuild;
 
+const ResetBtn = styled.button`
+    place-self: center;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background-color: ${theme.colors.rouge};
+`
+
 const Text = styled.p`
     margin: 0;
     color: ${theme.colors.blanc};
@@ -187,10 +241,42 @@ const Text = styled.p`
 
 const NameContainer = styled.div`
     grid-column: 5 / span 2;
-    grid-row: 2;
+    grid-row: 1;
     display: flex;
     align-items: center;
     gap: 10px;
+`
+const DescContainer = styled.div`
+    grid-column: 5 / span 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+`
+
+const DescInput = styled.textarea`
+    height: 200px;
+    width: 80%;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    color: ${theme.colors.rouge};
+
+    &::placeholder {
+    color: ${theme.colors.rouge};
+    opacity: 0.5;
+    }
+
+    &:focus {
+    outline: none;
+    background-color: ${theme.colors.gris2};
+    color: ${theme.colors.blanc};
+    border: 2px solid ${theme.colors.blanc};
+    }
 `
 
 const NameInput = styled.input`

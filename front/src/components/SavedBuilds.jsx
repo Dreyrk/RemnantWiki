@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 import { BsPlusCircle } from "react-icons/bs"
 import { NavLink, useParams } from 'react-router-dom'
 
@@ -9,29 +10,48 @@ import BuildBox from './BuildBox'
 import Navbar from './Navbar.jsx'
 import BuildDisplay from './BuildDisplay.jsx'
 
+const variants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.2,
+            delayChildren: 0.2
+        }
+    }
+}
+
+
 function SavedBuilds() {
-    const [selectedBuild, setSelectedBuild] = useState(null)
     const { user } = useCurrentUserContext()
     const { name } = useParams()
+
+    const [index, setIndex] = useState(0)
+
 
     useEffect(() => {
         if (name) {
             const decodedName = decodeURIComponent(name)
-            console.log(decodedName)
-            setSelectedBuild(user.saved.builds.find(build => build.name === decodedName))
+            setIndex(user.saved.builds.indexOf(user.saved.builds.find(build => build.name.includes(decodedName))))
         }
-    }, [name])
+    }, [name, user.saved.builds])
 
     if (name) {
-        <Wrapper>
-            <Navbar />
-            <BuildDisplay build={selectedBuild} />
-        </Wrapper>
+        return (
+            <Wrapper>
+                <Navbar />
+                <BuildDisplay build={user.saved.builds[index]} showBuild={true} />
+            </Wrapper>
+        )
     } else {
         return (
             <Wrapper>
                 <Navbar />
-                <BigContainer>
+                <BigContainer
+                    variants={variants}
+                    initial="hidden"
+                    animate="show"
+                >
                     {user.saved.builds.map((build, i) => (<BuildBox key={i} build={build} />))}
                     <CreateBtn to={"create"}>
                         <BsPlusCircle size={40} color={theme.colors.blanc} />
@@ -51,7 +71,7 @@ const Wrapper = styled.div`
     place-items: center;
 `
 
-const BigContainer = styled.div`
+const BigContainer = styled(motion.div)`
     height: 95%;
     width: 87%;
     display: grid;

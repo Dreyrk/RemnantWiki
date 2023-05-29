@@ -74,6 +74,7 @@ const BuildImg = styled.img`
     width: 100%;
     object-fit: ${(props) => props.part !== "secondary" ? "contain" : "cover"};
     transform: ${(props) => props.part === "melee" && "scale(1.4)"};
+    transform: ${(props) => props.part === "secondary" && "scale(0.75)"};
     :hover {
         transform: ${(props) => props.part === "melee" ? "scale(1.7)" : "scale(1.1)"};
     }
