@@ -1,13 +1,13 @@
 # RemnantWiki
 
-RemnantWiki is a Web App for get informations on Remnant from the ashes game items and manage your builds
+RemnantWiki is a Web App thought in Desktop First for get informations on Remnant from the ashes game items and manage builds and more
 
 ## Installation
 
-Use npm for install dependencies
+Use npm script for install dependencies
 
 ```bash
-npm i
+npm run setup
 ```
 
 For start back and front
