@@ -5,6 +5,7 @@ const modsSchema = mongoose.Schema({
   description: { type: String },
   img: { type: String },
   worlds: { type: String },
+  section: { type: String, required: true, default: "mods" },
 });
 
 const mods = mongoose.model("mods", modsSchema);

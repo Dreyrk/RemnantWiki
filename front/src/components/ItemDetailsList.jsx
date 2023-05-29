@@ -28,7 +28,9 @@ function ItemDetailsList({ item, category }) {
                         animate: { y: 0, opacity: 1 }
                     }}>
                         <ModDesc>
-                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Location :</span> <br /> {item.location}
+                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Location :</span>
+                            <br />
+                            {item.location}
                         </ModDesc>
                     </ListItem>
                     <ListItem variants={{
@@ -36,7 +38,9 @@ function ItemDetailsList({ item, category }) {
                         animate: { y: 0, opacity: 1 }
                     }}>
                         <ModDesc>
-                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> : <br /> {item.description}
+                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> :
+                            <br />
+                            {item.description}
                         </ModDesc>
                     </ListItem>
                 </DetailsList>

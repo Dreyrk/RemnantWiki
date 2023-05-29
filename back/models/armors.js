@@ -20,6 +20,7 @@ const armorSchema = mongoose.Schema({
   armorSet: { type: String },
   worlds: { type: String },
   img: { type: String },
+  section: { type: String, required: true, default: "armors" },
 });
 
 const armors = mongoose.model("armors", armorSchema);

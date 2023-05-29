@@ -10,14 +10,37 @@ import LikeBtn from './LikeBtn.jsx'
 import ItemBoxDesc from './ItemBoxDesc.jsx'
 import ModModal from './ModModal.jsx'
 
-function ItemBox({ item, build, addItem }) {
+const variants = {
+    hidden: { x: -100, opacity: 0 },
+    show: {
+        x: 0,
+        opacity: 1
+    }
+}
+
+function ItemBox({ item, build, addItem, index }) {
     const [show, setShow] = useState(false)
     const { token } = useCurrentUserContext()
     const { pathname } = useLocation()
 
     if (build) {
         return (
-            <SelectBtn type='button' onClick={() => addItem(item)}>
+            <SelectBtn
+                variants={{
+                    hidden: { y: -100, opacity: 0 },
+                    show: {
+                        y: 0,
+                        opacity: 1
+                    }
+                }}
+                initial="hidden"
+                animate="show"
+                transition={{
+                    delay: index * 0.2,
+                }}
+                type='button'
+                onClick={() => addItem(item)}
+            >
                 <BoxContainer>
                     <FlipContainer
                         animate={{ rotateY: show ? 180 : 0 }}
@@ -37,7 +60,14 @@ function ItemBox({ item, build, addItem }) {
         )
     } else {
         return (
-            <NavLink to={`${pathname}/${item._id}`} style={{ margin: 0, textDecoration: "none", position: "relative" }}>
+            <NavLinkContainer
+                variants={variants}
+                initial="hidden"
+                animate="show"
+                transition={{
+                    delay: index * 0.2,
+                }}
+                to={`/stuff/${item.section}/${item._id}`}>
                 <BoxContainer>
                     {token && <LikeBtn item={item} />}
                     <FlipContainer
@@ -54,14 +84,20 @@ function ItemBox({ item, build, addItem }) {
                     </FlipContainer>
                     <ItemBoxDesc setShow={setShow} item={item} />
                 </BoxContainer >
-            </NavLink>
+            </NavLinkContainer>
         )
     }
 }
 
 export default ItemBox;
 
-const SelectBtn = styled.div`
+const NavLinkContainer = styled(motion(NavLink))`
+    margin: 0;
+    position: relative;
+    text-decoration: none;
+`
+
+const SelectBtn = styled(motion.div)`
     margin: 0;
 `
 

@@ -38,8 +38,8 @@ function ItemsList({ data, isLoading, isError, setShow, part, setBuild }) {
                 </CloseBtn>
                 <PartName>{UpperCaseFirstLetter(part)}</PartName>
                 <List>
-                    {data.map((item) => (
-                        <ItemBox item={item} key={item._id} build={true} addItem={addItem} />
+                    {data.map((item, i) => (
+                        <ItemBox item={item} key={item._id} build={true} index={i} addItem={addItem} />
                     ))}
                 </List>
             </Container>

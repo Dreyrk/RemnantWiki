@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FaRandom } from 'react-icons/fa';
 
 import { theme } from '../style/theme.js';
+import StyledBtn from '../style/StyledBtn.js';
 import category from '../utils/category.js';
 
 import Navbar from '../components/Navbar'
@@ -100,22 +101,8 @@ const CategoryContainer = styled.div`
     place-items: center;
 `
 
-const StyledBtn = styled.button`
-    height: 100px;
-    width: 350px;
-    border: 10px solid ${theme.colors.blanc};
-    background-color: ${theme.colors.rouge};
-    border-radius: 30px;
-    box-shadow: 0px 4px 4px ${theme.colors.gris1};
-    color: ${theme.colors.blanc};
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 50px;
-`
-
 const StyledLink = styled(NavLink)`
     text-decoration: none;
-
 `
 const CircleLink = styled(NavLink)`
     text-decoration: none;
