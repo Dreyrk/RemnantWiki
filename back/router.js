@@ -58,6 +58,7 @@ router.get("/api/name/mods/:name", modsController.getByName);
 //TRAITS
 router.get("/api/items/traits", traitsController.getAll);
 router.get("/api/items/traits/:id", traitsController.getById);
+router.get("/api/traits/worlds/:world", traitsController.getByWorld);
 
 //EMOTES
 router.get("/api/items/emotes", emotesController.getAll);

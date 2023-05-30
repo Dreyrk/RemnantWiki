@@ -3,9 +3,10 @@ import styled from 'styled-components';
 import { useParams } from 'react-router-dom';
 
 import useCurrentUserContext from '../hooks/useCurrentUserContext';
+import Navbar from '../components/Navbar';
 import ChallengeBuild from '../components/ChallengeBuild';
 import SavedBuilds from '../components/SavedBuilds';
-import Navbar from '../components/Navbar';
+import BestBuilds from '../components/BestBuilds';
 
 function Builds() {
     const { token } = useCurrentUserContext()
@@ -27,9 +28,10 @@ function Builds() {
             )
         default:
             return (
-                <div>
-                    builds page
-                </div>
+                <Wrapper>
+                    <Navbar />
+                    <BestBuilds />
+                </Wrapper>
             )
     }
 }

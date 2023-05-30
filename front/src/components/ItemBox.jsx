@@ -18,7 +18,7 @@ const variants = {
     }
 }
 
-function ItemBox({ item, build, addItem, index }) {
+function ItemBox({ item, build, addItem, index, trait }) {
     const [show, setShow] = useState(false)
     const { token } = useCurrentUserContext()
     const { pathname } = useLocation()
@@ -58,7 +58,7 @@ function ItemBox({ item, build, addItem, index }) {
                 </BoxContainer >
             </SelectBtn>
         )
-    } else {
+    } else if (!trait) {
         return (
             <NavLinkContainer
                 variants={variants}
@@ -86,6 +86,28 @@ function ItemBox({ item, build, addItem, index }) {
                 </BoxContainer >
             </NavLinkContainer>
         )
+    } else {
+        <SelectBtn
+            variants={variants}
+            initial="hidden"
+            animate="show"
+            transition={{
+                delay: index * 0.2,
+            }}
+            type='button'
+        >
+            <BoxContainer>
+                <FlipContainer
+                    animate={{ rotateY: show ? 180 : 0 }}
+                    transition={{ duration: 0.6 }}
+                >
+                    <ImgContainer transition={{ delay: 0.3 }}>
+                        <BoxImg height={100} src={item.img} alt={item.name} />
+                    </ImgContainer>
+                </FlipContainer>
+                <ItemBoxDesc setShow={setShow} item={item} />
+            </BoxContainer >
+        </SelectBtn>
     }
 }
 

@@ -5,6 +5,9 @@ const traitSchema = mongoose.Schema({
   description: { type: String },
   img: { type: String },
   worlds: { type: String },
+  unlock: { type: String },
+  base: { type: String },
+  max: { type: String },
 });
 
 const trait = mongoose.model("trait", traitSchema);

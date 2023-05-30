@@ -37,6 +37,21 @@ const traitController = {
       console.error(e);
     }
   },
+  getByWorld: async (req, res) => {
+    const { world } = req.params;
+    try {
+      const data = await trait.find({ worlds: world });
+
+      if (data) {
+        res.status(CODES.SUCCESS).send({ data: data });
+      } else {
+        res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
+      }
+    } catch (e) {
+      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+      console.error(e);
+    }
+  },
 };
 
 export default traitController;

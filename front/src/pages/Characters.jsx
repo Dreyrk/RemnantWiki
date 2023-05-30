@@ -16,7 +16,7 @@ function Characters() {
                 <StyledLink to={"traits"} column={2} row={1}>
                     <StyledBtn>Traits</StyledBtn>
                 </StyledLink>
-                <StyledLink to={"builds"} column={"1 / span 2"} row={2}>
+                <StyledLink to={"builds/bests"} column={"1 / span 2"} row={2}>
                     <StyledBtn>Best Builds</StyledBtn>
                 </StyledLink>
             </Container>
