@@ -37,6 +37,29 @@ const traitController = {
       console.error(e);
     }
   },
+  getByWorld: async (req, res) => {
+    const { world } = req.params;
+    try {
+      let data = [];
+      if (world.includes("13")) {
+        data = await trait.find({
+          worlds: { $in: [world] },
+        });
+      } else {
+        data = await trait.find({
+          worlds: { $size: 1, $all: [world] },
+        });
+      }
+      if (data.length > 0) {
+        res.status(200).send({ data: data });
+      } else {
+        res.status(404).send({ error: "No trait found for this world" });
+      }
+    } catch (e) {
+      res.sendStatus(500);
+      console.error(e);
+    }
+  },
 };
 
 export default traitController;

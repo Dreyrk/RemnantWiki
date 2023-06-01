@@ -40,6 +40,7 @@ const weaponSchema = mongoose.Schema({
     required: true,
   },
   weaponMod: weaponModSchema,
+  section: { type: String, required: true, default: "weapons" },
 });
 
 const weapons = mongoose.model("weapons", weaponSchema);

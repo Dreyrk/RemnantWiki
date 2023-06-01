@@ -10,10 +10,10 @@ function ItemBoxDesc({ item, setShow }) {
                 <BoxDescContainer>
                     <AltName>{item.name}</AltName>
                     <Desc>
-                        Base DMG: <span style={{ color: theme.colors.rouge }}>{item.baseDamage}m</span>
+                        Base DMG: <span style={{ marginLeft: "4px", color: theme.colors.rouge }}>{item.baseDamage}m</span>
                     </Desc>
                     <DPS>
-                        Crit chance: <span style={{ color: theme.colors.rouge }}>{item.critChance ? item.critChance : "?"}%</span>
+                        Crit chance: <span style={{ marginLeft: "4px", color: theme.colors.rouge }}>{item.critChance ? item.critChance : "?"}%</span>
                     </DPS>
                 </BoxDescContainer>
             )
@@ -26,10 +26,10 @@ function ItemBoxDesc({ item, setShow }) {
                         {item.weaponMod?.img && <WeaponMod onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} src={item.weaponMod.img} />}
                     </NameModContainer>
                     <Desc>
-                        Range: <span style={{ color: theme.colors.rouge }}>{item.idealRange}m</span>
+                        Range: <span style={{ marginLeft: "4px", color: theme.colors.rouge }}>{item.idealRange}m</span>
                     </Desc>
                     <DPS>
-                        Base DPS: <span style={{ color: theme.colors.rouge }}>{Math.ceil(item.baseDamage * item.rps)}</span>
+                        Base DPS: <span style={{ marginLeft: "4px", color: theme.colors.rouge }}>{Math.ceil(item.baseDamage * item.rps)}</span>
                     </DPS>
                 </BoxDescContainer>
             )
@@ -39,15 +39,15 @@ function ItemBoxDesc({ item, setShow }) {
             return (
                 <BoxDescContainer>
                     <AltName>{item.name}</AltName>
-                    <Desc>Base Armor: <span style={{ color: theme.colors.rouge }}>{item.baseArmor}</span></Desc>
-                    <ArmorSet>Set: <span style={{ color: theme.colors.rouge }}>{item.armorSet}</span></ArmorSet>
+                    <Desc>Base Armor: <span style={{ marginLeft: "4px", color: theme.colors.rouge }}>{item.baseArmor}</span></Desc>
+                    <ArmorSet>Set: <span style={{ marginLeft: "4px", color: theme.colors.rouge }}>{item.armorSet}</span></ArmorSet>
                 </BoxDescContainer>
             )
         default:
             return (
                 <BoxDescContainer>
                     <AltName>{item.name}</AltName>
-                    <BaseDesc>Worlds: <span style={{ color: theme.colors.rouge }}>{item.worlds}</span></BaseDesc>
+                    <BaseDesc>Worlds: {Array.isArray(item.worlds) ? item.worlds.map((world) => (<span style={{ marginLeft: "4px", color: theme.colors.rouge }}>{world}</span>)) : <span style={{ color: theme.colors.rouge }}>{item.worlds}</span>}</BaseDesc>
                 </BoxDescContainer>
             )
     }

@@ -51,7 +51,7 @@ const IconContainer = styled.button`
     padding: 0;
     cursor: pointer;
     opacity: 1;
-    z-index: 99;
+    z-index: 90;
 `
 
 const StyledCreateBtn = styled.button`
@@ -72,9 +72,8 @@ const StyledCreateBtn = styled.button`
 const BuildImg = styled.img`
     height: 100%;
     width: 100%;
-    object-fit: ${(props) => props.part !== "secondary" ? "contain" : "cover"};
+    object-fit: contain;
     transform: ${(props) => props.part === "melee" && "scale(1.4)"};
-    transform: ${(props) => props.part === "secondary" && "scale(0.75)"};
     :hover {
         transform: ${(props) => props.part === "melee" ? "scale(1.7)" : "scale(1.1)"};
     }

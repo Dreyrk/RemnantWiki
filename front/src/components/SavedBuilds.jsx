@@ -9,6 +9,7 @@ import useCurrentUserContext from '../hooks/useCurrentUserContext'
 import BuildBox from './BuildBox'
 import Navbar from './Navbar.jsx'
 import BuildDisplay from './BuildDisplay.jsx'
+import NoAccess from './NoAccess.jsx'
 
 const variants = {
     hidden: { opacity: 0 },
@@ -16,47 +17,55 @@ const variants = {
         opacity: 1,
         transition: {
             staggerChildren: 0.2,
-            delayChildren: 0.2
+            delayChildren: 0.2,
         }
     }
 }
 
 
 function SavedBuilds() {
-    const { user } = useCurrentUserContext()
+    const { user, token } = useCurrentUserContext()
     const { name } = useParams()
 
     const [index, setIndex] = useState(0)
 
 
     useEffect(() => {
-        if (name) {
+        if (name && token) {
             const decodedName = decodeURIComponent(name)
             setIndex(user.saved.builds.indexOf(user.saved.builds.find(build => build.name.includes(decodedName))))
         }
-    }, [name, user.saved.builds])
+    }, [name, user.saved.builds, token])
 
     if (name) {
         return (
             <Wrapper>
                 <Navbar />
-                <BuildDisplay build={user.saved.builds[index]} showBuild={true} />
+                {token ?
+                    <BuildDisplay build={user.saved.builds[index]} showBuild={true} />
+                    :
+                    <NoAccess />
+                }
             </Wrapper>
         )
     } else {
         return (
             <Wrapper>
                 <Navbar />
-                <BigContainer
-                    variants={variants}
-                    initial="hidden"
-                    animate="show"
-                >
-                    {user.saved.builds.map((build, i) => (<BuildBox key={i} build={build} />))}
-                    <CreateBtn to={"create"}>
-                        <BsPlusCircle size={40} color={theme.colors.blanc} />
-                    </CreateBtn>
-                </BigContainer>
+                {token ?
+                    <BigContainer
+                        variants={variants}
+                        initial="hidden"
+                        animate="show"
+                    >
+                        {user.saved.builds.map((build, i) => (<BuildBox key={i} build={build} />))}
+                        <CreateBtn to={"create"}>
+                            <BsPlusCircle size={40} color={theme.colors.blanc} />
+                        </CreateBtn>
+                    </BigContainer>
+                    :
+                    <NoAccess />
+                }
             </Wrapper>
         )
     }

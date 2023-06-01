@@ -9,6 +9,7 @@ import CurrentUserContextProvider from "./contexts/CurrentUserContext";
 
 const Page = styled.div`
   height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
   overflow-y: auto;
@@ -16,6 +17,10 @@ const Page = styled.div`
   font-family: "Roboto", sans-serif;
   position: relative;
   background-color: ${theme.colors.noir};
+  scroll-snap-type: y mandatory;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

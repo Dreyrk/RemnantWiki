@@ -2,301 +2,451 @@
   {
     "name": "Vigor",
     "description": "Increases Max Health.",
-    "worlds": "Ward 13",
+    "worlds": "ward13",
+    "base": "+2.5",
+    "max": "+50",
+    "unlock": "Starting Trait",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vigor_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Endurance",
     "description": "Increases Max Stamina.",
-    "worlds": "Ward 13",
+    "worlds": "ward13",
+    "base": "+2.5",
+    "max": "+50",
+    "unlock": "Starting Trait",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/endurance_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Exploiter",
     "description": "Increases Weak Spot Damage.",
-    "worlds": "Any",
+    "worlds": "any",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Defeat 150 enemies with Weak Spot damage",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/exploiter_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Spirit",
     "description": "Increases Mod Power Generation.",
-    "worlds": "Earth,Ward 13",
+    "worlds": ["earth", "ward13"],
+    "base": "+1.25%",
+    "max": "+25%",
+    "unlock": "Complete the Supply Run event in the Sorrow's Field dungeon on Earth. The Ex-Cultist archetype starts with this trait.",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/spirit_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Quick Hands",
     "description": "Increases Reload Speed.",
-    "worlds": "Earth",
+    "worlds": "earth",
+    "base": "+1.25%",
+    "max": "+25%",
+    "unlock": "Defeat The Ent or Singe on Earth.",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/quick_hands_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "World Walker",
     "description": "Reduces Stamina cost when sprinting and evading.",
-    "worlds": "Rhom",
+    "base": "-1%",
+    "max": "-20%",
+    "unlock": "Obtained on your first visit to Rhom",
+    "worlds": "rhom",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/world_walker_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Keeper's Blessing",
     "description": "Increases resistance to elemental damage, buildup, and STATUS effects.",
-    "worlds": "Labyrinth",
+    "base": "+0.5%",
+    "max": "+10%",
+    "unlock": "Enter The Labyrinth for the first time. (Campaign only)",
+    "worlds": "labyrinth",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/keepers_blessing_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Mother's Blessing",
     "description": "Increases Ranged damage reduction.",
-    "worlds": "Earth",
+    "base": "+0.5%",
+    "max": "+10%",
+    "unlock": "Successfully defend the Root Mother on Earth. (Campaign only)",
+    "worlds": "earth",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/mothers_blessing_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Teamwork",
     "description": "Increases Mod Power buildup rate, earned Experience when killing enemies, and reduces damage taken when standing near teammates.",
-    "worlds": "Any",
+    "worlds": "any",
+    "base": "+1m",
+    "max": "+20m",
+    "unlock": "Enter a multiplayer session.",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/teamwork_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Warrior",
     "description": "Increases Melee Damage.",
-    "worlds": "Earth,Ward 13",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Successfully defend at least one of the Liz Sisters during the event 'A Tale of Two Liz's' on Earth. The Scrapper archetype starts with this Trait.",
+    "worlds": ["earth", "ward13"],
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warrior_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Shadow Walker",
     "description": "Reduces enemy Awareness.",
-    "worlds": "Earth,Ward 13",
+    "base": "-1.5%",
+    "max": "-30%",
+    "unlock": "Complete the Hunter's Hideout event dungeon on Earth. The Hunter archetype starts with this Trait.",
+    "worlds": ["earth", "ward13"],
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/shadow_walker_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Elder Knowledge",
     "description": "Increases earned Experience when killing enemies.",
-    "worlds": "Ward 13",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Listen to the Tape Recorder found in Level B2 of Ward 13.",
+    "worlds": "ward13",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/elder_knowledge_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Scavenger",
     "description": "Increases the amount of scrap picked up.",
-    "worlds": "Earth,Ward 13",
+    "base": "+1.75%",
+    "max": "+35%",
+    "unlock": "Return the Tarnished Ring to Reggie in Ward 13. Alternatively, collect a total of 50,000 Scrap.",
+    "worlds": ["earth", "ward13"],
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scavenger_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Recovery",
     "description": "Increases Stamina Regen rate and reduces Stamina Regen delay.",
-    "worlds": "Rhom",
+    "base": "+1",
+    "max": "+20",
+    "unlock": "Defeat Claviger or The Harrow on Rhom.",
+    "worlds": ["rhom"],
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/recovery_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Handling",
     "description": "Reduces Gun Spread and Recoil.",
-    "worlds": "Any",
+    "base": "-1%",
+    "max": "-20%",
+    "unlock": "Acquire 10 ranged weapons.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/handling_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Glutton",
     "description": "Increases Consumable Use speed.",
-    "worlds": "Corsus",
+    "base": "+1.75%",
+    "max": "+35%",
+    "unlock": "Defeat The Unclean One on Corsus.",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/glutton_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Catalyst",
-    "description": "Increases chance to proc STATUS effects on enemies.",
-    "worlds": "Corsus",
+    "description": "Increases Mod Power Generation when attacking an enemy with an active Status Effect.",
+    "base": "+2%",
+    "max": "+40%",
+    "unlock": "Defeat The Thrall or Canker on Corsus.",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/catalyst_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Executioner",
     "description": "Increases Critical Hit Chance.",
-    "worlds": "Corsus",
+    "base": "+1.25%",
+    "max": "+25%",
+    "unlock": "Defeat Ixillis on Corsus.",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/executioner_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Triage",
     "description": "Increases Healing Effectiveness.",
-    "worlds": "Yaesha",
+    "base": "+5%",
+    "max": "+100%",
+    "unlock": "Complete the Shrine of the Immortals event on Yaesha. (Campaign Only)",
+    "worlds": "yaesha",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/triage_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Kingslayer",
     "description": "Increases Critical Hit Damage.",
-    "worlds": "Rhom",
+    "base": "+1.25%",
+    "max": "+25%",
+    "unlock": "Defeat the Undying King in Rhom.",
+    "worlds": "rhom",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/kingslayer_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Will to Live",
     "description": "Increases Health while wounded.",
-    "worlds": "Any",
+    "base": "+5%",
+    "max": "+100%",
+    "unlock": "Get revived by teammates 10 times.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/will_to_live_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Arcane Strike",
     "description": "Increases Mod Power gained on Melee hits.",
-    "worlds": "Yaesha",
+    "base": "+1.25%",
+    "max": "+25%",
+    "unlock": "Defeat The Ravager or Totem Father in Yaesha.",
+    "worlds": "yaesha",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/arcane_strike_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Mind's Eye",
     "description": "Increases Ranged Damage.",
-    "worlds": "Ward 17",
+    "base": "+0.75%",
+    "max": "+15%",
+    "unlock": "Defeat the Dreamer in Ward 17.",
+    "worlds": "ward17",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/minds_eye_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Bark Skin",
     "description": "Increases Armor Effectiveness.",
-    "worlds": "Earth",
+    "base": "+0.75%",
+    "max": "+15%",
+    "unlock": "Interact with the Wailing Tree on Earth while wearing the Twisted Mask.",
+    "worlds": "earth",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bark_skin_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Revivalist",
     "description": "Increases Revive Speed.",
-    "worlds": "Any",
+    "base": "+5%",
+    "max": "+100%",
+    "unlock": "Revive teammates 10 times.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/revivalist_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Guardian's Blessing",
-    "description": "Melee Damage Reduction +1%",
-    "worlds": "Yaesha",
+    "description": "Increases Melee Damage Reduction",
+    "base": "+0.5%",
+    "max": "+10%",
+    "unlock": "Defeat the Root Horror Boss on Yaesha.",
+    "worlds": "yaesha",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/guardians_blessing_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Cold as Ice",
     "description": "Increases damage dealt to enemies when attacking them from behind.",
-    "worlds": "Earth",
+    "base": "+0.5%",
+    "max": "+10%",
+    "unlock": "Enter the Brabus encounter on earth without the Pocket Watch and kill your teammate when prompted. (Requires Multiplayer)",
+    "worlds": "earth",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/cold_as_ice_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Trigger Happy",
     "description": "Increases Fire Rate.",
-    "worlds": "Ward 13",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Upgrade a Weapon to +20.",
+    "worlds": "ward13",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/trigger_happy_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Rapid Strike",
     "description": "Increases Melee Attack Speed.",
-    "worlds": "Ward 13",
+    "base": "+0.75%",
+    "max": "+15%",
+    "unlock": "Upgrade a Melee Weapon to +20.",
+    "worlds": "ward13",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/rapid_strike_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Suspicion",
     "description": "Reduced Friendly Fire Damage Taken.",
-    "worlds": "Any",
+    "base": "-2.5%",
+    "max": "-50%",
+    "unlock": "Get downed by teammates 10 times.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/suspicion_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Swiftness",
     "description": "Increases Movement Speed.",
-    "worlds": "Yaesha",
+    "base": "+0.75%",
+    "max": "+15%",
+    "unlock": "Play the Song of the Guardian on any Bell Puzzle found in Yaesha. Combination: 1-1-3-4-1-1-3-2.",
+    "worlds": "yaesha",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/swiftness_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Sleight of Hand",
     "description": "Increases Weapon Swap Speed.",
-    "worlds": "Any",
+    "base": "+2.5%",
+    "max": "+50%",
+    "unlock": "Use 10 different ranged weapons to acquire 100 kills each.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/sleight_of_hand_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Concentration",
     "description": "Increases weapon mod duration.",
-    "worlds": "Corsus",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Use the Cryptolith Sigil on the Cryptolith Tower for the first time. (Adventure Mode only)",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/concentration_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Blood Bond",
     "description": "Damage absorbtion.",
-    "worlds": "Corsus",
+    "base": "+0.75%",
+    "max": "+15%",
+    "unlock": "Use the Cryptolith Sigil on the Cryptolith Tower for the second time. (Adventure Mode only)",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/blood_bond_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Footwork",
     "description": "Aim movement speed.",
-    "worlds": "Corsus",
+    "base": "+1.25%",
+    "max": "+25%",
+    "unlock": "Defeat the Iskal Queen (Boss) on Corsus. (Adventure Mode only)",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/footwork_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Potency",
     "description": "Increases consumable duration.",
-    "worlds": "Corsus",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Use the Iskal Vial on the Graveyard Elf's cauldron in Corsus. (Adventure Mode only)",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/potency_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Fortification",
     "description": "Reduces damage taken while reviving teamates.",
-    "worlds": "Corsus",
+    "base": "-1.25%",
+    "max": "-25%",
+    "unlock": "Obtain the Hero's Ring from the Fetid Pools event in Corsus.",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fortification_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Invoker",
     "description": "Increases summons damage.",
-    "worlds": "Any",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Kill 100 enemies with summoned creatures.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/invoker_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Luminescent",
     "description": "Extra lumenite chance.",
-    "worlds": "Corsus",
+    "base": "+1.5%",
+    "max": "+30%",
+    "unlock": "Give the Opalescent Shell to Mar'Gosh on Corsus. (Adventure Mode only)",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/luminescent_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Evocation",
     "description": "Mod damage bonus.",
-    "worlds": "Corsus",
+    "base": "+0.75%",
+    "max": "+15%",
+    "unlock": "Destroy all hives in the Circlet Hatchery on Corsus without getting hit by Wisps.",
+    "worlds": "corsus",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/evocation_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Armor Piercer",
-    "description": "Deal 5000 damage to enemies' armored regions.",
-    "worlds": "Any",
+    "description": "Increases damage dealt to enemy armored regions.",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Deal 5,000 damage to enemy armored sections.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/armor_piercer_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Climber",
-    "description": "Vault 50 times.",
-    "worlds": "Any",
+    "description": "Increases Vaulting Speed.",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Vault 50 times.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/climber_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Demolitionist",
-    "description": "Kill 100 enemies with explosions.",
-    "worlds": "Any",
+    "description": "Increases Explosion damage.",
+    "base": "+0.75%",
+    "max": "+15%",
+    "unlock": "Kill 100 enemies with explosive damage.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/demolitionist_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Tormentor",
-    "description": "Apply 100 Status Effects to enemies.",
-    "worlds": "Any",
+    "description": "Increases Status effect duration when applied to enemies.",
+    "base": "+1.5%",
+    "max": "+30%",
+    "unlock": "Apply 100 Status Effects to enemies.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/tormentor_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Flash Caster",
-    "description": "Obtain 25 Weapon Mods.",
-    "worlds": "Any",
+    "description": "Increases Weapon Mod Casting Speed.",
+    "base": "+1.25%",
+    "max": "+25%",
+    "unlock": "Obtain 25 Weapon Mods.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/flash_caster_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Vaccine",
-    "description": "Cure 25 Status Effects with Consumables.",
-    "worlds": "Any",
+    "description": "Reduces Status Effect build-up rate.",
+    "base": "-1.5%",
+    "max": "-30%",
+    "unlock": "Cure 25 Status Effects with Consumables.",
+    "worlds": "any",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vaccine_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Hard Charger",
-    "description": "Defeat Brudvaak, the Rider and Vargr, the Warg.",
-    "worlds": "Resium",
+    "description": "Increases Melee Charge damage.",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Defeat Brudvaak and Vargr in Reisum.",
+    "worlds": "resium",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hard_charger_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Siphoner",
-    "description": "Complete the Rescue the Krall Baby event.",
-    "worlds": "Resium",
+    "description": "Increases Life Steal rate.",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Complete the Rescue the Krall Baby event in Resium.",
+    "worlds": "resium",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/siphoner_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Last Resort",
-    "description": "Defeat Harsgaard, Root Harbinger.",
-    "worlds": "Ward Prime",
+    "description": "Increases all damage dealt when Health is below 15%.",
+    "base": "+1%",
+    "max": "+20%",
+    "unlock": "Defeat Harsgaard in Reisum. (Campaign only)",
+    "worlds": "ward_prime",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/last_resort_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
     "name": "Wisdom",
-    "description": "Complete the Ward Prime quest line.",
-    "worlds": "Ward Prime",
+    "description": "Increases Elemental damage",
+    "base": "+0.5%",
+    "max": "+10%",
+    "unlock": "Complete the Ward Prime questline to uncover the portal to Reisum.",
+    "worlds": "ward_prime",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/wisdom_traits_remnant_from_the_ashes_wiki_guide.png"
   }
 ]

@@ -68,11 +68,16 @@ const Container = styled.div`
 `
 
 const HomeLink = styled(NavLink)`
+    position: absolute;
+    top: 95%;
+    left: 50%;
     font-size: 24px;
-    opacity: 0.5;
     padding-right: 50px;
+    opacity: 1;
     :hover {
-        opacity: 1;
+        opacity: 0.75;
+        transform: scale(0.8);
+        transition: 0.3s ease-in-out;
     }
 `
 

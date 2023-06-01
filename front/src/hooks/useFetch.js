@@ -14,10 +14,7 @@ async function fetcher(url) {
 }
 
 export function useFetch(url) {
-  const { data, error } = useSWR(url, fetcher, {
-    revalidateOnFocus: false,
-    shouldRetryOnError: false,
-  });
+  const { data, error } = useSWR(url, fetcher);
 
   return {
     data: data && data.data,

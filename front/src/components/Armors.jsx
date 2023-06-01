@@ -52,6 +52,7 @@ const BoxDisplayContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     overflow-y: auto;
+    overflow-x: hidden;
     gap: 15px;
     @media ${device.desktop} {
         grid-template-columns: repeat(3, 1fr);
@@ -61,6 +62,9 @@ const BoxDisplayContainer = styled.div`
     }
     @media ${device.mobileL} {
         grid-template-columns: repeat(1, 1fr);
+    }
+    ::-webkit-scrollbar {
+        display: none;
     }
 `
 
