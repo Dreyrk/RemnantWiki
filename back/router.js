@@ -8,10 +8,11 @@ import amuletsController from "./controllers/amuletsController.js";
 import ringsController from "./controllers/ringsController.js";
 import armorsController from "./controllers/armorsController.js";
 import armorSetsController from "./controllers/armorSetsController.js";
-import weaponsController from "./controllers/weaponsConroller.js";
+import weaponsController from "./controllers/weaponsController.js";
 import modsController from "./controllers/modsController.js";
 import traitsController from "./controllers/traitsController.js";
 import emotesController from "./controllers/emotesController.js";
+import classesController from "./controllers/classesController.js";
 
 //AUTH IMPORT
 import userController from "./controllers/usersController.js";
@@ -73,5 +74,10 @@ router.post(
 );
 router.put("/api/user/:id", auth.verifyToken, userController.updateUser);
 router.get("/api/user", userController.getAll);
+
+//CLASSES
+router.get("/api/classes/scrapper", classesController.scrapper);
+router.get("/api/classes/cultist", classesController.cultist);
+router.get("/api/classes/hunter", classesController.hunter);
 
 export default router;

@@ -21,10 +21,10 @@ function TraitBox({ trait, isLoading, isError }) {
     } else {
 
         return (
-            <StyledNavLink>
+            <StyledNavLink to={`${trait._id}`}>
                 <BoxContainer onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
                     <FlipContainer
-                        animate={{ rotateY: show ? 180 : 0 }}
+                        animate={{ rotateX: show ? 180 : 0 }}
                         transition={{ duration: 0.6 }}
                     >
                         {show ?
@@ -37,10 +37,10 @@ function TraitBox({ trait, isLoading, isError }) {
                     <BoxDescContainer>
                         <Name column={"1 / span 2"} row={1} >{trait.name}</Name>
                         <Text column={1} row={"2 / span 3"} >Base :
-                            <span style={{ color: theme.colors.rouge }}>{trait.base}</span>
+                            <span style={{ marginLeft: "8px", color: theme.colors.rouge }}>{trait.base}</span>
                         </Text>
                         <Text column={2} row={"2 / span 3"} >Max :
-                            <span style={{ color: theme.colors.rouge }}>{trait.max}</span>
+                            <span style={{ marginLeft: "8px", color: theme.colors.rouge }}>{trait.max}</span>
                         </Text>
                     </BoxDescContainer>
                 </BoxContainer>

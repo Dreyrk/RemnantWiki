@@ -79,7 +79,7 @@ const ModalContainer = styled(motion.div)`
     background-color: ${theme.colors.blanc};
     padding: 15px;
     border-radius: 25px;
-    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 `
 
 const ModImg = styled.img`

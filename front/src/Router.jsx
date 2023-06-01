@@ -22,7 +22,7 @@ const routes = [
     //CHARACTERS
     { path: '/characters', component: Characters },
     { path: '/characters/classes', component: Classes },
-    { path: '/characters/traits', component: Traits },
+    { path: '/characters/traits/:id?', component: Traits },
     { path: '/characters/builds/bests', component: Builds },
     //STUFF
     { path: '/stuff/:itemCategory?', component: Stuff },

@@ -57,11 +57,11 @@ function Login({ accountCreated, variants }) {
                 <SubTitle>Login</SubTitle>
                 <LabelInputContainer>
                     <Label htmlFor="login-email">Email :</Label>
-                    <Input onChange={(e) => setUser({ ...user, email: e.target.value })} name='login-email' type="email" placeholder='johndoe@email.com' />
+                    <Input autoComplete='email' onChange={(e) => setUser({ ...user, email: e.target.value })} id='login-email' type="email" placeholder='johndoe@email.com' />
                 </LabelInputContainer>
                 <PasswordContainer>
                     <Label htmlFor="login-password">Password :</Label>
-                    <Password onChange={(e) => setUser({ ...user, password: e.target.value })} name='login-password' type={hide ? "password" : "text"} placeholder='********' />
+                    <Password autoComplete="current-password" onChange={(e) => setUser({ ...user, password: e.target.value })} id='login-password' type={hide ? "password" : "text"} placeholder='********' />
                     {hide ? <BiHide color={theme.colors.blanc} style={{ position: 'absolute', right: 110, top: 21 }} size={20} onClick={() => setHide(false)} /> : <BiShow color={theme.colors.blanc} style={{ position: 'absolute', right: 110, top: 21 }} size={20} onClick={() => setHide(true)} />}
                 </PasswordContainer>
                 <StyledBtn onClick={loginUser} type='button'>Login</StyledBtn>

@@ -139,6 +139,7 @@ const NavContainer = styled.div`
     background-color: ${theme.colors.gris1};
     position: sticky;
     top: 0;
+    z-index: 99;
     @media ${device.mobileL} {
         height: 65px;
         flex-direction: row-reverse;

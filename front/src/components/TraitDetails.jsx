@@ -1,55 +1,39 @@
 import React, { useEffect, useState, useCallback } from 'react'
-import { useParams } from 'react-router-dom'
-import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-import { theme } from '../style/theme.js'
 import fetchData from '../helpers/fetchData.js'
-import Navbar from '../components/Navbar.jsx'
-import ItemDetailsList from '../components/ItemDetailsList.jsx'
+import { theme } from "../style/theme.js"
+import ItemDetailsList from './ItemDetailsList';
 
-function ItemDetails() {
-    const [details, setDetails] = useState({})
-    const { itemCategory, id } = useParams()
+function TraitDetails({ id }) {
+    const [trait, setTrait] = useState({});
 
     const getData = useCallback(async () => {
-        const data = await fetchData(`items/${itemCategory}/${id}`);
-        setDetails(data)
-    }, [itemCategory, id]);
+        const data = await fetchData(`items/traits/${id}`);
+        setTrait(data)
+    }, [id]);
 
     useEffect(() => {
         getData()
     }, [getData])
 
     return (
-        <Wrapper>
-            <Navbar />
-            <BigContainer>
-                <LeftSideContainer>
-                    <Title>{details.name}</Title>
-                    <Img src={details.img} alt={details.name} />
-                </LeftSideContainer>
-                <RightSideContainer>
-                    <Title>Item Details</Title>
-                    <ItemDetailsList item={details} category={itemCategory} />
-                </RightSideContainer>
-            </BigContainer>
-        </Wrapper>
+        <BigContainer>
+            <LeftSideContainer>
+                <Title>{trait.name}</Title>
+                <Img src={trait.img} alt={trait.name} />
+            </LeftSideContainer>
+            <RightSideContainer>
+                <Title>Item Details</Title>
+                <ItemDetailsList item={trait} category={"trait"} />
+            </RightSideContainer>
+        </BigContainer>
     )
 }
 
-export default ItemDetails;
+export default TraitDetails;
 
-
-
-const Wrapper = styled.div`
-    height: 100%;
-    width: 100%;
-    max-height: 100vh;
-    margin: 0;
-    display: grid;
-    place-items: center;
-`
 const BigContainer = styled.div`
     height: 86vh;
     width: 95%;
