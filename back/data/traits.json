@@ -2,7 +2,7 @@
   {
     "name": "Vigor",
     "description": "Increases Max Health.",
-    "worlds": "ward 13",
+    "worlds": "ward13",
     "base": "+2.5",
     "max": "+50",
     "unlock": "Starting Trait",
@@ -11,7 +11,7 @@
   {
     "name": "Endurance",
     "description": "Increases Max Stamina.",
-    "worlds": "ward 13",
+    "worlds": "ward13",
     "base": "+2.5",
     "max": "+50",
     "unlock": "Starting Trait",
@@ -29,7 +29,7 @@
   {
     "name": "Spirit",
     "description": "Increases Mod Power Generation.",
-    "worlds": "earth & ward 13",
+    "worlds": ["earth", "ward13"],
     "base": "+1.25%",
     "max": "+25%",
     "unlock": "Complete the Supply Run event in the Sorrow's Field dungeon on Earth. The Ex-Cultist archetype starts with this trait.",
@@ -86,7 +86,7 @@
     "base": "+1%",
     "max": "+20%",
     "unlock": "Successfully defend at least one of the Liz Sisters during the event 'A Tale of Two Liz's' on Earth. The Scrapper archetype starts with this Trait.",
-    "worlds": "earth & ward 13",
+    "worlds": ["earth", "ward13"],
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warrior_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
@@ -95,7 +95,7 @@
     "base": "-1.5%",
     "max": "-30%",
     "unlock": "Complete the Hunter's Hideout event dungeon on Earth. The Hunter archetype starts with this Trait.",
-    "worlds": "earth & ward 13",
+    "worlds": ["earth", "ward13"],
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/shadow_walker_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
@@ -104,7 +104,7 @@
     "base": "+1%",
     "max": "+20%",
     "unlock": "Listen to the Tape Recorder found in Level B2 of Ward 13.",
-    "worlds": "ward 13",
+    "worlds": "ward13",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/elder_knowledge_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
@@ -113,7 +113,7 @@
     "base": "+1.75%",
     "max": "+35%",
     "unlock": "Return the Tarnished Ring to Reggie in Ward 13. Alternatively, collect a total of 50,000 Scrap.",
-    "worlds": "earth & ward 13",
+    "worlds": ["earth", "ward13"],
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scavenger_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
@@ -122,7 +122,7 @@
     "base": "+1",
     "max": "+20",
     "unlock": "Defeat Claviger or The Harrow on Rhom.",
-    "worlds": "rhom",
+    "worlds": ["rhom"],
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/recovery_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
@@ -203,7 +203,7 @@
     "base": "+0.75%",
     "max": "+15%",
     "unlock": "Defeat the Dreamer in Ward 17.",
-    "worlds": "ward 17",
+    "worlds": "ward17",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/minds_eye_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
@@ -248,7 +248,7 @@
     "base": "+1%",
     "max": "+20%",
     "unlock": "Upgrade a Weapon to +20.",
-    "worlds": "ward 13",
+    "worlds": "ward13",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/trigger_happy_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
@@ -257,7 +257,7 @@
     "base": "+0.75%",
     "max": "+15%",
     "unlock": "Upgrade a Melee Weapon to +20.",
-    "worlds": "ward 13",
+    "worlds": "ward13",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/rapid_strike_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
@@ -437,7 +437,7 @@
     "base": "+1%",
     "max": "+20%",
     "unlock": "Defeat Harsgaard in Reisum. (Campaign only)",
-    "worlds": "ward Prime",
+    "worlds": "ward_prime",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/last_resort_traits_remnant_from_the_ashes_wiki_guide.png"
   },
   {
@@ -446,7 +446,7 @@
     "base": "+0.5%",
     "max": "+10%",
     "unlock": "Complete the Ward Prime questline to uncover the portal to Reisum.",
-    "worlds": "ward Prime",
+    "worlds": "ward_prime",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/wisdom_traits_remnant_from_the_ashes_wiki_guide.png"
   }
 ]

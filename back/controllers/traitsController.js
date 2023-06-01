@@ -40,15 +40,23 @@ const traitController = {
   getByWorld: async (req, res) => {
     const { world } = req.params;
     try {
-      const data = await trait.find({ worlds: world });
-
-      if (data) {
-        res.status(CODES.SUCCESS).send({ data: data });
+      let data = [];
+      if (world.includes("13")) {
+        data = await trait.find({
+          worlds: { $in: [world] },
+        });
       } else {
-        res.status(CODES.NOT_FOUND).send({ error: "data is undefined" });
+        data = await trait.find({
+          worlds: { $size: 1, $all: [world] },
+        });
+      }
+      if (data.length > 0) {
+        res.status(200).send({ data: data });
+      } else {
+        res.status(404).send({ error: "No trait found for this world" });
       }
     } catch (e) {
-      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
+      res.sendStatus(500);
       console.error(e);
     }
   },

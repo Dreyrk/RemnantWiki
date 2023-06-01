@@ -47,7 +47,7 @@ function ItemBoxDesc({ item, setShow }) {
             return (
                 <BoxDescContainer>
                     <AltName>{item.name}</AltName>
-                    <BaseDesc>Worlds: <span style={{ color: theme.colors.rouge }}>{item.worlds}</span></BaseDesc>
+                    <BaseDesc>Worlds: {Array.isArray(item.worlds) ? item.worlds.map((world) => (<span style={{ color: theme.colors.rouge }}>{world}</span>)) : <span style={{ color: theme.colors.rouge }}>{item.worlds}</span>}</BaseDesc>
                 </BoxDescContainer>
             )
     }

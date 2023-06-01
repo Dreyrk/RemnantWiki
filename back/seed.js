@@ -30,8 +30,10 @@ async function main() {
     useUnifiedTopology: true,
   });
 
+  //RESET ALL USERS
   await user.deleteMany({});
 
+  //FILL DB
   await amulet.deleteMany({});
   await amulet.insertMany(amuletsData);
 

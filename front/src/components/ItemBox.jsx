@@ -18,7 +18,7 @@ const variants = {
     }
 }
 
-function ItemBox({ item, build, addItem, index, trait }) {
+function ItemBox({ item, build, addItem, index, trait, isLoading, isError }) {
     const [show, setShow] = useState(false)
     const { token } = useCurrentUserContext()
     const { pathname } = useLocation()
@@ -88,12 +88,6 @@ function ItemBox({ item, build, addItem, index, trait }) {
         )
     } else {
         <SelectBtn
-            variants={variants}
-            initial="hidden"
-            animate="show"
-            transition={{
-                delay: index * 0.2,
-            }}
             type='button'
         >
             <BoxContainer>
