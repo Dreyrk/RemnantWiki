@@ -18,6 +18,7 @@ const Page = styled.div`
   position: relative;
   background-color: ${theme.colors.noir};
   scroll-snap-type: y mandatory;
+  scroll-padding-top: 100px;
   ::-webkit-scrollbar {
     display: none;
   }

@@ -1,0 +1,382 @@
+[
+  {
+    "name": "One Shot Slayer",
+    "description": "This Build is optimized for one shot enemies without caring about difficulty level",
+    "head": {
+      "name": "Slayer Mask",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slayer_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+      "baseArmor": 12,
+      "maxArmor": 124,
+      "frost": 2,
+      "weight": 9,
+      "armorSet": "Slayer",
+      "bleed": 1,
+      "fire": -1,
+      "rot": 2,
+      "radiation": -2,
+      "corrosive": 3,
+      "shock": -2,
+      "worlds": "Corsus",
+      "category": "head"
+    },
+    "body": {
+      "name": "Slayer Mantle",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slayer_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+      "baseArmor": 26,
+      "maxArmor": 152,
+      "frost": 3,
+      "weight": 15,
+      "armorSet": "Slayer",
+      "bleed": 2,
+      "fire": -3,
+      "rot": 2,
+      "radiation": -2,
+      "corrosive": 3,
+      "shock": -2,
+      "worlds": "Corsus",
+      "category": "body"
+    },
+    "legs": {
+      "name": "Slayer Boots",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slayer_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+      "baseArmor": 15,
+      "maxArmor": 130,
+      "frost": 1,
+      "weight": 10,
+      "armorSet": "Slayer",
+      "bleed": 2,
+      "fire": -2,
+      "rot": 3,
+      "radiation": -2,
+      "corrosive": 3,
+      "shock": -2,
+      "worlds": "Corsus",
+      "category": "legs"
+    },
+    "ring1": {
+      "name": "Bloodletter's Insignia",
+      "description": "BLEEDING effects applied by the wearer steal 10% of the damage dealt and return it to the wearer as Health.",
+      "worlds": "Resium",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bloodletters_insignia_ring_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
+    "ring2": {
+      "name": "Burden of the Follower",
+      "description": "Reduces Fire Rate by 35%. Increases Mod Power generation by 100%.",
+      "worlds": "Yaesha",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/burden_of_the_follower.png"
+    },
+    "amulet": {
+      "name": "Razorwire Necklace",
+      "description": "Increase BLEEDING damage by 50% and Ranged and Melee damage dealt to enemies with BLEEDING by 15%.",
+      "location": "Random drop Reisum",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/razorwire_necklace_amulet_remnant_from_the_ashes_wiki_guide_64px.png",
+      "worlds": "Resium"
+    },
+    "primary": {
+      "name": "Crossbow",
+      "baseDamage": 115,
+      "maxDamage": 345,
+      "rps": 3,
+      "magazine": 1,
+      "idealRange": 18,
+      "maxAmmo": 25,
+      "critChance": 20,
+      "worlds": "Corsus",
+      "category": "primary",
+      "type": "normal",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/crossbow_basic_weapon_remnat_from_the_ashes_wiki_guide_250px.png",
+      "weaponMod": {
+        "name": "Hot Shot",
+        "description": "Ammunition is imbues with flame dealing FIRE damage which is increased by 15%. Shots also have a chance to apply the BURNING effect, dealing 100 FIRE damage over 10 seconds. Lasts 15 seconds.",
+        "worlds": "Ward 13",
+        "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hot_shot_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+      }
+    },
+    "secondary": {
+      "name": "Twin Shot",
+      "category": "secondary",
+      "baseDamage": 60,
+      "maxDamage": 180,
+      "rps": 7.5,
+      "magazine": 2,
+      "idealRange": 16,
+      "maxAmmo": 34,
+      "critChance": 15,
+      "worlds": "Reisum",
+      "type": "normal",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/minicrossbow_weapon_remnant_from_the_ashes_wiki_guide_150px.png",
+      "weaponMod": {
+        "name": "Fan of Knives",
+        "description": "Throw a fan of 7 knives that deal 20 damage each and applying the BLEED effect dealing 600 damage over 20s. Max 2 Charges",
+        "worlds": "Resium",
+        "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fan_of_knives_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
+      }
+    },
+    "melee": {
+      "name": "Scar of The Jungle God",
+      "baseDamage": 27,
+      "maxDamage": 81,
+      "weaponMod": {
+        "name": "Razor Sharp",
+        "description": "Charge attacks have apply the BLEEDING effect dealing 200 damage over 20 seconds"
+      },
+      "worlds": "Yaesha",
+      "category": "melee",
+      "critChance": 5,
+      "type": "normal",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scarofthejunglegod_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
+    }
+  },
+  {
+    "name": "Radiant Executionner (Crit Build)",
+    "description": "This build maximize chance and damage of critical hits",
+    "head": {
+      "name": "Radiant Visage",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/radiant_head_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+      "baseArmor": 14,
+      "maxArmor": 128,
+      "frost": 3,
+      "weight": 12,
+      "armorSet": "Radiant",
+      "bleed": 2,
+      "fire": 2,
+      "rot": -2,
+      "radiation": 0,
+      "corrosive": -4,
+      "shock": 3,
+      "worlds": "Yaesha",
+      "category": "head"
+    },
+    "body": {
+      "name": "Radiant Protector",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/radiant_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+      "baseArmor": 33,
+      "maxArmor": 166,
+      "frost": 3,
+      "weight": 29,
+      "armorSet": "Radiant",
+      "bleed": 1,
+      "fire": 3,
+      "rot": -1,
+      "radiation": -1,
+      "corrosive": -5,
+      "shock": 4,
+      "worlds": "Yaesha",
+      "category": "body"
+    },
+    "legs": {
+      "name": "Radiant Greaves",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/radiant_legs_armor_remnant_from_the_ashes_wiki_guide_64px.png",
+      "baseArmor": 22,
+      "maxArmor": 144,
+      "frost": 3,
+      "weight": 18,
+      "armorSet": "Radiant",
+      "bleed": 1,
+      "fire": 2,
+      "rot": -1,
+      "radiation": 0,
+      "corrosive": -4,
+      "shock": 3,
+      "worlds": "Yaesha",
+      "category": "legs"
+    },
+    "ring1": {
+      "name": "Braided Thorns",
+      "description": "Increase Crit Chance by 10%. Gain an additional 10% for 10 seconds after slaying an enemy.",
+      "worlds": "Earth",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/braided_thorns_ring_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
+    "ring2": {
+      "name": "Devouring Loop",
+      "description": "Critical Hits have a 5% chance to deal 4x damage.",
+      "worlds": "Corsus",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/devouring_loop_ring_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
+    "amulet": {
+      "name": "Gunslinger's Charm",
+      "description": "Increases Fire Rate by 15% and Reload Speed by 20%",
+      "location": "Can be found at a random location at Earth.",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/gunslingers_charm_amulet_remnant_from_the_ashes_wiki_guide_64px.png",
+      "worlds": "Earth"
+    },
+    "primary": {
+      "name": "Fusion Rifle",
+      "baseDamage": 9,
+      "maxDamage": 27,
+      "rps": 2.8,
+      "magazine": 50,
+      "idealRange": 20,
+      "maxAmmo": 300,
+      "critChance": 5,
+      "worlds": "Ward Prime",
+      "category": "primary",
+      "weaponMod": {
+        "name": "Fusion Cannon",
+        "description": "Fires a large powerful beam that penetrates through enemies dealing 80 for a single charge. Multiple charges increase damage dealt, recoil, and beam thickness per charge. 50 stacks",
+        "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fusioncannon_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
+      },
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fusionrifle_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
+    },
+    "secondary": {
+      "name": "Machine Pistol",
+      "category": "secondary",
+      "baseDamage": 8,
+      "maxDamage": 24,
+      "rps": 18,
+      "magazine": 24,
+      "idealRange": 18,
+      "maxAmmo": 240,
+      "critChance": 5,
+      "worlds": "Ward Prime",
+      "type": "normal",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/machinepistol_weapon_remnant_from_the_ashes_wiki_guide_150px.png",
+      "weaponMod": {
+        "name": "Hunter's Mark",
+        "description": "Marks all enemies within 35 meters for the caster and their allies. Crit Chance against marked enemies is increased by 10%. Lasts 30 seconds.",
+        "worlds": "Ward 13",
+        "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hunters_mark_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+      }
+    },
+    "melee": {
+      "name": "Hero's Sword",
+      "baseDamage": 48,
+      "maxDamage": 144,
+      "weaponMod": {
+        "name": "Energy Wave",
+        "description": "Charge attacks release an energy wave allowing the wielder to strike enemies from farther away."
+      },
+      "worlds": "Any",
+      "category": "melee",
+      "critChance": 10,
+      "type": "normal",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/adventurers_blade_basic_weapon_remnant_from_the_ashes_wiki_guide_220px.png"
+    }
+  },
+  {
+    "name": "Explosive Warlord (DoT Build)",
+    "description": "Perfect for explosing enemies whithout caring of his life",
+    "head": {
+      "name": "Warlord Skull",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warlord_helmet_armor_item_remnant_from_the_ashes_wiki_guide_64px.png",
+      "baseArmor": 16,
+      "maxArmor": 132,
+      "frost": 3,
+      "weight": 14,
+      "armorSet": "Warlord",
+      "bleed": 1,
+      "fire": -1,
+      "rot": -3,
+      "radiation": -1,
+      "corrosive": 2,
+      "shock": 3,
+      "category": "head",
+      "worlds": "Resium"
+    },
+    "body": {
+      "name": "Warlord Armor",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warlord_armor_item_remnant_from_the_ashes_wiki_guide_64px.png",
+      "baseArmor": 34,
+      "maxArmor": 168,
+      "frost": 6,
+      "weight": 31,
+      "armorSet": "Warlord",
+      "bleed": 2,
+      "fire": -2,
+      "rot": -5,
+      "radiation": -1,
+      "corrosive": 2,
+      "shock": 2,
+      "worlds": "Resium",
+      "category": "body"
+    },
+    "legs": {
+      "name": "Warlord Boots",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/warlord_legs_armor_item_remnant_from_the_ashes_wiki_guide_64px.png",
+      "baseArmor": 21,
+      "maxArmor": 142,
+      "frost": 5,
+      "bleed": 2,
+      "fire": -2,
+      "rot": -3,
+      "radiation": -1,
+      "corrosive": 2,
+      "shock": 1,
+      "armorSet": "Warlord",
+      "worlds": "Resium",
+      "category": "legs"
+    },
+    "ring1": {
+      "name": "Prismatic Diamond Ring",
+      "description": "Increases ELEMENTAL damage by 10%.",
+      "worlds": "Resium",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/prismaticdiamond_ring_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
+    "ring2": {
+      "name": "Band of Discord",
+      "description": "Reduces Consumable Use Speed by 15%. Dragon Hearts heal the wearer with 125 Health over 30 seconds.",
+      "worlds": "Resium",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/band_of_discord_ring_remnant_from_the_ashes_wiki_guide_64px.png"
+    },
+    "amulet": {
+      "name": "Vulcan's Detonator",
+      "description": "Increases Explosion Damage by 25%. Explosions apply BURNING status effect.",
+      "location": "Warning Totems event: destroy all totems while alerting all of them",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vulcansdetonator_amulet_remnant_from_the_ashes_wiki_guide_64px.png",
+      "worlds": "Resium"
+    },
+    "primary": {
+      "name": "Eye of the Storm",
+      "baseDamage": 65,
+      "maxDamage": 195,
+      "rps": 1.7,
+      "magazine": 15,
+      "idealRange": 25,
+      "maxAmmo": 45,
+      "critChance": 10,
+      "worlds": "Yaesha",
+      "category": "primary",
+      "type": "shock",
+      "weaponMod": {
+        "name": "Static Field Shot",
+        "description": "Fires a projectile that deals 65 SHOCK damage and applies the OVERLOADED effect. Overloaded enemies will trigger an explosion when they get within 4 meters from each other dealing up to 325 SHOCK damage within a 5 meter.",
+        "worlds": "Yaesha",
+        "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/eye_of_the_storm_statice_field_shot_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+      },
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/boss_eyeofthestorm_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
+    },
+    "secondary": {
+      "name": "Hive Cannon",
+      "category": "secondary",
+      "baseDamage": 57,
+      "maxDamage": 171,
+      "rps": 1.8,
+      "magazine": 5,
+      "idealRange": 16,
+      "maxAmmo": 25,
+      "critChance": 5,
+      "worlds": "Corsus",
+      "type": "corrosive",
+      "weaponMod": {
+        "name": "Hive Shot",
+        "description": "Fires a projectile that deals 20 CORROSIVE damage within 2.5 meters releasing an insect cloud that lasts for 12 seconds. Spreads to nearby enemies.",
+        "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hive_cannon_hive_shot_weapon_mod_remnant_from_the_ashes_wiki_guide_64px.png"
+      },
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hivecannon_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
+    },
+    "melee": {
+      "name": "Scar of The Jungle God",
+      "baseDamage": 27,
+      "maxDamage": 81,
+      "weaponMod": {
+        "name": "Razor Sharp",
+        "description": "Charge attacks have apply the BLEEDING effect dealing 200 damage over 20 seconds"
+      },
+      "worlds": "Yaesha",
+      "category": "melee",
+      "critChance": 5,
+      "type": "normal",
+      "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scarofthejunglegod_boss_weapon_remnant_from_the_ashes_wiki_guide_150px.png"
+    }
+  }
+]

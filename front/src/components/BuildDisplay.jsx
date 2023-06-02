@@ -40,7 +40,7 @@ function BuildDisplay({ build, showBuild }) {
                         transition={{ delay: 0.5, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
                         exit={{ y: 150, scale: 0.2, opacity: 0 }}
                     >
-                        <BuildImg src={build.head.img} />
+                        <BuildImg src={build.head.img} alt='build-item' />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/armors/${build.body._id}`}
@@ -51,7 +51,7 @@ function BuildDisplay({ build, showBuild }) {
                         transition={{ delay: 0.7, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
                         exit={{ scale: 0.2, opacity: 0 }}
                     >
-                        <BuildImg src={build.body.img} />
+                        <BuildImg src={build.body.img} alt='build-item' />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/armors/${build.legs._id}`}
@@ -62,7 +62,7 @@ function BuildDisplay({ build, showBuild }) {
                         transition={{ delay: 0.5, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
                         exit={{ y: -150, scale: 0.2, opacity: 0 }}
                     >
-                        <BuildImg src={build.legs.img} />
+                        <BuildImg src={build.legs.img} alt='build-item' />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/amulets/${build.amulet._id}`}
@@ -73,7 +73,7 @@ function BuildDisplay({ build, showBuild }) {
                         transition={{ delay: 0.3, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
                         exit={{ y: 50, x: 185, scale: 0.2, opacity: 0 }}
                     >
-                        <BuildImg src={build.amulet.img} />
+                        <BuildImg src={build.amulet.img} alt='build-item' />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/rings/${build.ring1._id}`}
@@ -84,7 +84,7 @@ function BuildDisplay({ build, showBuild }) {
                         transition={{ delay: 0.3, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
                         exit={{ y: -50, x: 185, scale: 0.2, opacity: 0 }}
                     >
-                        <BuildImg src={build.ring1.img} />
+                        <BuildImg src={build.ring1.img} alt='build-item' />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/rings/${build.ring2._id}`}
@@ -95,7 +95,7 @@ function BuildDisplay({ build, showBuild }) {
                         transition={{ delay: 0.1, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
                         exit={{ y: -50, x: 381, scale: 0.2, opacity: 0 }}
                     >
-                        <BuildImg src={build.ring2.img} />
+                        <BuildImg src={build.ring2.img} alt='build-item' />
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/weapons/${build.primary._id}`}
@@ -106,7 +106,11 @@ function BuildDisplay({ build, showBuild }) {
                         transition={{ delay: 0, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
                         exit={{ x: -451, scale: 0.115, opacity: 0 }}
                     >
-                        <BuildImg src={build.primary.img} />
+                        <BuildImg src={build.primary.img} alt='build-item' />
+                        {build.primary.weaponMod.img &&
+                            <ModLink to={`/stuff/mods/${build.primary.weaponMod._id}`}>
+                                <ModImg src={build.primary.weaponMod.img} alt='weapon-mod' />
+                            </ModLink>}
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/weapons/${build.secondary._id}`}
@@ -117,7 +121,12 @@ function BuildDisplay({ build, showBuild }) {
                         transition={{ delay: 0.3, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
                         exit={{ y: 50, x: -195, scale: 0.2, opacity: 0 }}
                     >
-                        <BuildImg secondary src={build.secondary.img} />
+                        <BuildImg secondary src={build.secondary.img} alt='build-item' />
+                        {build.secondary.weaponMod.img &&
+                            <ModLink to={`/stuff/mods/${build.secondary.weaponMod._id}`}>
+                                <ModImg src={build.secondary.weaponMod.img} alt='weapon-mod' />
+                            </ModLink>
+                        }
                     </GridContainer>
                     <GridContainer
                         to={`/stuff/weapons/${build.melee._id}`}
@@ -128,7 +137,10 @@ function BuildDisplay({ build, showBuild }) {
                         transition={{ delay: 0.3, type: 'spring', stiffness: 60, bounce: 0.5, duration: 0.5 }}
                         exit={{ y: -50, x: -195, scale: 0.2, opacity: 0 }}
                     >
-                        <BuildImg src={build.melee.img} />
+                        <BuildImg src={build.melee.img} alt='build-item' />
+                        {build.melee.weaponMod.img &&
+                            <ModImg src={build.melee.weaponMod.img} alt='weapon-mod' />
+                        }
                     </GridContainer>
                 </BuildContainer >
             }
@@ -137,6 +149,22 @@ function BuildDisplay({ build, showBuild }) {
 }
 
 export default BuildDisplay;
+
+const ModLink = styled(NavLink)`
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 1;
+    :hover {
+        transform: scale(1.4);
+    }
+`
+
+const ModImg = styled.img`
+    height: 100%;
+    width: 100;
+    object-fit: contain;
+`
 
 const Title = styled(motion.h1)`
     margin: 0;
@@ -157,12 +185,15 @@ const Desc = styled(motion.p)`
 `
 
 const Wrapper = styled.div`
-    top: 12%;
-    height: 85%;
-    max-height: 80vh;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 83vh;
     width: 1420px;
     border-radius: 25px;
     background-color: ${theme.colors.gris2};
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
     @media ${device.mobileL} {
      width: 400px;
     }
@@ -194,6 +225,7 @@ const GridContainer = styled(motion(NavLink))`
     background-color: rgba(244, 244, 246, 0.4);
     border-radius: 25px;
     opacity: 1;
+    position: relative;
 `
 
 const BuildImg = styled.img`

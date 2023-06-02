@@ -63,7 +63,7 @@ function Stuff() {
                             if (cat.name !== "Challenge Build") {
                                 return (
                                     <StyledLink key={cat.name} to={cat.link}>
-                                        <StyledBtn type='button'>{cat.name}</StyledBtn>
+                                        <StyledBtn disabled={cat.disabled ? true : false} type='button'>{cat.name}</StyledBtn>
                                     </StyledLink>
                                 )
                             } else {
