@@ -13,8 +13,6 @@ import TraitCircle from './TraitCircle.jsx'
 function ClassCard({ data, isLoading, isError }) {
     const [imgSelected, setImgSelected] = useState(missing)
 
-    console.log(data)
-
     useEffect(() => {
         if (data?.other.img.original) {
             setImgSelected(data.other.img.original)
@@ -78,14 +76,14 @@ function ClassCard({ data, isLoading, isError }) {
                         top={"50px"} row={"4 / span 6"} column={"6 / span 8"} >
                         <BuildImg src={data.primary.img} alt='primary' scale={"scale(1.8)"} />
                     </Container>
-                    <Container
+                    <TraitContainer
                         justify={"space-around"}
                         row={"2 / span 3"} column={"4 / span 7"} >
                         {data.traits.map((trait) => (
                             <TraitCircle key={trait._id} trait={trait} />
                         )
                         )}
-                    </Container>
+                    </TraitContainer>
                 </BuildContainer>
             </ClassContainer>
         )
@@ -99,6 +97,7 @@ const BuildImg = styled.img`
     width: 100%;
     object-fit: contain;
     transform: ${(props) => props.scale};
+    
 `
 
 const Container = styled(NavLink)`
@@ -113,9 +112,25 @@ const Container = styled(NavLink)`
     padding-bottom: ${(props) => props.bottom};
     padding-top: ${(props) => props.top};
     opacity: 1;
+    :hover {
+    transform: scale(1.2)
+    }
 `
 
-const BuildContainer = styled(motion.div)`
+const TraitContainer = styled.div`
+    max-height: 180px;
+    max-width: 200px;
+    display: flex;
+    justify-content: ${(props) => props.justify ? props.justify : "center"};
+    align-items: center;
+    grid-column: ${(props) => props.column};
+    grid-row: ${(props) => props.row};
+    place-self: ${(props) => props.place};
+    padding-bottom: ${(props) => props.bottom};
+    padding-top: ${(props) => props.top};
+`
+
+const BuildContainer = styled.div`
     grid-column: 2;
     grid-row: 2 / span 3;
     display: grid;
@@ -148,7 +163,6 @@ const DescriptionContainer = styled.div`
     padding: 15px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), -2px -2px 10px rgba(255, 255, 255, 0.5);
-    overflow-y: auto;
 `
 
 const StepsContainer = styled.div`
@@ -192,7 +206,7 @@ const SkinImg = styled(motion.img)`
 `
 
 const ClassContainer = styled.div`
-    height: 82vh;
+    height: 83vh;
     width: 95vw;
     background-color: ${theme.colors.gris1};
     border-radius: 25px;
@@ -202,7 +216,7 @@ const ClassContainer = styled.div`
     place-content: center;
 `
 const Desc = styled.p`
-    height: 100%;
+    height: 80%;
     width: 100%;
     margin: 0;
     margin-top: 15px;
@@ -210,4 +224,5 @@ const Desc = styled.p`
     font-size: 18px;
     color: ${theme.colors.blanc};
     text-align: center;
+    overflow-y: auto;
 `

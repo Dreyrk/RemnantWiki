@@ -18,6 +18,7 @@ import classesController from "./controllers/classesController.js";
 import userController from "./controllers/usersController.js";
 import loginController from "./auth/login.js";
 import auth from "./auth/auth.js";
+import buildsController from "./controllers/buildsController.js";
 
 //AMULETS
 router.get("/api/items/amulets", amuletsController.getAll);
@@ -79,5 +80,8 @@ router.get("/api/user", userController.getAll);
 router.get("/api/classes/scrapper", classesController.scrapper);
 router.get("/api/classes/cultist", classesController.cultist);
 router.get("/api/classes/hunter", classesController.hunter);
+
+//BUILDS
+router.get("/api/builds/bests", buildsController.getAll);
 
 export default router;

@@ -26,6 +26,7 @@ const category = [
   {
     name: "Items",
     link: "/stuff/items",
+    disabled: true,
   },
 ];
 

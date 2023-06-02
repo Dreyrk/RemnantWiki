@@ -31,7 +31,7 @@ function ItemDetailsList({ item, category }) {
                         <ModDesc>
                             <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Location :</span>
                             <br />
-                            {item.location}
+                            {item.location ? item.location : "Unknown informations"}
                         </ModDesc>
                     </ListItem>
                     <ListItem variants={{
@@ -41,7 +41,7 @@ function ItemDetailsList({ item, category }) {
                         <ModDesc>
                             <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> :
                             <br />
-                            {item.description}
+                            {item.description ? item.description : "Unknown informations"}
                         </ModDesc>
                     </ListItem>
                 </DetailsList>
