@@ -63,5 +63,5 @@ const LikeContainer = styled.button`
     position: absolute;
     top: 2.5;
     left: 5;
-    z-index: 99;
+    z-index: 3;
 `
