@@ -13,12 +13,13 @@ import modsController from "./controllers/modsController.js";
 import traitsController from "./controllers/traitsController.js";
 import emotesController from "./controllers/emotesController.js";
 import classesController from "./controllers/classesController.js";
+import buildsController from "./controllers/buildsController.js";
+import worldsController from "./controllers/worldsController.js";
 
 //AUTH IMPORT
 import userController from "./controllers/usersController.js";
 import loginController from "./auth/login.js";
 import auth from "./auth/auth.js";
-import buildsController from "./controllers/buildsController.js";
 
 //AMULETS
 router.get("/api/items/amulets", amuletsController.getAll);
@@ -83,5 +84,8 @@ router.get("/api/classes/hunter", classesController.hunter);
 
 //BUILDS
 router.get("/api/builds/bests", buildsController.getAll);
+
+//WORLDS
+router.get("/api/worlds", worldsController.getAll);
 
 export default router;

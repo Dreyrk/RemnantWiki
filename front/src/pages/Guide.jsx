@@ -10,7 +10,7 @@ function Guide() {
         <>
             <Navbar />
             <Container>
-                <StyledLink to={"walktrough"} column={1} row={1}>
+                <StyledLink to={"walkthrough"} column={1} row={1}>
                     <StyledBtn>Walkthrough</StyledBtn>
                 </StyledLink>
                 <StyledLink to={"newgame"} column={2} row={1}>

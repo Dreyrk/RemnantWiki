@@ -48,7 +48,9 @@ function Auth() {
                 :
                 <Container>
                     <SuccessBox />
-                    <HomeLink to={"/"}><AiFillHome color={theme.colors.blanc} size={40} /></HomeLink>
+                    <HomeLink to={"/"}>
+                        <AiFillHome color={theme.colors.blanc} size={40} />
+                    </HomeLink>
                 </Container>
             }
         </Wrapper>
@@ -68,9 +70,9 @@ const Container = styled.div`
 `
 
 const HomeLink = styled(NavLink)`
-    position: absolute;
-    top: 95%;
-    left: 50%;
+    position: sticky;
+    bottom: -10%;
+    left: 45%;
     font-size: 24px;
     padding-right: 50px;
     opacity: 1;

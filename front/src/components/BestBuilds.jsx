@@ -19,7 +19,7 @@ function BestBuilds() {
 
     useEffect(() => {
         getData()
-    }, [])
+    }, [getData])
 
     return (
         <Container>
