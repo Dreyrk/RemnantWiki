@@ -6,6 +6,7 @@ import { IoClose } from 'react-icons/io5';
 import { theme } from '../style/theme.js';
 import UpperCaseFirstLetter from "../helpers/UpperCaseFirstLetter.js"
 import ItemBox from "./ItemBox.jsx"
+import Loading from './Loading.jsx';
 
 
 function ItemsList({ data, isLoading, isError, setShow, part, setBuild }) {
@@ -22,12 +23,12 @@ function ItemsList({ data, isLoading, isError, setShow, part, setBuild }) {
 
     if (isLoading) {
         return (
-            <p>Loading</p>
+            <Loading />
         )
     }
     else if (isError) {
         return (
-            <p>Error</p>
+            <p>{isError}</p>
         )
     }
     else if (data) {

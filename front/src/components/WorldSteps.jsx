@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 import { theme } from '../style/theme';
-
-
-function calculatePosition(i) {
-    const row = Math.floor(i / 5) * 2 + 2;
-    const col = ((i < 5) ? i : (9 - i)) + 1;
-    return { row, col };
-}
+import { calculatePosition } from '../helpers/calculatePosition';
 
 const calculateScrollValues = (textLength) => {
     if (textLength > 40) {
-        const overflowPercentage = ((textLength - 10) / textLength) * 100;
+        //Overflow restant à scroll (en %)
+        const overflowPercentage = ((textLength > 200 ? textLength - 100 : textLength - 20) / textLength) * 100;
         return {
-            initial: { y: textLength < 100 ? "20%" : "35%" },
+            initial: { y: textLength < 200 ? "25%" : "40%" },
             animate: { y: `${overflowPercentage - 100}%` }
         };
     }
@@ -25,21 +20,59 @@ const calculateScrollValues = (textLength) => {
     };
 }
 
-function WorldSteps({ step, index }) {
+const initial = {
+    scale: 0,
+    x: -114,
+    y: -50
+}
+
+const visible = {
+    scale: 1,
+    x: -114,
+    y: 0
+}
+
+const variants = {
+    hidden: (i = 1) => ({
+        x: i !== 5 && -2000,
+        y: i === 5 && -2000,
+        opacity: 0
+    }),
+    visible: {
+        x: 0,
+        opacity: 1
+    }
+};
+
+function WorldSteps({ step, index, reference }) {
     const [show, setShow] = useState(false)
     const { row, col } = calculatePosition(index);
+    const transitionDelay = index * 0.2;
 
-    console.log(step)
+    const inView = useInView(reference, {
+        once: true
+    });
 
     return (
-        <StyledFragment key={index} row={row} col={col} direction={row === 4 ? 'rtl' : 'ltr'}>
-            <Step onMouseLeave={() => setShow(false)} onMouseEnter={() => setShow(true)}>{index + 1}</Step>
+        <StyledFragment
+            initial="hidden"
+            animate={inView ? "visible" : "hidden"}
+            variants={variants}
+            transition={{ delay: transitionDelay, stiffness: 100, duration: 0.8 }}
+            row={row}
+            col={col}
+            direction={row === 4 ? 'rtl' : 'ltr'}>
             <StepPath vertical={index === 5} row={row} />
+            <Step onMouseLeave={() => setShow(false)} onMouseEnter={() => setShow(true)}>{index + 1}</Step>
             {show &&
-                <ModalContainer>
+                <ModalContainer
+                    initial={initial}
+                    animate={visible}
+                    transition={{ type: "spring", stiffness: 100 }}
+                >
                     <ScrollText
                         {...calculateScrollValues(step.length)}
-                        transition={{ ease: "linear", duration: step.length / 10 }}
+                        transition={{ ease: "linear", duration: step.length / 20 }}
                     >
                         {step}
                     </ScrollText>
@@ -51,19 +84,29 @@ function WorldSteps({ step, index }) {
 
 export default WorldSteps;
 
-const ScrollText = styled(motion.div)`
+const StyledFragment = styled(motion.div)`
+    position: relative;
+    grid-row: ${(props) => props.row};
+    grid-column: ${(props) => props.col};
+    direction: ${(props) => props.direction};
+`
+
+const ScrollText = styled(motion.p)`
     display: block;
     color: ${theme.colors.noir};
     font-size: 22px;
+    white-space: pre-line;
+    text-align: center;
+    margin: 0;
 `;
 
 const ModalContainer = styled(motion.div)`
     position: absolute;
     z-index: 3;
-    width: 200px;
+    width: 250px;
     height: 100px;
     bottom: -120px;
-    left: 50%;
+    left: 30%;
     transform: translateX(-50%);
     background-color: ${theme.colors.blanc};
     border-radius: 10px;
@@ -76,14 +119,7 @@ const ModalContainer = styled(motion.div)`
     overflow: hidden;
 `
 
-const StyledFragment = styled.div`
-    position: relative;
-    grid-row: ${(props) => props.row};
-    grid-column: ${(props) => props.col};
-    direction: ${(props) => props.direction};
-`
-
-const Step = styled.div`
+const Step = styled(motion.div)`
     height: 120px;
     width: 120px;
     display: grid;
@@ -100,7 +136,7 @@ const Step = styled.div`
     }
 `
 
-const StepPath = styled.div`
+const StepPath = styled(motion.div)`
     position: absolute;
     width: calc(100% + 140px);
     bottom: ${(props) => props.vertical ? '200%' : '50%'};

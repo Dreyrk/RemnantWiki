@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 import { theme } from '../style/theme.js';
 
@@ -37,10 +37,17 @@ const child = {
 
 function AnimatedText({ text, size, justify, col, row, decoration }) {
 
+    const ref = useRef(null)
+
+    const inView = useInView(ref, {
+        once: true
+    });
+
     const letters = Array.from(text)
 
     return (
         <Container
+            ref={ref}
             decoration={decoration}
             column={col}
             row={row}
@@ -48,7 +55,7 @@ function AnimatedText({ text, size, justify, col, row, decoration }) {
             justify={justify}
             variants={container}
             initial="hidden"
-            animate="visible"
+            animate={inView ? "visible" : "hidden"}
         >
             {letters.map((letter, i) => (
                 <motion.span variants={child} key={i}>

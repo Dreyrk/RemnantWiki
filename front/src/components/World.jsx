@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import styled from 'styled-components';
 
 import { theme } from '../style/theme';
@@ -22,8 +22,10 @@ const backgroundImageUrl = (world) => {
 }
 
 function World({ world }) {
+    const ref = useRef(null)
+
     return (
-        <WorldContainer img={backgroundImageUrl(world)}>
+        <WorldContainer ref={ref} img={backgroundImageUrl(world)}>
             <AnimatedText col={3} row={1} size={"42px"} text={world.name} />
             <Desc>
                 <span style={{ textDecoration: "underline", fontSize: "22px", fontWeight: 700, margin: 0 }}>Description</span>
@@ -31,7 +33,7 @@ function World({ world }) {
             </Desc>
             {world.steps.map((step, i) => {
                 return (
-                    <WorldSteps key={i} step={step} index={i} />
+                    <WorldSteps reference={ref} key={i} step={step} index={i} />
                 )
             })}
         </WorldContainer>

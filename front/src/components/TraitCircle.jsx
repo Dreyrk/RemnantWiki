@@ -7,7 +7,6 @@ import { theme } from '../style/theme.js'
 
 
 function TraitCircle({ trait }) {
-
     const [hovered, setHovered] = useState(false)
 
     return (

@@ -1,7 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
+
 import useFetch from '../hooks/useFetch.js'
+import Navbar from '../components/Navbar'
 import World from '../components/World'
+import Loading from '../components/Loading'
 
 function Walkthrough() {
     const { data, isLoading, isError } = useFetch("worlds")
@@ -10,7 +12,7 @@ function Walkthrough() {
         return (
             <>
                 <Navbar />
-                <p>Loading...</p>
+                <Loading />
             </>
         )
     } else if (!data && isError) {
