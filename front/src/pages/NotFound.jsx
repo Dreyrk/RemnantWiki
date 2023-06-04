@@ -49,7 +49,7 @@ function NotFound() {
                 initial="initial"
                 animate="animate"
                 variants={childVariants}
-            >Page not found
+            >Page not Found
                 <br />
                 <StyledSpan
                     initial="initial"

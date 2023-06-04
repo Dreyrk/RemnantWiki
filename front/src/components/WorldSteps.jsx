@@ -140,8 +140,8 @@ const StepPath = styled(motion.div)`
     position: absolute;
     width: calc(100% + 140px);
     bottom: ${(props) => props.vertical ? '200%' : '50%'};
-    left: ${(props) => props.row === 2 && !props.vertical ? '-230px' : '-60%'};
-    right: ${(props) => props.row === 4 && !props.vertical ? '-230px' : 'auto'};
+    left: ${(props) => props.row === 2 && props.vertical ? '-60%' : '-230px'};
+    right: ${(props) => props.row === 4 && props.vertical ? '-60%' : '-230px'};
     border-top: 2px solid ${theme.colors.rouge};
     z-index: 1;
     transform: ${(props) => props.vertical && 'rotate(90deg)'};
