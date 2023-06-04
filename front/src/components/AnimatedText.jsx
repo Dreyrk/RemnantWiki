@@ -35,12 +35,15 @@ const child = {
     }
 }
 
-function AnimatedText({ text, size, justify }) {
+function AnimatedText({ text, size, justify, col, row, decoration }) {
 
     const letters = Array.from(text)
 
     return (
         <Container
+            decoration={decoration}
+            column={col}
+            row={row}
             size={size}
             justify={justify}
             variants={container}
@@ -48,9 +51,9 @@ function AnimatedText({ text, size, justify }) {
             animate="visible"
         >
             {letters.map((letter, i) => (
-                <DescLetter variants={child} key={i}>
+                <motion.span variants={child} key={i}>
                     {letter === " " ? "\u00A0" : letter}
-                </DescLetter>
+                </motion.span>
             ))}
         </Container>
     )
@@ -66,9 +69,7 @@ const Container = styled(motion.div)`
     overflow: hidden;
     font-size: ${(props) => props.size ? props.size : "42px"};
     font-weight: 700;
-    grid-column: 1 / span 2;
-`
-
-const DescLetter = styled(motion.span)`
+    grid-column: ${(props) => props.column ? props.column : "1 / span 2"};
+    text-decoration: ${(props) => props.decoration};
     color: ${theme.colors.blanc};
 `
