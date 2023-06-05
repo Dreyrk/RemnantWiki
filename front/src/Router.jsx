@@ -17,6 +17,7 @@ import SavedBuilds from './components/SavedBuilds';
 import SavedItems from './components/SavedItems';
 import Classes from './components/Classes';
 import Traits from './components/Traits';
+import BestBuilds from './components/BestBuilds';
 
 const routes = [
     { path: '/', component: Home },
@@ -24,7 +25,7 @@ const routes = [
     { path: '/characters', component: Characters },
     { path: '/characters/classes', component: Classes },
     { path: '/characters/traits/:id?', component: Traits },
-    { path: '/characters/builds/bests', component: Builds },
+    { path: '/characters/builds/bests', component: BestBuilds },
     //STUFF
     { path: '/stuff/:itemCategory?', component: Stuff },
     { path: '/stuff/:itemCategory?/:id?', component: ItemDetails },
