@@ -3,14 +3,14 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 function Loading() {
-    return (
-        <Container>
-            <Loader
-                animate={{ rotate: 360 }}
-                transition={{ duration: 1, loop: Infinity }}
-            />
-        </Container>
-    )
+  return (
+    <Container>
+      <Loader
+        animate={{ rotate: 360 }}
+        transition={{ duration: 2, repeat: Infinity }}
+      />
+    </Container>
+  )
 }
 
 export default Loading;

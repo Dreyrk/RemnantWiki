@@ -62,7 +62,7 @@ function WorldSteps({ step, index, reference }) {
             row={row}
             col={col}
             direction={row === 4 ? 'rtl' : 'ltr'}>
-            <StepPath vertical={index === 5} row={row} />
+            <StepPath vertical={index === 5 ? 1 : 0} row={row} />
             <Step onMouseLeave={() => setShow(false)} onMouseEnter={() => setShow(true)}>{index + 1}</Step>
             {show &&
                 <ModalContainer

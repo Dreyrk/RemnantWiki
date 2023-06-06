@@ -88,10 +88,10 @@ function BuildPiece({ item, itemType }) {
     return (
         <GridContainer
             to={getUrl(itemType, item)}
-            armor={['head', 'body', 'legs'].includes(itemType)}
-            jewel={['amulet', 'ring1', 'ring2'].includes(itemType)}
-            primary={itemType === 'primary'}
-            secondary={['secondary', 'melee'].includes(itemType)}
+            armor={['head', 'body', 'legs'].includes(itemType) ? 1 : 0}
+            jewel={['amulet', 'ring1', 'ring2'].includes(itemType) ? 1 : 0}
+            primary={itemType === 'primary' ? 1 : 0}
+            secondary={['secondary', 'melee'].includes(itemType) ? 1 : 0}
             column={column}
             row={row}
             initial={initial}

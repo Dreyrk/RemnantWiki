@@ -95,13 +95,11 @@ const BigContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
 `
 
 const StyledBtn = styled.button`
     height: 45px;
     width: 140px;
-    margin: auto;
     border-radius: 40px;
     background-color: ${theme.colors.rouge};
     color: ${theme.colors.blanc};

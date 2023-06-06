@@ -15,6 +15,7 @@ import emotesController from "./controllers/emotesController.js";
 import classesController from "./controllers/classesController.js";
 import buildsController from "./controllers/buildsController.js";
 import worldsController from "./controllers/worldsController.js";
+import achievementsController from "./controllers/achievementsController.js";
 
 //AUTH IMPORT
 import userController from "./controllers/usersController.js";
@@ -87,5 +88,8 @@ router.get("/api/builds/bests", buildsController.getAll);
 
 //WORLDS
 router.get("/api/worlds", worldsController.getAll);
+
+//ACHIEVEMENTS
+router.get("/api/achievements", achievementsController.getAll);
 
 export default router;

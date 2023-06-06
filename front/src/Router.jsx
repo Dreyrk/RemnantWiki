@@ -18,6 +18,7 @@ import SavedItems from './components/SavedItems';
 import Classes from './components/Classes';
 import Traits from './components/Traits';
 import BestBuilds from './components/BestBuilds';
+import Achievements from './pages/Achievements';
 
 const routes = [
     { path: '/', component: Home },
@@ -31,7 +32,6 @@ const routes = [
     { path: '/stuff/:itemCategory?/:id?', component: ItemDetails },
     { path: '/builds/:type?', component: Builds },
     { path: '/worlds', component: Worlds },
-
     //SAVED
     { path: '/saved/builds/create', component: CreateBuild },
     { path: '/saved/builds/:name?', component: SavedBuilds },
@@ -40,6 +40,7 @@ const routes = [
     //GUIDE
     { path: '/guide', component: Guide },
     { path: '/guide/walkthrough', component: Walkthrough },
+    { path: '/guide/achievements', component: Achievements },
     //AUTH & OTHER
     { path: '/auth', component: Auth },
     { path: '*', component: NotFound }

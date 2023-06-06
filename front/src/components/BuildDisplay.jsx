@@ -1,19 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { motion } from "framer-motion"
-import { AiOutlineDown } from "react-icons/ai"
 
 import { theme } from "../style/theme.js"
 import { device } from '../style/device.js'
 import BuildPiece from './BuildPiece.jsx'
 
 
-function BuildDisplay({ build, showBuild, downBuild }) {
-    const [hovered, setHovered] = useState(false);
+function BuildDisplay({ build, showBuild }) {
     return (
         <Wrapper>
             {showBuild &&
-                <BuildContainer big={build.description}>
+                <BuildContainer
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    big={build.description ? 1 : 0}>
                     <Title
                         initial={{ opacity: 0, scale: 0.2 }}
                         animate={{ scale: 1, opacity: 1, rotate: 0 }}
@@ -35,42 +36,19 @@ function BuildDisplay({ build, showBuild, downBuild }) {
                     {Object.keys(build).map((piece) => (
                         piece !== "name" && piece !== "description" && piece !== "_id" &&
                         <BuildPiece
+                            key={build[piece]._id}
                             item={build[piece]}
                             itemType={piece}
                         />
                     ))}
                 </BuildContainer >
             }
-            {downBuild &&
-                <DownBtn
-                    onClick={downBuild}
-                    onMouseEnter={() => setHovered(true)}
-                    onMouseLeave={() => setHovered(false)}
-                    animate={{ y: !hovered && [-30, 5, -30] }}
-                    transition={{ repeat: Infinity, ease: "easeInOut", duration: 3, bounce: 0.25 }}
-                >
-                    <AiOutlineDown color={theme.colors.noir} size={50} />
-                </DownBtn>
-            }
+
         </Wrapper>
     )
 }
 
 export default BuildDisplay;
-
-const DownBtn = styled(motion.button)`
-    cursor: pointer;
-    position: absolute;
-    bottom: -5%;
-    left: 46.5%;
-    height: 65px;
-    width: 65px;
-    background-color: ${theme.colors.blanc};
-    border: 6px solid ${theme.colors.rouge};
-    border-radius: 50%;
-    display: grid;
-    place-content: center;
-`
 
 const Title = styled(motion.h1)`
     margin: 0;
@@ -92,7 +70,7 @@ const Desc = styled(motion.p)`
 
 const Wrapper = styled.section`
     position: relative;
-    height: 85vh;
+    height: 80vh;
     width: 100%;
     display: grid;
     place-content: center;
