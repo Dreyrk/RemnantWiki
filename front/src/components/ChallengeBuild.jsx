@@ -33,25 +33,26 @@ function ChallengeBuild() {
         }
     }, [fullSet]);
 
-
-
     async function getChallengeBuild() {
         setShowBuild(false)
-        const { head, body, legs } = await fetchData("random/armors")
-        const { ring1, ring2 } = await fetchData("random/rings")
-        const amulet = await fetchData("random/amulets")
-        const { primary, secondary, melee } = await fetchData("random/weapons")
+        try {
+            const { head, body, legs } = await fetchData("random/armors")
+            const { ring1, ring2 } = await fetchData("random/rings")
+            const amulet = await fetchData("random/amulets")
+            const { primary, secondary, melee } = await fetchData("random/weapons")
 
-        if (head && body && legs && ring1 && ring2 && amulet && primary && secondary && melee) {
-            setFullSet({
-                head, body, legs, ring1, ring2, amulet, primary, secondary, melee
-            })
-            setShowBuild(true)
-        } else {
-            toast.error("failed to get random challenge build")
+            if (head && body && legs && ring1 && ring2 && amulet && primary && secondary && melee) {
+                setFullSet({
+                    head, body, legs, ring1, ring2, amulet, primary, secondary, melee
+                })
+                setShowBuild(true)
+            } else {
+                throw new Error("One or more items failed to load");
+            }
+        } catch (error) {
+            toast.error("Failed to get random challenge build: " + error.message)
         }
     }
-
     return (
         <BigContainer>
             <ToastContainer
@@ -64,7 +65,11 @@ function ChallengeBuild() {
                 theme="dark"
             />
             <AnimatePresence>
-                {fullSet.head !== null ? <BuildDisplay build={fullSet} showBuild={showBuild} /> : <Title>Click to discover your challenge build</Title>}
+                {fullSet.head && fullSet.body && fullSet.legs && fullSet.ring1 && fullSet.ring2 && fullSet.amulet && fullSet.primary && fullSet.secondary && fullSet.melee ?
+                    <BuildDisplay build={fullSet} showBuild={showBuild} />
+                    :
+                    <Title>Click to discover your challenge build</Title>
+                }
             </AnimatePresence>
             <StyledBtn onClick={getChallengeBuild} type='button'>Challenge</StyledBtn>
         </BigContainer>
@@ -90,13 +95,11 @@ const BigContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
 `
 
 const StyledBtn = styled.button`
     height: 45px;
     width: 140px;
-    margin: auto;
     border-radius: 40px;
     background-color: ${theme.colors.rouge};
     color: ${theme.colors.blanc};

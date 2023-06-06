@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import { theme } from '../style/theme';
-import { AiOutlineCheck } from "react-icons/ai"
 import { motion } from "framer-motion"
+import { AiOutlineCheck } from "react-icons/ai"
+
+import { theme } from '../style/theme.js';
+import { device } from '../style/device.js';
 
 const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -45,7 +47,7 @@ const BoxContainer = styled(motion.div)`
     border: 2px solid ${theme.colors.rouge};
     color: ${theme.colors.blanc};
     background-color: ${theme.colors.gris1};
-    position: absolute;
+    position: sticky;
     top: 15%;
     left: 30%;
     border-radius: 35px;
@@ -54,6 +56,11 @@ const BoxContainer = styled(motion.div)`
     justify-content: space-evenly;
     align-items: center;
     gap: 25px;
+    @media ${device.mobileL} {
+        width: 80%;
+        height: 300px;
+        margin-right: 35px;
+    }
 `
 
 const IconContainer = styled(motion.div)`
@@ -78,6 +85,9 @@ const TextContainer = styled(motion.div)`
     border: 1px solid rgba(157, 2, 8, 0.35);
     box-shadow: 0px 0px 0px 1px rgba(157, 2, 8, 0.35);
     border-radius: 15px;
+    @media ${device.mobileL} {
+        display: none;
+    }
 `
 const Text = styled.p`
     font-style: normal;

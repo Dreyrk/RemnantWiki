@@ -45,19 +45,22 @@ function Navbar({ titleSelected }) {
                         <CloseBtn type='button' onClick={() => setShow(false)}>
                             <IoClose size={40} color={theme.colors.blanc} />
                         </CloseBtn>
-                        <Link show column={1} row={2} to="/characters">Characters</Link>
-                        <Link show column={2} row={3} to="/stuff">Equipements/Stuff</Link>
-                        <Link show column={2} row={2} to="/worlds">Worlds</Link>
-                        <Link show column={1} row={3} to="/guide">Guide</Link>
+                        <Link show="true" column={1} row={2} to="/characters">Characters</Link>
+                        <Link show="true" column={2} row={3} to="/stuff">Equipements/Stuff</Link>
+                        <Link show="true" column={2} row={2} to="/worlds">Worlds</Link>
+                        <Link show="true" column={1} row={3} to="/guide">Guide</Link>
                         {token &&
-                            <IconLink to="/saved">
+                            <IconLink column={2} row={1} show="true" to="/saved">
                                 <BsBookmarkHeart size={30} color={theme.colors.blanc} />
                             </IconLink>}
                         {!token ?
                             <IconLink to="/auth">
                                 <FaUser size={30} color={theme.colors.blanc} />
-                            </IconLink> :
-                            <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />
+                            </IconLink>
+                            :
+                            <IconLink column={2} row={1} show="true" logout="true" >
+                                <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />
+                            </IconLink>
                         }
                     </MobileNavContainer>
                 }
@@ -185,7 +188,11 @@ const Link = styled(NavLink)`
         scale: 0.8;
     }
     @media ${device.mobileL} {
-        display: ${(props) => props.show ? "block" : "none"};
+        height: 15%;
+        width: 70%;
+        display: ${(props) => props.show ? "flex" : "none"};
+        align-items: center;
+        justify-content: center;
         grid-column: ${(props) => props.column};
         grid-row: ${(props) => props.row};
         border: 2px solid ${theme.colors.blanc};
@@ -193,6 +200,7 @@ const Link = styled(NavLink)`
         padding: 5px;
         border-radius: 25px;
         box-shadow: rgba(157, 2, 8, 0.5) 0px 8px 24px;
+        font-size: 14px;
     }
 `
 const IconLink = styled(NavLink)`
@@ -204,7 +212,11 @@ const IconLink = styled(NavLink)`
         scale: 0.8;
     }
     @media ${device.mobileL} {
-        display: none;
+        grid-column: ${(props) => props.column};
+        grid-row: ${(props) => props.row};
+        display: ${(props) => props.show ? "block" : "none"};
+        padding-left: ${(props) => props.logout && "70px"};
+        padding-right: ${(props) => !props.logout && "70px"};
     }
 `
 

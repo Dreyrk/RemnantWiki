@@ -10,13 +10,10 @@ function ModModal({ mod, trait }) {
     const [unlockHeight, setUnlockHeight] = useState(0);
 
     useEffect(() => {
-        const desc = mod.description.length
-        const descLength = parseInt(desc, 10)
-        setDescHeight(descLength * 0.2)
-
+        const descLength = mod.description.length
+        setDescHeight(descLength * 0.1)
         if (mod.unlock) {
-            const unlock = mod.unlock.length
-            const unlockLength = parseInt(unlock, 10)
+            const unlockLength = mod.unlock.length
             setUnlockHeight(unlockLength * 0.2)
         }
 
@@ -40,8 +37,10 @@ function ModModal({ mod, trait }) {
     if (!trait) {
         return (
             <ModalContainer transition={{ delay: 0.3 }}>
-                <ModImg src={mod.img} alt={mod.name} />
-                <ModName>{mod.name}</ModName>
+                <Container>
+                    <ModImg src={mod.img} alt={mod.name} />
+                    <ModName>{mod.name}</ModName>
+                </Container>
                 <ModDescContainer>
                     <ModDesc height={descHeight} style={{ translateY: descHeight > 18 && scroll }}>{mod.description}</ModDesc>
                 </ModDescContainer>
@@ -49,14 +48,14 @@ function ModModal({ mod, trait }) {
         )
     } else {
         return (
-            <ModalContainer transition={{ delay: 0.3 }}>
+            <ModalContainer trait transition={{ delay: 0.3 }}>
                 <Title>Description :</Title>
                 <TextContainer>
                     <ModDesc height={descHeight} style={{ translateY: descHeight > 18 && scroll }}>{mod.description}</ModDesc>
                 </TextContainer>
                 <Title>Unlock :</Title>
                 <TextContainer>
-                    <ModDesc height={descHeight} style={{ translateY: unlockHeight > 18 && scroll2 }}>{mod.unlock}</ModDesc>
+                    <ModDesc height={unlockHeight} style={{ translateY: unlockHeight > 18 && scroll2 }}>{mod.unlock}</ModDesc>
                 </TextContainer>
             </ModalContainer>
         )
@@ -79,7 +78,7 @@ const ModalContainer = styled(motion.div)`
     background-color: ${theme.colors.blanc};
     padding: 15px;
     border-radius: 25px;
-    transform: rotateX(180deg);
+    transform: ${(props) => props.trait ? "rotateX(180deg)" : "rotateY(180deg)"};
 `
 
 const ModImg = styled.img`
@@ -95,6 +94,16 @@ const ModName = styled.p`
     color: ${theme.colors.rouge};
 `
 
+const Container = styled.div`
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    z-index: 99;
+    background-color: ${theme.colors.blanc};
+`
+
 const ModDesc = styled(motion.p)`
     height: ${(props) => props.height};
     margin: 0;
@@ -107,6 +116,7 @@ const ModDescContainer = styled(motion.div)`
     margin: 0;
     display: flex;
     flex-flow: column;
+    overflow: hidden;
 `
 
 const Title = styled.p`

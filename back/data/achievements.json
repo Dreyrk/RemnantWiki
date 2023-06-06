@@ -1,0 +1,352 @@
+[
+  {
+    "name": "Fire in the Sky",
+    "description": "Defeat Singe",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/424aa9b8ea4e11076993b35f62dc72cff0063239.jpg"
+  },
+  {
+    "name": "The Bigger They Are",
+    "description": "Defeat The Ent",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/1fd9e9cc3dec35694b5e80a2aabf65f80533c8d6.jpg"
+  },
+  {
+    "name": "Wolf of the Woods",
+    "description": "Defeat the Pan Wolf",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/519d6dee4517d7650f0eb95b0b0697beb3c64829.jpg"
+  },
+  {
+    "name": "Undying, Eh?",
+    "description": "Defeat the Undying King",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/c78f4cce5e295165244bf3383611a9f6382b6d9f.jpg"
+  },
+  {
+    "name": "The Keymaster",
+    "description": "Defeat the Claviger",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/75adde3064b0625834f350371705c75acd9cdc87.jpg"
+  },
+  {
+    "name": "Butterfly Effect",
+    "description": "Defeat Ixillis XV",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/2abc1420e030d768c0e93dab70f22dc0f36dd95a.jpg"
+  },
+  {
+    "name": "Untouchable",
+    "description": "Defeat a world boss in single player without taking damage",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/48f1c9fa86cdbca2869dfd46cbc4e5b4449a9a95.jpg"
+  },
+  {
+    "name": "Not So Special",
+    "description": "Defeat 100 special enemies",
+    "unlock": "Campaign/Adventure, Survival",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/754fbd84feaa26dea3f98e1f4542a113da901fde.jpg"
+  },
+  {
+    "name": "First... But Not the Last!",
+    "description": "Acquire first trait",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/575dc11d49a474db5075999e68f81192eace4288.jpg"
+  },
+  {
+    "name": "Good Start",
+    "description": "Acquire 10 traits",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/d5506f47d6fae16b8b34275a8f0bc86eb926d9cd.jpg"
+  },
+  {
+    "name": "That's a Lot of Traits!",
+    "description": "Acquire 20 traits",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/67d5fca78cb659ec20fc6a0b923172148c821b5d.jpg"
+  },
+  {
+    "name": "Unleash Your Potential",
+    "description": "Acquire 30 traits",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/e97a3335d9eed01b6c52f4376c4f384fc1a5895c.jpg"
+  },
+  {
+    "name": "Equipment Collector",
+    "description": "Acquire 5 armor sets",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/8cd107aacd1287ba3885ec2082c77433d495d00c.jpg"
+  },
+  {
+    "name": "Equipment Enthusiast",
+    "description": "Acquire 10 armor sets",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/0317f599a42f3bf6f9fe625b67a2a6cd3f593f2f.jpg"
+  },
+  {
+    "name": "Hard Choices",
+    "description": "Upgrade first weapon",
+    "unlock": "Ward 13",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/42e6d3e0ab7f96471a3001493c5a4b8867a80901.jpg"
+  },
+  {
+    "name": "Halfway There",
+    "description": "Upgrade any weapon to +10",
+    "unlock": "Ward 13",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/5aa082c55dc0fc6b80e909449ee8632ce8b8a222.jpg"
+  },
+  {
+    "name": "Push It to the Limit",
+    "description": "Upgrade any weapon to +20",
+    "unlock": "Ward 13",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/1e6899a339733d2369afb71d91c0de3a3f2f509a.jpg"
+  },
+  {
+    "name": "Mod Collector",
+    "description": "Acquire 5 weapon mods",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/23dcaf573520e1e3e7ed24e4de7ee71bae33bf53.jpg"
+  },
+  {
+    "name": "Mod Enthusiast",
+    "description": "Acquire 15 weapon mods",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/7ef1ef5557e1d41b4ca0b4c34403a992b9f4e93f.jpg"
+  },
+  {
+    "name": "Trait Dabbler",
+    "description": "Upgrade any trait to 10",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/15263ee192228c5e358e27d6bc95600dae05c46e.jpg"
+  },
+  {
+    "name": "Trait Focus",
+    "description": "Upgrade any trait to 20",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/226c51ad78397d5604f4efd63a115d0fd368a8e3.jpg"
+  },
+  {
+    "name": "One Person's Scrap...",
+    "description": "Acquire 50,000 scrap",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/4f33447c6de1f36889528247f05b003409f599fe.jpg"
+  },
+  {
+    "name": "Scrap Harvester",
+    "description": "Acquire 100,000 scrap",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/a7ee82abf0faaa9692aeb6bf102f3ce418d31881.jpg"
+  },
+  {
+    "name": "Scrap Collector",
+    "description": "Acquire 200,000 scrap",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/7e4fbb2a3ef2873eb6a47e4e58faca733cb1d396.jpg"
+  },
+  {
+    "name": "Ready For Action",
+    "description": "Craft a weapon using material from a defeated world boss",
+    "unlock": "Ward 13",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/fdca221e3f9d3226e6b1dd5d8b35358be5c74b7f.jpg"
+  },
+  {
+    "name": "Like a Boss",
+    "description": "Upgrade a boss weapon to 5",
+    "unlock": "Ward 13",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/fbfe11e9b3e96fffd285e1dfa4476cf3284c6a85.jpg"
+  },
+  {
+    "name": "This Watch...",
+    "description": "Acquire Mudtooth's pocket watch",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/54ae29cdbdf2d2f665c7b1ac020e81193aa96e1a.jpg"
+  },
+  {
+    "name": "Not So Lucky",
+    "description": "Return coin to Ace",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/99aaeb5c1e59976fa5b76e3d014d104dddb0fb3a.jpg"
+  },
+  {
+    "name": "Fade to White",
+    "description": "Activate the Ward 13 World Stone",
+    "unlock": "Ward 13",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/6cb4a2fde714ae14729ed744fe93ed9864718a53.jpg"
+  },
+  {
+    "name": "Are You Ok?",
+    "description": "Meet the Root Mother",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/8b206c33ee7f9b0b2077a34d27b694a554f65de5.jpg"
+  },
+  {
+    "name": "What is the Labyrinth ?",
+    "description": "Meet the Labyrinth Keeper",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/3ee1a6904d18c0e7c5020528444dcedb04747eb8.jpg"
+  },
+  {
+    "name": "Death Warmed Over",
+    "description": "Meet the Undying King",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/af02c1ef02a4921ac64a57355bdb77973e95c2b6.jpg"
+  },
+  {
+    "name": "Like a Moth to a Flame",
+    "description": "Meet the Swamp Queen",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/8b21997bea85d0dfb1145a4b54a62796a2e30cd0.jpg"
+  },
+  {
+    "name": "Changing of the Guard",
+    "description": "Meet the Pan Rebel Leader",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/e6a174e4c23df736ba09d16e8da11c4d29b985ad.jpg"
+  },
+  {
+    "name": "The Founder",
+    "description": "Meet Andrew Ford",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/13936330898a15e39bebf5f67d980fac420fe716.jpg"
+  },
+  {
+    "name": "Heart of a Dragon",
+    "description": "Upgrade Dragon Heart",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/dd4a90162e22c3ad030b8369abef8035cd780308.jpg"
+  },
+  {
+    "name": "Precious",
+    "description": "Return ring to Reggie",
+    "unlock": "Ward 13",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/7d333b2f89e8f89be40650f16a1701715713678e.jpg"
+  },
+  {
+    "name": "Shot Through the Heart",
+    "description": "Return the Swamp Guardian's heart to the Undying King",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/fb32e776d85faa8d0e7b55d4f23295a56c4034f7.jpg"
+  },
+  {
+    "name": "Dark Awakening",
+    "description": "Defeat the Dreamer",
+    "unlock": "Campaign",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/1a697e20f877df9f8c85067e2d9ce6480a58dbfe.jpg"
+  },
+  {
+    "name": "Watch the Totems !",
+    "description": "Defeat the Totem Father",
+    "unlock": "Campaign/Adventure",
+    "dlc": "normal",
+    "img": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/617290/00f3f7fdfcd281908a02c26e5c5274570e6fb913.jpg"
+  },
+  {
+    "name": "Survivor",
+    "description": "Defeat 5 Bosses in a row in Survival Mode",
+    "unlock": "Survival",
+    "dlc": "Swamps Of Corsus",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/7e95d1f5f98f85ab16d6eb7eb453251d1bb6b4a2.jpg"
+  },
+  {
+    "name": "Dominator",
+    "description": "Defeat 10 Bosses in a row in Survival Mode",
+    "unlock": "Survival",
+    "dlc": "Swamps Of Corsus",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/f298473692d3e9e8be0289c55b17fbb3e24c9f61.jpg"
+  },
+  {
+    "name": "Fashion",
+    "description": "Purchase 15 Armor Skins",
+    "unlock": "Adventure/Survival",
+    "dlc": "Swamps Of Corsus",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/8ec547ee1b2fa3ca5bdc448621d16d4a7bbdd213.jpg"
+  },
+  {
+    "name": "Fashion is Danger",
+    "description": "Purchase 40 Armor Skins",
+    "unlock": "Adventure/Survival",
+    "dlc": "Swamps Of Corsus",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/e0210ce6fcba3bf573e2bfe641406fda3361e5a1.jpg"
+  },
+  {
+    "name": "Fall of the Iskal",
+    "description": "Defeat the Iskal Queen",
+    "unlock": "Adventure",
+    "dlc": "Swamps Of Corsus",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/eb6c29b1461d6d52a3130568ca6c78fc55f4369a.jpg"
+  },
+  {
+    "name": "Other Voices",
+    "description": "Listen to all the Recordings in Ward Prime",
+    "unlock": "Campaign(DLC)",
+    "dlc": "Subject 2923",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/e6ee3ca28c9fe952876487f04da17bbad5ca32d1.jpg"
+  },
+  {
+    "name": "Nemesis",
+    "description": "Defeat the Final Boss",
+    "unlock": "Campaign(DLC)",
+    "dlc": "Subject 2923",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/07ba741ce1e17551542c23ee9d48b74c6964f2c8.jpg"
+  },
+  {
+    "name": "Girl in the Snow",
+    "description": "Travel to Reisum",
+    "unlock": "Campaign(DLC)",
+    "dlc": "Subject 2923",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/59dc42d5d0389a142842e46e608df79b7de8fa9d.jpg"
+  },
+  {
+    "name": "Hard Bargain",
+    "description": "Make a Deal with Sebum",
+    "unlock": "Campaign(DLC)",
+    "dlc": "Subject 2923",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/5ac9d3689a2abdb86768f80e32d78295546f2bf9.jpg"
+  },
+  {
+    "name": "Lockdown",
+    "description": "Visit the Homestead Basement",
+    "unlock": "Campaign(DLC)",
+    "dlc": "Subject 2923",
+    "img": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/617290/d7453f74241c6c248c340ec6423479fc0a45f2ab.jpg"
+  }
+]

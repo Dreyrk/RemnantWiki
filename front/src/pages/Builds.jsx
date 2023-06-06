@@ -6,7 +6,7 @@ import useCurrentUserContext from '../hooks/useCurrentUserContext';
 import Navbar from '../components/Navbar';
 import ChallengeBuild from '../components/ChallengeBuild';
 import SavedBuilds from '../components/SavedBuilds';
-import BestBuilds from '../components/BestBuilds';
+import NoAccess from '../components/NoAccess';
 
 function Builds() {
     const { token } = useCurrentUserContext()
@@ -30,7 +30,7 @@ function Builds() {
             return (
                 <Wrapper>
                     <Navbar />
-                    <BestBuilds />
+                    <NoAccess />
                 </Wrapper>
             )
     }

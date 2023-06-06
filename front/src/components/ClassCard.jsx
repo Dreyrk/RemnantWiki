@@ -7,6 +7,7 @@ import { theme } from '../style/theme.js'
 import missing from "../images/missing_img.jpg"
 import AnimatedText from './AnimatedText.jsx'
 import TraitCircle from './TraitCircle.jsx'
+import Loading from './Loading.jsx'
 
 
 
@@ -21,7 +22,7 @@ function ClassCard({ data, isLoading, isError }) {
 
     if (!data && isLoading) {
         return (
-            <p>Loading...</p>
+            <Loading />
         )
     }
     if (!data && isError) {

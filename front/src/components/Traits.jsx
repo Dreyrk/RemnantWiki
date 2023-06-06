@@ -11,7 +11,6 @@ import { useParams } from 'react-router-dom';
 import TraitDetails from './TraitDetails.jsx';
 
 function Traits() {
-
     const { id } = useParams()
 
     const { data: any, isLoading: anyIsLoading, isError: anyIsError } = useFetch("traits/worlds/any");

@@ -36,7 +36,8 @@ function typeImg(type) {
 }
 
 function WeaponsDetails({ item }) {
-    const [showType, setShowType] = useState(false)
+    const [showType, setShowType] = useState(false);
+
     return (
         <DetailsList
             initial="initial"

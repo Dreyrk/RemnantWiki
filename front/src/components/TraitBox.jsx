@@ -5,14 +5,14 @@ import { motion } from "framer-motion"
 import { theme } from "../style/theme.js"
 import { NavLink } from 'react-router-dom'
 import ModModal from './ModModal.jsx'
+import Loading from './Loading.jsx'
 
 function TraitBox({ trait, isLoading, isError }) {
-
     const [show, setShow] = useState(false)
 
     if (isLoading && !trait) {
         return (
-            <p>Loading...</p>
+            <Loading />
         )
     } else if (isError && !trait) {
         return (

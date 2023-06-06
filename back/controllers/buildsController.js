@@ -4,7 +4,21 @@ import CODES from "../utils/httpCodes.js";
 const buildsController = {
   getAll: async (req, res) => {
     try {
-      const data = await builds.find({});
+      const data = await builds
+        .find({})
+        .select([
+          "name",
+          "description",
+          "head",
+          "body",
+          "legs",
+          "primary",
+          "secondary",
+          "melee",
+          "amulet",
+          "ring1",
+          "ring2",
+        ]);
 
       if (data) {
         res.status(CODES.SUCCESS).send({ data });

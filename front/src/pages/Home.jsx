@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import Navbar from '../components/Navbar'
 import background from "../images/background.jpg"
+import { device } from '../style/device'
 
 function Home() {
     return (
@@ -35,4 +36,7 @@ const HomeSection = styled.section`
     background-size: cover;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    @media ${device.mobileL} {
+        background: none;
+    }
 `

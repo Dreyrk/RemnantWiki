@@ -13,6 +13,9 @@ const StyledBtn = styled.button`
   font-weight: ${(props) => props.fontWeight || "700"};
   font-size: ${(props) => props.fontSize || "38px"};
   line-height: ${(props) => props.lineHeight || "50px"};
+  :hover {
+    transform: scale(0.9);
+  }
 `;
 
 export default StyledBtn;
