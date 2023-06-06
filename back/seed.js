@@ -13,6 +13,7 @@ import user from "./models/user.js";
 import worlds from "./models/worlds.js";
 import builds from "./models/builds.js";
 import achievement from "./models/achievement.js";
+import boss from "./models/boss.js";
 
 import amuletsData from "./data/amulets.json" assert { type: "json" };
 import armorSetsData from "./data/armor_sets.json" assert { type: "json" };
@@ -24,6 +25,7 @@ import traitsData from "./data/traits.json" assert { type: "json" };
 import weaponsData from "./data/weapons.json" assert { type: "json" };
 import worldsData from "./data/worlds.json" assert { type: "json" };
 import achievementsData from "./data/achievements.json" assert { type: "json" };
+import bossesData from "./data/bosses.json" assert { type: "json" };
 
 dotenv.config();
 
@@ -68,6 +70,9 @@ async function main() {
 
   await achievement.deleteMany({});
   await achievement.insertMany(achievementsData);
+
+  await boss.deleteMany({});
+  await boss.insertMany(bossesData);
 
   await builds.deleteMany({});
 
