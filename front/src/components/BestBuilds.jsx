@@ -11,40 +11,29 @@ import Navbar from './Navbar'
 
 
 function BestBuilds() {
-    const [builds, setBuilds] = useState([])
-    const [currentBuildIndex, setCurrentBuildIndex] = useState(0);
+    const [builds, setBuilds] = useState([]);
     const [hovered, setHovered] = useState(false);
-
     const buildRefs = useRef([]);
 
     const getData = useCallback(async () => {
         const data = await fetchData(`builds/bests`);
-        setBuilds(data)
+        setBuilds(data);
     }, []);
 
     useEffect(() => {
-        getData()
+        getData();
     }, [getData]);
-
-    const downBuild = () => {
-        if (currentBuildIndex < buildRefs.current.length - 1) {
-            setCurrentBuildIndex(currentBuildIndex + 1);
-            buildRefs.current[currentBuildIndex + 1].scrollIntoView({
-                behavior: 'smooth',
-            });
-        }
-    };
 
     return (
         <Wrapper>
             <Navbar />
             <Container>
                 {builds.map((build, i) => (
-                    <div key={build._id} ref={(el) => (buildRefs[i] = el)}>
+                    <BigSection key={build._id} ref={(el) => buildRefs.current[i] = el}>
                         <BuildDisplay build={build} showBuild={true} />
-                        {i &&
+                        {i !== builds.length - 1 &&
                             <DownBtn
-                                onClick={downBuild}
+                                onClick={() => buildRefs.current[i].scrollIntoView({ behavior: 'smooth' })}
                                 onMouseEnter={() => setHovered(true)}
                                 onMouseLeave={() => setHovered(false)}
                                 animate={{ y: !hovered && [-30, 5, -30] }}
@@ -53,7 +42,7 @@ function BestBuilds() {
                                 <AiOutlineDown color={theme.colors.noir} size={50} />
                             </DownBtn>
                         }
-                    </div>
+                    </BigSection>
                 ))}
             </Container>
         </Wrapper>
@@ -62,10 +51,15 @@ function BestBuilds() {
 
 export default BestBuilds;
 
+const BigSection = styled.section`
+    height: 80vh;
+    position: relative;
+`
+
 const DownBtn = styled(motion.button)`
     cursor: pointer;
     position: absolute;
-    bottom: 0;
+    bottom: -10%;
     left: 46.5%;
     height: 65px;
     width: 65px;

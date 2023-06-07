@@ -206,37 +206,37 @@
   {
     "name": "Fan of Knives",
     "description": "Throw a fan of 7 knives that deal 20 damage each and applying the BLEED effect dealing 600 damage over 20s. Max 2 Charges",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fan_of_knives_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
     "name": "Frozen Mist",
     "description": "Fires a projectile that deals 2 FROST damage. Releases a freezing cloud that lasts 10s, and applies FROSTBITE to enemies within 4m. Applies 3 FROSTBITE stacks on a direct hit. Players walking through the cloud will take damage and FROSTBITE buildup",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/frozen_mist_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
     "name": "Blizzard",
     "description": "Cast a storm cloud that rains icicles as it travels forward up to 30m. Icicles deal 30 FROST damage each and apply FROSTBITE to enemies within 2m. Max 1 Charge",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/blizzard_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
     "name": "Cold Spear",
     "description": "Fires or throws a large icicle that deals 60 FROST damage and applies the FROZEN effect to a single enemy. Max 3 Charges.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/cold_spear_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
     "name": "Fusion Cannon",
     "description": "Fires a large powerful beam that penetrates through enemies dealing 80 for a single charge. Multiple charges increase damage dealt, recoil, and beam thickness per charge. 50 stacks",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fusioncannon_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
     "name": "Incinerator",
     "description": "Spews 11 fireballs that deal 20.15 FIRE dmg within 2m each and ignites enemies with BURNING effect dealing 100.75 dmg over 10s",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/incinerator_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
   }
 ]

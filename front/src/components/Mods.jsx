@@ -8,7 +8,7 @@ import fetchData from '../helpers/fetchData.js';
 import FilterCheck from './FilterCheck.jsx';
 import ItemBox from './ItemBox.jsx';
 
-const modsFilters = ["Earth", "Rhom", "Corsus", "Yaesha", "Resium", "Ward 13"];
+const modsFilters = ["Earth", "Rhom", "Corsus", "Yaesha", "Reisum", "Ward 13"];
 
 function Mods() {
     const [mods, setMods] = useState([]);
