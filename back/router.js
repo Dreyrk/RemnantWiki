@@ -17,6 +17,7 @@ import buildsController from "./controllers/buildsController.js";
 import worldsController from "./controllers/worldsController.js";
 import achievementsController from "./controllers/achievementsController.js";
 import bossController from "./controllers/bossesController.js";
+import enemyController from "./controllers/enemyController.js";
 
 //AUTH IMPORT
 import userController from "./controllers/usersController.js";
@@ -96,5 +97,9 @@ router.get("/api/achievements", achievementsController.getAll);
 //BOSSES
 router.get("/api/bosses", bossController.getAll);
 router.get("/api/bosses/:location", bossController.getByLocation);
+
+//BOSSES
+router.get("/api/enemies", enemyController.getAll);
+router.get("/api/enemies/:location", enemyController.getByLocation);
 
 export default router;

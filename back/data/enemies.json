@@ -1,0 +1,590 @@
+[
+  {
+    "name": "Ash Devil",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ash_devil_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Ash+Devil"
+  },
+  {
+    "name": "Assassin",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/assassin_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Assassin"
+  },
+  {
+    "name": "Defiler",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/defiler_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Defiler+%28Enemy%29"
+  },
+  {
+    "name": "Devil",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/devil_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Devil"
+  },
+  {
+    "name": "Flame Devil",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/flame_devil_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Flame+Devil"
+  },
+  {
+    "name": "Hollow",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hollow_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Hollow"
+  },
+  {
+    "name": "Howler",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/howler_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Howler"
+  },
+  {
+    "name": "Hulk",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hulk_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Hulk"
+  },
+  {
+    "name": "Hunter",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hunter_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Hunter+(Enemy)"
+  },
+  {
+    "name": "Juggernaut",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/juggernaut_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Juggernaut"
+  },
+  {
+    "name": "Ripper",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ripper_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Ripper"
+  },
+  {
+    "name": "Rot Wart",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/rot_wart_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Rot+Wart"
+  },
+  {
+    "name": "Rot Witch",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/rot_witch_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Rot+Witch"
+  },
+  {
+    "name": "Sapper",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/sapper_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Sapper"
+  },
+  {
+    "name": "Seedcaller",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/seedcaller_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Seedcaller"
+  },
+  {
+    "name": "Shaman",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/root_shaman_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Shaman"
+  },
+  {
+    "name": "Shrike",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/shrike_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Shrike"
+  },
+  {
+    "name": "Slayer",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slayer_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Slayer"
+  },
+  {
+    "name": "Splitter",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/splitter_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Splitter"
+  },
+  {
+    "name": "Stalker",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/stalker_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Stalker"
+  },
+  {
+    "name": "Tumbler",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/tumbler_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Tumbler"
+  },
+  {
+    "name": "Vampire",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vampire_remnant.jpg",
+    "location": "earth",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Vampire"
+  },
+  {
+    "name": "Infectors",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/infectors_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Infectors"
+  },
+  {
+    "name": "Pan Swordsman",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pan_swordmen_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Swordsman"
+  },
+  {
+    "name": "Archer",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/archer_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Archer"
+  },
+  {
+    "name": "Pan Thunder Tusk",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pan_thunder_tusk_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Thunder+Tusk"
+  },
+  {
+    "name": "Pan Spearman",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pan_spearman_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Spearman"
+  },
+  {
+    "name": "Pan Priest",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pan_priest_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Priest"
+  },
+  {
+    "name": "Slink",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slink_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Slink"
+  },
+  {
+    "name": "Berserker",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/berserker_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Berserker"
+  },
+  {
+    "name": "Pan Assassin",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pan_assassin_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Assassin"
+  },
+  {
+    "name": "Glaive Thrower",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/glaive_thrower_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Glaive+Thrower"
+  },
+  {
+    "name": "Blink Fiend",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/blink_fiend_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Blink+Fiend"
+  },
+  {
+    "name": "Pan Impaler",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pan_impaler_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Impaler"
+  },
+  {
+    "name": "Fleshopede",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fleshopede_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Fleshopede"
+  },
+  {
+    "name": "Risen",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/risen_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Risen"
+  },
+  {
+    "name": "Pan Slayer",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pan_slayer_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Slayer"
+  },
+  {
+    "name": "Pan Immolator",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/immolator_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Immolator"
+  },
+  {
+    "name": "Pan Kin Caller",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/kin_caller_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Kin+Caller"
+  },
+  {
+    "name": "Storm Warden",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/storm_warden_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Storm+Warden"
+  },
+  {
+    "name": "Shock Warden",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/shock_warden_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Shock+Warden"
+  },
+  {
+    "name": "Pan Shrike",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/pan_shrike_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Pan+Shrike"
+  },
+  {
+    "name": "Hellion",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hellion_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Hellion"
+  },
+  {
+    "name": "Solar",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/solar_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Solar"
+  },
+  {
+    "name": "Black Horns",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/black_horns_remnant.jpg",
+    "location": "yaesha",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Black+Horns"
+  },
+  {
+    "name": "Stinkhound",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/stinkhound_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Stinkhound"
+  },
+  {
+    "name": "Berzerker",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/berzerker_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Berzerker"
+  },
+  {
+    "name": "Buri Shaman",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/buri_shaman_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Buri+Shaman"
+  },
+  {
+    "name": "Buri Impaler",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/impaler_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Buri+Impaler"
+  },
+  {
+    "name": "Lurker",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/lurker_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Lurker"
+  },
+  {
+    "name": "Ghast",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ghast_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Ghast"
+  },
+  {
+    "name": "Anointed",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/anointed_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Anointed"
+  },
+  {
+    "name": "Anointed Swordman",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/anointed_swordsman_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Anointed+Swordsman"
+  },
+  {
+    "name": "Strider",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/strider_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Strider"
+  },
+  {
+    "name": "Wasteland Skull",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/wasteland_skull_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Wasteland+Skull"
+  },
+  {
+    "name": "Hive Skull",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/hive_skull_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Hive+Skull"
+  },
+  {
+    "name": "Cyclops",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/cyclops_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Cyclops"
+  },
+  {
+    "name": "Stalker",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/stalker_buri_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Stalker+(Buri)"
+  },
+  {
+    "name": "Sentinel Skull",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/sentinel_skull_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Sentinel+Skull"
+  },
+  {
+    "name": "Detonator",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/detonator_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Detonator"
+  },
+  {
+    "name": "Blight Skull",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/blight_skull_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Blight+Skull"
+  },
+  {
+    "name": "Slinger Grenade Launcher",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slinger_grenade_launcher_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Slinger+Grenade+Launcher"
+  },
+  {
+    "name": "Slinger Rifleman",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/slinger_rifleman_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Slinger+Rifleman"
+  },
+  {
+    "name": "Contaminator",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/contaminator_remnant.jpg",
+    "location": "rhom",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Contaminator"
+  },
+  {
+    "name": "Swamp Hound",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/swamp_hound_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Swamp+Hound"
+  },
+  {
+    "name": "Fallen Swamp Elf",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fallen_swamp_elf_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Fallen+Swamp+Elf"
+  },
+  {
+    "name": "Bloat",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bloat_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Bloat"
+  },
+  {
+    "name": "Zombie",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/zombie_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Zombie"
+  },
+  {
+    "name": "Swamp Bug",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/swamp_bug_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Swamp+Bug"
+  },
+  {
+    "name": "Headless",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/headless_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Headless"
+  },
+  {
+    "name": "Iskal Crossbowman",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/iskal_crossbowman_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Iskal+Crossbowman"
+  },
+  {
+    "name": "Skull Mite",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/skull_mite_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Skull+Mite"
+  },
+  {
+    "name": "Temple Guardian",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/temple_guardian_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Temple+Guardian"
+  },
+  {
+    "name": "Shell Fiend",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/shell_fiend_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Shell+Fiend"
+  },
+  {
+    "name": "Barbstalker",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/barbstalker_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Barbstalker"
+  },
+  {
+    "name": "Flickering Horror",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/flickering_horror_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Flickering+Horror"
+  },
+  {
+    "name": "Infected Swamp Elf",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/infected_swamp_elf_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Infected+Swamp+Elf"
+  },
+  {
+    "name": "Quill Witch",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/quill_witch_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Quill+Witch"
+  },
+  {
+    "name": "Toxic Maiden",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/toxic_maiden_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Toxic+Maiden"
+  },
+  {
+    "name": "Iskal Scavenger",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scavenger_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Iskal+Scavenger"
+  },
+  {
+    "name": "Blademaw",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/blademaw_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Blademaw"
+  },
+  {
+    "name": "Swarm Host",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/swarm_host_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Swarm+Host"
+  },
+  {
+    "name": "Iskal Infector",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/iskal_infector_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Iskal+Infector"
+  },
+  {
+    "name": "Relentless",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/relentless_remnant.jpg",
+    "location": "corsus",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Relentless"
+  },
+  {
+    "name": "Mole Rat",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/mole_rat.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Mole+Rat"
+  },
+  {
+    "name": "Mole Bomber",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/mole_rat_bomber.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Mole+Bomber"
+  },
+  {
+    "name": "Urikki Bombardier",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/urikki_bombardier.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Urikki+Bombardier"
+  },
+  {
+    "name": "Urikki Bandit",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/urikki_bandit.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Urikki+Bandit"
+  },
+  {
+    "name": "Urikki Archer",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ratman_archer.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Urikki+Archer"
+  },
+  {
+    "name": "Ice Archer",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ice_archer.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Ice+Archer"
+  },
+  {
+    "name": "Snow Jackal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/snow_jackal.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Snow+Jackal"
+  },
+  {
+    "name": "Iceberg Jackal",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/tundra_jackal.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Iceberg+Jackal"
+  },
+  {
+    "name": "Urikki Brute",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/urikki_brute.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Urikki+Brute"
+  },
+  {
+    "name": "Emin Gladiator",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/emin_gladiator.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Emin+Gladiator"
+  },
+  {
+    "name": "Emin Blademaster",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/emin_blademaster.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Emin+Blademaster"
+  },
+  {
+    "name": "Blizzard Mage",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/blizzard_mage.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Blizzard+Mage"
+  },
+  {
+    "name": "Fen Flyer",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fen_flyer.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Fen+Flyer"
+  },
+  {
+    "name": "Bat Bomber",
+    "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bat_bomber.png",
+    "location": "reisum",
+    "link": "https://remnantfromtheashes.wiki.fextralife.com/Bat+Bomber"
+  }
+]

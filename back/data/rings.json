@@ -44,7 +44,7 @@
   {
     "name": "Band of Discord",
     "description": "Reduces Consumable Use Speed by 15%. Dragon Hearts heal the wearer with 125 Health over 30 seconds.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/band_of_discord_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -74,7 +74,7 @@
   {
     "name": "Bloodletter's Insignia",
     "description": "BLEEDING effects applied by the wearer steal 10% of the damage dealt and return it to the wearer as Health.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bloodletters_insignia_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -116,7 +116,7 @@
   {
     "name": "Burden of the Warlord",
     "description": "Reduces effective range of all firearms by 50%. Increases all damage dealt by 15%.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/burden_of_the_warlord_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -152,7 +152,7 @@
   {
     "name": "Evoker's Seal",
     "description": "Refunds 15% Mod Power on use.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/invokers_seal_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -242,7 +242,7 @@
   {
     "name": "Juggernaut Band",
     "description": "After sprinting for 2 seconds, incoming damage is reduced by 10%, Movement Speed is increased by 15%, stagger level is reduced by 1, and the wearer will perform the heaviest evade.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/juggernaut_band_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -284,7 +284,7 @@
   {
     "name": "Prismatic Diamond Ring",
     "description": "Increases ELEMENTAL damage by 10%.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/prismaticdiamond_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -344,7 +344,7 @@
   {
     "name": "Ring of Synergy",
     "description": "Increase Teamwork effect by 10% and Revival speed by 11% per ally also wearing this ring",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ring_of_synergy_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -362,7 +362,7 @@
   {
     "name": "Ring of the Punisher",
     "description": "Increases damage to enemies affected by STATUS effects. Each unique STATUS applied increases all damage by 5%.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/ring_of_punisher_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -386,13 +386,13 @@
   {
     "name": "Scavenger's Ring",
     "description": "Collecting Scrap, Iron, and Ammo pickups regenerates 3% of Max Health and increases Ranged and Melee damage by 10% for 30 seconds.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/scavengers_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
     "name": "Serpent's Fang",
     "description": "Increased Charged Melee Damage by 20%.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/serpents_fang_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -428,7 +428,7 @@
   {
     "name": "Swashbuckler's Signet",
     "description": "Build one buff stack every 20 seconds up to a max of 3 stacks. Melee Charge Attacks consume one stack and replenish 15% of the wearer's ammo capacity for both firearms.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/swashbucklers_signet_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   },
   {
@@ -440,7 +440,7 @@
   {
     "name": "Volatile Gem",
     "description": "Dragon Hearts explode dealing 600 damage plus 10% per gear score and inflict 100% extra stagger damage within 5 meters.",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/volatile_gem_ring_remnant_from_the_ashes_wiki_guide_64px.png"
   }
 ]

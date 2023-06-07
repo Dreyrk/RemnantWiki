@@ -11,13 +11,13 @@ function Guide() {
             <Navbar />
             <Container>
                 <StyledLink to={"walkthrough"} column={1} row={1}>
-                    <StyledBtn>Walkthrough</StyledBtn>
+                    <StyledBtn type='button'>Walkthrough</StyledBtn>
                 </StyledLink>
                 <StyledLink to={"newgame"} column={2} row={1}>
-                    <StyledBtn>New Game +</StyledBtn>
+                    <StyledBtn type='button' disabled={true} >New Game +</StyledBtn>
                 </StyledLink>
                 <StyledLink to={"achievements"} column={"1 / span 2"} row={2}>
-                    <StyledBtn >Achievements</StyledBtn>
+                    <StyledBtn type='button' >Achievements</StyledBtn>
                 </StyledLink>
             </Container>
         </>

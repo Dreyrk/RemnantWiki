@@ -56,7 +56,7 @@
     "ring1": {
       "name": "Bloodletter's Insignia",
       "description": "BLEEDING effects applied by the wearer steal 10% of the damage dealt and return it to the wearer as Health.",
-      "worlds": "Resium",
+      "worlds": "Reisum",
       "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/bloodletters_insignia_ring_remnant_from_the_ashes_wiki_guide_64px.png"
     },
     "ring2": {
@@ -70,7 +70,7 @@
       "description": "Increase BLEEDING damage by 50% and Ranged and Melee damage dealt to enemies with BLEEDING by 15%.",
       "location": "Random drop Reisum",
       "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/razorwire_necklace_amulet_remnant_from_the_ashes_wiki_guide_64px.png",
-      "worlds": "Resium"
+      "worlds": "Reisum"
     },
     "primary": {
       "name": "Crossbow",
@@ -108,7 +108,7 @@
       "weaponMod": {
         "name": "Fan of Knives",
         "description": "Throw a fan of 7 knives that deal 20 damage each and applying the BLEED effect dealing 600 damage over 20s. Max 2 Charges",
-        "worlds": "Resium",
+        "worlds": "Reisum",
         "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/fan_of_knives_mod_icon_remnant_from_the_ashes_wiki_guide_64px.png"
       }
     },
@@ -271,7 +271,7 @@
       "corrosive": 2,
       "shock": 3,
       "category": "head",
-      "worlds": "Resium"
+      "worlds": "Reisum"
     },
     "body": {
       "name": "Warlord Armor",
@@ -287,7 +287,7 @@
       "radiation": -1,
       "corrosive": 2,
       "shock": 2,
-      "worlds": "Resium",
+      "worlds": "Reisum",
       "category": "body"
     },
     "legs": {
@@ -303,19 +303,19 @@
       "corrosive": 2,
       "shock": 1,
       "armorSet": "Warlord",
-      "worlds": "Resium",
+      "worlds": "Reisum",
       "category": "legs"
     },
     "ring1": {
       "name": "Prismatic Diamond Ring",
       "description": "Increases ELEMENTAL damage by 10%.",
-      "worlds": "Resium",
+      "worlds": "Reisum",
       "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/prismaticdiamond_ring_remnant_from_the_ashes_wiki_guide_64px.png"
     },
     "ring2": {
       "name": "Band of Discord",
       "description": "Reduces Consumable Use Speed by 15%. Dragon Hearts heal the wearer with 125 Health over 30 seconds.",
-      "worlds": "Resium",
+      "worlds": "Reisum",
       "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/band_of_discord_ring_remnant_from_the_ashes_wiki_guide_64px.png"
     },
     "amulet": {
@@ -323,7 +323,7 @@
       "description": "Increases Explosion Damage by 25%. Explosions apply BURNING status effect.",
       "location": "Warning Totems event: destroy all totems while alerting all of them",
       "img": "https://remnantfromtheashes.wiki.fextralife.com/file/Remnant-From-The-Ashes/vulcansdetonator_amulet_remnant_from_the_ashes_wiki_guide_64px.png",
-      "worlds": "Resium"
+      "worlds": "Reisum"
     },
     "primary": {
       "name": "Eye of the Storm",

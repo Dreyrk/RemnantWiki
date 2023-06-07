@@ -5,7 +5,7 @@ import { theme } from '../style/theme.js';
 import Loading from "./Loading.jsx"
 import BossCard from './BossCard.jsx';
 
-function Bosses({ data, isLoading, isError, world }) {
+function CardsDisplay({ data, isLoading, isError, world, boss }) {
     if (!data && isLoading) {
         return (
             <Loading />
@@ -17,7 +17,7 @@ function Bosses({ data, isLoading, isError, world }) {
     } else {
         return (
             <LocationContainer>
-                <Title>{world} Bosses</Title>
+                <Title>{world} {boss ? "Bosses" : "Enemies"}</Title>
                 <Container>
                     {data.map((boss) => (
                         <BossCard boss={boss} />
@@ -28,7 +28,7 @@ function Bosses({ data, isLoading, isError, world }) {
     }
 }
 
-export default Bosses;
+export default CardsDisplay;
 
 const LocationContainer = styled.section`
     display: flex;

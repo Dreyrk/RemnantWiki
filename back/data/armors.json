@@ -318,7 +318,7 @@
     "corrosive": 2,
     "shock": 3,
     "category": "head",
-    "worlds": "Resium"
+    "worlds": "Reisum"
   },
   {
     "name": "Scavenger Helmet",
@@ -335,7 +335,7 @@
     "corrosive": -3,
     "shock": -2,
     "category": "head",
-    "worlds": "Resium"
+    "worlds": "Reisum"
   },
   {
     "name": "Adventurer Tunic",
@@ -623,7 +623,7 @@
     "radiation": -1,
     "corrosive": 2,
     "shock": 2,
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "category": "body"
   },
   {
@@ -640,7 +640,7 @@
     "radiation": 2,
     "corrosive": -2,
     "shock": -3,
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "category": "body"
   },
   {
@@ -928,7 +928,7 @@
     "corrosive": 2,
     "shock": 1,
     "armorSet": "Warlord",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "category": "legs"
   },
   {
@@ -944,7 +944,7 @@
     "corrosive": -2,
     "shock": -2,
     "armorSet": "Scavenger",
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "category": "legs"
   }
 ]

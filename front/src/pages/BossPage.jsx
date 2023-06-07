@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 
 import Navbar from '../components/Navbar'
-import Bosses from '../components/Bosses';
+import Bosses from '../components/CardsDisplay';
 import useFetch from '../hooks/useFetch';
 
-const worlds = ["Earth", "Rhom", "Corsus", "Yaesha", "Ward 17", "Ward Prime", "Resium"]
+const worlds = ["Earth", "Rhom", "Corsus", "Yaesha", "Ward 17", "Ward Prime", "Reisum"]
 
 function BossPage() {
     const bossData = {
@@ -28,6 +28,7 @@ function BossPage() {
                         isLoading={isLoading}
                         isError={isError}
                         world={worlds[i]}
+                        boss={true}
                     />
                 ))}
             </Wrapper>

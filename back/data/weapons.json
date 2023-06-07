@@ -708,7 +708,7 @@
       "name": "Cold Strike",
       "description": "Strikes apply FROSTBITE stacks. Charge attacks apply 2 stacks per hit"
     },
-    "worlds": "Resium",
+    "worlds": "Reisum",
     "category": "melee",
     "critChance": 5,
     "type": "normal",

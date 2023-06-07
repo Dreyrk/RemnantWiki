@@ -8,7 +8,7 @@ import fetchData from '../helpers/fetchData.js';
 import FilterCheck from './FilterCheck.jsx';
 import ItemBox from './ItemBox.jsx';
 
-const amuletsFilters = ["Earth", "Rhom", "Yaesha", "Corsus", "Resium", "Any"];
+const amuletsFilters = ["Earth", "Rhom", "Yaesha", "Corsus", "Reisum", "Any"];
 
 function Amulets() {
     const [amulets, setAmulets] = useState([]);
