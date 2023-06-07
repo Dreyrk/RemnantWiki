@@ -5,6 +5,7 @@ import useCurrentUserContext from '../hooks/useCurrentUserContext';
 
 import Navbar from '../components/Navbar'
 import { theme } from '../style/theme.js';
+import StyledBtn from '../style/StyledBtn';
 
 function Saved() {
     const { user, token } = useCurrentUserContext()
@@ -14,12 +15,12 @@ function Saved() {
             <Navbar />
             <Container>
                 <Title>{user.pseudo}'s Saved Page</Title>
-                <StyledBtn to={token ? "/saved/items" : "/auth"}>
-                    Items
-                </StyledBtn>
-                <StyledBtn to={token ? "/saved/builds" : "/auth"}>
-                    Builds
-                </StyledBtn>
+                <StyledLink to={token ? "/saved/items" : "/auth"}>
+                    <StyledBtn>Items</StyledBtn>
+                </StyledLink>
+                <StyledLink to={token ? "/saved/builds" : "/auth"}>
+                    <StyledBtn>Builds</StyledBtn>
+                </StyledLink>
             </Container>
         </>
     )
@@ -44,20 +45,7 @@ const Container = styled.div`
     place-items: center;
 `
 
-const StyledBtn = styled(NavLink)`
-    height: 100px;
-    width: 350px;
-    border: 10px solid ${theme.colors.blanc};
-    background-color: ${theme.colors.rouge};
-    border-radius: 30px;
-    box-shadow: 0px 4px 4px ${theme.colors.gris1};
-    color: ${theme.colors.blanc};
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+const StyledLink = styled(NavLink)`
     opacity: 1;
     grid-row: 2;
 `
