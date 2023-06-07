@@ -2,32 +2,47 @@ import React from 'react'
 import styled from 'styled-components';
 
 import Navbar from '../components/Navbar'
+import Bosses from '../components/Bosses';
 import useFetch from '../hooks/useFetch';
 
 const worlds = ["Earth", "Rhom", "Corsus", "Yaesha", "Ward 17", "Ward Prime", "Resium"]
 
 function BossPage() {
-    const { data: earthBosses, isLoading: earthLoading, isError: earthError } = useFetch("worlds/bosses/earth")
-    const { data: rhomBosses, isLoading: rhomLoading, isError: rhomError } = useFetch("worlds/bosses/rhom")
-    const { data: corsusBosses, isLoading: corsusLoading, isError: corsusError } = useFetch("worlds/bosses/corsus")
-    const { data: yaeshaBosses, isLoading: yaeshaLoading, isError: yaeshaError } = useFetch("worlds/bosses/yaesha")
-    const { data: wardPrimeBosses, isLoading: wardPrimeLoading, isError: wardPrimeError } = useFetch("worlds/bosses/wardPrime")
-    const { data: ward17Bosses, isLoading: ward17Loading, isError: ward17Error } = useFetch("worlds/bosses/ward17")
-    const { data: resiumBosses, isLoading: resiumLoading, isError: resiumError } = useFetch("worlds/bosses/resium")
+    const bossData = {
+        earth: useFetch("bosses/earth"),
+        rhom: useFetch("bosses/rhom"),
+        corsus: useFetch("bosses/corsus"),
+        yaesha: useFetch("bosses/yaesha"),
+        wardPrime: useFetch("bosses/wardPrime"),
+        ward17: useFetch("bosses/ward17"),
+        resium: useFetch("bosses/resium"),
+    };
     return (
         <>
             <Navbar />
-            <Container>
-
-            </Container>
+            <Wrapper>
+                {Object.entries(bossData).map(([world, { data, isLoading, isError }], i) => (
+                    <Bosses
+                        key={world}
+                        data={data}
+                        isLoading={isLoading}
+                        isError={isError}
+                        world={worlds[i]}
+                    />
+                ))}
+            </Wrapper>
         </>
     )
 }
 
 export default BossPage;
 
-const Container = styled.div`
-    height: calc(100vh - 100px);
-    width: 100%;
-    overflow-y: auto;
+
+
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `
+
+

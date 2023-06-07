@@ -113,9 +113,6 @@ const Container = styled(NavLink)`
     padding-bottom: ${(props) => props.bottom};
     padding-top: ${(props) => props.top};
     opacity: 1;
-    :hover {
-    transform: scale(1.2)
-    }
 `
 
 const TraitContainer = styled.div`
