@@ -89,12 +89,12 @@ const Title = styled.h1`
 `
 
 const BigContainer = styled.div`
-    height: 100%;
-    width: 100%;
-    margin: 0;
+    height: 90vh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
 `
 
 const StyledBtn = styled.button`

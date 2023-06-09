@@ -71,12 +71,7 @@ const Desc = styled(motion.p)`
 const Wrapper = styled.section`
     position: relative;
     height: 80vh;
-    width: 100%;
-    display: grid;
-    place-content: center;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    scroll-behavior: smooth;
+    width: 100vw;
     @media ${device.mobileL} {
      width: 400px;
     }
@@ -84,8 +79,10 @@ const Wrapper = styled.section`
 
 const BuildContainer = styled(motion.div)`
     margin: auto;
-    height: 75%;
-    width: 92%;
+    max-width: 100vw;
+    max-height: 80vh;
+    height: calc(100vh - 150px);
+    width: 90vw;
     display: grid;
     grid-template-columns: repeat(8, 12.5%);
     grid-template-rows: repeat(8, 12.5%);
