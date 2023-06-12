@@ -20,7 +20,7 @@ const category = [
     link: "/stuff/mods",
   },
   {
-    name: "Challenge Build",
+    name: "Challenge",
     link: "/builds/challenge",
   },
   {

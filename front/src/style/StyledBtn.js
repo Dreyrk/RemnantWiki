@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { theme } from "./theme.js";
+import { device } from "./device.js";
 
 const StyledBtn = styled.button`
   height: ${(props) => props.height || "100px"};
@@ -15,6 +16,12 @@ const StyledBtn = styled.button`
   line-height: ${(props) => props.lineHeight || "50px"};
   :hover {
     transform: scale(0.9);
+  }
+  @media ${device.mobileL} {
+    height: 80px;
+    width: 195px;
+    font-size: 26px;
+    line-height: 28px;
   }
 `;
 

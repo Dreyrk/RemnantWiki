@@ -172,7 +172,7 @@ const StepsContainer = styled.div`
     justify-content: space-evenly;
     bottom: 0;
     left: 40%;
-    z-index: 99;
+    z-index: 4;
 `
 
 const Circle = styled.div`

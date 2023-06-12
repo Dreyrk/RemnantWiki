@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FaRandom } from 'react-icons/fa';
 
 import { theme } from '../style/theme.js';
+import { device } from '../style/device.js';
 import StyledBtn from '../style/StyledBtn.js';
 import category from '../utils/category.js';
 
@@ -60,7 +61,7 @@ function Stuff() {
                     <Navbar />
                     <CategoryContainer>
                         {category.map((cat) => {
-                            if (cat.name !== "Challenge Build") {
+                            if (cat.name !== "Challenge") {
                                 return (
                                     <StyledLink key={cat.name} to={cat.link}>
                                         <StyledBtn disabled={cat.disabled ? true : false} type='button'>{cat.name}</StyledBtn>
@@ -70,8 +71,8 @@ function Stuff() {
                                 return (
                                     <CircleLink key={cat.name} to={cat.link}>
                                         <CircleBtn type='button'>
-                                            {cat.name}
-                                            <FaRandom size={30} color={theme.colors.blanc} />
+                                            <Text>{cat.name}</Text>
+                                            <FaRandom size={60} color={theme.colors.blanc} />
                                         </CircleBtn>
                                     </CircleLink>
                                 )
@@ -118,13 +119,24 @@ const CircleBtn = styled.button`
     border-radius: 50%;
     box-shadow: 0px 4px 4px ${theme.colors.gris1};
     color: ${theme.colors.blanc};
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding-top: 15px;
+    @media ${device.mobileL} {
+    height: 90px;
+    width: 90px;
+    font-size: 12px;
+    padding-top: 3px;
+  }
+`
+const Text = styled.span`
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+    @media ${device.mobileL} {
+        display: none;
+    }
 `
