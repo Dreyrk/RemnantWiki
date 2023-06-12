@@ -7,8 +7,9 @@
   "scripts": {
     "dev": "nodemon index.js",
     "seed": "node ./seed.js",
-    "test": "mocha tests/*.test.js",
-    "start": "./dev-back-entrypoint.sh"
+    "mocha": "npx mocha tests/*.test.js",
+    "start": "./dev-back-entrypoint.sh",
+    "test": "docker compose -f docker-compose.test.yml --env-file ./.env up -d --build --force-recreate"
   },
   "author": "Dreyrk",
   "license": "ISC",
