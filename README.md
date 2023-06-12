@@ -13,7 +13,7 @@ npm run setup
 For start back and front
 
 ```bash
-npm start
+npm run dev
 ```
 
 ## Mock-up
