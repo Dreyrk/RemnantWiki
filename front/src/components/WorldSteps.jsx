@@ -145,4 +145,5 @@ const StepPath = styled(motion.div)`
     right: ${(props) => props.row === 4 && props.vertical ? '-90px' : '-270px'};
     border-top: 2px solid ${theme.colors.rouge};
     transform: ${(props) => props.vertical && 'rotate(90deg)'};
+    z-index: 1;
 `

@@ -5,11 +5,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "dev": "nodemon index.js",
     "seed": "node ./seed.js",
-    "test": "mocha tests/*.test.js"
+    "test": "mocha tests/*.test.js",
+    "start": "./dev-back-entrypoint.sh"
   },
-  "author": "",
+  "author": "Dreyrk",
   "license": "ISC",
   "dependencies": {
     "argon2": "^0.30.3",

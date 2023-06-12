@@ -78,7 +78,7 @@ router.post(
   auth.verifyPassword
 );
 router.put("/api/user/:id", auth.verifyToken, userController.updateUser);
-router.get("/api/user", userController.getAll);
+router.get("/api/user", auth.verifyToken, userController.getAll);
 
 //CLASSES
 router.get("/api/classes/scrapper", classesController.scrapper);
