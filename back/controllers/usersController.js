@@ -42,7 +42,7 @@ const userController = {
     const userBody = req.body;
     try {
       const newUser = await user.create(userBody);
-      res.status(CODES.CREATED).send(newUser);
+      res.status(CODES.CREATED).send({ data: newUser }).select("pseudo email");
     } catch (e) {
       res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
       console.error(e);

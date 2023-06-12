@@ -17,7 +17,7 @@ function Home() {
                     <AnimatedText size={"50px"} text={"Welcome to the Ward 13 Traveler !"} />
                 </TitleContainer>
                 <Title>Story Overview</Title>
-                <Text>Remnant: From the Ashes is set in a post-apocalyptic world where it has been thrown into chaos by an ancient evil from another dimension
+                <Text>Remnant From the Ashes is set in a post-apocalyptic world where it has been thrown into chaos by an ancient evil from another dimension
                     which is now overrun by monstrous creatures. As one of the last remnants of humanity, you'll set out alone or alongside up to two other players
                     to face down hordes of deadly enemies and epic bosses, and try to carve a foothold, rebuild, and then retake what was lost.
                 </Text>
