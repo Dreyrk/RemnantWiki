@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - .:/app
-      - /app/node_modules
+      - .:/front
+      - /front/node_modules
     ports:
       - "3000:3000"
     command: npm run build
