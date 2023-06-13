@@ -9,7 +9,7 @@ import StyledBtn from '../style/StyledBtn.js';
 import category from '../utils/category.js';
 
 import Navbar from '../components/Navbar'
-import Weapons from '../components/Weapons.jsx';
+import Weapons from '../components/Weapons';
 import Armors from '../components/Armors'
 import Amulets from '../components/Amulets'
 import Rings from '../components/Rings'
@@ -105,6 +105,7 @@ const CategoryContainer = styled.div`
 const StyledLink = styled(NavLink)`
     text-decoration: none;
 `
+
 const CircleLink = styled(NavLink)`
     text-decoration: none;
     grid-row: 1 / span 3;
@@ -132,6 +133,7 @@ const CircleBtn = styled.button`
     padding-top: 3px;
   }
 `
+
 const Text = styled.span`
     font-weight: 700;
     font-size: 38px;

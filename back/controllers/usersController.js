@@ -5,7 +5,7 @@ import CODES from "../utils/httpCodes.js";
 const userController = {
   getAll: async (req, res) => {
     try {
-      const data = await user.find({});
+      const data = await user.find({}).select("pseudo");
 
       if (data) {
         res.status(CODES.SUCCESS).send({ data: data, totalUsers: data.length });
@@ -44,8 +44,7 @@ const userController = {
       const newUser = await user.create(userBody);
       res.status(CODES.CREATED).send({ data: newUser }).select("pseudo email");
     } catch (e) {
-      res.sendStatus(CODES.INTERNAL_SERVER_ERROR);
-      console.error(e);
+      res.status(CODES.INTERNAL_SERVER_ERROR).send({ error: e });
     }
   },
   updateUser: async (req, res) => {
