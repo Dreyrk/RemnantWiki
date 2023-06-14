@@ -7,7 +7,7 @@ async function fetchData(url, options = { method: "GET" }) {
 
   if (res.ok) {
     const data = await res.json();
-    return data.data;
+    return { data: data, status: res.status };
   } else {
     throw new Error("fetch failed");
   }
