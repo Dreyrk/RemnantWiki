@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
-import { getUri } from "./db.js";
+
+import { getUri } from "./utils/getUri.js";
 
 import amulet from "./models/amulet.js";
 import armors from "./models/armors.js";
