@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import dotenv from "dotenv";
+import { getUri } from "./db.js";
 
 import amulet from "./models/amulet.js";
 import armors from "./models/armors.js";
@@ -31,7 +32,7 @@ import enemiesData from "./data/enemies.json" assert { type: "json" };
 
 dotenv.config();
 
-const uri = process.env.URI || "mongodb://127.0.0.1:27017/remnantdb";
+const uri = getUri();
 
 async function main() {
   await mongoose.connect(uri, {
