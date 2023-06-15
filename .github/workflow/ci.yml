@@ -1,0 +1,17 @@
+name: "CI"
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test-back:
+  runs-on: ubuntu_latest
+  steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2 
+    - name: Install Dependencies
+      run: cd ./back && npm ci
+    - name: Run Tests
+      run: cd ./back && npm run mocha

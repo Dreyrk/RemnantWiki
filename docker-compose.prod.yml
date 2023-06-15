@@ -5,7 +5,6 @@ services:
     image: mongo:latest
     restart: always
     environment:  
-      PROD_URI: ${PROD_URI}
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
     volumes:

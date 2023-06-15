@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 
-ENV ENV=production
+# ENV ENV=production
 
 WORKDIR /api
 
