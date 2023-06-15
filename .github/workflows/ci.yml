@@ -6,8 +6,8 @@ on:
 
 jobs:
   test-back:
-  runs-on: ubuntu_latest
-  steps:
+    runs-on: ubuntu_latest
+    steps:
     - name: Checkout Code
       uses: actions/checkout@v2 
     - name: Install Dependencies
