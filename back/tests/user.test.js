@@ -3,8 +3,8 @@ const { expect: chaiExcept } = chai;
 import user from "../models/user.js";
 
 describe("User API", () => {
-  beforeEach(async () => {
-    await user.deleteMany({});
+  beforeEach(() => {
+    user.deleteMany({});
   });
   describe("AUTH", () => {
     it("User can create an account", async () => {
@@ -52,8 +52,6 @@ describe("User API", () => {
       );
 
       const loginData = await loginRes.json();
-
-      console.log(loginRes);
 
       chaiExcept(loginRes.status).to.equal(200);
       chaiExcept(loginData.user.pseudo).to.equal(loginUser.pseudo);
