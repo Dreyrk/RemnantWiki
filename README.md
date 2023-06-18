@@ -10,13 +10,13 @@ Use npm script for install dependencies
 npm run setup
 ```
 
-For start back and front
+For start developpement environnement
 
 ```bash
 npm run dev
 ```
 
-For start production
+For start production environnement
 
 ```bash
 npm run prod
