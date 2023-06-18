@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 
-# ENV ENV=production
+ENV ENV=production
 
 WORKDIR /api
 
@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD [ "npm", "run", "start:production" ]
+CMD [ "npm", "run", "start" ]
