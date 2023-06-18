@@ -1,9 +1,12 @@
 version: "3"
 
+name: production
+
 services:
   mongodb:
     image: mongo:latest
     restart: always
+    command: mongod --quiet
     environment:  
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
@@ -13,7 +16,7 @@ services:
   api:
     build:
       context: ./back
-      dockerfile: Dockerfile.api
+      dockerfile: Dockerfile
     ports:
       - 5000:5000
     environment:
@@ -25,7 +28,7 @@ services:
   client:
     build:
       context: ./front
-      dockerfile: Dockerfile.client
+      dockerfile: Dockerfile
     environment:
       REACT_APP_BASE_API_URL_PROD: ${REACT_APP_BASE_API_URL_PROD}
     ports:

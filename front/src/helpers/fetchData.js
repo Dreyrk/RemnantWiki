@@ -7,7 +7,11 @@ async function fetchData(url, options = { method: "GET" }) {
 
   if (res.ok) {
     const data = await res.json();
-    return { data: data, status: res.status };
+    if (url.includes("random")) {
+      return data.data;
+    } else {
+      return { data: data.data, status: res.status };
+    }
   } else {
     throw new Error("fetch failed");
   }

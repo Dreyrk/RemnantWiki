@@ -1,7 +1,5 @@
 FROM node:lts-alpine
 
-ENV ENV=production
-
 WORKDIR /api
 
 COPY package*.json .

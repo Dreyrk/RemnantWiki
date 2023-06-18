@@ -20,7 +20,7 @@ do
 done
 
 echo "# Watch The Test Output...\n\n"
-result=$(docker logs dummy-api-test-api-1)
+result=$(docker logs ci-testing-test-api-1)
 echo "$result"
 case "$result" in 
 *"problem"*)

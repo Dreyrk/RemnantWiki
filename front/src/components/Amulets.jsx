@@ -15,7 +15,7 @@ function Amulets() {
     const originalData = useRef(amulets);
 
     const getData = useCallback(async () => {
-        const data = await fetchData("items/amulets");
+        const { data } = await fetchData("items/amulets");
         setAmulets(data)
         originalData.current = data
     }, []);
