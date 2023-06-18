@@ -8,7 +8,7 @@ RUN npm install
 
 COPY . .
 
-RUN npm run seed
+RUN node ./back/seed.js
 
 EXPOSE 5000
 
