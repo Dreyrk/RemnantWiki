@@ -20,7 +20,7 @@ export function useFetch(url) {
   const { data, error } = useSWR(url, fetcher);
 
   return {
-    data: data && data.data,
+    data: data?.data,
     isLoading: !error && !data,
     isError: error,
   };

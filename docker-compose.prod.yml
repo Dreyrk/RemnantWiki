@@ -22,6 +22,7 @@ services:
     environment:
       PROD_URI: ${PROD_URI}
       JWT_SECRET: ${JWT_SECRET}
+    command: sh ./prod-entrypoint.sh
     depends_on:
       - mongodb
 
