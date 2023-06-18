@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "client": "cd ./front && npm start",
-    "server": "cd ./back && npm run dev",
+    "server": "cd ./back && npm start",
     "setup": "npm i && npm --prefix ./front i && npm --prefix ./back i",
     "seed": "cd ./back && npm run seed && cd ..",
-    "test": "cd ./back && npm run test && cd .."
+    "test": "cd ./back && npm run test",
+    "prod": "docker compose -f docker-compose.prod.yml --env-file ./.env up -d"
   },
   "author": "Dreyrk",
   "license": "ISC",

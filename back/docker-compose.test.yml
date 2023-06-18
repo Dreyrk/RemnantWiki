@@ -1,14 +1,13 @@
 version: "3"
 
+name: ci-testing
+
 services:
-  
   test-mongodb:
     image: mongo:latest
     networks:
       - testbackendnetwork
-    ports:
-      - 4000:27017
-    command: mongod --quiet 
+    command: mongod --quiet
     healthcheck:
       test: echo 'db.runCommand({serverStatus:1}).ok' | mongosh admin -u $MONGO_INITDB_ROOT_USERNAME -p $MONGO_INITDB_ROOT_PASSWORD --quiet | grep 1
       interval: 10s
@@ -18,9 +17,9 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
-  
+
   test-api:
-    build: 
+    build:
       dockerfile: ./test.Dockerfile
     networks:
       - testbackendnetwork
@@ -29,9 +28,9 @@ services:
     depends_on:
       test-mongodb:
         condition: service_healthy
-    command: sh ./test-back-entrypoint.sh
+    command: sh ./test-entrypoint.sh
     environment:
-      ENV: "TEST"
+      ENV: "test"
       TEST_URI: ${TEST_URI}
       JWT_SECRET: ${JWT_SECRET}
 

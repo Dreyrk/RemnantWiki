@@ -15,7 +15,7 @@ function Armors() {
     const originalData = useRef(armors);
 
     const getData = useCallback(async () => {
-        const data = await fetchData("items/armors");
+        const { data } = await fetchData("items/armors");
         setArmors(data)
         originalData.current = data
     }, []);

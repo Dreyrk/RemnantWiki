@@ -5,11 +5,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
+    "start": "nodemon index.js",
     "seed": "node ./seed.js",
     "mocha": "npx mocha tests/*.test.js",
-    "start": "./dev-back-entrypoint.sh",
-    "test": "docker compose -f docker-compose.test.yml --env-file ./.env up -d --build --force-recreate"
+    "test": "docker compose -f docker-compose.test.yml --env-file ./.env up -d --build --force-recreate",
+    "start:production": "node ./index.js"
   },
   "author": "Dreyrk",
   "license": "ISC",

@@ -1,0 +1,40 @@
+version: "3"
+
+name: production
+
+services:
+  mongodb:
+    image: mongo:latest
+    restart: always
+    command: mongod --quiet
+    environment:  
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+    volumes:
+      - mongodb_data:/data/
+  
+  api:
+    build:
+      context: ./back
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    environment:
+      PROD_URI: ${PROD_URI}
+      JWT_SECRET: ${JWT_SECRET}
+    command: sh ./prod-entrypoint.sh
+    depends_on:
+      - mongodb
+
+  client:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    environment:
+      REACT_APP_BASE_API_URL_PROD: ${REACT_APP_BASE_API_URL_PROD}
+    ports:
+    - 3000:3000
+
+volumes:
+  mongodb_data:
+

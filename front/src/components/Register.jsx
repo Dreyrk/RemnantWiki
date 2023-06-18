@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { theme } from "../style/theme.js";
+import fetchData from "../helpers/fetchData.js"
 import useCurrentUserContext from '../hooks/useCurrentUserContext.js'
 
 
@@ -17,7 +18,6 @@ function Register({ setAccountCreated, variants }) {
 
     async function createUser() {
         try {
-            const BASE_URL = process.env.REACT_APP_BASE_API_URL_DEV;
             const fetchOpts = {
                 method: "POST",
                 headers: {
@@ -27,7 +27,7 @@ function Register({ setAccountCreated, variants }) {
                 body: JSON.stringify(user),
             };
 
-            const res = await fetch(`${BASE_URL}/auth/register`, fetchOpts);
+            const res = await fetchData(`auth/register`, fetchOpts);
 
             if (res.status === 201) {
                 toast.success("Account Created !")

@@ -8,7 +8,7 @@ const loginController = {
     try {
       const loginUser = await user.find({ email });
 
-      if (loginUser[0] != null) {
+      if (loginUser[0]) {
         req.user = loginUser[0];
         next();
       } else {

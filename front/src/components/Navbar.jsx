@@ -76,7 +76,7 @@ function Navbar({ titleSelected }) {
                         <FaUser size={30} color={theme.colors.blanc} />
                     </IconLink>
                     :
-                    <IconLink logout="true" >
+                    <IconLink to={"/"} logout="true" >
                         <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />
                     </IconLink>
                 }

@@ -6,6 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { theme } from "../style/theme.js";
+import fetchData from "../helpers/fetchData.js"
 import useCurrentUserContext from '../hooks/useCurrentUserContext.js';
 
 function Login({ accountCreated, variants }) {
@@ -13,33 +14,28 @@ function Login({ accountCreated, variants }) {
     const [hide, setHide] = useState(true);
 
     async function loginUser() {
-        try {
-            const BASE_URL = process.env.REACT_APP_BASE_API_URL_DEV;
-            const fetchOpts = {
-                method: "POST",
-                headers: {
-                    Accept: "application/json",
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(user),
-            };
+        const fetchOpts = {
+            method: "POST",
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user),
+        };
 
-            const res = await fetch(`${BASE_URL}/auth/login`, fetchOpts);
+        const res = await fetchData(`auth/login`, fetchOpts);
 
-            const data = await res.json()
-
-            if (res.status === 200) {
-                toast.success("Login Success !")
-                setUser(data.user)
-                setToken(data.token)
-            } else if (res.status === 400) {
-                toast.error("Bad Request")
-            } else if (res.status === 404) {
-                toast.error("Wrong email or password")
-            }
-        } catch (e) {
-            toast.error("Failed to Fetch :/")
+        if (res.status === 200) {
+            console.log(res)
+            toast.success("Login Success !")
+            setUser(res.data.user)
+            setToken(res.data.token)
+        } else if (res.status === 400) {
+            toast.error("Bad Request")
+        } else if (res.status === 404) {
+            toast.error("Wrong email or password")
         }
+
     };
 
     return (

@@ -1,39 +1,36 @@
-import React, { useEffect, useState, useCallback } from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 import { theme } from '../style/theme.js'
-import fetchData from '../helpers/fetchData.js'
 import Navbar from '../components/Navbar.jsx'
 import ItemDetailsList from '../components/ItemDetailsList.jsx'
+import useFetch from '../hooks/useFetch.js'
+import Loading from '../components/Loading.jsx'
 
 function ItemDetails() {
-    const [details, setDetails] = useState({})
     const { itemCategory, id } = useParams()
 
-    const getData = useCallback(async () => {
-        const data = await fetchData(`items/${itemCategory}/${id}`);
-        setDetails(data)
-    }, [itemCategory, id]);
+    const { data: details, isLoading, isError } = useFetch(`items/${itemCategory}/${id}`)
 
-    useEffect(() => {
-        getData()
-    }, [getData])
 
     return (
         <Wrapper>
             <Navbar />
-            <BigContainer>
-                <LeftSideContainer>
-                    <Title>{details.name}</Title>
-                    <Img src={details.img} alt={details.name} />
-                </LeftSideContainer>
-                <RightSideContainer>
-                    <Title>Item Details</Title>
-                    <ItemDetailsList item={details} category={itemCategory} />
-                </RightSideContainer>
-            </BigContainer>
+            {isLoading && !details ?
+                <Loading />
+                :
+                <BigContainer>
+                    <LeftSideContainer>
+                        <Title>{details.name}</Title>
+                        <Img src={details.img} alt={details.name} />
+                    </LeftSideContainer>
+                    <RightSideContainer>
+                        <Title>Item Details</Title>
+                        <ItemDetailsList item={details} isLoading={isLoading} isError={isError} category={itemCategory} />
+                    </RightSideContainer>
+                </BigContainer>}
         </Wrapper>
     )
 }

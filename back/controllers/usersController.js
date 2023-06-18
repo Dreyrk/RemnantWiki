@@ -41,8 +41,14 @@ const userController = {
   postUser: async (req, res) => {
     const userBody = req.body;
     try {
-      const newUser = await user.create(userBody);
-      res.status(CODES.CREATED).send({ data: newUser }).select("pseudo email");
+      if (userBody) {
+        const newUser = await user.create(userBody);
+        res
+          .status(CODES.CREATED)
+          .send({ data: { pseudo: newUser.pseudo, email: newUser.email } });
+      } else {
+        res.sendStatus(CODES.BAD_REQUEST);
+      }
     } catch (e) {
       res.status(CODES.INTERNAL_SERVER_ERROR).send({ error: e });
     }

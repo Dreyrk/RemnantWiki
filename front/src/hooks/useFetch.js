@@ -1,7 +1,10 @@
 import useSWR from "swr";
 
 async function fetcher(url) {
-  const res = await fetch(`${process.env.REACT_APP_BASE_API_URL_DEV}/${url}`);
+  const BASE_URL =
+    process.env.REACT_APP_BASE_API_URL_DEV ||
+    process.env.REACT_APP_BASE_API_URL_PROD;
+  const res = await fetch(`${BASE_URL}/${url}`);
 
   if (!res.ok) {
     const error = new Error("An error occurred while fetching the data.");
@@ -17,7 +20,7 @@ export function useFetch(url) {
   const { data, error } = useSWR(url, fetcher);
 
   return {
-    data: data && data.data,
+    data: data?.data,
     isLoading: !error && !data,
     isError: error,
   };

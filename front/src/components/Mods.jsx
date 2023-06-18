@@ -15,7 +15,7 @@ function Mods() {
     const originalData = useRef(mods);
 
     const getData = useCallback(async () => {
-        const data = await fetchData("items/mods");
+        const { data } = await fetchData("items/mods");
         setMods(data)
         originalData.current = data
     }, []);

@@ -2,10 +2,15 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 dotenv.config();
 
-const uri = process.env.URI || "mongodb://127.0.0.1:27017/remnantdb";
+import { getUri } from "./utils/getUri.js";
+
+const uri = getUri();
 
 async function main() {
-  await mongoose.connect(uri);
+  await mongoose.connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
 }
 
 export default main;

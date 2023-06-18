@@ -71,10 +71,7 @@ const Container = styled.div`
 
 const HomeLink = styled(NavLink)`
     position: sticky;
-    bottom: -10%;
-    left: 45%;
     font-size: 24px;
-    padding-right: 50px;
     opacity: 1;
     :hover {
         opacity: 0.75;

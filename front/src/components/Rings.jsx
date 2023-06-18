@@ -15,7 +15,7 @@ function Rings() {
     const originalData = useRef(rings);
 
     const getData = useCallback(async () => {
-        const data = await fetchData("items/rings");
+        const { data } = await fetchData("items/rings");
         setRings(data)
         originalData.current = data
     }, []);

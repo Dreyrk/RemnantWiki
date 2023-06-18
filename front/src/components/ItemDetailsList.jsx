@@ -4,109 +4,116 @@ import { motion } from 'framer-motion';
 
 import WeaponsDetails from './WeaponsDetails.jsx';
 import ArmorsDetails from './ArmorsDetails.jsx';
+import Loading from "./Loading.jsx"
 import { theme } from '../style/theme.js';
 
 
 
-function ItemDetailsList({ item, category }) {
-    switch (category) {
-        case "weapons":
-            return (
-                <WeaponsDetails item={item} />
-            )
-        case "amulets":
-            return (
-                <DetailsList
-                    initial="initial"
-                    animate="animate"
-                    variants={{
-                        initial: { opacity: 0 },
-                        animate: { opacity: 1, transition: { staggerChildren: 0.2, delay: 0.2 } }
-                    }}
-                >
-                    <ListItem variants={{
-                        initial: { y: -10, opacity: 0 },
-                        animate: { y: 0, opacity: 1 }
-                    }}>
-                        <ModDesc>
-                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Location :</span>
-                            <br />
-                            {item.location ? item.location : "Unknown informations"}
-                        </ModDesc>
-                    </ListItem>
-                    <ListItem variants={{
-                        initial: { y: -10, opacity: 0 },
-                        animate: { y: 0, opacity: 1 }
-                    }}>
-                        <ModDesc>
-                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> :
-                            <br />
-                            {item.description ? item.description : "Unknown informations"}
-                        </ModDesc>
-                    </ListItem>
-                </DetailsList>
-            )
-        case "armors":
-            return (
-                <ArmorsDetails item={item} />
-            )
-        case "trait":
-            return (
-                <DetailsList initial="initial"
-                    animate="animate"
-                    variants={{
-                        initial: { opacity: 0 },
-                        animate: { opacity: 1, transition: { staggerChildren: 0.2, delay: 0.2 } }
-                    }}>
-                    <ListItem variants={{
-                        initial: { y: -10, opacity: 0 },
-                        animate: { y: 0, opacity: 1 }
-                    }}>
-                        <ModDesc>
-                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> : <br /> {item.description}
-                        </ModDesc>
-                    </ListItem>
-                    <ListItem variants={{
-                        initial: { y: -10, opacity: 0 },
-                        animate: { y: 0, opacity: 1 }
-                    }}>
-                        <ModDesc>
-                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >How to Unlock</span> : <br /> {item.unlock}
-                        </ModDesc>
-                    </ListItem>
-                    <StatsContainer
+function ItemDetailsList({ item, category, isLoading, isError }) {
+    if (isLoading) {
+        return <Loading />
+    } else if (isError) {
+        return <p>{isError.info}</p>
+    } else {
+        switch (category) {
+            case "weapons":
+                return (
+                    <WeaponsDetails item={item} />
+                )
+            case "amulets":
+                return (
+                    <DetailsList
+                        initial="initial"
+                        animate="animate"
                         variants={{
+                            initial: { opacity: 0 },
+                            animate: { opacity: 1, transition: { staggerChildren: 0.2, delay: 0.2 } }
+                        }}
+                    >
+                        <ListItem variants={{
                             initial: { y: -10, opacity: 0 },
                             animate: { y: 0, opacity: 1 }
                         }}>
-                        <Tile>
-                            <Text>Stats :</Text>
-                        </Tile>
-                        <Container>
-                            <Text>Base: {item.base}</Text>
-                            <Text>Max: {item.max}</Text>
-                        </Container>
-                    </StatsContainer>
-                </DetailsList>
-            )
-        default:
-            return (
-                <DetailsList initial="initial"
-                    animate="animate"
-                    variants={{
-                        initial: { opacity: 0 },
-                        animate: { opacity: 1, transition: { staggerChildren: 0.2, delay: 0.2 } }
-                    }}>
-                    <ListItem variants={{
-                        initial: { y: -10, opacity: 0 },
-                        animate: { y: 0, opacity: 1 }
-                    }}>
-                        <ModDesc>
-                            <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> : <br /> {item.description}
-                        </ModDesc>
-                    </ListItem>
-                </DetailsList>
-            )
+                            <ModDesc>
+                                <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Location :</span>
+                                <br />
+                                {item.location ? item.location : "Unknown informations"}
+                            </ModDesc>
+                        </ListItem>
+                        <ListItem variants={{
+                            initial: { y: -10, opacity: 0 },
+                            animate: { y: 0, opacity: 1 }
+                        }}>
+                            <ModDesc>
+                                <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> :
+                                <br />
+                                {item.description ? item.description : "Unknown informations"}
+                            </ModDesc>
+                        </ListItem>
+                    </DetailsList>
+                )
+            case "armors":
+                return (
+                    <ArmorsDetails item={item} />
+                )
+            case "trait":
+                return (
+                    <DetailsList initial="initial"
+                        animate="animate"
+                        variants={{
+                            initial: { opacity: 0 },
+                            animate: { opacity: 1, transition: { staggerChildren: 0.2, delay: 0.2 } }
+                        }}>
+                        <ListItem variants={{
+                            initial: { y: -10, opacity: 0 },
+                            animate: { y: 0, opacity: 1 }
+                        }}>
+                            <ModDesc>
+                                <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> : <br /> {item.description}
+                            </ModDesc>
+                        </ListItem>
+                        <ListItem variants={{
+                            initial: { y: -10, opacity: 0 },
+                            animate: { y: 0, opacity: 1 }
+                        }}>
+                            <ModDesc>
+                                <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >How to Unlock</span> : <br /> {item.unlock}
+                            </ModDesc>
+                        </ListItem>
+                        <StatsContainer
+                            variants={{
+                                initial: { y: -10, opacity: 0 },
+                                animate: { y: 0, opacity: 1 }
+                            }}>
+                            <Tile>
+                                <Text>Stats :</Text>
+                            </Tile>
+                            <Container>
+                                <Text>Base: {item.base}</Text>
+                                <Text>Max: {item.max}</Text>
+                            </Container>
+                        </StatsContainer>
+                    </DetailsList>
+                )
+            default:
+                return (
+                    <DetailsList initial="initial"
+                        animate="animate"
+                        variants={{
+                            initial: { opacity: 0 },
+                            animate: { opacity: 1, transition: { staggerChildren: 0.2, delay: 0.2 } }
+                        }}>
+                        <ListItem variants={{
+                            initial: { y: -10, opacity: 0 },
+                            animate: { y: 0, opacity: 1 }
+                        }}>
+                            <ModDesc>
+                                <span style={{ textDecoration: `underline ${theme.colors.rouge}` }} >Effect</span> : <br /> {item.description}
+                            </ModDesc>
+                        </ListItem>
+                    </DetailsList>
+                )
+        }
     }
 }
 
