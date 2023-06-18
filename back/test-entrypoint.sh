@@ -3,7 +3,7 @@
 echo "\n###\n# Launch API...\n###"
 nohup npm start &
 echo "\n###\n# Populate DB with seed...\n###"
-npm run seed
+node ./seed.js
 PID=$!
 wait $PID
 echo "\n###\n# Launch Units Tests...\n###"
