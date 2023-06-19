@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { motion, useInView } from 'framer-motion';
 
 import { theme } from '../style/theme.js';
+import { device } from '../style/device.js';
 
 const container = {
     hidden: { opacity: 0 },
@@ -79,4 +80,7 @@ const Container = styled(motion.div)`
     grid-column: ${(props) => props.column ? props.column : "1 / span 2"};
     text-decoration: ${(props) => props.decoration};
     color: ${theme.colors.blanc};
+    @media ${device.mobileL} {
+        font-size: 26px;
+}
 `

@@ -9,6 +9,7 @@ import useCurrentUserContext from "../hooks/useCurrentUserContext.js"
 import LikeBtn from './LikeBtn.jsx'
 import ItemBoxDesc from './ItemBoxDesc.jsx'
 import ModModal from './ModModal.jsx'
+import { device } from '../style/device.js'
 
 const variants = {
     hidden: { x: -100, opacity: 0 },
@@ -111,10 +112,16 @@ const NavLinkContainer = styled(motion(NavLink))`
     margin: 0;
     position: relative;
     text-decoration: none;
+    @media ${device.mobileL} {
+        margin: auto;   
+    }
 `
 
 const SelectBtn = styled(motion.div)`
     margin: 0;
+    @media ${device.mobileL} {
+        margin: auto;   
+    }
 `
 
 const FlipContainer = styled(motion.div)`

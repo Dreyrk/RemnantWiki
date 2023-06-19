@@ -7,6 +7,7 @@ import ward17Background from "../images/ward17.png"
 import labyrinthBackground from "../images/labyrinth.png"
 import WorldSteps from './WorldSteps';
 import AnimatedText from "./AnimatedText"
+import { device } from '../style/device';
 
 const backgroundImageUrl = (world) => {
     if (world.name === "Corsus") {
@@ -57,6 +58,14 @@ const Desc = styled.p`
     flex-direction: column;
     gap: 15px;
     margin-top: 20px;
+    @media ${device.mobileL} {
+        font-size: 16px;
+        width: 90%;
+        height: 100%;
+        margin: 0;
+        align-self: start;
+        overflow: visible;
+    }
 `
 
 const WorldContainer = styled.section`
@@ -71,4 +80,13 @@ const WorldContainer = styled.section`
     background-image: ${(props) => props.img};
     background-repeat: no-repeat;
     background-size: cover;
+    @media ${device.mobileL} {
+        height: 100vh;
+        position: relative;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        gap: 20px;
+        background: none;
+    }
 `

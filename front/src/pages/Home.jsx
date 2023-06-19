@@ -21,7 +21,7 @@ function Home() {
                     which is now overrun by monstrous creatures. As one of the last remnants of humanity, you'll set out alone or alongside up to two other players
                     to face down hordes of deadly enemies and epic bosses, and try to carve a foothold, rebuild, and then retake what was lost.
                 </Text>
-                <StyledLink to={"/guide/walkthrough"}>
+                <StyledLink to={"/guide/walkthrough"} replace={true}>
                     Discover Game Story Now !
                 </StyledLink>
             </HomeSection>
@@ -44,8 +44,12 @@ const StyledLink = styled(NavLink)`
     border-radius: 25px;
     box-shadow: 0px 4px 10px rgba(244, 244, 246, 0.3);
     :hover {
-  box-shadow: 0px 6px 14px rgba(244, 244, 246, 0.3);
-}
+        box-shadow: 0px 6px 14px rgba(244, 244, 246, 0.3);
+    }
+    @media ${device.mobileL} {
+        font-size: 20px;
+        width: 250px;
+    }
 `
 
 const Text = styled.p`
@@ -58,6 +62,11 @@ const Text = styled.p`
     font-size: 24px;
     background-color: ${theme.colors.gris1};
     border-radius: 15px;
+    @media ${device.mobileL} {
+        font-size: 20px;
+        height: 290px;
+        width: 350px;
+    }
 `
 
 const Title = styled.h2`
@@ -102,5 +111,9 @@ const HomeSection = styled.section`
     grid-template-rows: repeat(8, 1fr);
     @media ${device.mobileL} {
         background: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
 `
