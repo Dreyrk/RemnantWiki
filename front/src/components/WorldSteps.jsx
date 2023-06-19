@@ -4,6 +4,7 @@ import { motion, useInView } from 'framer-motion';
 
 import { theme } from '../style/theme';
 import { calculatePosition } from '../helpers/calculatePosition';
+import { device } from '../style/device';
 
 const calculateScrollValues = (textLength) => {
     if (textLength > 40) {
@@ -89,6 +90,9 @@ const StyledFragment = styled(motion.div)`
     grid-row: ${(props) => props.row};
     grid-column: ${(props) => props.col};
     direction: ${(props) => props.direction};
+    @media ${device.mobileL} {
+        position: static;
+    }
 `
 
 const ScrollText = styled(motion.p)`
@@ -117,6 +121,10 @@ const ModalContainer = styled(motion.div)`
     align-items: center;
     text-align: center;
     overflow: hidden;
+    @media ${device.mobileL} {
+        bottom: 14%;
+        left: 45%;
+    }
 `
 
 const Step = styled(motion.div)`
@@ -133,7 +141,11 @@ const Step = styled(motion.div)`
     font-weight: 700;
     :hover {
         transform: scale(1.2);
-        transition: 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+    @media ${device.mobileL} {
+        height: 50px;
+        width: 50px;
     }
 `
 
@@ -146,4 +158,7 @@ const StepPath = styled(motion.div)`
     border-top: 2px solid ${theme.colors.rouge};
     transform: ${(props) => props.vertical && 'rotate(90deg)'};
     z-index: 1;
+    @media ${device.mobileL} {
+        display: none;
+    }
 `

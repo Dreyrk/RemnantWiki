@@ -123,7 +123,6 @@ const StatsContainer = styled(motion.li)`
     display: grid;
     grid-template-columns: 35% 65%;
     grid-template-rows: 50% 50%;
-    
 `
 
 const Container = styled.div`

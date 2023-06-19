@@ -61,7 +61,8 @@ const BoxDisplayContainer = styled.div`
         grid-template-columns: repeat(2, 1fr);
     }
     @media ${device.mobileL} {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 100%);
+        place-content: center;
     }
     ::-webkit-scrollbar {
         display: none;

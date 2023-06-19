@@ -28,55 +28,52 @@ function Navbar({ titleSelected }) {
     return (
         <NavContainer>
             <SideContainer>
-                <LogoLink to="/">
+                <LogoLink to="/" onClick={() => setShow(false)} >
                     <Logo src={logo} />
                 </LogoLink>
-                <Link to="/characters">Characters</Link>
-                <Link to="/stuff">Equipements/Stuff</Link>
+                <Link to="/characters" onClick={() => setShow(false)} >Characters</Link>
+                <Link to="/stuff" onClick={() => setShow(false)} >Equipements/Stuff</Link>
             </SideContainer>
             <Title to="/">{titleSelected ? titleSelected : "Remnant Wiki"}</Title>
             <SideContainer>
-                {!show ?
-                    <BurgerMenuIcon type='button' onClick={() => setShow(true)} >
-                        <BiMenuAltLeft size={45} color={theme.colors.blanc} />
-                    </BurgerMenuIcon>
-                    :
-                    <MobileNavContainer>
-                        <CloseBtn type='button' onClick={() => setShow(false)}>
-                            <IoClose size={40} color={theme.colors.blanc} />
-                        </CloseBtn>
-                        <Link show="true" column={1} row={2} to="/characters">Characters</Link>
-                        <Link show="true" column={2} row={3} to="/stuff">Equipements/Stuff</Link>
-                        <Link show="true" column={2} row={2} to="/worlds">Worlds</Link>
-                        <Link show="true" column={1} row={3} to="/guide">Guide</Link>
-                        {token &&
-                            <IconLink column={2} row={1} show="true" to="/saved">
-                                <BsBookmarkHeart size={30} color={theme.colors.blanc} />
-                            </IconLink>}
-                        {!token ?
-                            <IconLink to="/auth">
-                                <FaUser size={30} color={theme.colors.blanc} />
-                            </IconLink>
-                            :
-                            <IconLink column={2} row={1} show="true" logout="true" >
-                                <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />
-                            </IconLink>
-                        }
-                    </MobileNavContainer>
-                }
-                <Link to="/worlds">Worlds</Link>
-                <Link to="/guide">Guide</Link>
+                <BurgerMenuIcon type='button' show={!show} onClick={() => setShow(true)} >
+                    <BiMenuAltLeft size={45} color={theme.colors.blanc} />
+                </BurgerMenuIcon>
+                <MobileNavContainer open={show}>
+                    <CloseBtn type='button' onClick={() => setShow(false)}>
+                        <IoClose size={40} color={theme.colors.blanc} />
+                    </CloseBtn>
+                    <Link show="true" column={1} row={2} to="/characters" onClick={() => setShow(false)} >Characters</Link>
+                    <Link show="true" column={2} row={3} to="/stuff" onClick={() => setShow(false)} >Equipements/Stuff</Link>
+                    <Link show="true" column={2} row={2} to="/worlds" onClick={() => setShow(false)} >Worlds</Link>
+                    <Link show="true" column={1} row={3} to="/guide" onClick={() => setShow(false)} >Guide</Link>
+                    {token &&
+                        <IconLink column={2} row={1} show="true" to="/saved" onClick={() => setShow(false)} >
+                            <BsBookmarkHeart size={30} color={theme.colors.blanc} />
+                        </IconLink>}
+                    {!token ?
+                        <IconLink column={2} row={1} show="true" to="/auth" onClick={() => setShow(false)} >
+                            <FaUser size={30} color={theme.colors.blanc} />
+                        </IconLink>
+                        :
+                        <IconLink column={2} row={1} show="true" logout="true" onClick={() => setShow(false)} >
+                            <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />
+                        </IconLink>
+                    }
+                </MobileNavContainer>
+                <Link to="/worlds" onClick={() => setShow(false)} >Worlds</Link>
+                <Link to="/guide" onClick={() => setShow(false)} >Guide</Link>
                 {token &&
-                    <IconLink to="/saved">
+                    <IconLink to="/saved" onClick={() => setShow(false)} >
                         <BsBookmarkHeart size={30} color={theme.colors.blanc} />
                     </IconLink>
                 }
                 {!token ?
-                    <IconLink to="/auth">
+                    <IconLink to="/auth" onClick={() => setShow(false)} >
                         <FaUser size={30} color={theme.colors.blanc} />
                     </IconLink>
                     :
-                    <IconLink to={"/"} logout="true" >
+                    <IconLink to={"/"} logout="true" onClick={() => setShow(false)} >
                         <BiLogOut onClick={logOut} size={30} color={theme.colors.blanc} />
                     </IconLink>
                 }
@@ -93,23 +90,28 @@ const CloseBtn = styled.button`
     margin-top: 15px;
     margin-left: 10px;
     border: none;
-    background-color: ${theme.colors.noir};
+    background: none;
     grid-column: 1;
     grid-row: 1;
     place-self: start;
 `
 
 const MobileNavContainer = styled.div`
-    position: absolute;
+     position: absolute;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 350px;
-    background-color: ${theme.colors.noir};
+    width: 400px;
+    background-color: rgba(32, 32, 32, 0.97);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 100px);
     place-items: center;
+    transition: transform .2s ease-out;
+    transform: translateX(${(props) => (props.open ? '0' : '-100%')});
+    ::before, ::after {
+        transition: all .2s ease-out;
+    }
 `
 
 const BurgerMenuIcon = styled.button`
@@ -126,7 +128,7 @@ const BurgerMenuIcon = styled.button`
         transform: scale(0.8);
     }
     @media ${device.mobileL} {
-        display: flex;
+        display: ${(props) => props.show && "flex"};
         justify-content: center;
         align-items: center;
     }
@@ -215,8 +217,6 @@ const IconLink = styled(NavLink)`
         grid-column: ${(props) => props.column};
         grid-row: ${(props) => props.row};
         display: ${(props) => props.show ? "block" : "none"};
-        padding-left: ${(props) => props.logout && "70px"};
-        padding-right: ${(props) => !props.logout && "70px"};
     }
 `
 
