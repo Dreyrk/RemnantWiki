@@ -1,4 +1,3 @@
-# build environment
 FROM node:lts-alpine as build
 
 ENV ENV=production
