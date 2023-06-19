@@ -2,8 +2,10 @@ import useSWR from "swr";
 
 async function fetcher(url) {
   const BASE_URL =
-    process.env.REACT_APP_BASE_API_URL_DEV ||
-    process.env.REACT_APP_BASE_API_URL_PROD;
+    process.env.ENV === "production"
+      ? process.env.REACT_APP_BASE_API_URL_PROD
+      : process.env.REACT_APP_BASE_API_URL_DEV;
+
   const res = await fetch(`${BASE_URL}/${url}`);
 
   if (!res.ok) {
