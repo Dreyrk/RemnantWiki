@@ -25,3 +25,8 @@ npm run prod
 ## Mock-up
 
 [Figma model](https://www.figma.com/file/AGeAX3HVhKHLsmz7bdQ9za/RemnantWiki?type=design&node-id=101-135&t=DA4jrxcGG8d0YIvg-0)
+
+## Links 
+
+Client [here](https://remnant-client.onrender.com)
+API [here](https://remnant-api.onrender.com)
