@@ -8,6 +8,7 @@ import Navbar from '../components/Navbar.jsx'
 import ItemDetailsList from '../components/ItemDetailsList.jsx'
 import useFetch from '../hooks/useFetch.js'
 import Loading from '../components/Loading.jsx'
+import { device } from '../style/device.js'
 
 function ItemDetails() {
     const { itemCategory, id } = useParams()
@@ -74,6 +75,10 @@ const Title = styled(motion.h1)`
     font-size: 42px;
     line-height: 50px;
     letter-spacing: 0.05em;
+    @media ${device.mobileL} {
+        font-size: 26px;
+        padding-right: 45px;
+    }
 `
 
 const LeftSideContainer = styled(motion.div)`
@@ -86,6 +91,9 @@ const LeftSideContainer = styled(motion.div)`
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    @media ${device.mobileL} {
+        width: 175px;
+    }
 `
 const RightSideContainer = styled(motion.div)`
     overflow-y: auto;
@@ -94,5 +102,9 @@ const RightSideContainer = styled(motion.div)`
     color: white;
     ::-webkit-scrollbar {
         display: none;
+    }
+    @media ${device.mobileL} {
+        width: 255px;
+        overflow-x: auto;
     }
 `

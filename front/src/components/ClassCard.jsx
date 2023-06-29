@@ -208,7 +208,7 @@ const CarouselContainer = styled(motion.div)`
     margin-bottom: 10px;
     @media ${device.mobileL} {
         height: 270px;
-        width: 160px;
+        width: 170px;
         margin-left: 30px;
         transform: translateX(-5px);
     }
