@@ -8,7 +8,7 @@ import missing from "../images/missing_img.jpg"
 import AnimatedText from './AnimatedText.jsx'
 import TraitCircle from './TraitCircle.jsx'
 import Loading from './Loading.jsx'
-
+import { device } from '../style/device.js'
 
 
 function ClassCard({ data, isLoading, isError }) {
@@ -49,7 +49,7 @@ function ClassCard({ data, isLoading, isError }) {
                     <Title>Starting Build</Title>
                     <Container
                         to={`/stuff/armors/${data.head._id}`}
-                        bottom={"135px"} row={"2 / span 4"} column={"2 / span 3"} place={"end stretch"}>
+                        bottom={"135px"} row={"2 / span 4"} type={"head"} column={"2 / span 3"} placeSelf={"end stretch"}>
                         <BuildImg scale={"scale(0.6)"} src={data.head.img} alt='head' />
                     </Container>
                     <Container
@@ -98,7 +98,9 @@ const BuildImg = styled.img`
     width: 100%;
     object-fit: contain;
     transform: ${(props) => props.scale};
-    
+    @media ${device.mobileL} {
+        transform: scale(0.8);
+    }
 `
 
 const Container = styled(NavLink)`
@@ -109,10 +111,14 @@ const Container = styled(NavLink)`
     align-items: center;
     grid-column: ${(props) => props.column};
     grid-row: ${(props) => props.row};
-    place-self: ${(props) => props.place};
+    place-self: ${(props) => props.placeSelf};
     padding-bottom: ${(props) => props.bottom};
     padding-top: ${(props) => props.top};
     opacity: 1;
+    @media ${device.mobileL} {
+        grid-row: ${(props) => props.type === "head" && 5};
+        transform: ${(props) => props.type === "head" && "translateY(20px)"};
+    }
 `
 
 const TraitContainer = styled.div`
@@ -126,6 +132,9 @@ const TraitContainer = styled.div`
     place-self: ${(props) => props.place};
     padding-bottom: ${(props) => props.bottom};
     padding-top: ${(props) => props.top};
+    @media ${device.mobileL} {
+        grid-column: 2 / span 6;
+    }
 `
 
 const BuildContainer = styled.div`
@@ -161,6 +170,9 @@ const DescriptionContainer = styled.div`
     padding: 15px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), -2px -2px 10px rgba(255, 255, 255, 0.5);
+    @media ${device.mobileL} {
+        margin-left: 30px;
+    }
 `
 
 const StepsContainer = styled.div`
@@ -194,6 +206,12 @@ const CarouselContainer = styled(motion.div)`
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1), -2px -2px 10px rgba(157, 2, 8, 0.5);
     border-radius: 5px;
     margin-bottom: 10px;
+    @media ${device.mobileL} {
+        height: 270px;
+        width: 160px;
+        margin-left: 30px;
+        transform: translateX(-5px);
+    }
 `
 
 const SkinImg = styled(motion.img)`
@@ -223,4 +241,7 @@ const Desc = styled.p`
     color: ${theme.colors.blanc};
     text-align: center;
     overflow-y: auto;
+    @media ${device.mobileL} {
+        margin-top: 0;
+    }
 `
