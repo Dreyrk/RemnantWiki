@@ -4,8 +4,6 @@ name: ci-testing
 
 services:
   test-mongodb:
-    build:
-      context: ./back
     image: mongo:latest
     networks:
       - testbackendnetwork
