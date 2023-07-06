@@ -24,6 +24,12 @@ import userController from "./controllers/usersController.js";
 import loginController from "./auth/login.js";
 import auth from "./auth/auth.js";
 
+router.get("/", (req, res) => {
+  res.send(
+    "<style>body { font-size: 32px; font-weight: 600; }</style> Welcome to Remmnant API ! <br/> <br/> Routes availables: <br/> -'/api/items/' + weapons, armors, rings, amulets, etc... <br/> -'/api/random/' + item type <br/> -'/api/classes/' + class <br/> <br/> And more..."
+  );
+});
+
 //AMULETS
 router.get("/api/items/amulets", amuletsController.getAll);
 router.get("/api/items/amulets/:id", amuletsController.getById);
