@@ -1,6 +1,6 @@
 async function fetchData(url, options = { method: "GET" }) {
   const BASE_URL =
-    process.env.REACT_APP_ENV === "production"
+    process.env.NODE_ENV === "production"
       ? process.env.REACT_APP_BASE_API_URL_PROD
       : process.env.REACT_APP_BASE_API_URL_DEV;
 

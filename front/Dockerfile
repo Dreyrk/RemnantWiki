@@ -1,6 +1,6 @@
 FROM node:lts-alpine as build
 
-ENV ENV=production
+ENV NODE_ENV=production
 
 WORKDIR /client
 

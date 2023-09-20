@@ -57,7 +57,7 @@ function Login({ accountCreated, variants }) {
                 </LabelInputContainer>
                 <PasswordContainer>
                     <Label htmlFor="login-password">Password :</Label>
-                    <Password autoComplete="current-password" onChange={(e) => setUser({ ...user, password: e.target.value })} id='login-password' type={hide ? "password" : "text"} placeholder='********' />
+                    <Password onChange={(e) => setUser({ ...user, password: e.target.value })} id='login-password' type={hide ? "password" : "text"} placeholder='********' />
                     {hide ? <BiHide color={theme.colors.blanc} style={{ position: 'absolute', right: 110, top: 21 }} size={20} onClick={() => setHide(false)} /> : <BiShow color={theme.colors.blanc} style={{ position: 'absolute', right: 110, top: 21 }} size={20} onClick={() => setHide(true)} />}
                 </PasswordContainer>
                 <StyledBtn onClick={loginUser} type='button'>Login</StyledBtn>
