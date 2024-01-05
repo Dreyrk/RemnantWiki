@@ -4,7 +4,9 @@ RemnantWiki is a Web App thought in Desktop First for get informations on Remnan
 
 ## Installation
 
-Use npm script for install dependencies
+Use npm script 
+
+For setup project
 
 ```bash
 npm run setup
