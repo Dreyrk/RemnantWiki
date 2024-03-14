@@ -14,7 +14,7 @@ function BestBuilds() {
 
     const getData = useCallback(async () => {
         const data = await fetchData(`builds/bests`);
-        setBuilds(data);
+        setBuilds(data.data);
     }, []);
 
     useEffect(() => {

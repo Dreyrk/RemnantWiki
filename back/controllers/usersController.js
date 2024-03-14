@@ -21,9 +21,7 @@ const userController = {
     const { id } = res.params;
     try {
       if (mongoose.Types.ObjectId.isValid(id)) {
-        const oneUser = await user
-          .findById(id)
-          .select("pseudo", "email", "saved");
+        const oneUser = await user.findById(id).select("pseudo", "email", "saved");
 
         if (oneUser) {
           res.status(CODES.SUCCESS).send(oneUser);
@@ -43,9 +41,7 @@ const userController = {
     try {
       if (userBody) {
         const newUser = await user.create(userBody);
-        res
-          .status(CODES.CREATED)
-          .send({ data: { pseudo: newUser.pseudo, email: newUser.email } });
+        res.status(CODES.CREATED).send({ data: { pseudo: newUser.pseudo, email: newUser.email } });
       } else {
         res.sendStatus(CODES.BAD_REQUEST);
       }

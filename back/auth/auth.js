@@ -32,11 +32,7 @@ const auth = {
   },
   verifyPassword: async (req, res) => {
     try {
-      const isVerified = await argon2.verify(
-        req.user.password,
-        req.body.password,
-        hashingOptions
-      );
+      const isVerified = await argon2.verify(req.user.password, req.body.password, hashingOptions);
 
       if (isVerified) {
         const id = req.user._id.toString();
@@ -44,6 +40,7 @@ const auth = {
           algorithm: "HS512",
         });
         req.user.password = "secret password";
+        console.log(req.user);
         res.status(200).send({ token, user: req.user });
       } else {
         res.status(CODES.BAD_REQUEST).send({ error: "Wrong Password" });

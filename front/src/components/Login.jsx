@@ -26,7 +26,6 @@ function Login({ accountCreated, variants }) {
         const res = await fetchData(`auth/login`, fetchOpts);
 
         if (res.status === 200) {
-            console.log(res)
             toast.success("Login Success !")
             setUser(res.data.user)
             setToken(res.data.token)
