@@ -22,10 +22,7 @@ describe("User API", () => {
         body: JSON.stringify(newUser),
       };
 
-      const response = await fetch(
-        "http://localhost:5000/api/auth/register",
-        opts
-      );
+      const response = await fetch("http://localhost:5000/api/auth/register", opts);
       const responseData = await response.json();
 
       chaiExcept(response.status).to.equal(201);
@@ -46,15 +43,12 @@ describe("User API", () => {
         body: JSON.stringify(loginUser),
       };
 
-      const loginRes = await fetch(
-        "http://localhost:5000/api/auth/login",
-        loginOpts
-      );
+      const loginRes = await fetch("http://localhost:5000/api/auth/login", loginOpts);
 
       const loginData = await loginRes.json();
 
       chaiExcept(loginRes.status).to.equal(200);
-      chaiExcept(loginData.user.pseudo).to.equal(loginUser.pseudo);
+      chaiExcept(loginData.data.user.pseudo).to.equal(loginUser.pseudo);
     });
   });
 });
