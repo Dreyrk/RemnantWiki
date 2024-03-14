@@ -40,8 +40,7 @@ const auth = {
           algorithm: "HS512",
         });
         req.user.password = "secret password";
-        console.log(req.user);
-        res.status(200).send({ token, user: req.user });
+        res.status(200).send({ data: { user: req.user, token } });
       } else {
         res.status(CODES.BAD_REQUEST).send({ error: "Wrong Password" });
       }

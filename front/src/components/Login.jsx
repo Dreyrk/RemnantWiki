@@ -27,6 +27,7 @@ function Login({ accountCreated, variants }) {
 
         if (res.status === 200) {
             toast.success("Login Success !")
+            console.log(res)
             setUser(res.data.user)
             setToken(res.data.token)
         } else if (res.status === 400) {
