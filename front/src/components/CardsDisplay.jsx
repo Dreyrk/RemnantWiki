@@ -20,7 +20,7 @@ function CardsDisplay({ data, isLoading, isError, world, boss }) {
                 <Title>{world} {boss ? "Bosses" : "Enemies"}</Title>
                 <Container>
                     {data.map((boss) => (
-                        <BossCard boss={boss} />
+                        <BossCard key={boss.name} boss={boss} />
                     ))}
                 </Container>
             </LocationContainer>

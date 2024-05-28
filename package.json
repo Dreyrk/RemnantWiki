@@ -10,7 +10,7 @@
     "setup": "npm i && npm --prefix ./front i && npm --prefix ./back i && node ./back/seed.js",
     "seed": "cd ./back && npm run seed && cd ..",
     "test": "cd ./back && npm run test",
-    "prod": "docker compose -f docker-compose.prod.yml --env-file ./.env up -d"
+    "prod": "docker compose -f docker-compose.yml --env-file ./.env up -d"
   },
   "author": "Dreyrk",
   "license": "ISC",
